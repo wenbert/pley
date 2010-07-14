@@ -49,9 +49,16 @@ class Business(models.Model):
     status          = models.CharField(max_length=1, choices=BUSINESS_STATUS)
     created_at      = models.DateTimeField('date created')
     updated_at      = models.DateTimeField('date updated')
+    parking_open    = models.BooleanField(verbose_name='Open')
+    parking_basement    = models.BooleanField(verbose_name='Basement')
+    parking_private_lot    = models.BooleanField(verbose_name='Private Lot')
+    parking_valet    = models.BooleanField(verbose_name='Valet')
+    parking_validated    = models.BooleanField(verbose_name='Validated')
+    parking_street    = models.BooleanField(verbose_name='Street')
     def __unicode__(self):
         return self.name
 
+'''
 class Parking(models.Model):
     slug            = models.SlugField(max_length=50)
     display         = models.CharField(max_length=50)
@@ -62,4 +69,4 @@ class Parking(models.Model):
 class BusinessParking(models.Model):
     business        = models.ForeignKey(Business)
     parking         = models.ForeignKey(Parking)
-
+'''

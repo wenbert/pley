@@ -1,14 +1,8 @@
 from django.db import models
 from django.contrib import admin
-from pley.business.models import Business, BusinessParking, Parking
-
-class BusinessParkingInline(admin.TabularInline):
-    model = BusinessParking
+from pley.business.models import Business
 
 class BusinessAdmin(admin.ModelAdmin):
-        inlines = [
-            BusinessParkingInline,
-        ]
+    pass
         
 admin.site.register(Business, BusinessAdmin)
-admin.site.register(Parking)
