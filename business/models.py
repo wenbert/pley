@@ -1,5 +1,6 @@
 from django.db import models
 from django.core.exceptions import ValidationError
+from datetime import datetime 
 
 # Create your models here.
 BUSINESS_STATUS = (
@@ -46,27 +47,18 @@ class Business(models.Model):
     price_range     = models.IntegerField(validators=[validate_max_rating])
     credit_card     = models.CharField(max_length=10, choices=YES_NO_NOTSURE)
     alcohol         = models.CharField(max_length=25, choices=ALCOHOL)
-    status          = models.CharField(max_length=1, choices=BUSINESS_STATUS)
-    created_at      = models.DateTimeField('date created')
-    updated_at      = models.DateTimeField('date updated')
+    status          = models.CharField(max_length=1, choices=BUSINESS_STATUS, default='A')
+    created_at      = models.DateTimeField(verbose_name='Date Created', default=datetime.now, blank=True)
+    updated_at      = models.DateTimeField(verbose_name='Date Updated', default=datetime.now, blank=True)
+    def __unicode__(self):
+        return self.name
+
+
+class Parking(models.Model):
+    business        = models.OneToOneField(Business)
     parking_open    = models.BooleanField(verbose_name='Open')
     parking_basement    = models.BooleanField(verbose_name='Basement')
     parking_private_lot    = models.BooleanField(verbose_name='Private Lot')
     parking_valet    = models.BooleanField(verbose_name='Valet')
     parking_validated    = models.BooleanField(verbose_name='Validated')
     parking_street    = models.BooleanField(verbose_name='Street')
-    def __unicode__(self):
-        return self.name
-
-'''
-class Parking(models.Model):
-    slug            = models.SlugField(max_length=50)
-    display         = models.CharField(max_length=50)
-    status          = models.CharField(max_length=5, choices=STATUSES)
-    def __unicode__(self):
-        return self.display
-        
-class BusinessParking(models.Model):
-    business        = models.ForeignKey(Business)
-    parking         = models.ForeignKey(Parking)
-'''
