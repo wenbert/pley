@@ -74,7 +74,7 @@ class ServingTime(models.Model):
     breakfast       = models.BooleanField(verbose_name="Breakfast")
     brunch          = models.BooleanField(verbose_name="Brunch")
     lunch           = models.BooleanField(verbose_name="Lunch")
-    inner           = models.BooleanField(verbose_name="Dinner")
+    dinner           = models.BooleanField(verbose_name="Dinner")
     late_night      = models.BooleanField(verbose_name="Late Night")
     dessert         = models.BooleanField(verbose_name="Dessert")
     
@@ -84,6 +84,7 @@ class Address(models.Model):
     address2        = models.CharField(max_length=250, verbose_name="Address 2")
     city            = models.CharField(max_length=250, verbose_name="City")
     province        = models.CharField(max_length=250, verbose_name="Province / State")
+    # NOTE: kailangan pa country? philippines ra man ka ni?
     country         = models.CharField(max_length=250, verbose_name="Country")
     zipcode         = models.CharField(max_length=10, verbose_name="Zipcode")
     
