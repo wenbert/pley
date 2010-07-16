@@ -3,8 +3,12 @@
 <title>Add Business</title>
 </head>
 <body>
+{% if success %}
+<h1>Success!</h1>
+{% else %}
 <h1>Add Business</h1>
-<form name="add_business" action="/business/add/" method="post">
+<form name="add_business" action="" method="post">
+	{% csrf_token %}
 	<h2>Business info</h2>
 	{{ business_form.as_p }}
 	<h2>Address</h2>
@@ -15,5 +19,6 @@
 	{{ serving_time_form.as_p }}
 	<input type="submit" value="Save"/>
 </form>
+{% endif %}
 </body>
 </html>
