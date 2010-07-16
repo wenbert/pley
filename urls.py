@@ -1,4 +1,8 @@
 from django.conf.urls.defaults import *
+from django.views.generic.create_update import create_object
+
+from pley.business.models import Business, Parking
+from pley.business.views import *
 
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
@@ -14,4 +18,5 @@ urlpatterns = patterns('',
 
     # Uncomment the next line to enable the admin:
     (r'^admin/', include(admin.site.urls)),
+    ('^business/add/$', business_add),
 )
