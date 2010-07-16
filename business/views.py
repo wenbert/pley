@@ -13,11 +13,7 @@ def business_save(request):
 
 def business_add(request):
     if request.method == 'POST':
-        business_form = BusinessForm(request.POST)
-        address_form = AddressForm(request.POST)
-        parking_form = ParkingForm(request.POST)
-        serving_time_form = ServingTimeForm(request.POST)
-        name = business_form.cleaned_data['name']
+        pass
     else:
         business_form = BusinessForm()
         address_form = AddressForm()
@@ -29,9 +25,6 @@ def business_add(request):
               "address_form": address_form,
               "parking_form": parking_form,
               "serving_time_form": serving_time_form,
-              "success": success,
-              "name": name,
            }
     return render_to_response("business_form.html",
-                              data,
-                              context_instance=RequestContext(request, data))
+                              data)
