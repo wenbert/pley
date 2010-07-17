@@ -3,6 +3,15 @@ from django.core.exceptions import ValidationError
 from datetime import datetime 
 
 # Create your models here.
+
+PRICE_RANGE = (
+    (1,'1'),
+    (2,'2'),
+    (3,'3'),
+    (4,'4'),
+    (5,'5'),
+)
+
 BUSINESS_STATUS = (
     ('A', 'Active'),
     ('P', 'Pending'),
@@ -43,7 +52,7 @@ def validate_max_rating(val):
 
 class Business(models.Model):
     name            = models.CharField(max_length=250)
-    price_range     = models.IntegerField(validators=[validate_max_rating], verbose_name="Price Range", help_text="1 = Lowest; 5 = Highest")
+    price_range     = models.IntegerField(verbose_name="Price Range", help_text="1 = Very Cheap; 5 = Very Expensive", choices=PRICE_RANGE)
     credit_card     = models.CharField(max_length=10, verbose_name="Accepts Credit Card?", choices=YES_NO_NOTSURE)
     alcohol         = models.CharField(max_length=25, verbose_name="Serves alcohol?", choices=ALCOHOL)
     kids            = models.CharField(max_length=10, verbose_name="Good for kids?", choices=YES_NO_NOTSURE)

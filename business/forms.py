@@ -7,6 +7,7 @@ class BusinessForm(forms.ModelForm):
         model = Business
         exclude = ('created_at', 'updated_at', 'status', )
         widgets = {
+            'price_range': forms.RadioSelect,
             'credit_card': forms.RadioSelect,
             'alcohol': forms.RadioSelect,
             'kids': forms.RadioSelect,
