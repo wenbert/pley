@@ -6,6 +6,9 @@
 {% if success %}
 <h1>Success!</h1>
 {% else %}
+    {% if error %}
+        <h2>Test {{ error }}</h2>
+    {% endif %}
 <h1>Add Business</h1>
 <form name="add_business" action="" method="post">
 	{% csrf_token %}
