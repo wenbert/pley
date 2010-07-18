@@ -1,33 +1,29 @@
-<html>
-<head>
-<title>Browse Businesses</title>
-</head>
-<body>
-<h1>Browse...</h1>
-<p>{{ string }}</p>
-{% if business_list %}
-<ul>
-    {% for business in businesses.object_list %}
-        <li>{{ business.name }}</li>
-    {% endfor %}
-</ul>
-<div class="pagination">
-    <span class="step-links">
-        {% if businesses.has_previous %}
-            <a href="?page={{ businesses.previous_page_number }}">previous</a>
-        {% endif %}
+{% extends "base.html" %}
+{% block title %}Browse{% endblock %}
 
-        <span class="current">
-            Page {{ businesses.number }} of {{ businesses.paginator.num_pages }}
-        </span>
-
-        {% if businesses.has_next %}
-            <a href="?page={{ businesses.next_page_number }}">next</a>
-        {% endif %}
-    </span>
-</div>
-{% else %}
-    No business available.
-{% endif %}
-</body>
-</html>
+{% block content %}
+    {% if business_list %}
+        <ul>
+            {% for business in businesses.object_list %}
+                <li>{{ business.name }}</li>
+            {% endfor %}
+        </ul>
+        <div class="pagination">
+            <span class="step-links">
+                {% if businesses.has_previous %}
+                    <a href="?page={{ businesses.previous_page_number }}">previous</a>
+                {% endif %}
+        
+                <span class="current">
+                    Page {{ businesses.number }} of {{ businesses.paginator.num_pages }}
+                </span>
+        
+                {% if businesses.has_next %}
+                    <a href="?page={{ businesses.next_page_number }}">next</a>
+                {% endif %}
+            </span>
+        </div>
+    {% else %}
+        No business available.
+    {% endif %}
+{% endblock %}
