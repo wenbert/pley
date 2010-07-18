@@ -10,7 +10,11 @@ from pley.business.models import *
 from pley.business.forms import *
 
 def business_browse(request):
+    #my_objects = get_list_or_404(MyModel, published=True)
     business_list = Business.objects.all().order_by('-created_at')
+    if not business_list:
+        raise Http404
+        
     paginator = Paginator(business_list, 3)
     
     try:
@@ -23,11 +27,9 @@ def business_browse(request):
     except (EmptyPage, InvalidPage):
         businesses = paginator.page(paginator.num_page)
         
-    #output = ', '.join([b.name for b in businesses])
     data = {"string": "value",
             "business_list": business_list,
-            "businesses": businesses
-            }
+            "businesses": businesses,}
     return render_to_response("business/business_browse.html",
                               data, context_instance=RequestContext(request))
 
@@ -113,12 +115,12 @@ def business_add(request):
                 address.save()
                 serving_time.save()
             except IntegrityError, e:
-                transaction.rollback()
                 success = False
+                transaction.rollback()
                 error = e
             else:
-                transaction.commit()
                 success = True
+                transaction.commit()
             #redirect to success page
     else:
         business_form = BusinessForm()
