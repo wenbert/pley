@@ -6,6 +6,7 @@ class BusinessForm(forms.ModelForm):
     class Meta:
         model = Business
         exclude = ('created_at', 'updated_at', 'status', )
+        '''
         widgets = {
             'price_range': forms.RadioSelect,
             'credit_card': forms.RadioSelect,
@@ -19,6 +20,7 @@ class BusinessForm(forms.ModelForm):
             'attire': forms.RadioSelect,
             'takeout': forms.RadioSelect,
         }
+        '''
 
 class ParkingForm(forms.ModelForm):
     class Meta:
@@ -35,3 +37,7 @@ class AddressForm(forms.ModelForm):
         model = Address
         exclude = ('business',)
 
+class BusinessCategoryForm(forms.ModelForm):
+    class Meta:
+        model = BusinessCategory
+        

@@ -4,14 +4,6 @@ from datetime import datetime
 
 # Create your models here.
 
-PRICE_RANGE = (
-    (1,'1'),
-    (2,'2'),
-    (3,'3'),
-    (4,'4'),
-    (5,'5'),
-)
-
 BUSINESS_STATUS = (
     ('A', 'Active'),
     ('P', 'Pending'),
@@ -52,7 +44,14 @@ def validate_max_rating(val):
 
 class Business(models.Model):
     name            = models.CharField(max_length=250)
-    price_range     = models.IntegerField(verbose_name="Price Range", help_text="1 = Very Cheap; 5 = Very Expensive", choices=PRICE_RANGE)
+    status          = models.CharField(max_length=1, choices=BUSINESS_STATUS, default='A')
+    created_at      = models.DateTimeField(verbose_name='Date Created', default=datetime.now, blank=True)
+    updated_at      = models.DateTimeField(verbose_name='Date Updated', default=datetime.now, blank=True)
+    def __unicode__(self):
+        return self.name
+
+class BusinessProperty(models.Model):
+    business        = models.OneToOneField(Business)
     credit_card     = models.CharField(max_length=10, verbose_name="Accepts Credit Card?", choices=YES_NO_NOTSURE)
     alcohol         = models.CharField(max_length=25, verbose_name="Serves alcohol?", choices=ALCOHOL)
     kids            = models.CharField(max_length=10, verbose_name="Good for kids?", choices=YES_NO_NOTSURE)
@@ -63,11 +62,6 @@ class Business(models.Model):
     outdoor_seating = models.CharField(max_length=10, verbose_name="Outdoor seating?", choices=YES_NO_NOTSURE)
     wheelchair      = models.CharField(max_length=10, verbose_name="Wheelchair accessible?", choices=YES_NO_NOTSURE)
     attire          = models.CharField(max_length=50, choices=ATTIRE)
-    status          = models.CharField(max_length=1, choices=BUSINESS_STATUS, default='A')
-    created_at      = models.DateTimeField(verbose_name='Date Created', default=datetime.now, blank=True)
-    updated_at      = models.DateTimeField(verbose_name='Date Updated', default=datetime.now, blank=True)
-    def __unicode__(self):
-        return self.name
 
 class Parking(models.Model):
     business            = models.OneToOneField(Business)
@@ -104,3 +98,17 @@ class Zipcode(models.Model):
     country         = models.CharField(max_length=250, verbose_name="Country")
     def __unicode__(self):
         return self.zipcode
+
+class Category(models.Model):
+    slug            = models.SlugField(max_length=250)
+    display         = models.CharField(max_length=250)
+    status          = models.CharField(max_length=3, choices=STATUSES, default='A')
+    members         = models.ManyToManyField(Business, through="BusinessCategory")
+    def __unicode__(self):
+        return self.slug
+    
+class BusinessCategory(models.Model):
+    business        = models.ForeignKey(Business)
+    category        = models.ForeignKey(Category)
+    
+    
