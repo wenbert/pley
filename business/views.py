@@ -67,7 +67,7 @@ def business_add(request):
                 address.save()
                 
                 business_category = BusinessCategory(business=business,category=category)
-                
+                business_category.save()
             except IntegrityError, e:
                 transaction.rollback()
                 success = False
