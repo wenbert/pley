@@ -40,4 +40,4 @@ class AddressForm(forms.ModelForm):
 class BusinessCategoryForm(forms.ModelForm):
     class Meta:
         model = BusinessCategory
-        
+        exclude = ('business')

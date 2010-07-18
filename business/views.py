@@ -40,44 +40,12 @@ def business_add(request):
     if request.method == 'POST':
         business_form       = BusinessForm(request.POST)
         address_form        = AddressForm(request.POST)
-        '''
-        parking_form        = ParkingForm(request.POST)
-        serving_time_form   = ServingTimeForm(request.POST)
-        '''
+        business_category_form = BusinessCategoryForm(request.POST)
         
-        if (business_form.is_valid() and address_form.is_valid()
-        and parking_form.is_valid() and serving_time_form.is_valid()):
+        if (business_form.is_valid() and address_form.is_valid() and business_category_form.is_valid()):
             
             business_name   = business_form.cleaned_data['name']
-            
-            '''
-            price_range     = business_form.cleaned_data['price_range']
-            credit_card     = business_form.cleaned_data['credit_card']
-            alcohol         = business_form.cleaned_data['alcohol']
-            kids            = business_form.cleaned_data['kids']
-            groups          = business_form.cleaned_data['groups']
-            reservations    = business_form.cleaned_data['reservations']
-            takeout         = business_form.cleaned_data['takeout']
-            waiters         = business_form.cleaned_data['waiters']
-            outdoor_seating = business_form.cleaned_data['outdoor_seating']
-            wheelchair      = business_form.cleaned_data['wheelchair']
-            attire          = business_form.cleaned_data['attire']
-
-            parking_open        = parking_form.cleaned_data['parking_open']
-            parking_basement    = parking_form.cleaned_data['parking_basement']
-            parking_private_lot = parking_form.cleaned_data['parking_private_lot']
-            parking_valet       = parking_form.cleaned_data['parking_valet']
-            parking_validated   = parking_form.cleaned_data['parking_validated']
-            parking_street      = parking_form.cleaned_data['parking_street']
-
-            serving_breakfast   = serving_time_form.cleaned_data['breakfast']
-            serving_brunch      = serving_time_form.cleaned_data['brunch']
-            serving_lunch       = serving_time_form.cleaned_data['lunch']
-            serving_dinner      = serving_time_form.cleaned_data['dinner']
-            serving_late_night  = serving_time_form.cleaned_data['late_night']
-            serving_dessert     = serving_time_form.cleaned_data['dessert']
-            '''
-
+            category        = business_category_form.cleaned_data['category']
             address_1       = address_form.cleaned_data['address1']
             address_2       = address_form.cleaned_data['address2']
             address_city    = address_form.cleaned_data['city']
@@ -87,68 +55,36 @@ def business_add(request):
             address_zipcode = address_form.cleaned_data['zipcode']
 
             # TODO: catch possible exceptions here
-            business = Business(name=business_name)
-            ''' price_range=price_range,
-            credit_card=credit_card, alcohol=alcohol,
-            kids=kids, groups=groups, takeout=takeout,
-            waiters=waiters, reservations=reservations,
-            outdoor_seating=outdoor_seating,
-            attire=attire,
-            wheelchair=wheelchair'''
             try:
+                business = Business(name=business_name)
                 business.save()
-                
-                '''
-                parking = Parking(parking_open=parking_open, 
-                                  parking_basement=parking_basement,
-                                  parking_private_lot=parking_private_lot,
-                                  parking_valet=parking_valet,
-                                  parking_validated=parking_validated,
-                                  parking_street=parking_street, 
-                                  business=business)
-                                  
-                serving_time = ServingTime(breakfast=serving_breakfast,
-                                           brunch=serving_brunch,
-                                           lunch=serving_lunch,
-                                           dinner=serving_dinner,
-                                           late_night=serving_late_night,
-                                           dessert=serving_dessert, 
-                                           business=business)
-                '''
                                   
                 address = Address(address1=address_1, address2=address_2,
                                   city=address_city, province=address_province,
                                   country=address_country,
                                   zipcode=address_zipcode,
-                                  business=business)
-                                  
-                
-                parking.save()
+                                  business=business)    
                 address.save()
-                serving_time.save()
+                
+                business_category = BusinessCategory(business=business,category=category)
+                
             except IntegrityError, e:
-                success = False
                 transaction.rollback()
+                success = False
                 error = e
             else:
-                success = True
                 transaction.commit()
+                success = True
             #redirect to success page
     else:
         business_form = BusinessForm()
         address_form = AddressForm()
-        '''
-        parking_form = ParkingForm()
-        serving_time_form = ServingTimeForm()
-        '''
+        business_category_form = BusinessCategoryForm()
         
     data = {
               "business_form": business_form,
               "address_form": address_form,
-              '''
-              "parking_form": parking_form,
-              "serving_time_form": serving_time_form,
-              '''
+              "business_category_form": business_category_form,
               "success": success,
               "error": error
            }
