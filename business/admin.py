@@ -1,7 +1,7 @@
 #hello
 from django.db import models
 from django.contrib import admin
-from pley.business.models import Business, Parking, Address, ServingTime, Category, BusinessCategory, BusinessProperty
+from pley.business.models import Business, Parking, Address, ServingTime, Category, BusinessCategory, BusinessProperty, Phone
 
 class ParkingInline(admin.StackedInline):
     model = Parking
@@ -21,12 +21,17 @@ class BusinessPropertyInline(admin.StackedInline):
     model = BusinessProperty
     extra = 1
 
+class PhoneInline(admin.StackedInline):
+    model = Phone
+    extra = 1
+
 class BusinessAdmin(admin.ModelAdmin):
     radio_fields = {}
     
     inlines = [
         AddressInline,
         BusinessCategoryInline,
+        PhoneInline,
     ]
         
 admin.site.register(Business, BusinessAdmin)

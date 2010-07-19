@@ -59,6 +59,10 @@ class Address(models.Model):
     # NOTE: kailangan pa country? philippines ra man ka ni?
     country         = models.CharField(max_length=250, verbose_name="Country")
     zipcode         = models.CharField(max_length=10, verbose_name="Zipcode")
+
+class Phone(models.Model):
+    business        = models.OneToOneField(Business)
+    phone_number    = models.CharField(max_length=100, verbose_name="Telephone")
     
 class BusinessProperty(models.Model):
     business        = models.OneToOneField(Business)

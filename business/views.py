@@ -50,16 +50,19 @@ def business_add(request):
         business_form       = BusinessForm(request.POST)
         address_form        = AddressForm(request.POST)
         business_category_form = BusinessCategoryForm(request.POST)
+        phone_form          = PhoneForm(request.POST)
         
-        if (business_form.is_valid() and address_form.is_valid() and business_category_form.is_valid()):
+        if (business_form.is_valid() and address_form.is_valid() and business_category_form.is_valid() and phone_form.is_valid()):
             
             business_name   = business_form.cleaned_data['name']
             category        = business_category_form.cleaned_data['category']
+            phone_number    = phone_form.cleaned_data['phone_number']
             address_1       = address_form.cleaned_data['address1']
             address_2       = address_form.cleaned_data['address2']
             address_city    = address_form.cleaned_data['city']
             address_province = address_form.cleaned_data['province']
             address_country = address_form.cleaned_data['country']
+            
             # TODO: zipcode should be found in zipcode table
             address_zipcode = address_form.cleaned_data['zipcode']
 
@@ -75,8 +78,12 @@ def business_add(request):
                                   business=business)    
                 address.save()
                 
+                phone   = Phone(phone_number=phone_number)
+                phone.save()
+                
                 business_category = BusinessCategory(business=business,category=category)
                 business_category.save()
+                
             except IntegrityError, e:
                 transaction.rollback()
                 success = False
@@ -86,14 +93,16 @@ def business_add(request):
                 success = True
             #redirect to success page
     else:
-        business_form = BusinessForm()
-        address_form = AddressForm()
+        business_form   = BusinessForm()
+        address_form    = AddressForm()
         business_category_form = BusinessCategoryForm()
+        phone_form      = PhoneForm()
         
     data = {
               "business_form": business_form,
               "address_form": address_form,
               "business_category_form": business_category_form,
+              "phone_form": phone_form,
               "success": success,
               "error": error
            }
