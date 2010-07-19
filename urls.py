@@ -23,6 +23,7 @@ urlpatterns = patterns('',
     (r'^admin/', include(admin.site.urls)),
     (r'^business/add/$', business_add),
     (r'^business/browse/$', business_browse),
+    (r'^business/view/(?P<business_id>\d+)/$', business_view),
     #(r'^business/browse/$', list_detail.object_list, business_info),
     #(r'^business/browse/page(?P<page>[0-9]+/$)',list_detail.object_list, business_info),
 )

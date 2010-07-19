@@ -5,7 +5,7 @@
     {% if business_list %}
         <ul>
             {% for business in businesses.object_list %}
-                <li>{{ business.name }}</li>
+                <li><a href="/business/view/{{business.id}}">{{ business.name }}</a></li>
             {% endfor %}
         </ul>
         <div class="pagination">

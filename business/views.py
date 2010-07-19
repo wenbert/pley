@@ -33,6 +33,15 @@ def business_browse(request):
     return render_to_response("business/business_browse.html",
                               data, context_instance=RequestContext(request))
 
+def business_view(request, business_id):
+    business_item = Business.objects.select_related().get(id=business_id)
+    address_list = Address.objects.filter(business=business_item)
+    
+    data = {"business_item": business_item,
+            "address_list": address_list}
+    return render_to_response("business/business_view.html",
+                              data, context_instance=RequestContext(request))
+
 @transaction.commit_manually
 def business_add(request):
     success = False

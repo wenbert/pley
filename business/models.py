@@ -49,7 +49,17 @@ class Business(models.Model):
     updated_at      = models.DateTimeField(verbose_name='Date Updated', default=datetime.now, blank=True)
     def __unicode__(self):
         return self.name
-
+        
+class Address(models.Model):
+    business        = models.ForeignKey(Business)
+    address1        = models.CharField(max_length=250, verbose_name="Address 1")
+    address2        = models.CharField(max_length=250, verbose_name="Address 2")
+    city            = models.CharField(max_length=250, verbose_name="City")
+    province        = models.CharField(max_length=250, verbose_name="Province / State")
+    # NOTE: kailangan pa country? philippines ra man ka ni?
+    country         = models.CharField(max_length=250, verbose_name="Country")
+    zipcode         = models.CharField(max_length=10, verbose_name="Zipcode")
+    
 class BusinessProperty(models.Model):
     business        = models.OneToOneField(Business)
     credit_card     = models.CharField(max_length=10, verbose_name="Accepts Credit Card?", choices=YES_NO_NOTSURE)
@@ -80,16 +90,6 @@ class ServingTime(models.Model):
     dinner           = models.BooleanField(verbose_name="Dinner")
     late_night      = models.BooleanField(verbose_name="Late Night")
     dessert         = models.BooleanField(verbose_name="Dessert")
-    
-class Address(models.Model):
-    business        = models.ForeignKey(Business)
-    address1        = models.CharField(max_length=250, verbose_name="Address 1")
-    address2        = models.CharField(max_length=250, verbose_name="Address 2")
-    city            = models.CharField(max_length=250, verbose_name="City")
-    province        = models.CharField(max_length=250, verbose_name="Province / State")
-    # NOTE: kailangan pa country? philippines ra man ka ni?
-    country         = models.CharField(max_length=250, verbose_name="Country")
-    zipcode         = models.CharField(max_length=10, verbose_name="Zipcode")
     
 class Zipcode(models.Model):
     zipcode         = models.CharField(max_length=10, verbose_name="Zipcode")
