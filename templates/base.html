@@ -10,9 +10,20 @@
     <div id="sidebar">
         {% block sidebar %}
         <ul>
+            {% if user.is_authenticated %}
+                <li><a href="/accounts/logout">Logout</a></li>
+            {% else %}
+                <li><a href="/accounts/login">Login</a></li>
+                <li><a href="/accounts/register">Sign-up</a></li>
+            {% endif %}
             <li><a href="/business/browse">Browse</a></li>
-            <li><a href="/business/add">Add</a></li>
+            <li><a href="/business/add">Add Business</a></li>
         </ul>
+        {% if user.is_authenticated %}
+            <p>Welcome, {{ user.username }}. Thanks for logging in.</p>
+        {% else %}
+            <p>Hello! If you want to submit a review or add a business, please register here.</p>
+        {% endif %}
         {% endblock %}
     </div>
 

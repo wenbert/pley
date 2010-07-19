@@ -64,7 +64,7 @@ class Phone(models.Model):
     business        = models.OneToOneField(Business)
     phone_number    = models.CharField(max_length=100, verbose_name="Telephone")
     
-class BusinessProperty(models.Model):
+class Property(models.Model):
     business        = models.OneToOneField(Business)
     credit_card     = models.CharField(max_length=10, verbose_name="Accepts Credit Card?", choices=YES_NO_NOTSURE)
     alcohol         = models.CharField(max_length=25, verbose_name="Serves alcohol?", choices=ALCOHOL)

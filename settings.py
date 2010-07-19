@@ -37,6 +37,8 @@ LANGUAGE_CODE = 'en-us'
 
 SITE_ID = 1
 
+LOGIN_REDIRECT_URL = "/"
+
 # If you set this to False, Django will make some optimizations so as not
 # to load the internationalization machinery.
 USE_I18N = True
@@ -92,8 +94,11 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.sites',
     'django.contrib.messages',
+    'registration',
     'pley.business',
     'django.contrib.admin'
     # Uncomment the next line to enable the admin:
     # 'django.contrib.admin',
 )
+
+ACCOUNT_ACTIVATION_DAYS = 7

@@ -4,6 +4,7 @@ from django.views.generic import list_detail
 
 from pley.business.models import Business, Parking
 from pley.business.views import *
+from pley.accounts.views import *
 
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
@@ -24,6 +25,8 @@ urlpatterns = patterns('',
     (r'^business/add/$', business_add),
     (r'^business/browse/$', business_browse),
     (r'^business/view/(?P<business_id>\d+)/$', business_view),
+    (r'^accounts/', include('registration.backends.default.urls')),
+    (r'^accounts/logout/$', 'django.contrib.auth.views.logout'),
     #(r'^business/browse/$', list_detail.object_list, business_info),
     #(r'^business/browse/page(?P<page>[0-9]+/$)',list_detail.object_list, business_info),
 )
