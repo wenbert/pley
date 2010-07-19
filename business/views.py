@@ -56,12 +56,13 @@ def business_add(request):
             
             business_name   = business_form.cleaned_data['name']
             category        = business_category_form.cleaned_data['category']
-            phone_number    = phone_form.cleaned_data['phone_number']
             address_1       = address_form.cleaned_data['address1']
             address_2       = address_form.cleaned_data['address2']
             address_city    = address_form.cleaned_data['city']
             address_province = address_form.cleaned_data['province']
             address_country = address_form.cleaned_data['country']
+            
+            phone_number    = phone_form.cleaned_data['phone_number']
             
             # TODO: zipcode should be found in zipcode table
             address_zipcode = address_form.cleaned_data['zipcode']
