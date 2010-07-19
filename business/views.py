@@ -79,7 +79,7 @@ def business_add(request):
                                   business=business)    
                 address.save()
                 
-                phone   = Phone(phone_number=phone_number)
+                phone   = Phone(phone_number=phone_number, business=business)
                 phone.save()
                 
                 business_category = BusinessCategory(business=business,category=category)
