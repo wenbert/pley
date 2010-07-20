@@ -1,0 +1,14 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+Subject: Account Activation http://localhost:8000
+From: webmaster@localhost
+To: test@test.com
+Date: Tue, 20 Jul 2010 18:03:43 -0000
+Message-ID: <20100720180343.9560.57371@Subsea-wenbert.delrosario>
+
+Please click here to activate your account: =
+
+http://localhost:8000/accounts/activate/efa0f0402e4b1f88915273e1b5b7429cf49=
+7b5dd/
+-------------------------------------------------------------------------------

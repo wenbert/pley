@@ -104,3 +104,5 @@ LOGIN_URL = "/accounts/login"
 LOGIN_REDIRECT_URL = "/business/add"
 LOGOUT_URL = "/business/browse"
 ACCOUNT_ACTIVATION_DAYS = 7
+EMAIL_BACKEND = 'django.core.mail.backends.filebased.EmailBackend'
+EMAIL_FILE_PATH = 'C:/django/pley/app_messages' # change this to a proper location

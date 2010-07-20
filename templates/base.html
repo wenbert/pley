@@ -12,9 +12,11 @@
         <ul>
             {% if user.is_authenticated %}
                 <li><a href="/accounts/logout">Logout</a></li>
+                <li><a href="/accounts/password/change">Change Password</a></li>
             {% else %}
-                <li><a href="/accounts/login">Login</a></li>
                 <li><a href="/accounts/register">Sign-up</a></li>
+                <li><a href="/accounts/login">Login</a></li>
+                <li><a href="/accounts/password/reset">Forgot Password</a></li>
             {% endif %}
             <li><a href="/business/browse">Browse</a></li>
             <li><a href="/business/add">Add Business</a></li>
