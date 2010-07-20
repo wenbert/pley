@@ -100,4 +100,7 @@ INSTALLED_APPS = (
     # 'django.contrib.admin',
 )
 
+LOGIN_URL = "/accounts/login"
+LOGIN_REDIRECT_URL = "/business/add"
+LOGOUT_URL = "/business/browse"
 ACCOUNT_ACTIVATION_DAYS = 7

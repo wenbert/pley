@@ -8,7 +8,9 @@ from pley.accounts.views import *
 
 from django.views.generic.simple import direct_to_template
 from registration.views import register, activate
+from registration.forms import *
 
+from django.contrib.auth.views import login, logout
 
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
@@ -30,20 +32,25 @@ urlpatterns = patterns('',
     (r'^business/browse/$', business_browse),
     (r'^business/view/(?P<business_id>\d+)/$', business_view),
     #Enable this instead of backends.default.urls
-    #(r'^accounts/', include('registration.backends.simple.urls')),
+    
     #Disabled below since there is no email yet
     #(r'^accounts/', include('registration.backends.default.urls')),
-    (r'^accounts/logout/$', 'django.contrib.auth.views.logout'),
+    #url(r'^accounts/login/$', 'django.contrib.auth.views.login'),
+    #url(r'^accounts/logout/$', 'django.contrib.auth.views.logout'),
     #(r'^accounts/register/$', register),
     #(r'^business/browse/$', list_detail.object_list, business_info),
     #(r'^business/browse/page(?P<page>[0-9]+/$)',list_detail.object_list, business_info),
+    #url(r'^accounts/login/$',  login),
+    #url(r'^accounts/logout/$', logout),
+    
     url(r'^accounts/register/$',
        register,
-       {'backend': 'registration.backends.simple.SimpleBackend', 'success_url': '/business/browse'},
+       {'backend': 'registration.backends.simple.SimpleBackend', 'form_class': RegistrationFormTermsOfService, 'success_url': '/business/browse', },
        name='registration_register'),
-   url(r'^accounts/register/closed/$',
+    url(r'^accounts/register/closed/$',
        direct_to_template,
        {'template': 'registration/registration_closed.html'},
        name='registration_disallowed'),
-   (r'', include('registration.auth_urls')),
+    (r'', include('registration.auth_urls')),
+    (r'^accounts/', include('registration.backends.simple.urls')),
 )
