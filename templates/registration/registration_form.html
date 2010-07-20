@@ -2,14 +2,17 @@
 
 {% block content %}
 
-{% if form.errors %}
-<p>Your username and password didn't match. Please try again.</p>
-{% endif %}
-
-<form method="post" action="{% url django.contrib.auth.views.login %}">{% csrf_token %}
-{{form.as_p}}
-<input type="submit" value="login" />
-<input type="hidden" name="next" value="{{ next }}" />
+<form method="post" action="">
+{% csrf_token %}
+<dl>
+{% for field in form %}
+    <dt>{{ field.label_tag }}</dt>
+    <dd>{{ field }}</dd>
+    {% if field.help_text %}<dd>{{ field.help_text }}</dd>{% endif %}
+    {% if field.errors %}<dd class="myerrors">{{ field.errors }}</dd>{% endif %}
+{% endfor %}
+</dl>
+<input type="submit" />
 </form>
-
+{{test}}
 {% endblock %}
