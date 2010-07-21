@@ -10,7 +10,7 @@ from django.views.generic.simple import direct_to_template
 from registration.views import register, activate
 from registration.forms import *
 
-from django.contrib.auth.views import login, logout
+from django.contrib.auth.views import login, logout, password_change, password_reset
 
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
@@ -73,6 +73,8 @@ urlpatterns = patterns('',
        direct_to_template,
        {'template': 'registration/registration_closed.html'},
        name='registration_disallowed'),
+    url(r'^accounts/password/change/$',
+       password_change),
     (r'^accounts/', include('registration.backends.default.urls')),
     #(r'', include('registration.auth_urls')),
     
