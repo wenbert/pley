@@ -7,10 +7,6 @@ from pley.business.views import *
 from pley.accounts.views import *
 
 from django.views.generic.simple import direct_to_template
-from registration.views import register, activate
-from registration.forms import *
-
-from django.contrib.auth.views import login, logout, password_change, password_reset
 
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
@@ -61,21 +57,21 @@ urlpatterns = patterns('',
     # [a-fA-F0-9]{40} because a bad activation key should still get to the view;
     # that way it can return a sensible "invalid key" message instead of a
     # confusing 404.
-    url(r'^accounts/register/$',
-       register,
-       {'backend': 'registration.backends.default.DefaultBackend', 'form_class': RegistrationFormUniqueEmail },
-       name='registration_register'),
-    url(r'^accounts/register/complete/$',
-       direct_to_template,
-       {'template': 'registration/registration_complete.html'},
-       name='registration_complete'),
-    url(r'^accounts/register/closed/$',
-       direct_to_template,
-       {'template': 'registration/registration_closed.html'},
-       name='registration_disallowed'),
-    url(r'^accounts/password/change/$',
-       password_change),
-    (r'^accounts/', include('registration.backends.default.urls')),
+    #url(r'^accounts/register/$',
+    #   register,
+    #   {'backend': 'registration.backends.default.DefaultBackend', 'form_class': RegistrationFormUniqueEmail },
+    #   name='registration_register'),
+    #url(r'^accounts/register/complete/$',
+    #   direct_to_template,
+    #   {'template': 'registration/registration_complete.html'},
+    #   name='registration_complete'),
+    #url(r'^accounts/register/closed/$',
+    #   direct_to_template,
+    #   {'template': 'registration/registration_closed.html'},
+    #   name='registration_disallowed'),
+    #url(r'^accounts/password/change/$',
+    #   password_change),
+    #(r'^accounts/', include('registration.backends.default.urls')),
     #(r'', include('registration.auth_urls')),
-    
+    (r'^accounts/', include('accounts.urls')),   
 )
