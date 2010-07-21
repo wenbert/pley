@@ -9,4 +9,9 @@ TODO:
 2) Improve Add Business
     - learn how to AJAX to zipcode model
 3) Layouts
-4) User Registration and Pages
+4) User Registration
+    - login (done)
+    - logout (done)
+    - password change
+    - password reset
+    - email verification (done)
