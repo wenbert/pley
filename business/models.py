@@ -21,22 +21,6 @@ STATUSES = (
     ('off','Off'),
 )
 
-ALCOHOL = (
-    ('beer','Beer Only'),
-    ('wine','Wine Only'),
-    ('beer_wine','Beer and Wine'),
-    ('full_bar','Full Bar'),
-    ('none','None'),
-    ('not_sure','Not Sure'),
-)
-
-ATTIRE = (
-    ('casual','Casual'),
-    ('dressy','Dressy'),
-    ('formal','Formal (Jacket Required)'),
-    ('not_sure','Not Sure'),
-)
-
 def validate_max_rating(val):
     if not val in range(1,6):
         raise ValidationError(u'%s is not a valid rating.' % val)
@@ -63,37 +47,6 @@ class Address(models.Model):
 class Phone(models.Model):
     business        = models.OneToOneField(Business)
     phone_number    = models.CharField(max_length=100, verbose_name="Telephone")
-    
-class Property(models.Model):
-    business        = models.OneToOneField(Business)
-    credit_card     = models.CharField(max_length=10, verbose_name="Accepts Credit Card?", choices=YES_NO_NOTSURE)
-    alcohol         = models.CharField(max_length=25, verbose_name="Serves alcohol?", choices=ALCOHOL)
-    kids            = models.CharField(max_length=10, verbose_name="Good for kids?", choices=YES_NO_NOTSURE)
-    groups          = models.CharField(max_length=10, verbose_name="Good for groups?", choices=YES_NO_NOTSURE)
-    reservations    = models.CharField(max_length=10, verbose_name="Takes reservations?", choices=YES_NO_NOTSURE)
-    takeout         = models.CharField(max_length=10, verbose_name="Take-out?", choices=YES_NO_NOTSURE)
-    waiters         = models.CharField(max_length=10, verbose_name="Waiter services?", choices=YES_NO_NOTSURE)
-    outdoor_seating = models.CharField(max_length=10, verbose_name="Outdoor seating?", choices=YES_NO_NOTSURE)
-    wheelchair      = models.CharField(max_length=10, verbose_name="Wheelchair accessible?", choices=YES_NO_NOTSURE)
-    attire          = models.CharField(max_length=50, choices=ATTIRE)
-
-class Parking(models.Model):
-    business            = models.OneToOneField(Business)
-    parking_open        = models.BooleanField(verbose_name='Open Parking')
-    parking_basement    = models.BooleanField(verbose_name='Basement Parking')
-    parking_private_lot = models.BooleanField(verbose_name='Private Lot')
-    parking_valet       = models.BooleanField(verbose_name='Valet Parking')
-    parking_validated   = models.BooleanField(verbose_name='Validated')
-    parking_street      = models.BooleanField(verbose_name='Street Parking')
-
-class ServingTime(models.Model):
-    business        = models.OneToOneField(Business)
-    breakfast       = models.BooleanField(verbose_name="Breakfast")
-    brunch          = models.BooleanField(verbose_name="Brunch")
-    lunch           = models.BooleanField(verbose_name="Lunch")
-    dinner           = models.BooleanField(verbose_name="Dinner")
-    late_night      = models.BooleanField(verbose_name="Late Night")
-    dessert         = models.BooleanField(verbose_name="Dessert")
     
 class Zipcode(models.Model):
     zipcode         = models.CharField(max_length=10, verbose_name="Zipcode")

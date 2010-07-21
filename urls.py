@@ -2,8 +2,10 @@ from django.conf.urls.defaults import *
 from django.views.generic.create_update import create_object
 from django.views.generic import list_detail
 
-from pley.business.models import Business, Parking
+from pley.business.models import Business
+from pley.review.models import Review
 from pley.business.views import *
+from pley.review.views import *
 from pley.accounts.views import *
 
 from django.views.generic.simple import direct_to_template
@@ -28,6 +30,8 @@ urlpatterns = patterns('',
     (r'^business/add/$', business_add),
     (r'^business/browse/$', business_browse),
     (r'^business/view/(?P<business_id>\d+)/$', business_view),
+    (r'^review/add/$', review_add),
+    
     #Enable this instead of backends.default.urls
     
     #Disabled below since there is no email yet
@@ -73,5 +77,5 @@ urlpatterns = patterns('',
     #   password_change),
     #(r'^accounts/', include('registration.backends.default.urls')),
     #(r'', include('registration.auth_urls')),
-    (r'^accounts/', include('accounts.urls')),   
+    (r'^accounts/', include('accounts.urls')),
 )

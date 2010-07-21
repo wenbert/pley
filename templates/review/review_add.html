@@ -8,17 +8,11 @@
         {% if error %}
             <h2>Test {{ error }}</h2>
         {% endif %}
-    <h1>Add Business</h1>
-    <form name="business_add" action="" method="post">
+    <h1>Add Review</h1>
+    <form name="review_add" action="" method="post">
     	{% csrf_token %}
-    	<h2>Business info</h2>
-    	{{ business_form.as_p }}
-    	<h2>Address</h2>
-        {{ address_form.as_p }}
-        <h2>Telephone</h2>
-        {{ phone_form.as_p }}
-        <h2>Category</h2>
-        {{ business_category_form.as_p }}
+    	<h2>Review</h2>
+    	{{ review_form.as_p }}
     	<input type="submit" value="Save"/>
     </form>
     {% endif %}
