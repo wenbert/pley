@@ -10,6 +10,12 @@ from django.core.paginator import Paginator, InvalidPage, EmptyPage
 from pley.business.models import *
 from pley.business.forms import *
 
+def business_home(request):
+    data = {}
+    return render_to_response("business/business_home.html",
+                          data, context_instance=RequestContext(request))
+
+
 def business_browse(request):
     #my_objects = get_list_or_404(MyModel, published=True)
     business_list = Business.objects.all().order_by('-created_at')

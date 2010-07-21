@@ -27,6 +27,7 @@ urlpatterns = patterns('',
     # Example:
     # (r'^pley/', include('pley.foo.urls')),
 
+    (r'^$', business_home),
     (r'^admin/', include(admin.site.urls)),
     (r'^business/add/$', business_add),
     (r'^business/browse/$', business_browse),
