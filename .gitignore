@@ -1,5 +1,6 @@
 # Ignore these file types #
 ##########################
 *.pyc
+*.log
 
 # For more info: http://help.github.com/git-ignore/ 
