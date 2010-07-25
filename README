@@ -1,5 +1,8 @@
 REQUIREMENTS:
-1) Install django-registration (http://bitbucket.org/ubernostrum/django-registration/src/tip/docs/quickstart.rst)
+1) Python 2.5 or greater than
+2) Django
+3) PostgreSQL
+4) Install django-registration (http://bitbucket.org/ubernostrum/django-registration/src/tip/docs/quickstart.rst)
 
 TODO:
 1) Make business_id and user_id in Review Add form hidden
