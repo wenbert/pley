@@ -4,8 +4,9 @@
  
 #navbar ul {
     margin: 0; 
-    padding: 0;
+    padding: 0 0 0 8px;
     float: left;
+    font-size: 0.9em;
 }
  
 #navbar ul li {
@@ -18,7 +19,7 @@
     float: left; 
     text-decoration: none;
     color: white;
-    padding: 10.5px 11px;
+    padding: 5px 5px 5px 5px;
 }
  
 #navbar ul li a:visited {

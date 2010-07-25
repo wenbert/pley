@@ -18,27 +18,32 @@
 </head>
 
 <body>
-<div class="container"> 
-    <div id="header" class="span-24 last">
+<div class="container" id="header"> 
+    <div class="span-24 last">
         <img id="logo" src="/images/logo.png"/>
     </div>
-    <div id="navbar" class="span-24 last">
-        {% block navbar %}
+    {% block navbar %}
+    <div id="navbar" class="span-18">
             <ul>
-                {% if user.is_authenticated %}
-                    <li><a href="/accounts/logout">Logout</a></li>
-                    <li><a href="/accounts/password/change">Change Password</a></li>
-                {% else %}
-                    <li><a href="/accounts/register">Sign-up</a></li>
-                    <li><a href="/accounts/login">Login</a></li>
-                    <li><a href="/accounts/password/reset">Forgot Password</a></li>
-                {% endif %}
-                <li><a href="/business/browse">Browse</a></li>
+                <li><a href="/business/browse">Browse Businesses</a></li>
                 <li><a href="/business/add">Add Business</a></li>
             </ul>
-        {% endblock %}
     </div>
-
+    <div id="navbar" class="span-6 last">
+        <ul>
+        {% if user.is_authenticated %}
+            <li><a href="/accounts/logout">Logout</a></li>
+            <li><a href="/accounts/password/change">Change Password</a></li>
+        {% else %}
+            <li><a href="/accounts/register">Sign-up</a></li>
+            <li><a href="/accounts/login">Login</a></li>
+            <li><a href="/accounts/password/reset">Forgot Password</a></li>
+        {% endif %}
+        </ul>
+    </div>
+    {% endblock %}
+</div>
+<div class="container">
     <div class="span-24 last">
         {% if user.is_authenticated %}
             <p>Welcome, {{ user.username }}. Thanks for logging in.</p>
