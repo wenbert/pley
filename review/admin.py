@@ -24,4 +24,4 @@ class ReviewAdmin(admin.ModelAdmin):
         ServingTimeInline,
     ]
         
-admin.site.register(BusinessAdmin)
+admin.site.register(Review, ReviewAdmin)

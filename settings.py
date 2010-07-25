@@ -95,6 +95,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'registration',
     'pley.business',
+    'pley.review', 
     'django.contrib.admin'
     # Uncomment the next line to enable the admin:
     # 'django.contrib.admin',

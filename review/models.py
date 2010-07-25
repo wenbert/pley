@@ -1,5 +1,6 @@
 from django.db import models
 from django.core.exceptions import ValidationError
+from django.contrib.auth.models import User
 
 from pley.business.models import Business
 from registration.models import *
@@ -47,10 +48,11 @@ class Review(models.Model):
     created_at      = models.DateTimeField(verbose_name='Date Created', default=datetime.now, blank=True)
     updated_at      = models.DateTimeField(verbose_name='Date Updated', default=datetime.now, blank=True)
     def __unicode__(self):
-        return self.name
+        return self.review
         
 class Property(models.Model):
     business        = models.OneToOneField(Business)
+    review          = models.ForeignKey(Review)
     credit_card     = models.CharField(max_length=10, verbose_name="Accepts Credit Card?", choices=YES_NO_NOTSURE)
     alcohol         = models.CharField(max_length=25, verbose_name="Serves alcohol?", choices=ALCOHOL)
     kids            = models.CharField(max_length=10, verbose_name="Good for kids?", choices=YES_NO_NOTSURE)
@@ -64,6 +66,7 @@ class Property(models.Model):
 
 class Parking(models.Model):
     business            = models.OneToOneField(Business)
+    review          = models.ForeignKey(Review)
     parking_open        = models.BooleanField(verbose_name='Open Parking')
     parking_basement    = models.BooleanField(verbose_name='Basement Parking')
     parking_private_lot = models.BooleanField(verbose_name='Private Lot')
@@ -73,6 +76,7 @@ class Parking(models.Model):
 
 class ServingTime(models.Model):
     business        = models.OneToOneField(Business)
+    review          = models.ForeignKey(Review)
     breakfast       = models.BooleanField(verbose_name="Breakfast")
     brunch          = models.BooleanField(verbose_name="Brunch")
     lunch           = models.BooleanField(verbose_name="Lunch")

@@ -2,13 +2,12 @@
 from django.http import HttpResponse, Http404
 from django.template import Context, loader
 from django.template import RequestContext
-from django.shortcuts import render_to_response, redirect
+from django.shortcuts import render_to_response, redirect, get_object_or_404
 from django.db import transaction
-from django.db import IntegrityError
+from django.db import IntegrityError, DatabaseError
 from django.contrib.auth.decorators import login_required
 from django.core.paginator import Paginator, InvalidPage, EmptyPage
 from pley.business.models import *
-from pley.business.forms import *
 from pley.review.models import *
 from pley.review.forms import *
 
@@ -17,14 +16,17 @@ from pley.review.forms import *
 def review_add(request, business_id):
     success = False
     error = None
+
+    business = get_object_or_404(Business, id=business_id)
+
     if request.method == 'POST':
         review_form         = ReviewForm(request.POST)
         property_form       = PropertyForm(request.POST)
         parking_form        = ParkingForm(request.POST)
         serving_time_form   = ServingTimeForm(request.POST)
         
-        if(review_form.is_valid() and property_form.is_valid and parking_form.is_valid and serving_time_form.is_valid):
-            review          = review_form.cleaned_data['review']
+        if(review_form.is_valid() and property_form.is_valid() and parking_form.is_valid() and serving_time_form.is_valid()):
+            review_text     = review_form.cleaned_data['review']
             
             credit_card     = property_form.cleaned_data['credit_card']
             alcohol         = property_form.cleaned_data['alcohol']
@@ -53,8 +55,36 @@ def review_add(request, business_id):
             
             try:
                 #DO THE SAVES HERE
-                pass
-            except IntegrityError, e:
+                review = Review(review=review_text, business=business,
+                                user=request.user)
+                review.save()
+                properties = Property(business=business,
+                                      review=review,
+                                      credit_card=credit_card,
+                                      alcohol=alcohol,
+                                      kids=kids, groups=groups,
+                                      reservations=reservations,
+                                      takeout=takeout, waiters=waiters,
+                                      outdoor_seating=outdoor_seating,
+                                      wheelchair=wheelchair, attire=attire)
+                parking = Parking(business=business, 
+                                  review=review,
+                                  parking_open=parking_open,
+                                  parking_basement=parking_basement,
+                                  parking_private_lot=parking_private_lot,
+                                  parking_valet=parking_valet,
+                                  parking_validated=parking_validated,
+                                  parking_street=parking_street)
+                serving_time = ServingTime(business=business,
+                                           review=review,
+                                           breakfast=breakfast,
+                                           brunch=brunch, lunch=lunch,
+                                           dinner=dinner, late_night=late_night,
+                                           dessert=dessert)
+                properties.save()
+                parking.save()
+                serving_time.save()
+            except (IntegrityError), e:
                 transaction.rollback()
                 success = False
                 error = e
@@ -76,7 +106,9 @@ def review_add(request, business_id):
                 "parking_form": parking_form,
                 "serving_time_form": serving_time_form,
                 "success": success,
-                "error": error
+                "error": error,
+                "business": business,
+                "user": request.user,
             }
     return render_to_response("review/review_add.html",
                               data, context_instance=RequestContext(request))

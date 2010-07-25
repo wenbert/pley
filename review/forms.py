@@ -6,12 +6,12 @@ from django.forms.widgets import *
 class ReviewForm(forms.ModelForm):
     class Meta:
         model = Review
-        exclude = ('created_at', 'updated_at', 'status', )
+        exclude = ('created_at', 'updated_at', 'status', 'business', 'user',)
 
 class PropertyForm(forms.ModelForm):
     class Meta:
         model = Property
-        exclude = ('business',)
+        exclude = ('business', 'review',)
         widgets = {
             'credit_card': RadioSelect(),
             'alcohol': RadioSelect(),
@@ -28,9 +28,9 @@ class PropertyForm(forms.ModelForm):
 class ParkingForm(forms.ModelForm):
     class Meta:
         model = Parking
-        exclude = ('business',)
+        exclude = ('business', 'review',)
 
 class ServingTimeForm(forms.ModelForm):
     class Meta:
         model = ServingTime
-        exclude = ('business',)
+        exclude = ('business', 'review',)
