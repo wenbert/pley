@@ -1,0 +1,39 @@
+#navbar {
+    background-color: #2b2b2b;
+}
+ 
+#navbar ul {
+    margin: 0; 
+    padding: 0;
+    float: left;
+}
+ 
+#navbar ul li {
+    display: inline;
+    list-style-type: none;
+    padding-right: 20px;
+}
+ 
+#navbar ul li a{
+    float: left; 
+    text-decoration: none;
+    color: white;
+    padding: 10.5px 11px;
+}
+ 
+#navbar ul li a:visited {
+    color: white;
+}
+ 
+#navbar ul li a:hover, #navbar ul li .current{
+    color: #fff;
+    background-color:#100e0e;
+}
+
+#header {
+    background-color:#2b2b2b;
+}    
+
+#logo {
+    padding: 10px 0 0 5px;
+}

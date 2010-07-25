@@ -4,34 +4,56 @@
 <head>
     <link rel="stylesheet" href="style.css" />
     <title>Pley: {% block title %}{% endblock %}</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/styles.css" type="text/css" media="screen, projection"> 
+    
+    <!-- Framework CSS --> 
+    <link rel="stylesheet" href="/css/blueprint/screen.css" type="text/css" media="screen, projection"> 
+    <link rel="stylesheet" href="/css/blueprint/print.css" type="text/css" media="print"> 
+    <!--[if lt IE 8]><link rel="stylesheet" href="/css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]--> 
+ 
+    <!-- Import fancy-type plugin for the sample page. --> 
+    <link rel="stylesheet" href="/css/blueprint/plugins/fancy-type/screen.css" type="text/css" media="screen, projection"> 
 </head>
 
 <body>
-    <div id="sidebar">
-        {% block sidebar %}
-        <ul>
-            {% if user.is_authenticated %}
-                <li><a href="/accounts/logout">Logout</a></li>
-                <li><a href="/accounts/password/change">Change Password</a></li>
-            {% else %}
-                <li><a href="/accounts/register">Sign-up</a></li>
-                <li><a href="/accounts/login">Login</a></li>
-                <li><a href="/accounts/password/reset">Forgot Password</a></li>
-            {% endif %}
-            <li><a href="/business/browse">Browse</a></li>
-            <li><a href="/business/add">Add Business</a></li>
-            <li><a href="/review/add">Add Review</a> (Need to put this link inside a business/view)</li>
-        </ul>
+<div class="container"> 
+    <div id="header" class="span-24 last">
+        <img id="logo" src="/images/logo.png"/>
+    </div>
+    <div id="navbar" class="span-24 last">
+        {% block navbar %}
+            <ul>
+                {% if user.is_authenticated %}
+                    <li><a href="/accounts/logout">Logout</a></li>
+                    <li><a href="/accounts/password/change">Change Password</a></li>
+                {% else %}
+                    <li><a href="/accounts/register">Sign-up</a></li>
+                    <li><a href="/accounts/login">Login</a></li>
+                    <li><a href="/accounts/password/reset">Forgot Password</a></li>
+                {% endif %}
+                <li><a href="/business/browse">Browse</a></li>
+                <li><a href="/business/add">Add Business</a></li>
+            </ul>
+        {% endblock %}
+    </div>
+
+    <div class="span-24 last">
         {% if user.is_authenticated %}
             <p>Welcome, {{ user.username }}. Thanks for logging in.</p>
         {% else %}
             <p>Hello! If you want to submit a review or add a business, please register here.</p>
         {% endif %}
-        {% endblock %}
     </div>
-
-    <div id="content">
+    
+    <div class="span-24 last">
         {% block content %}{% endblock %}
     </div>
+    
+    <div class="span-24 last">
+        &copy; Footer!
+    </div>
+</div>
 </body>
 </html>

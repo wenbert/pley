@@ -1,4 +1,5 @@
 from django.conf.urls.defaults import *
+from django.conf import settings
 from django.views.generic.create_update import create_object
 from django.views.generic import list_detail
 
@@ -31,51 +32,8 @@ urlpatterns = patterns('',
     (r'^business/browse/$', business_browse),
     (r'^business/view/(?P<business_id>\d+)/$', business_view),
     (r'^review/add/(?P<business_id>\d+)/$', review_add),
-    
-    #Enable this instead of backends.default.urls
-    
-    #Disabled below since there is no email yet
-    #(r'^accounts/', include('registration.backends.default.urls')),
-    #url(r'^accounts/login/$', 'django.contrib.auth.views.login'),
-    #url(r'^accounts/logout/$', 'django.contrib.auth.views.logout'),
-    #(r'^accounts/register/$', register),
-    #(r'^business/browse/$', list_detail.object_list, business_info),
-    #(r'^business/browse/page(?P<page>[0-9]+/$)',list_detail.object_list, business_info),
-    #url(r'^accounts/login/$',  login),
-    #url(r'^accounts/logout/$', logout),
-    
-    #url(r'^accounts/register/$',
-    #   register,
-    #   {'backend': 'registration.backends.simple.SimpleBackend', 'form_class': RegistrationFormTermsOfService, 'success_url': '/business/browse', },
-    #   name='registration_register'),
-          
-    #url(r'^accounts/register/closed/$',
-    #   direct_to_template,
-    #   {'template': 'registration/registration_closed.html'},
-    #   name='registration_disallowed'),
-    #url(r'^accounts/activate/complete/$',
-    #   direct_to_template,
-    #   {'template': 'registration/activation_complete.html'},
-    #   name='registration_activation_complete'),
-    # Activation keys get matched by \w+ instead of the more specific
-    # [a-fA-F0-9]{40} because a bad activation key should still get to the view;
-    # that way it can return a sensible "invalid key" message instead of a
-    # confusing 404.
-    #url(r'^accounts/register/$',
-    #   register,
-    #   {'backend': 'registration.backends.default.DefaultBackend', 'form_class': RegistrationFormUniqueEmail },
-    #   name='registration_register'),
-    #url(r'^accounts/register/complete/$',
-    #   direct_to_template,
-    #   {'template': 'registration/registration_complete.html'},
-    #   name='registration_complete'),
-    #url(r'^accounts/register/closed/$',
-    #   direct_to_template,
-    #   {'template': 'registration/registration_closed.html'},
-    #   name='registration_disallowed'),
-    #url(r'^accounts/password/change/$',
-    #   password_change),
-    #(r'^accounts/', include('registration.backends.default.urls')),
-    #(r'', include('registration.auth_urls')),
     (r'^accounts/', include('accounts.urls')),
+    (r'^images/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.IMAGES_DOC_ROOT, 'show_indexes': True}),
+    (r'^js/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.JS_DOC_ROOT, 'show_indexes': True}),
+    (r'^css/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.CSS_DOC_ROOT, 'show_indexes': True}),
 )
