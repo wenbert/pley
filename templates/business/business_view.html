@@ -1,24 +1,25 @@
 {% extends "base.html" %}
-{% block title %}Browse{% endblock %}
 
-{% block content %}
-    {{business_id}}
-    {% if business_item %}
-        Name: {{business_item.name}}<br/>
-        {% if address_list %}
-            <ul>
-            {% for address in address_list %}
-                <li>Address: {{address.address1}}<br/>
-                    {{ address.address2 }}<br/>
-                    {{ address.city }}, {{ address.province }}, {{ address.country }}<br/>
-                    Zipcode: {{ address.zipcode }}<br/>
-                </li>
-                
-            {% endfor %}
-            <li><a href="/review/add/{{business_item.id}}">Add Review</a></li>
-            </ul>
-        {% endif %}
-    {% else %}
-        No business available.
-    {% endif %}
-{% endblock %}
+{% if business_item %}
+    {% block title %}{{business_item.name}}{% endblock %}
+    {% block page_name %}{{business_item.name}}{% endblock %}
+    
+    {% block content %}
+            Name: {{business_item.name}}<br/>
+            {% if address_list %}
+                <ul>
+                {% for address in address_list %}
+                    <li>Address: {{address.address1}}<br/>
+                        {{ address.address2 }}<br/>
+                        {{ address.city }}, {{ address.province }}, {{ address.country }}<br/>
+                        Zipcode: {{ address.zipcode }}<br/>
+                    </li>
+                    
+                {% endfor %}
+                <li><a href="/review/add/{{business_item.id}}">Add Review</a></li>
+                </ul>
+            {% endif %}
+    {% endblock %}
+{% else %}
+    No business available.
+{% endif %} 

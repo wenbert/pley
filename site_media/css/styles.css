@@ -38,3 +38,14 @@
 #logo {
     padding: 10px 0 0 5px;
 }
+
+#page_name h1{
+    color: #4A79AA;
+    font-size: 1.8em;
+    text-shadow:2px 2px 0 rgba(0, 0, 0, 0.10);
+    font-family:Georgia,serif;
+    letter-spacing:1px;
+    margin:5px 5px 5px 5px;
+    padding:5px;
+    border-bottom: 1px dashed #9FBAD5;
+}

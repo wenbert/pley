@@ -46,6 +46,9 @@
     {% endblock %}
 </div>
 <div class="container">
+    <div id="page_name" class="span-24 last">
+        <h1>{% block page_name %}{% endblock %}</h1>
+    </div>
     <div class="span-24 last">
         {% if user.is_authenticated %}
             <p>Welcome, {{ user.username }}. Thanks for logging in.</p>
