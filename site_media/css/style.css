@@ -38,7 +38,8 @@
  
 #navbar_sub ul {
     margin: 0; 
-    padding: 0 10px 0 0;
+    margin: 0 -15px 0 0;
+    padding: 0 0 0 0;
     text-align: right;
     font-size: 0.9em;
 }
@@ -66,10 +67,11 @@
 
 #header {
     background-color:#2b2b2b;
+    width: 975px;
 }    
 
 #logo {
-    padding: 10px 0 0 5px;
+    padding: 0 0 0 5px;
 }
 
 #page_name h1{
@@ -78,18 +80,22 @@
     text-shadow:2px 2px 0 rgba(0, 0, 0, 0.10);
     font-family:Georgia,serif;
     letter-spacing:1px;
-    margin:5px 5px 5px 5px;
-    padding:5px;
+    margin:5px 5px 5px 0;
+    padding:5px 0 0 0;;
     border-bottom: 1px dashed #9FBAD5;
+}
+
+#business_props h2 {
+    font-size: 1.2em;
+    margin: 10px 0 0 0;
+    color: #565656;
 }
 
 #business_props ul {
     margin: 0 0 10px 0;
-    padding: 0;
+    padding: 10px 10px 10px 10px;
 }
 #business_props ul li{
-    margin: 0;
-    padding: 10px 0 10px 10px;
     list-style-type: none;
 }
 
@@ -99,4 +105,13 @@
     background-color: #FCFCFC;
     padding: 0;
     margin: 0;
+}
+
+.border_bottom{
+    border-bottom: 1px dashed #E5E5E5;
+    padding: 0 0 10px 0;
+}
+
+.icon {
+    margin:0 7px -3px 0 !important;
 }

@@ -8,8 +8,9 @@
     
     {% block content %}
     
-    <div class="span-8" id="business_props">
+    <div class="span-7" id="business_props">
         {% if address_list %}
+            <h2>Address</h2>
             <ul class="boxed_list">
             {% for address in address_list %}
                 <li>{{address.address1}}<br/>
@@ -19,22 +20,36 @@
                 </li>
             {% endfor %}
             </ul>
+            <h2>Contact Number</h2>
             <ul class="boxed_list">
-                <li><b>Telephone Numbers</b></li>
             {% for phone in phone_list %}
                 <li>{{phone.phone_number}}</li>
             {% endfor %}
             </ul>
         {% endif %}
-        <a href="/review/add/{{business_item.id}}" class="button"><span>Add Review</span></a> 
     </div>
-    <div class="span-8">
+    <div class="span-7">
         Box for Photos
     </div>
-    <div class="span-8 last">
+    <div class="span-7 last">
         Box for Google Maps
     </div>
     
+    <div class="span-24 last">
+        <div class="buttons">
+            <a href="/review/add/{{business_item.id}}" class="button"><img src="/images/icons/add.png" alt=""/> <span>Add Review</span></a> 
+            <a href="/review/add/{{business_item.id}}" class="button"><img src="/images/icons/image_add.png" alt=""/> <span>Add Photos</span></a> 
+        </div>
+    </div>
+    
+    <div class="span-24 last" id="business_props">
+        <h2>Reviews</h2>
+        {% load webdesign %}
+        <ul class="boxed_list">
+            <li class="border_bottom">{% lorem %}</li>
+            <li class="border_bottom">{% lorem %}</li>
+        </ul>
+    </div>
     {% endblock %}
 {% else %}
     No business available.

@@ -3,7 +3,7 @@
 {% block page_name %}Add Business{% endblock %}
 
 {% block content %}
-<div class="span-24 last">
+<div class="span-22">
     {% if success %}
     <h1>Success!</h1>
     {% else %}
@@ -20,7 +20,12 @@
         {{ phone_form.as_p }}
         <h2>Category</h2>
         {{ business_category_form.as_p }}
-    	<input type="submit" value="Save"/>
+    	<div class="buttons">
+            <button type="submit" class="positive">
+                <img src="/images/icons/accept.png" alt=""/> 
+                Save
+            </button>
+        </div>
     </form>
     {% endif %}
 </div>

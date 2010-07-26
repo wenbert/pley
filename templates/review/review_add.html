@@ -20,7 +20,12 @@
         {{ parking_form.as_p }}
         <h2>Serving Time</h2>
         {{ serving_time_form.as_p }}
-    	<input type="submit" value="Save"/>
+    	<div class="buttons">
+            <button type="submit" class="positive">
+                <img src="/images/icons/accept.png" alt=""/> 
+                Save
+            </button>
+        </div>
     </form>
     {% endif %}
 </div>
