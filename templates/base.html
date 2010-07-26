@@ -6,7 +6,7 @@
     <title>Pley: {% block title %}{% endblock %}</title>
     
     <!-- CSS -->
-    <link rel="stylesheet" href="/css/styles.css" type="text/css" media="screen, projection"> 
+    <link rel="stylesheet" href="/css/style.css" type="text/css" media="screen, projection"> 
     
     <!-- Framework CSS --> 
     <link rel="stylesheet" href="/css/blueprint/screen.css" type="text/css" media="screen, projection"> 
@@ -15,7 +15,9 @@
  
     <!-- Import fancy-type plugin for the sample page. --> 
     <link rel="stylesheet" href="/css/blueprint/plugins/fancy-type/screen.css" type="text/css" media="screen, projection"> 
+    <link rel="stylesheet" href="/css/nicebutton.css" type="text/css" media="screen"> 
 </head>
+
 
 <body>
 <div class="container" id="header"> 
@@ -46,9 +48,6 @@
     {% endblock %}
 </div>
 <div class="container">
-    <div id="page_name" class="span-24 last">
-        <h1>{% block page_name %}{% endblock %}</h1>
-    </div>
     <div class="span-24 last">
         {% if user.is_authenticated %}
             <p>Welcome, {{ user.username }}. Thanks for logging in.</p>
@@ -56,14 +55,17 @@
             <p>Hello! If you want to submit a review or add a business, please register here.</p>
         {% endif %}
     </div>
+    <div id="page_name" class="span-24 last">
+        <h1>{% block page_name %}{% endblock %}</h1>
+    </div>    
     
-    <div class="span-24 last">
-        {% block content %}{% endblock %}
-    </div>
+    {% block content %}{% endblock %}
+
     
     <div class="span-24 last">
         &copy; Footer!
     </div>
 </div>
+
 </body>
 </html>

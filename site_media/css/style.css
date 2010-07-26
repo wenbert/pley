@@ -49,3 +49,21 @@
     padding:5px;
     border-bottom: 1px dashed #9FBAD5;
 }
+
+#business_props ul {
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+#business_props ul li{
+    margin: 0;
+    padding: 10px 0 10px 10px;
+    list-style-type: none;
+}
+
+.boxed_list {
+    color: #2b2b2b;
+    border: 1px solid #E5E5E5;
+    background-color: #FCFCFC;
+    padding: 0;
+    margin: 0;
+}

@@ -28,6 +28,7 @@ def validate_max_rating(val):
 
 class Business(models.Model):
     name            = models.CharField(max_length=250)
+    website         = models.CharField(max_length=250)
     status          = models.CharField(max_length=1, choices=BUSINESS_STATUS, default='A')
     created_at      = models.DateTimeField(verbose_name='Date Created', default=datetime.now, blank=True)
     updated_at      = models.DateTimeField(verbose_name='Date Updated', default=datetime.now, blank=True)

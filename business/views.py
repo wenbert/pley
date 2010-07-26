@@ -38,11 +38,13 @@ def business_browse(request):
                               data, context_instance=RequestContext(request))
 
 def business_view(request, business_id):
-    business_item = Business.objects.select_related().get(id=business_id)
-    address_list = Address.objects.filter(business=business_item)
+    business_item   = Business.objects.select_related().get(id=business_id)
+    address_list    = Address.objects.filter(business=business_item)
+    phone_list   = Phone.objects.filter(business=business_item)
     
     data = {"business_item": business_item,
-            "address_list": address_list}
+            "address_list": address_list,
+            "phone_list": phone_list,}
     return render_to_response("business/business_view.html",
                               data, context_instance=RequestContext(request))
 

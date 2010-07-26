@@ -1,14 +1,27 @@
 {% extends "base.html" %}
 {% block title %}Browsing{% endblock %}
+
 {% block page_name %}Browsing{% endblock %}
 
+<div class="span-24 last">
 {% block content %}
-    {% if business_list %}
-        <ul>
+    <table>
+        <tr>
+            <th>Business Name</th>
+            <th>Categories</th>
+        </tr>
+        {% if business_list %}
             {% for business in businesses.object_list %}
-                <li><a href="/business/view/{{business.id}}">{{ business.name }}</a></li>
+            <tr>
+                <td><a href="/business/view/{{business.id}}">{{ business.name }}</a></td>
+                <td>[get categories of business]</td>
+            </tr>
             {% endfor %}
-        </ul>
+        {% else %}
+            <tr><td>No business available.</td></tr>
+        {% endif %}
+    </table>
+    {% if business_list %}
         <div class="pagination">
             <span class="step-links">
                 {% if businesses.has_previous %}
@@ -24,7 +37,6 @@
                 {% endif %}
             </span>
         </div>
-    {% else %}
-        No business available.
     {% endif %}
 {% endblock %}
+</div>

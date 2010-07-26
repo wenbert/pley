@@ -1,0 +1,25 @@
+a.button {
+    /* Sliding right image */
+    background: transparent url('/images/nicebuttons/button_right.png') no-repeat scroll top right; 
+    display: block;
+    float: left;
+    height: 35px; /* CHANGE THIS VALUE ACCORDING TO IMAGE HEIGHT */
+    margin-right: 6px;
+    padding-right: 20px; /* CHENGE THIS VALUE ACCORDING TO RIGHT IMAGE WIDTH */
+    /* FONT PROPERTIES */
+    text-decoration: none;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:bold;
+}
+
+a.button span {
+    /* Background left image */ 
+    background: transparent url('/images/nicebuttons/button_left.png') no-repeat; 
+    display: block;
+    line-height: 22px; /* CHANGE THIS VALUE ACCORDING TO BUTTONG HEIGHT */
+    padding: 7px 0 5px 18px;
+} 
+a.button:hover span{
+    text-decoration:underline;
+}

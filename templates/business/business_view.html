@@ -2,23 +2,39 @@
 
 {% if business_item %}
     {% block title %}{{business_item.name}}{% endblock %}
+    
     {% block page_name %}{{business_item.name}}{% endblock %}
     
+    
     {% block content %}
-            Name: {{business_item.name}}<br/>
-            {% if address_list %}
-                <ul>
-                {% for address in address_list %}
-                    <li>Address: {{address.address1}}<br/>
-                        {{ address.address2 }}<br/>
-                        {{ address.city }}, {{ address.province }}, {{ address.country }}<br/>
-                        Zipcode: {{ address.zipcode }}<br/>
-                    </li>
-                    
-                {% endfor %}
-                <li><a href="/review/add/{{business_item.id}}">Add Review</a></li>
-                </ul>
-            {% endif %}
+    
+    <div class="span-8" id="business_props">
+        {% if address_list %}
+            <ul class="boxed_list">
+            {% for address in address_list %}
+                <li>{{address.address1}}<br/>
+                    {{ address.address2 }}<br/>
+                    {{ address.city }}, {{ address.province }}, {{ address.country }}<br/>
+                    {{ address.zipcode }}<br/>
+                </li>
+            {% endfor %}
+            </ul>
+            <ul class="boxed_list">
+                <li><b>Telephone Numbers</b></li>
+            {% for phone in phone_list %}
+                <li>{{phone.phone_number}}</li>
+            {% endfor %}
+            </ul>
+        {% endif %}
+        <a href="/review/add/{{business_item.id}}" class="button"><span>Add Review</span></a> 
+    </div>
+    <div class="span-8">
+        Box for Photos
+    </div>
+    <div class="span-8 last">
+        Box for Google Maps
+    </div>
+    
     {% endblock %}
 {% else %}
     No business available.
