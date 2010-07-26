@@ -10,6 +10,9 @@ from django.core.paginator import Paginator, InvalidPage, EmptyPage
 from pley.business.models import *
 from pley.business.forms import *
 
+from geopy import geocoders  
+from django.conf import settings
+
 def business_home(request):
     data = {}
     return render_to_response("business/business_home.html",
@@ -42,9 +45,21 @@ def business_view(request, business_id):
     address_list    = Address.objects.filter(business=business_item)
     phone_list   = Phone.objects.filter(business=business_item)
     
+    #sakto ni? ang GOOGLE_MAP_KEY kay string bya
+    g = geocoders.Google(settings.GOOGLE_MAPS_KEY) 
+    
+    #address_list, put into one array/list/whatever, for now, usa lang sa
+    geodata = place, (lat, lng) = g.geocode("Cabancalan, Mandaue City") 
+    lat = geodata[1][0]
+    lng = geodata[1][1]
+    
     data = {"business_item": business_item,
             "address_list": address_list,
-            "phone_list": phone_list,}
+            "phone_list": phone_list,
+            "geodata": geodata,
+            "lat": lat,
+            "lng": lng,
+            }
     return render_to_response("business/business_view.html",
                               data, context_instance=RequestContext(request))
 

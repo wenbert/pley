@@ -112,3 +112,5 @@ EMAIL_FILE_PATH = 'C:/django/pley/_app_messages' # change this to a proper locat
 IMAGES_DOC_ROOT = os.path.join(os.path.dirname(__file__), 'site_media/images')
 JS_DOC_ROOT = os.path.join(os.path.dirname(__file__), 'site_media/js')
 CSS_DOC_ROOT = os.path.join(os.path.dirname(__file__), 'site_media/css')
+
+GOOGLE_MAPS_KEY = "ABQIAAAAyZeVfLsw2c4InVCRmyfl2BSpgwgf-O3xmR2IWVPKtW4-h_pDPRQcGlNEJiKj1ckO2JsfT1qfN3akcw"

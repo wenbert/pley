@@ -32,7 +32,16 @@
         Box for Photos
     </div>
     <div class="span-7 last">
-        Box for Google Maps
+        <div id="map"></div>
+        <style media="screen"type="text/css">#map { width:380px; height:300px; }</style>
+        
+        <script type="text/javascript"t>
+        $(document).ready(function(){ 
+          var map = new GMap2(document.getElementById('map')); 
+          var mapcenter = new GLatLng({{lat}},{{lng}}); 
+          map.setCenter(mapcenter, 14); 
+        });
+        </script>
     </div>
     
     <div class="span-24 last">
