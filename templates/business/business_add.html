@@ -3,6 +3,7 @@
 {% block page_name %}Add Business{% endblock %}
 
 {% block content %}
+<div class="span-24 last">
     {% if success %}
     <h1>Success!</h1>
     {% else %}
@@ -22,4 +23,5 @@
     	<input type="submit" value="Save"/>
     </form>
     {% endif %}
+</div>
 {% endblock %}

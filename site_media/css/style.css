@@ -31,6 +31,39 @@
     background-color:#100e0e;
 }
 
+
+#navbar_sub {
+    background-color: #2b2b2b;
+}
+ 
+#navbar_sub ul {
+    margin: 0; 
+    padding: 0 10px 0 0;
+    text-align: right;
+    font-size: 0.9em;
+}
+ 
+#navbar_sub ul li {
+    display: inline;
+    list-style-type: none;
+    padding: 0 0 0 0;
+}
+ 
+#navbar_sub ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 5px 5px 5px;
+}
+ 
+#navbar_sub ul li a:visited {
+    color: white;
+}
+ 
+#navbar_sub ul li a:hover, #navbar ul li .current{
+    color: #fff;
+    background-color:#100e0e;
+}
+
 #header {
     background-color:#2b2b2b;
 }    

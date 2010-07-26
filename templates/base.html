@@ -21,19 +21,12 @@
 
 <body>
 <div class="container" id="header"> 
-    <div class="span-24 last">
+    <div class="span-17">
         <a href="/">
             <img id="logo" src="/images/logo.png" border=0/>
         </a>
     </div>
-    {% block navbar %}
-    <div id="navbar" class="span-18">
-            <ul>
-                <li><a href="/business/browse">Browse Businesses</a></li>
-                <li><a href="/business/add">Add Business</a></li>
-            </ul>
-    </div>
-    <div id="navbar" class="span-6 last">
+    <div id="navbar_sub" class="span-7 last">
         <ul>
         {% if user.is_authenticated %}
             <li><a href="/accounts/logout">Logout</a></li>
@@ -45,6 +38,14 @@
         {% endif %}
         </ul>
     </div>
+    {% block navbar %}
+    <div id="navbar" class="span-17">
+            <ul>
+                <li><a href="/business/browse">Browse Businesses</a></li>
+                <li><a href="/business/add">Add Business</a></li>
+            </ul>
+    </div>
+    
     {% endblock %}
 </div>
 <div class="container">
