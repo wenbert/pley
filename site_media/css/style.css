@@ -115,3 +115,7 @@
 .icon {
     margin:0 7px -3px 0 !important;
 }
+
+#map_canvas {
+    border: 1px solid #E5E5E5;
+}
