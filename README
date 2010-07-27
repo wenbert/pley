@@ -2,6 +2,8 @@ TODO:
 1) Normalize and display reviews in business_view
 2) Display number of reviews, average rating for business in business_browse
 3) Edit business
+4) Catch error when no location is found in Google Maps
+5) Add "help text" for Address1 (Building name/number, Sitio), Address2 (Barangay)
 
 
 REQUIREMENTS:
