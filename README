@@ -3,7 +3,7 @@ TODO:
 2) Display number of reviews, average rating for business in business_browse
 3) Edit business
 4) Catch error when no location is found in Google Maps
-5) Add "help text" for Address1 (Building name/number, Sitio), Address2 (Barangay)
+5) Add "help text" for Address1 (Building name/number, Street Name), Address2 (Barangay)
 6) Take a look at Django-Tagging http://code.google.com/p/django-tagging/
 
 

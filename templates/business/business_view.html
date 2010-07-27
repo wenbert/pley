@@ -43,7 +43,7 @@
             
             var infoWindow = new google.maps.InfoWindow({
                     position: map.getCenter(),
-                    content: '<b>{{business_item.name}}</b><br/> is located in:<br/><i>{{ business_item.address2 }}, {{ business_item.city }}</i>'
+                    content: '<b>{{business_item.name}}</b><br/><i>{{ business_item.address1 }},<br/>{{ business_item.address2 }}, {{ business_item.city }}</i>'
                 });
                 infoWindow.open(map);
             
