@@ -7,11 +7,6 @@ class BusinessForm(forms.ModelForm):
         model = Business
         exclude = ('created_at', 'updated_at', 'status', )
 
-class AddressForm(forms.ModelForm):
-    class Meta:
-        model = Address
-        exclude = ('business',)
-
 class BusinessCategoryForm(forms.ModelForm):
     class Meta:
         model = BusinessCategory

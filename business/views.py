@@ -42,19 +42,17 @@ def business_browse(request):
 
 def business_view(request, business_id):
     business_item   = Business.objects.select_related().get(id=business_id)
-    address_list    = Address.objects.filter(business=business_item)
     phone_list   = Phone.objects.filter(business=business_item)
     
     #sakto ni? ang GOOGLE_MAP_KEY kay string bya
     g = geocoders.Google(settings.GOOGLE_MAPS_KEY) 
     
     #address_list, put into one array/list/whatever, for now, usa lang sa
-    geodata = place, (lat, lng) = g.geocode("Cabancalan, Mandaue City") 
+    geodata = place, (lat, lng) = g.geocode(business_item.address1 + ', ' +business_item.address2 + ', ' + business_item.city + ', ' + business_item.province + ', ' + business_item.country) 
     lat = geodata[1][0]
     lng = geodata[1][1]
     
     data = {"business_item": business_item,
-            "address_list": address_list,
             "phone_list": phone_list,
             "geodata": geodata,
             "lat": lat,
@@ -70,36 +68,30 @@ def business_add(request):
     error = None
     if request.method == 'POST':
         business_form       = BusinessForm(request.POST)
-        address_form        = AddressForm(request.POST)
         business_category_form = BusinessCategoryForm(request.POST)
         phone_form          = PhoneForm(request.POST)
         
-        if (business_form.is_valid() and address_form.is_valid() and business_category_form.is_valid() and phone_form.is_valid()):
+        if (business_form.is_valid() and business_category_form.is_valid() and phone_form.is_valid()):
             
             business_name   = business_form.cleaned_data['name']
             category        = business_category_form.cleaned_data['category']
-            address_1       = address_form.cleaned_data['address1']
-            address_2       = address_form.cleaned_data['address2']
-            address_city    = address_form.cleaned_data['city']
-            address_province = address_form.cleaned_data['province']
-            address_country = address_form.cleaned_data['country']
+            address_1       = business_form.cleaned_data['address1']
+            address_2       = business_form.cleaned_data['address2']
+            address_city    = business_form.cleaned_data['city']
+            address_province = business_form.cleaned_data['province']
+            address_country = business_form.cleaned_data['country']
+            # TODO: zipcode should be found in zipcode table
+            address_zipcode = business_form.cleaned_data['zipcode']
             
             phone_number    = phone_form.cleaned_data['phone_number']
-            
-            # TODO: zipcode should be found in zipcode table
-            address_zipcode = address_form.cleaned_data['zipcode']
 
             # TODO: catch possible exceptions here
             try:
-                business = Business(name=business_name)
-                business.save()
-                                  
-                address = Address(address1=address_1, address2=address_2,
+                business = Business(name=business_name,address1=address_1, address2=address_2,
                                   city=address_city, province=address_province,
                                   country=address_country,
-                                  zipcode=address_zipcode,
-                                  business=business)    
-                address.save()
+                                  zipcode=address_zipcode)
+                business.save()
                 
                 phone   = Phone(phone_number=phone_number, business=business)
                 phone.save()
@@ -117,13 +109,11 @@ def business_add(request):
             #redirect to success page
     else:
         business_form   = BusinessForm()
-        address_form    = AddressForm()
         business_category_form = BusinessCategoryForm()
         phone_form      = PhoneForm()
         
     data = {
               "business_form": business_form,
-              "address_form": address_form,
               "business_category_form": business_category_form,
               "phone_form": phone_form,
               "success": success,

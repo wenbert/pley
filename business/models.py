@@ -29,21 +29,18 @@ def validate_max_rating(val):
 class Business(models.Model):
     name            = models.CharField(max_length=250)
     website         = models.CharField(max_length=250)
+    address1        = models.CharField(max_length=250, verbose_name="Address 1")
+    address2        = models.CharField(max_length=250, verbose_name="Address 2")
+    city            = models.CharField(max_length=250, verbose_name="City")
+    province        = models.CharField(max_length=250, verbose_name="Province / State")
+    country         = models.CharField(max_length=250, verbose_name="Country") #default this to Philippines?
+    zipcode         = models.CharField(max_length=10, verbose_name="Zipcode")
     status          = models.CharField(max_length=1, choices=BUSINESS_STATUS, default='A')
     created_at      = models.DateTimeField(verbose_name='Date Created', default=datetime.now, blank=True)
     updated_at      = models.DateTimeField(verbose_name='Date Updated', default=datetime.now, blank=True)
     def __unicode__(self):
         return self.name
         
-class Address(models.Model):
-    business        = models.ForeignKey(Business)
-    address1        = models.CharField(max_length=250, verbose_name="Address 1")
-    address2        = models.CharField(max_length=250, verbose_name="Address 2")
-    city            = models.CharField(max_length=250, verbose_name="City")
-    province        = models.CharField(max_length=250, verbose_name="Province / State")
-    # NOTE: kailangan pa country? philippines ra man ka ni?
-    country         = models.CharField(max_length=250, verbose_name="Country")
-    zipcode         = models.CharField(max_length=10, verbose_name="Zipcode")
 
 class Phone(models.Model):
     business        = models.OneToOneField(Business)
