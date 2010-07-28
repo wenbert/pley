@@ -1,0 +1,117 @@
+{% extends "base.html" %}
+
+{% if business_item %}
+    {% block title %}{{business_item.name}}{% endblock %}
+    
+    {% block page_name %}{{business_item.name}}{% endblock %}
+
+    {% block content %}
+    
+    <div class="span-9" id="business_props">
+            <h2>Address</h2>
+            <ul class="boxed_list">
+                <li>{{business_item.address1}}<br/>
+                    {{ business_item.address2 }}<br/>
+                    {{ business_item.city }}, {{ business_item.province }}, {{ business_item.country }}<br/>
+                    {{ business_item.zipcode }}<br/>
+                </li>
+            </ul>
+            <h2>Contact Number</h2>
+            <ul class="boxed_list">
+            {% for phone in phone_list %}
+                <li>{{phone.phone_number}}</li>
+            {% endfor %}
+            </ul>
+        
+        {{initial_lng}}
+        <hr>
+        {{geo}}
+        <hr>
+        {{geodata}}
+        <hr>
+        {{string_location}}
+        <hr>
+        {{urlencoded_string_location}}
+    </div>
+    
+    <div class="span-8 ">
+        <div id="map_canvas" style="width: 310px; height: 300px"></div>
+        <script type="text/javascript">
+        $(document).ready(function(){ 
+            
+            var geodata = json_parse("{{geodata|escapejs}}");
+            var mapDiv = document.getElementById('map_canvas');
+            
+            var myLatlng = new google.maps.LatLng({{initial_lat}},{{initial_lng}});
+            var myOptions = {
+                zoom: 15,
+                center: myLatlng,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(mapDiv,myOptions);
+            
+            var markers = [];
+            for(var i=0; i<{{geodata_count}}; i++) {
+                var myLatlng = new google.maps.LatLng(geodata[i][1][0], geodata[i][1][1]);
+                var marker = new google.maps.Marker({
+                    position: myLatlng, 
+                    map: map
+                });
+                markers[i] = marker;
+            }
+            /*
+            var marker = new google.maps.Marker({
+                position: myLatlng, 
+                map: map, 
+                title:"{{ business_item.address2 }}, {{ business_item.city }}"
+            });
+            */
+            // setup 10 random points 
+            /*
+            var bounds = map.getBounds(); 
+            var southWest = bounds.getSouthWest(); 
+            var northEast = bounds.getNorthEast(); 
+            var lngSpan = northEast.lng() - southWest.lng(); 
+            var latSpan = northEast.lat() - southWest.lat(); 
+            var markers = []; 
+            
+            for (var i = 0; i<10; i++) { 
+                var point = new GLatLng(southWest.lat() + latSpan * Math.random(), southWest.lng() + lngSpan * Math.random()); 
+                marker = new GMarker(point); 
+                map.addOverlay(marker); 
+                markers[i] = marker; 
+            }   
+            */
+            //var geodata = json_parse("[[\"M. L. Quezon Street<br/>Mandaue City, Philippines\", [10.351381999999999, 123.923535]], [\"Talamban<br/>Cebu City, Philippines\", [10.353527, 123.91352500000001]]]");
+            
+        });
+        </script>
+        
+        <div id="mapsearch">Loading...</div>
+        
+    </div>
+    
+    <div class="span-7 last" style="background-color: #ccc">
+        Box for Photos
+    </div>
+    
+    <div class="span-24 last">
+
+        <div class="buttons">
+            <a href="/review/add/{{business_item.id}}" class="button"><img src="/images/icons/add.png" alt=""/> <span>Add Review</span></a> 
+            <a href="/review/add/{{business_item.id}}" class="button"><img src="/images/icons/image_add.png" alt=""/> <span>Add Photos</span></a> 
+        </div>
+    </div>
+    
+    <div class="span-24 last" id="business_props">
+        <h2>Reviews</h2>
+        <ul class="boxed_list">
+        {% for review in reviews %}
+            <li>{{review.review}} ({{review.created_at}})</li>
+        {% endfor %}
+        </ul>
+    </div>
+    {% endblock %}
+{% else %}
+    No business available.
+{% endif %} 

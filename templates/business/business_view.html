@@ -4,8 +4,7 @@
     {% block title %}{{business_item.name}}{% endblock %}
     
     {% block page_name %}{{business_item.name}}{% endblock %}
-    
-    
+
     {% block content %}
     
     <div class="span-9" id="business_props">
@@ -23,39 +22,58 @@
                 <li>{{phone.phone_number}}</li>
             {% endfor %}
             </ul>
-
     </div>
     
     <div class="span-8 ">
-        <div id="map_canvas" style="width: 310px; height: 300px"></div>
+        <div id="mapsearch">Loading</div>
         <script type="text/javascript">
         $(document).ready(function(){ 
-            var mapDiv = document.getElementById('map_canvas');
+        
+        var hotspotsList = [
+            { element : document.getElementById("hs01"), query : "Bo's Coffee Shop" },
+            { element : document.getElementById("hs02"), query : "Starbucks" },
+            { element : document.getElementById("hs03"), query : "WIFI" },
+            { element : document.getElementById("hs04"), query : "Massage" },
+            { element : document.getElementById("hs05"), query : "Fastfood" },
+            { element : document.getElementById("hs06"), query : "Pizza" },
+            { element : document.getElementById("hs07"), query : "Badminton" }
+        ];    
             
-            var myLatlng = new google.maps.LatLng({{lat}}, {{lng}});
-            var myOptions = {
-                zoom: 14,
-                center: myLatlng,
-                mapTypeId: google.maps.MapTypeId.ROADMAP
-            };
-            var map = new google.maps.Map(mapDiv,myOptions);
-            
-            /*
-            var marker = new google.maps.Marker({
-                position: myLatlng, 
-                map: map, 
-                title:"{{ business_item.address2 }}, {{ business_item.city }}"
-            });   
-            */
+        function LoadMapSearch() {
+            var options = {
+            title : "{{business_item.name|safe}}",
+            hotspots : hotspotsList,
+            zoomControl : GSmapSearchControl.ZOOM_CONTROL_ENABLE_ALL,
+            activeMapZoom : GSmapSearchControl.ACTIVE_MAP_ZOOM,
+            idleMapZoom  : GSmapSearchControl.ACTIVE_MAP_ZOOM
+        }
+        
+        new GSmapSearchControl(
+                document.getElementById("mapsearch"),
+                "{{string_location|safe}}",
+                options
+            );
+        }
+        GSearch.setOnLoadCallback(LoadMapSearch);
         });
         </script>
     </div>
     
-    <div class="span-7 last" style="background-color: #ccc">
-        Box for Photos
+    <div class="span-7 last" id="business_props">
+        <h2 style="color: #DF0101">Recommendations</h2>
+        <ul class="boxed_list">
+            <li id="hs01" class="hotspot">Bo's Coffee Shop</li>
+            <li id="hs02" class="hotspot">Starbucks</li>
+            <li id="hs03" class="hotspot">WIFI</li>
+            <li id="hs04" class="hotspot">Massage</li>
+            <li id="hs05" class="hotspot">Fastfood</li>
+            <li id="hs06" class="hotspot">Pizza</li>
+            <li id="hs07" class="hotspot">Badminton</li>
+        </ul>
     </div>
     
     <div class="span-24 last">
+
         <div class="buttons">
             <a href="/review/add/{{business_item.id}}" class="button"><img src="/images/icons/add.png" alt=""/> <span>Add Review</span></a> 
             <a href="/review/add/{{business_item.id}}" class="button"><img src="/images/icons/image_add.png" alt=""/> <span>Add Photos</span></a> 
@@ -64,10 +82,10 @@
     
     <div class="span-24 last" id="business_props">
         <h2>Reviews</h2>
-        {% load webdesign %}
         <ul class="boxed_list">
-            <li class="border_bottom">{% lorem %}</li>
-            <li class="border_bottom">{% lorem %}</li>
+        {% for review in reviews %}
+            <li>{{review.review}} ({{review.created_at}})</li>
+        {% endfor %}
         </ul>
     </div>
     {% endblock %}

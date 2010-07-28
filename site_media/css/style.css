@@ -88,7 +88,9 @@
 #business_props h2 {
     font-size: 1.2em;
     margin: 10px 0 0 0;
-    color: #565656;
+    /*color: #565656;*/
+    text-transform: uppercase;
+    color:#52595D;
 }
 
 #business_props ul {
@@ -118,4 +120,44 @@
 
 #map_canvas {
     border: 1px solid #E5E5E5;
+}
+
+#mapsearch {
+    width : 300px;
+    margin-left: 0;
+    padding: 0;
+    border : 1px solid #f9f9f9;
+    height: 320px;
+    clear:both;
+    display: block;
+}
+
+/* set height of idle state map */
+#mapsearch .gsmsc-idleMapDiv { 
+    height : 300px; 
+}
+
+/* set height of active state map */
+#mapsearch .gsmsc-mapDiv { 
+    height : 300px; 
+}
+
+.hotspot {
+    cursor: pointer;
+}
+
+.hotspot:hover {
+    text-decoration: underline;
+    color: #6281A1;
+}
+
+#hotspots {
+    border: 1px solid #E5E5E5;
+    background-color: #FCFCFC;
+    padding: 0;
+    margin: 0;
+}
+
+#hotspots h3 {
+    color: #2b2b2b;
 }
