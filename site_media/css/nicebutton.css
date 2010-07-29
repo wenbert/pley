@@ -1,3 +1,9 @@
+.buttons {
+    display: block;
+    clear: both;
+    margin-bottom: 50px;
+}
+
 .buttons a, .buttons button{
     display:block;
     float:left;

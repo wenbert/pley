@@ -91,11 +91,14 @@
     /*color: #565656;*/
     text-transform: uppercase;
     color:#52595D;
+    clear: both;
+    display: block;
 }
 
 #business_props ul {
     margin: 0 0 10px 0;
-    padding: 10px 10px 10px 10px;
+    padding: 5px 5px 5px 5px;
+    font-size: 0.95em;
 }
 #business_props ul li{
     list-style-type: none;
@@ -123,18 +126,18 @@
 }
 
 #mapsearch {
-    width : 300px;
-    margin-left: 0;
+    width : 480px;
+    margin: 0 0 65px 0;
     padding: 0;
-    border : 1px solid #f9f9f9;
-    height: 320px;
+    /*border : 1px solid #f9f9f9;*/
+    height: 300px;
     clear:both;
     display: block;
 }
 
 /* set height of idle state map */
 #mapsearch .gsmsc-idleMapDiv { 
-    height : 300px; 
+    height :300px; 
 }
 
 /* set height of active state map */
@@ -160,4 +163,21 @@
 
 #hotspots h3 {
     color: #2b2b2b;
+}
+
+#recommendations {
+    padding: 2px 4px 2px 5px;
+    background-color: #FFE8E8;
+    border: 1px solid #FFD2D2;
+    margin: 0 0 0 0;
+}
+
+#results {
+    margin: 10px 0 0 0;
+    font-size: 0.95em;
+}
+
+
+.medium_text {
+    font-size: 0.9em;
 }

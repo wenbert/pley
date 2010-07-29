@@ -64,7 +64,7 @@ def business_view(request, business_id):
     google_apikey   = settings.GOOGLE_MAPS_KEY
     
 
-    string_location = business_item.name + ', ' +business_item.address1 + ', ' + business_item.address2 + ', ' + business_item.city + ', ' + business_item.province + ', ' + business_item.country
+    string_location = business_item.name + ' near ' +business_item.address1 + ', ' + business_item.address2 + ', ' + business_item.city + ', ' + business_item.province + ', ' + business_item.country
     urlencoded_string_location = urllib.quote_plus(string_location)
     
     data = {"business_item": business_item,
