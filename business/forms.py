@@ -5,7 +5,8 @@ from pley.business.models import *
 class BusinessForm(forms.ModelForm):
     class Meta:
         model = Business
-        exclude = ('created_at', 'updated_at', 'status', )
+        exclude = ('created_at', 'updated_at', 'status', 
+                   'num_reviews', 'rating',)
 
 class BusinessCategoryForm(forms.ModelForm):
     class Meta:

@@ -40,10 +40,15 @@ STATUSES = (
     ('off','Off'),
 )
 
+def validate_max_rating(val):
+    if not val in range(0,6):
+        raise ValidationError(u'%s is not a valid rating.' % val)
+
 class Review(models.Model):
     review          = models.TextField()
-    business        = models.ForeignKey(Business)
-    user            = models.ForeignKey(User)
+    business        = models.ForeignKey(Business, unique=False, db_index=True)
+    user            = models.ForeignKey(User, db_index=True)
+    rating          = models.IntegerField(validators=[validate_max_rating])
     status          = models.CharField(max_length=1, choices=REVIEW_STATUS, default='A')
     created_at      = models.DateTimeField(verbose_name='Date Created', default=datetime.now, blank=True)
     updated_at      = models.DateTimeField(verbose_name='Date Updated', default=datetime.now, blank=True)
@@ -51,22 +56,22 @@ class Review(models.Model):
         return self.review
         
 class Property(models.Model):
-    business        = models.OneToOneField(Business)
-    review          = models.ForeignKey(Review)
-    credit_card     = models.CharField(max_length=10, verbose_name="Accepts Credit Card?", choices=YES_NO_NOTSURE)
-    alcohol         = models.CharField(max_length=25, verbose_name="Serves alcohol?", choices=ALCOHOL)
-    kids            = models.CharField(max_length=10, verbose_name="Good for kids?", choices=YES_NO_NOTSURE)
-    groups          = models.CharField(max_length=10, verbose_name="Good for groups?", choices=YES_NO_NOTSURE)
-    reservations    = models.CharField(max_length=10, verbose_name="Takes reservations?", choices=YES_NO_NOTSURE)
-    takeout         = models.CharField(max_length=10, verbose_name="Take-out?", choices=YES_NO_NOTSURE)
-    waiters         = models.CharField(max_length=10, verbose_name="Waiter services?", choices=YES_NO_NOTSURE)
-    outdoor_seating = models.CharField(max_length=10, verbose_name="Outdoor seating?", choices=YES_NO_NOTSURE)
-    wheelchair      = models.CharField(max_length=10, verbose_name="Wheelchair accessible?", choices=YES_NO_NOTSURE)
-    attire          = models.CharField(max_length=50, choices=ATTIRE)
+    business        = models.ForeignKey(Business)
+    review          = models.OneToOneField(Review)
+    credit_card     = models.CharField(max_length=10, verbose_name="Accepts Credit Card?", choices=YES_NO_NOTSURE, default='not_sure')
+    alcohol         = models.CharField(max_length=25, verbose_name="Serves alcohol?", choices=ALCOHOL, default='not_sure')
+    kids            = models.CharField(max_length=10, verbose_name="Good for kids?", choices=YES_NO_NOTSURE, default='not_sure')
+    groups          = models.CharField(max_length=10, verbose_name="Good for groups?", choices=YES_NO_NOTSURE, default='not_sure')
+    reservations    = models.CharField(max_length=10, verbose_name="Takes reservations?", choices=YES_NO_NOTSURE, default='not_sure')
+    takeout         = models.CharField(max_length=10, verbose_name="Take-out?", choices=YES_NO_NOTSURE, default='not_sure')
+    waiters         = models.CharField(max_length=10, verbose_name="Waiter services?", choices=YES_NO_NOTSURE, default='not_sure')
+    outdoor_seating = models.CharField(max_length=10, verbose_name="Outdoor seating?", choices=YES_NO_NOTSURE, default='not_sure')
+    wheelchair      = models.CharField(max_length=10, verbose_name="Wheelchair accessible?", choices=YES_NO_NOTSURE, default='not_sure')
+    attire          = models.CharField(max_length=50, choices=ATTIRE, default='not_sure')
 
 class Parking(models.Model):
-    business            = models.OneToOneField(Business)
-    review          = models.ForeignKey(Review)
+    business            = models.ForeignKey(Business)
+    review              = models.OneToOneField(Review)
     parking_open        = models.BooleanField(verbose_name='Open Parking')
     parking_basement    = models.BooleanField(verbose_name='Basement Parking')
     parking_private_lot = models.BooleanField(verbose_name='Private Lot')
@@ -75,8 +80,8 @@ class Parking(models.Model):
     parking_street      = models.BooleanField(verbose_name='Street Parking')
 
 class ServingTime(models.Model):
-    business        = models.OneToOneField(Business)
-    review          = models.ForeignKey(Review)
+    business        = models.ForeignKey(Business)
+    review          = models.OneToOneField(Review)
     breakfast       = models.BooleanField(verbose_name="Breakfast")
     brunch          = models.BooleanField(verbose_name="Brunch")
     lunch           = models.BooleanField(verbose_name="Lunch")

@@ -10,12 +10,24 @@
         <tr>
             <th>Business Name</th>
             <th>Categories</th>
+			<th>Reviews</th>
+			<th>Rating</th>
         </tr>
         {% if business_list %}
             {% for business in businesses.object_list %}
             <tr>
                 <td><a href="/business/view/{{business.id}}">{{ business.name }}</a></td>
-                <td>[get categories of business]</td>
+				<td>
+					{% for category in category_list %}
+					{{ category }}
+					{% endfor %}
+				</td>
+				<td>
+					{{ business.num_reviews }}
+				</td>
+				<td>
+					{{ business.rating }}
+				</td>
             </tr>
             {% endfor %}
         {% else %}

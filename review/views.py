@@ -18,6 +18,7 @@ def review_add(request, business_id):
     error = None
 
     business = get_object_or_404(Business, id=business_id)
+    # TODO: a user can only make one review per business. prompt him to edit his previous review instead
 
     if request.method == 'POST':
         review_form         = ReviewForm(request.POST)
@@ -27,7 +28,8 @@ def review_add(request, business_id):
         
         if(review_form.is_valid() and property_form.is_valid() and parking_form.is_valid() and serving_time_form.is_valid()):
             review_text     = review_form.cleaned_data['review']
-            
+            rating          = review_form.cleaned_data['rating']
+
             credit_card     = property_form.cleaned_data['credit_card']
             alcohol         = property_form.cleaned_data['alcohol']
             kids            = property_form.cleaned_data['kids']
@@ -56,7 +58,7 @@ def review_add(request, business_id):
             try:
                 #DO THE SAVES HERE
                 review = Review(review=review_text, business=business,
-                                user=request.user)
+                                user=request.user, rating=rating)
                 review.save()
                 properties = Property(business=business,
                                       review=review,
@@ -84,6 +86,19 @@ def review_add(request, business_id):
                 properties.save()
                 parking.save()
                 serving_time.save()
+
+                #edit business num_reviews and average rating
+                business.num_reviews += 1
+                previous_reviews = Review.objects.filter(business=business)
+                total_rating = 0
+                if previous_reviews:
+                    for r in previous_reviews:
+                        total_rating += r.rating
+                total_rating += rating
+                average_rating = total_rating / (len(previous_reviews) + 1)
+                business.rating = average_rating
+                business.save()
+
             except (IntegrityError), e:
                 transaction.rollback()
                 success = False

@@ -22,19 +22,22 @@ STATUSES = (
 )
 
 def validate_max_rating(val):
-    if not val in range(1,6):
+    if not val in range(0,6):
         raise ValidationError(u'%s is not a valid rating.' % val)
 
 
 class Business(models.Model):
     name            = models.CharField(max_length=250)
-    website         = models.CharField(max_length=250)
+    website         = models.CharField(max_length=250, blank=True)
     address1        = models.CharField(max_length=250, verbose_name="Address 1")
-    address2        = models.CharField(max_length=250, verbose_name="Address 2")
+    address2        = models.CharField(max_length=250, verbose_name="Address 2", blank=True)
     city            = models.CharField(max_length=250, verbose_name="City")
     province        = models.CharField(max_length=250, verbose_name="Province / State")
     country         = models.CharField(max_length=250, verbose_name="Country") #default this to Philippines?
     zipcode         = models.CharField(max_length=10, verbose_name="Zipcode")
+    num_reviews     = models.IntegerField(default=0)
+    rating          = models.IntegerField(default=0, validators=[validate_max_rating])
+
     status          = models.CharField(max_length=1, choices=BUSINESS_STATUS, default='A')
     created_at      = models.DateTimeField(verbose_name='Date Created', default=datetime.now, blank=True)
     updated_at      = models.DateTimeField(verbose_name='Date Updated', default=datetime.now, blank=True)

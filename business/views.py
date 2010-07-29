@@ -38,9 +38,22 @@ def business_browse(request):
         businesses = paginator.page(page)
     except (EmptyPage, InvalidPage):
         businesses = paginator.page(paginator.num_page)
+
+    # get categories
+    category_list = []
+    for business in businesses.object_list:
+        business_category_list = BusinessCategory.objects.filter(business=business)
+        categories = []
+        for business_category in business_category_list:
+            categories.append(business_category.category.display)
+        category_list.append(categories)
+
         
-    data = {"business_list": business_list,
-            "businesses": businesses,}
+    data = {
+            "business_list": business_list,
+            "businesses": businesses,
+            "category_list": category_list,
+           }
     return render_to_response("business/business_browse.html",
                               data, context_instance=RequestContext(request))
 

@@ -85,7 +85,7 @@
         <h2>Reviews</h2>
         <ul class="boxed_list">
         {% for review in reviews %}
-            <li>{{review.review}} ({{review.created_at}})</li>
+		<li>"{{review.review}}" by: {{review.user.first_name}} {{review.user.last_name}} on {{review.created_at}}</li>
         {% endfor %}
         </ul>
     </div>
