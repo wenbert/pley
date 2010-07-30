@@ -14,12 +14,15 @@
 			<th>Rating</th>
         </tr>
         {% if business_list %}
-            {% for business in businesses.object_list %}
+            {% for business, categories in business_and_categories_list %}
             <tr>
                 <td><a href="/business/view/{{business.id}}">{{ business.name }}</a></td>
 				<td>
-					{% for category in category_list %}
-					{{ category }}
+					{% for category in categories %}
+						{{ category }}
+						{% if not forloop.last %}
+						, 
+						{% endif %}
 					{% endfor %}
 				</td>
 				<td>

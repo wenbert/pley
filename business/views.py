@@ -48,11 +48,13 @@ def business_browse(request):
             categories.append(business_category.category.display)
         category_list.append(categories)
 
+    business_and_categories_list = zip(businesses.object_list, category_list)
         
     data = {
             "business_list": business_list,
             "businesses": businesses,
             "category_list": category_list,
+            "business_and_categories_list": business_and_categories_list,
            }
     return render_to_response("business/business_browse.html",
                               data, context_instance=RequestContext(request))
