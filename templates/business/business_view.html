@@ -7,11 +7,13 @@
 
     {% block content %}
     
-    <div class="span-12" id="business_props">
+    <div class="span-9" id="business_props">
             <h2>Address</h2>
             <ul class="boxed_list">
-                <li>{{business_item.address1}} {{ business_item.address2 }}, {{ business_item.city }}<br/>
-                    {{ business_item.province }}, {{ business_item.country }} {{ business_item.zipcode }}<br/>
+                <li>{{business_item.address1}}<br/>
+                    {{ business_item.address2 }}<br/>
+                    {{ business_item.city }}, {{ business_item.province }}, {{ business_item.country }}<br/>
+                    {{ business_item.zipcode }}<br/>
                 </li>
             </ul>
             <h2>Contact Number</h2>
@@ -20,75 +22,91 @@
                 <li>{{phone.phone_number}}</li>
             {% endfor %}
             </ul>
-            
-            <h2 style="color: #DF0101">Recommendations</h2>
-            <div class="medium_text">
-                Click on the recommendations below to find out if they are available near: <b>{{string_location|safe}}</b>
-            </div>
-            <div class="medium_text" id="recommendations">
-                <span id="hs01" class="hotspot">Bo's Coffee Shop</span>, 
-                <span id="hs02" class="hotspot">Starbucks</span>, 
-                <span id="hs03" class="hotspot">WIFI</span>, 
-                <span id="hs04" class="hotspot">Massage</span>, 
-                <span id="hs05" class="hotspot">Fastfood</span>, 
-                <span id="hs06" class="hotspot">Pizza</span>, 
-                <span id="hs07" class="hotspot">Badminton</span>
-            </div>
-            
-            <div id="results"></div>
-        
-            <div class="buttons">
-                <a href="/review/add/{{business_item.id}}" class="button"><img src="/images/icons/add.png" alt=""/> <span>Add Review</span></a> 
-                <a href="/review/add/{{business_item.id}}" class="button"><img src="/images/icons/image_add.png" alt=""/> <span>Add Photos</span></a> 
-            </div>
-            
-            <h2>Reviews</h2>
-            <ul class="boxed_list">
-                {% for review in reviews %}
-                    <li>"{{review.review}}" by: {{review.user.first_name}} {{review.user.last_name}} on {{review.created_at}}</li>
-                {% endfor %}
-            </ul>
-            
-            
     </div>
     
-    <div class="span-12 last">
-        <div id="mapsearch">The map will load shortly. Please wait for a few seconds.</div>
+    <div class="span-8 ">
+        <div id="map_message"></div>
+        <div id="map_canvas" style="width: 310px; height: 300px"></div>
         <script type="text/javascript">
-        $(document).ready(function(){ 
-        
-        var hotspotsList = [
-            { element : document.getElementById("hs01"), query : "Bo's Coffee Shop" },
-            { element : document.getElementById("hs02"), query : "Starbucks" },
-            { element : document.getElementById("hs03"), query : "WIFI" },
-            { element : document.getElementById("hs04"), query : "Massage" },
-            { element : document.getElementById("hs05"), query : "Fastfood" },
-            { element : document.getElementById("hs06"), query : "Pizza" },
-            { element : document.getElementById("hs07"), query : "Badminton" }
-        ];    
+        $(document).ready(function() {
+            // do stuff when DOM is ready
+            var geocoder = new google.maps.Geocoder();
+            var address = '{{string_location}}';
+
+            if (geocoder) {
+                geocoder.geocode({ 'address': address }, function (results, status) {
+                    if (status == google.maps.GeocoderStatus.OK) {
+                        //alert(results[0].geometry.location.lat())
+                        //alert(results[0].geometry.location.lng())
+                        
+                        var latlng = new google.maps.LatLng(results[0].geometry.location.lat(), results[0].geometry.location.lng());
+                        var myOptions = {
+                            zoom: 14,
+                            center: latlng,
+                            mapTypeId: google.maps.MapTypeId.ROADMAP
+                        };
+                        var map = new google.maps.Map(document.getElementById("map_canvas"),
+                            myOptions);
+                        
+                        $.each(results, function(i, result) {
+                            //$("#" + i).append(document.createTextNode(" - " + val));
+                            //alert(i+': '+result);
+                            var marker = new google.maps.Marker({
+                                position: new google.maps.LatLng(result.geometry.location.lat(), result.geometry.location.lng()), 
+                                map: map, 
+                                title:result.formatted_address
+                            }); 
+                            if(result.geometry.location_type == 'APPROXIMATE') {
+                                $("#map_message").html('<div class="notice">Sorry. Google could not find the exact location. The map is displaying the approximate location.</div>');
+                            }
+                            
+                            console.log("Geocoding result address: " + result.formatted_address );
+                            console.log("Geocoding result address components: " + result.address_components );
+                            console.log("Geocoding result location_type: " + result.geometry.location_type );
+                            console.log("Geocoding result viewport: " + result.geometry.viewport);
+                        });
+
+                        console.log("Geocoding address: " + address);
+                        console.log("Geocoding failed: " + status);
+                    } 
+                    else {
+                        $('#map_message').html('<div class="error">Google could not find the address you are looking for. So, we will display a Google Adsense here instead.');
+                        $('#map_canvas').remove();
+                        //alert('No results found. Check your console.log()');
+                        console.log("Geocoding address: " + address);
+                        console.log("Geocoding failed: " + status);
+                    }
+                });
+            }
+            /*
             
-        function LoadMapSearch() {
-            var options = {
-            title : "{{business_item.name|safe}}",
-            hotspots : hotspotsList,
-            zoomControl : GSmapSearchControl.ZOOM_CONTROL_ENABLE_ALL,
-            activeMapZoom : GSmapSearchControl.ACTIVE_MAP_ZOOM,
-            idleMapZoom  : GSmapSearchControl.ACTIVE_MAP_ZOOM,
-            showResultList : document.getElementById("results")
-        }
-        
-        new GSmapSearchControl(
-                document.getElementById("mapsearch"),
-                "{{string_location|safe}}",
-                options
-            );
-        }
-        GSearch.setOnLoadCallback(LoadMapSearch);
+            */
         });
+            
         </script>
+        
     </div>
     
+    <div class="span-7 last" style="background-color: #ccc">
+        Box for Photos
+    </div>
     
+    <div class="span-24 last">
+
+        <div class="buttons">
+            <a href="/review/add/{{business_item.id}}" class="button"><img src="/images/icons/add.png" alt=""/> <span>Add Review</span></a> 
+            <a href="/review/add/{{business_item.id}}" class="button"><img src="/images/icons/image_add.png" alt=""/> <span>Add Photos</span></a> 
+        </div>
+    </div>
+    
+    <div class="span-24 last" id="business_props">
+        <h2>Reviews</h2>
+        <ul class="boxed_list">
+        {% for review in reviews %}
+            <li>{{review.review}} ({{review.created_at}})</li>
+        {% endfor %}
+        </ul>
+    </div>
     {% endblock %}
 {% else %}
     No business available.

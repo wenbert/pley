@@ -43,7 +43,7 @@
   padding-left : 8px;
   background-repeat: no-repeat;
   background-position: left center;
-  background-image : url('cancel.gif');
+  background-image : url('/images/google/cancel.gif');
 }
 
 .gsmsc-next {
@@ -62,19 +62,19 @@
 }
 
 .gsmsc-prev-idle {
-  background-image : url('prev-idle.gif');
+  background-image : url('/images/google/prev-idle.gif');
 }
 
 .gsmsc-prev-active {
-  background-image : url('prev-active.gif');
+  background-image : url('/images/google/prev-active.gif');
 }
 
 .gsmsc-next-idle {
-  background-image : url('next-idle.gif');
+  background-image : url('/images/google/next-idle.gif');
 }
 
 .gsmsc-next-active {
-  background-image : url('next-active.gif');
+  background-image : url('/images/google/next-active.gif');
 }
 
 .gsmsc-mapDiv {

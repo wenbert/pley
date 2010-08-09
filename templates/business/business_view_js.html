@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+
+{% if business_item %}
+    {% block title %}{{business_item.name}}{% endblock %}
+    
+    {% block page_name %}{{business_item.name}}{% endblock %}
+
+    {% block content %}
+    
+    <div class="span-12" id="business_props">
+            <h2>Address</h2>
+            <ul class="boxed_list">
+                <li>{{business_item.address1}} {{ business_item.address2 }}, {{ business_item.city }}<br/>
+                    {{ business_item.province }}, {{ business_item.country }} {{ business_item.zipcode }}<br/>
+                </li>
+            </ul>
+            <h2>Contact Number</h2>
+            <ul class="boxed_list">
+            {% for phone in phone_list %}
+                <li>{{phone.phone_number}}</li>
+            {% endfor %}
+            </ul>
+        
+            <div class="buttons">
+                <a href="/review/add/{{business_item.id}}" class="button"><img src="/images/icons/add.png" alt=""/> <span>Add Review</span></a> 
+                <a href="/review/add/{{business_item.id}}" class="button"><img src="/images/icons/image_add.png" alt=""/> <span>Add Photos</span></a> 
+            </div>
+            
+            <h2>Reviews</h2>
+            <ul class="boxed_list">
+                {% load webdesign %}
+                {% lorem 5 random %}
+                {% for review in reviews %}
+                    <li>"{{review.review}}" by: {{review.user.first_name}} {{review.user.last_name}} on {{review.created_at}}</li>
+                {% endfor %}
+            </ul>
+            
+            
+    </div>
+    
+    <div class="span-12 last" id="business_props">
+        <div id="mapsearch">The map will load shortly. Please wait for a few seconds.</div>
+        <h2 style="color: #DF0101">Recommendations</h2>
+        <div class="medium_text">
+            Click on the recommendations below to find out if they are available near: <b>{{string_location|safe}}</b>.
+        </div>
+        <div class="medium_text" id="recommendations">
+            <span id="hs01" class="hotspot">Bo's Coffee Shop</span>, 
+            <span id="hs02" class="hotspot">Starbucks</span>, 
+            <span id="hs03" class="hotspot">WIFI</span>, 
+            <span id="hs04" class="hotspot">Massage</span>, 
+            <span id="hs05" class="hotspot">Fastfood</span>, 
+            <span id="hs06" class="hotspot">Pizza</span>, 
+            <span id="hs07" class="hotspot">Badminton</span>
+        </div>
+        <div id="results"></div>
+        
+        <script type="text/javascript">
+        $(document).ready(function(){ 
+        
+        var hotspotsList = [
+            { element : document.getElementById("hs01"), query : "Bo's Coffee Shop" },
+            { element : document.getElementById("hs02"), query : "Starbucks" },
+            { element : document.getElementById("hs03"), query : "WIFI" },
+            { element : document.getElementById("hs04"), query : "Massage" },
+            { element : document.getElementById("hs05"), query : "Fastfood" },
+            { element : document.getElementById("hs06"), query : "Pizza" },
+            { element : document.getElementById("hs07"), query : "Badminton" }
+        ];    
+            
+        function LoadMapSearch() {
+            var options = {
+            title : "{{business_item.name|safe}}",
+            hotspots : hotspotsList,
+            zoomControl : GSmapSearchControl.ZOOM_CONTROL_ENABLE_ALL,
+            activeMapZoom : GSmapSearchControl.ACTIVE_MAP_ZOOM,
+            idleMapZoom  : GSmapSearchControl.ACTIVE_MAP_ZOOM,
+            showResultList : document.getElementById("results")
+        }
+        
+        new GSmapSearchControl(
+                document.getElementById("mapsearch"),
+                "{{string_location|safe}}",
+                options
+            );
+        }
+        GSearch.setOnLoadCallback(LoadMapSearch);
+        });
+        </script>
+    </div>
+    
+    
+    {% endblock %}
+{% else %}
+    No business available.
+{% endif %} 
