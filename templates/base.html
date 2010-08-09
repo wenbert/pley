@@ -24,7 +24,7 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js "></script>
     {%endif%}
     {%if  google_apikey %}
-        {% if "business/view_ajax" in view_name %}
+        {% if "business/view_v2" in view_name %}
         <script src="http://maps.google.com/maps?file=api&amp;v=2.x&amp;key={{google_apikey}}" type="text/javascript"></script> 
         <script src="http://www.google.com/jsapi?key={{google_apikey}}" type="text/javascript"></script>
         <script type="text/javascript">

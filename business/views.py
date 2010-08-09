@@ -59,7 +59,7 @@ def business_browse(request):
     return render_to_response("business/business_browse.html",
                               data, context_instance=RequestContext(request))
 
-def business_view_ajax(request, business_id):
+def business_view_v2(request, business_id):
     business_item   = Business.objects.select_related().get(id=business_id)
     phone_list      = Phone.objects.filter(business=business_item)
     reviews         = Review.objects.filter(business=business_id)
@@ -77,7 +77,7 @@ def business_view_ajax(request, business_id):
             "urlencoded_string_location":urlencoded_string_location,
             "google_apikey":google_apikey,
             }
-    return render_to_response("business/business_view_ajax.html",
+    return render_to_response("business/business_view_v2.html",
                               data, context_instance=RequestContext(request))
 
 
