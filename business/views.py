@@ -59,6 +59,28 @@ def business_browse(request):
     return render_to_response("business/business_browse.html",
                               data, context_instance=RequestContext(request))
 
+def business_view_ajax(request, business_id):
+    business_item   = Business.objects.select_related().get(id=business_id)
+    phone_list      = Phone.objects.filter(business=business_item)
+    reviews         = Review.objects.filter(business=business_id)
+    google_apikey   = settings.GOOGLE_MAPS_KEY
+    
+
+    string_location = business_item.name + ' near ' +business_item.address1 + ', ' + business_item.address2 + ', ' + business_item.city + ', ' + business_item.province + ', ' + business_item.country
+    urlencoded_string_location = urllib.quote_plus(string_location)
+    
+    data = {"business_item": business_item,
+            "phone_list": phone_list,
+            "reviews":reviews,
+            "string_location":string_location,
+            "view_name": request.path,
+            "urlencoded_string_location":urlencoded_string_location,
+            "google_apikey":google_apikey,
+            }
+    return render_to_response("business/business_view_ajax.html",
+                              data, context_instance=RequestContext(request))
+
+
 def business_view(request, business_id):
     business_item   = Business.objects.select_related().get(id=business_id)
     phone_list      = Phone.objects.filter(business=business_item)
@@ -71,7 +93,7 @@ def business_view(request, business_id):
     #g = geocoders.Google(domain="google.com", resource='maps/geo')
     
     
-    string_location = business_item.name + ', ' + business_item.address2 + ', ' + business_item.city + ', ' + business_item.province + ', ' + business_item.country
+    string_location = business_item.name+ ', ' + business_item.address1 + ', '  + business_item.city + ', ' + business_item.province + ', ' + business_item.country
     #string_location = business_item.name + ', ' + business_item.address1 + ', ' + business_item.address2 + ' in ' + business_item.city + ', ' + business_item.province + ', ' + business_item.country
     #string_location = business_item.name
     #string_location = business_item.name + ', ' + business_item.address1 + ', ' + business_item.address2 + ', ' + business_item.province + ', ' + business_item.country
@@ -93,6 +115,7 @@ def business_view(request, business_id):
             "phone_list": phone_list,
             "reviews":reviews,
             "string_location":string_location,
+            "view_name": request.path,
             "urlencoded_string_location":urlencoded_string_location,
             }
     return render_to_response("business/business_view.html",

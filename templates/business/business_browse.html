@@ -16,7 +16,10 @@
         {% if business_list %}
             {% for business, categories in business_and_categories_list %}
             <tr>
-                <td><a href="/business/view/{{business.id}}">{{ business.name }}</a></td>
+                <td>
+                    <a href="/business/view/{{business.id}}">{{ business.name }}</a> | 
+                    <a href="/business/view_ajax/{{business.id}}">{{ business.name }}</a>
+                </td>
 				<td>
 					{% for category in categories %}
 						{{ category }}

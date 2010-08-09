@@ -19,16 +19,27 @@
     
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
     
-    {% if urlencoded_string_location %}
+    {%if urlencoded_string_location %}
     <script type="text/javascript" src="/js/json_parse.js"></script>
-    <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js "></script>
-    {% endif %}
+    {%endif%}
+    {%if  google_apikey %}
+        {% if "business/view_ajax" in view_name %}
+        <script src="http://maps.google.com/maps?file=api&amp;v=2.x&amp;key={{google_apikey}}" type="text/javascript"></script> 
+        <script src="http://www.google.com/jsapi?key={{google_apikey}}" type="text/javascript"></script>
+        <script type="text/javascript">
+        // First, we have to load the APIs.
+        google.load('maps' , '2');
+        google.load('search' , '1');
+        </script>
+        {% endif %}
+    {%else%}
+        <script src="http://maps.google.com/maps/api/js?sensor=false&region=PH"></script>
+    {%endif%}
 </head>
 
 
 <body>
-        
 <div class="container" id="header"> 
     <div class="span-17">
         <a href="/">

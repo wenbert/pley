@@ -25,8 +25,8 @@
     </div>
     
     <div class="span-8 ">
-        <div id="map_message"></div>
         <div id="map_canvas" style="width: 310px; height: 300px"></div>
+        <div id="map_message"></div>
         <script type="text/javascript">
         $(document).ready(function() {
             // do stuff when DOM is ready
@@ -48,6 +48,7 @@
                         var map = new google.maps.Map(document.getElementById("map_canvas"),
                             myOptions);
                         
+                            
                         $.each(results, function(i, result) {
                             //$("#" + i).append(document.createTextNode(" - " + val));
                             //alert(i+': '+result);
@@ -58,6 +59,8 @@
                             }); 
                             if(result.geometry.location_type == 'APPROXIMATE') {
                                 $("#map_message").html('<div class="notice">Sorry. Google could not find the exact location. The map is displaying the approximate location.</div>');
+                            }else if(result.geometry.location_type == 'GEOMETRIC_CENTER') {
+                                $("#map_message").html('<div class="notice">Sorry. Google could not find the exact location. The place you are looking for should be near the red marker.</div>');
                             }
                             
                             console.log("Geocoding result address: " + result.formatted_address );
