@@ -38,11 +38,19 @@
     <div class="span-12 last ">
         <div id="map_canvas" style="width: 475px; height: 300px"></div>
         <div id="map_message"></div>
+        <div id="searchwell"></div> 
         <script type="text/javascript">
+        //<![CDATA[
         $(document).ready(function() {
             // do stuff when DOM is ready
             var geocoder = new google.maps.Geocoder();
             var address = '{{string_location}}';
+            var map;
+            var localSearch;
+            var infoWindow;
+            var selectedResults = [];
+            var currentResults = [];
+            
 
             if (geocoder) {
                 geocoder.geocode({ 'address': address }, function (results, status) {
@@ -50,6 +58,7 @@
                         //alert(results[0].geometry.location.lat())
                         //alert(results[0].geometry.location.lng())
                         
+                        //Create the Map and center to geocode results latlong
                         var latlng = new google.maps.LatLng(results[0].geometry.location.lat(), results[0].geometry.location.lng());
                         var myOptions = {
                             zoom: 14,
@@ -59,29 +68,20 @@
                         var map = new google.maps.Map(document.getElementById("map_canvas"),
                             myOptions);
                         
-                        
-                        $.each(results, function(i, result) {
-                            //$("#" + i).append(document.createTextNode(" - " + val));
-                            //alert(i+': '+result);
-                            var marker = new google.maps.Marker({
-                                position: new google.maps.LatLng(result.geometry.location.lat(), result.geometry.location.lng()), 
-                                map: map, 
-                                title:result.formatted_address
-                            }); 
-                            if(result.geometry.location_type == 'APPROXIMATE') {
-                                $("#map_message").html('<div class="notice">Sorry. Google could not find the exact location. The map is displaying the approximate location.</div>');
-                            }else if(result.geometry.location_type == 'GEOMETRIC_CENTER') {
-                                $("#map_message").html('<div class="notice">Sorry. Google could not find the exact location. The place you are looking for should be near the red marker.</div>');
-                            }else if(result.geometry.location_type == 'ROOFTOP') {
-                                $("#map_message").html('<div class="success">Google managed to find the exact location of the place you are looking for. Congratulations!</div>');
-                            }
-                            
-                            console.log("Geocoding result address: " + result.formatted_address );
-                            console.log("Geocoding result address components: " + result.address_components );
-                            console.log("Geocoding result location_type: " + result.geometry.location_type );
-                            console.log("Geocoding result viewport: " + result.geometry.viewport);
+                        //Create one InfoWindow to open when a marker is clicked.
+                        infoWindow = new google.maps.InfoWindow;
+                        google.maps.event.addListener(infoWindow, 'closeclick', function() { 
+                            unselectMarkers();
                         });
-
+                        
+                        //Initialize the local searcher
+                        localSearch = new GlocalSearch();
+                        
+                        localSearch.setSearchCompleteCallback(null, OnLocalSearch);
+    
+                        localSearch.execute("{{business_item.name}}");
+                        //localSearch.execute("Gethsemane");
+                        
                         console.log("Geocoding address: " + address);
                         console.log("Geocoding failed: " + status);
                     } 
@@ -95,10 +95,50 @@
                 });
             }
             /*
-            
+            Other functions        
             */
-        });
+            function unselectMarkers() {
+                for (var i = 0; i < gCurrentResults.length; i++) {
+                    gCurrentResults[i].unselect();
+                }
+            }
             
+            function OnLocalSearch() {
+                if (!localSearch.results /* || localSearch.results.length <= 0*/) {
+                    alert('localSearch has no results!');
+                    return;
+                } 
+                
+                var searchWell = $("#searchwell");
+                
+                searchWell.html = "";
+                for(var i=0; i < currentResults.length; i++) {
+                    if(!currentResults[i].selected) {
+                        currentResults[i].marker().setMap(null);
+                    }
+                }
+                
+                currentResults = [];
+                for (var i=0; i<localSearch.results.length; i++) {
+                    console.log("Result "+i+": "+localSearch.results[i]);
+                    currentResults.push(new LocalResult(localSearch.results[i]));
+                }
+                
+                var attribution = localSearch.getAttribution();
+                if(attribution) {
+                    $("#searchwell").append(attribution);
+                }
+                
+                //Move the map to the first result
+                var first = localSearch.results[0];
+                console.log("localSearch.results[0]: "+localSearch.results[0]);
+                console.log("localSearch.results: "+localSearch.results);
+                console.log("localSearch.results.length: "+localSearch.results.length);
+                map.setCenter(new google.maps.LatLng(parseFloat(first.lat),
+                                                     parseFloat(first.lng)));
+            }
+        });
+        //]]>
         </script>
         
     </div>
