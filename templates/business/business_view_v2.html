@@ -179,7 +179,7 @@
             map.setCenter(new google.maps.LatLng(lat , lng), 14);
             
             // Execute an initial search
-            searchControl.execute("{{string_location}}");
+            searchControl.execute("{{string_location|safe}}");
         }
         
         google.setOnLoadCallback(OnLoad);

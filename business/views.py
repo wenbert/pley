@@ -66,7 +66,7 @@ def business_view_v2(request, business_id):
     google_apikey   = settings.GOOGLE_MAPS_KEY
     
 
-    string_location = business_item.name + ', ' +business_item.address1 + ', ' + business_item.address2 + ', ' + business_item.city + ', ' + business_item.province + ', ' + business_item.country
+    string_location = ' '+ business_item.name + ' near: ' +business_item.address1 + ', ' + business_item.address2 + ', ' + business_item.city + ', ' + business_item.province + ', ' + business_item.country
     urlencoded_string_location = urllib.quote_plus(string_location)
     
     data = {"business_item": business_item,
@@ -88,27 +88,9 @@ def business_view(request, business_id):
     
     #sakto ni? ang GOOGLE_MAP_KEY kay string bya
     #g = geocoders.Google(settings.GOOGLE_MAPS_KEY) 
-    #g = geocoders.Google(domain='maps.google.co.uk', resource='maps', output_format='json')
-    #g = geocoders.Google(domain='maps.google.com', resource='maps')
-    #g = geocoders.Google(domain="google.com", resource='maps/geo')
     
+    string_location = ''+business_item.name+ ' near: ' + business_item.address1 + ', '  + business_item.city + ', ' + business_item.province + ', ' + business_item.country
     
-    string_location = business_item.name+ ', ' + business_item.address1 + ', '  + business_item.city + ', ' + business_item.province + ', ' + business_item.country
-    #string_location = business_item.name + ', ' + business_item.address1 + ', ' + business_item.address2 + ' in ' + business_item.city + ', ' + business_item.province + ', ' + business_item.country
-    #string_location = business_item.name
-    #string_location = business_item.name + ', ' + business_item.address1 + ', ' + business_item.address2 + ', ' + business_item.province + ', ' + business_item.country
-    #string_location = "Jolibee, SM City Cebu"
-    
-    #geodata = []
-    #for place, (lat, lng) in g.geocode(string_location,exactly_one=False):
-    #    geodata.append((place, (lat, lng)))
-
-    #geo = geodata
-    #geodata_count = len(geodata)
-    #initial_lat = geodata[0][1][0] #to be used to initially zoom
-    #initial_lng = geodata[0][1][1]
-    
-    #geodata = json.dumps(geodata)
     urlencoded_string_location = urllib.quote_plus(string_location)
     
     data = {"business_item": business_item,

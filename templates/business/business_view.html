@@ -7,25 +7,36 @@
 
     {% block content %}
     
-    <div class="span-9" id="business_props">
-            <h2>Address</h2>
-            <ul class="boxed_list">
-                <li>{{business_item.address1}}<br/>
-                    {{ business_item.address2 }}<br/>
-                    {{ business_item.city }}, {{ business_item.province }}, {{ business_item.country }}<br/>
-                    {{ business_item.zipcode }}<br/>
-                </li>
-            </ul>
-            <h2>Contact Number</h2>
-            <ul class="boxed_list">
-            {% for phone in phone_list %}
-                <li>{{phone.phone_number}}</li>
-            {% endfor %}
-            </ul>
+    <div class="span-12" id="business_props">
+        <h2>Address</h2>
+        <ul class="boxed_list">
+            <li>{{business_item.address1}}<br/>
+                {{ business_item.address2 }}<br/>
+                {{ business_item.city }}, {{ business_item.province }}, {{ business_item.country }}<br/>
+                {{ business_item.zipcode }}<br/>
+            </li>
+        </ul>
+        <h2>Contact Number</h2>
+        <ul class="boxed_list">
+        {% for phone in phone_list %}
+            <li>{{phone.phone_number}}</li>
+        {% endfor %}
+        </ul>
+        
+        <div class="buttons">
+            <a href="/review/add/{{business_item.id}}" class="button"><img src="/images/icons/add.png" alt=""/> <span>Add Review</span></a> 
+            <a href="/review/add/{{business_item.id}}" class="button"><img src="/images/icons/image_add.png" alt=""/> <span>Add Photos</span></a> 
+        </div>
+        <h2>Reviews</h2>
+        <ul class="boxed_list">
+        {% for review in reviews %}
+            <li>{{review.review}} ({{review.created_at}})</li>
+        {% endfor %}
+        </ul>
     </div>
     
-    <div class="span-8 ">
-        <div id="map_canvas" style="width: 310px; height: 300px"></div>
+    <div class="span-12 last ">
+        <div id="map_canvas" style="width: 475px; height: 300px"></div>
         <div id="map_message"></div>
         <script type="text/javascript">
         $(document).ready(function() {
@@ -61,6 +72,8 @@
                                 $("#map_message").html('<div class="notice">Sorry. Google could not find the exact location. The map is displaying the approximate location.</div>');
                             }else if(result.geometry.location_type == 'GEOMETRIC_CENTER') {
                                 $("#map_message").html('<div class="notice">Sorry. Google could not find the exact location. The place you are looking for should be near the red marker.</div>');
+                            }else if(result.geometry.location_type == 'ROOFTOP') {
+                                $("#map_message").html('<div class="success">Google managed to find the exact location of the place you are looking for. Congratulations!</div>');
                             }
                             
                             console.log("Geocoding result address: " + result.formatted_address );
@@ -90,26 +103,6 @@
         
     </div>
     
-    <div class="span-7 last" style="background-color: #ccc">
-        Box for Photos
-    </div>
-    
-    <div class="span-24 last">
-
-        <div class="buttons">
-            <a href="/review/add/{{business_item.id}}" class="button"><img src="/images/icons/add.png" alt=""/> <span>Add Review</span></a> 
-            <a href="/review/add/{{business_item.id}}" class="button"><img src="/images/icons/image_add.png" alt=""/> <span>Add Photos</span></a> 
-        </div>
-    </div>
-    
-    <div class="span-24 last" id="business_props">
-        <h2>Reviews</h2>
-        <ul class="boxed_list">
-        {% for review in reviews %}
-            <li>{{review.review}} ({{review.created_at}})</li>
-        {% endfor %}
-        </ul>
-    </div>
     {% endblock %}
 {% else %}
     No business available.

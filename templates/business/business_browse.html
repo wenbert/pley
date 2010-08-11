@@ -17,8 +17,9 @@
             {% for business, categories in business_and_categories_list %}
             <tr>
                 <td>
-                    <!-- <a href="/business/view/{{business.id}}">{{ business.name }}</a> -->
-                    <a href="/business/view_v2/{{business.id}}">{{ business.name }}</a>
+                    {{ business.name }} [
+                    <a href="/business/view/{{business.id}}">V3</a> | 
+                    <a href="/business/view_v2/{{business.id}}">V2</a> ]
                 </td>
 				<td>
 					{% for category in categories %}
