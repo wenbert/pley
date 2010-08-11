@@ -46,10 +46,10 @@
             var geocoder = new google.maps.Geocoder();
             var address = '{{string_location}}';
             var map;
-            var localSearch;
             var infoWindow;
             var selectedResults = [];
-            var currentResults = [];
+            var gCurrentResults = [];
+            var gLocalSearch = new GlocalSearch();
             
 
             if (geocoder) {
@@ -74,12 +74,10 @@
                             unselectMarkers();
                         });
                         
-                        //Initialize the local searcher
-                        localSearch = new GlocalSearch();
                         
-                        localSearch.setSearchCompleteCallback(null, OnLocalSearch);
+                        gLocalSearch.setSearchCompleteCallback(null, OnLocalSearch);
     
-                        localSearch.execute("{{business_item.name}}");
+                        gLocalSearch.execute("{{business_item.name}}");
                         //localSearch.execute("Gethsemane");
                         
                         console.log("Geocoding address: " + address);
@@ -104,7 +102,7 @@
             }
             
             function OnLocalSearch() {
-                if (!localSearch.results /* || localSearch.results.length <= 0*/) {
+                if (!gLocalSearch.results /* || localSearch.results.length <= 0*/) {
                     alert('localSearch has no results!');
                     return;
                 } 
@@ -112,28 +110,28 @@
                 var searchWell = $("#searchwell");
                 
                 searchWell.html = "";
-                for(var i=0; i < currentResults.length; i++) {
+                for(var i=0; i < gCurrentResults.length; i++) {
                     if(!currentResults[i].selected) {
                         currentResults[i].marker().setMap(null);
                     }
                 }
                 
-                currentResults = [];
-                for (var i=0; i<localSearch.results.length; i++) {
+                gCurrentResults = [];
+                for (var i=0; i<gLocalSearch.results.length; i++) {
                     console.log("Result "+i+": "+localSearch.results[i]);
-                    currentResults.push(new LocalResult(localSearch.results[i]));
+                    gCurrentResults.push(new LocalResult(localSearch.results[i]));
                 }
                 
-                var attribution = localSearch.getAttribution();
+                var attribution = gLocalSearch.getAttribution();
                 if(attribution) {
                     $("#searchwell").append(attribution);
                 }
                 
                 //Move the map to the first result
-                var first = localSearch.results[0];
-                console.log("localSearch.results[0]: "+localSearch.results[0]);
-                console.log("localSearch.results: "+localSearch.results);
-                console.log("localSearch.results.length: "+localSearch.results.length);
+                var first = gLocalSearch.results[0];
+                console.log("gLocalSearch.results[0]: "+gLocalSearch.results[0]);
+                console.log("gLocalSearch.results: "+gLocalSearch.results);
+                console.log("gLocalSearch.results.length: "+gLocalSearch.results.length);
                 map.setCenter(new google.maps.LatLng(parseFloat(first.lat),
                                                      parseFloat(first.lng)));
             }
