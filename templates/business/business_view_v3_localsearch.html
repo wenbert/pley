@@ -46,18 +46,21 @@
             var geocoder = new google.maps.Geocoder();
             var address = '{{string_location}}';
             var map;
-            var infoWindow;
-            var selectedResults = [];
+            var geocoder = new google.maps.Geocoder();
+            var map;
+        
+            // Our global state for LocalSearch
+            var gInfoWindow;
+            var gSelectedResults = [];
             var gCurrentResults = [];
             var gLocalSearch = new GlocalSearch();
-            
-
+        
             if (geocoder) {
                 geocoder.geocode({ 'address': address }, function (results, status) {
                     if (status == google.maps.GeocoderStatus.OK) {
                         //alert(results[0].geometry.location.lat())
                         //alert(results[0].geometry.location.lng())
-                        
+        
                         //Create the Map and center to geocode results latlong
                         var latlng = new google.maps.LatLng(results[0].geometry.location.lat(), results[0].geometry.location.lng());
                         var myOptions = {
@@ -65,75 +68,34 @@
                             center: latlng,
                             mapTypeId: google.maps.MapTypeId.ROADMAP
                         };
-                        var map = new google.maps.Map(document.getElementById("map_canvas"),
+        
+                        map = new google.maps.Map(document.getElementById("map_canvas"),
                             myOptions);
-                        
-                        //Create one InfoWindow to open when a marker is clicked.
-                        infoWindow = new google.maps.InfoWindow;
-                        google.maps.event.addListener(infoWindow, 'closeclick', function() { 
-                            unselectMarkers();
-                        });
-                        
-                        
-                        gLocalSearch.setSearchCompleteCallback(null, OnLocalSearch);
-    
+        
+                        gLocalSearch.setSearchCompleteCallback(this, OnLocalSearch);
+                        //gLocalSearch.execute("debra heights wesleyan church");
                         gLocalSearch.execute("{{business_item.name}}");
-                        //localSearch.execute("Gethsemane");
-                        
-                        console.log("Geocoding address: " + address);
-                        console.log("Geocoding failed: " + status);
                     } 
                     else {
-                        $('#map_message').html('<div class="error">Google could not find the address you are looking for. So, we will display a Google Adsense here instead.');
-                        $('#map_canvas').remove();
-                        //alert('No results found. Check your console.log()');
+                        alert('No results found. Check console.log()');
                         console.log("Geocoding address: " + address);
                         console.log("Geocoding failed: " + status);
                     }
                 });
             }
+        
             /*
             Other functions        
-            */
-            function unselectMarkers() {
-                for (var i = 0; i < gCurrentResults.length; i++) {
-                    gCurrentResults[i].unselect();
-                }
-            }
-            
+            */        
             function OnLocalSearch() {
-                if (!gLocalSearch.results /* || localSearch.results.length <= 0*/) {
-                    alert('localSearch has no results!');
-                    return;
+                if (gLocalSearch.results[0]) { //This is empty. Why?
+                    var resultLat = gLocalSearch.results[0].lat; 
+                    var resultLng = gLocalSearch.results[0].lng; 
+                    var point = new google.maps.LatLng(resultLat,resultLng); 
+                    callbackFunction(point); 
+                }else{ 
+                    alert("not found!"); 
                 } 
-                
-                var searchWell = $("#searchwell");
-                
-                searchWell.html = "";
-                for(var i=0; i < gCurrentResults.length; i++) {
-                    if(!currentResults[i].selected) {
-                        currentResults[i].marker().setMap(null);
-                    }
-                }
-                
-                gCurrentResults = [];
-                for (var i=0; i<gLocalSearch.results.length; i++) {
-                    console.log("Result "+i+": "+localSearch.results[i]);
-                    gCurrentResults.push(new LocalResult(localSearch.results[i]));
-                }
-                
-                var attribution = gLocalSearch.getAttribution();
-                if(attribution) {
-                    $("#searchwell").append(attribution);
-                }
-                
-                //Move the map to the first result
-                var first = gLocalSearch.results[0];
-                console.log("gLocalSearch.results[0]: "+gLocalSearch.results[0]);
-                console.log("gLocalSearch.results: "+gLocalSearch.results);
-                console.log("gLocalSearch.results.length: "+gLocalSearch.results.length);
-                map.setCenter(new google.maps.LatLng(parseFloat(first.lat),
-                                                     parseFloat(first.lng)));
             }
         });
         //]]>

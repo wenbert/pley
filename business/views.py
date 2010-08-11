@@ -32,7 +32,7 @@ def business_view_v3_localsearch(request, business_id):
     #sakto ni? ang GOOGLE_MAP_KEY kay string bya
     #g = geocoders.Google(settings.GOOGLE_MAPS_KEY) 
     
-    string_location = ''+business_item.name+ ' near: ' + business_item.address1 + ', ' + business_item.address2 +  ', ' + business_item.province + ', ' + business_item.country
+    string_location = ''+business_item.name+ ' near: ' + business_item.address1 + ', ' + business_item.address2 +  ', ' + business_item.province + ', ' + business_item.country + ', ' + business_item.zipcode
     
     urlencoded_string_location = urllib.quote_plus(string_location)
     

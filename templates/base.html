@@ -25,7 +25,7 @@
     {%endif%}
     {%if  google_apikey %}
         {% if "business/view_v2" in view_name %}
-        <script src="http://maps.google.com/maps?file=api&amp;v=2.x&amp;key={{google_apikey}}" type="text/javascript"></script> 
+        <script src="http://maps.google.com/maps?file=api&v=2.x&key={{google_apikey}}" type="text/javascript"></script> 
         <script src="http://www.google.com/jsapi?key={{google_apikey}}" type="text/javascript"></script>
         <script type="text/javascript">
         // First, we have to load the APIs.
@@ -35,8 +35,7 @@
         {% endif %}
     {%else%}
         <!-- For V3 API -->
-        <script src="http://maps.google.com/maps/api/js?v=3.1&sensor=false&region=PH"></script>
-        <script src="http://maps.google.com/maps/api/js?sensor=false"></script> 
+        <script src="http://maps.google.com/maps/api/js?v=3.1&sensor=false"></script>
         <script src="http://www.google.com/uds/api?file=uds.js&v=1.0&key={{google_apikey}}" type="text/javascript"></script>
         
     {%endif%}
