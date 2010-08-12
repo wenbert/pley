@@ -28,11 +28,13 @@ def business_view_v3_localsearch(request, business_id):
     business_item   = Business.objects.select_related().get(id=business_id)
     phone_list      = Phone.objects.filter(business=business_item)
     reviews         = Review.objects.filter(business=business_id)
+    google_apikey   = settings.GOOGLE_MAPS_KEY
     
     #sakto ni? ang GOOGLE_MAP_KEY kay string bya
     #g = geocoders.Google(settings.GOOGLE_MAPS_KEY) 
     
-    string_location = ''+business_item.name+ ' near: ' + business_item.address1 + ', ' + business_item.address2 +  ', ' + business_item.province + ', ' + business_item.country + ', ' + business_item.zipcode
+    #string_location = business_item.name + ' near: ' +business_item.address1 + ', ' + business_item.address2 +  ', ' + business_item.province + ', ' + business_item.country + ', ' + business_item.zipcode
+    string_location = business_item.address2 +  ', ' + business_item.city +  ', ' + business_item.province + ', ' + business_item.country + ', ' + business_item.zipcode
     
     urlencoded_string_location = urllib.quote_plus(string_location)
     
@@ -42,6 +44,7 @@ def business_view_v3_localsearch(request, business_id):
             "string_location":string_location,
             "view_name": request.path,
             "urlencoded_string_location":urlencoded_string_location,
+            "google_apikey":google_apikey,
             }
     return render_to_response("business/business_view_v3_localsearch.html",
                               data, context_instance=RequestContext(request))

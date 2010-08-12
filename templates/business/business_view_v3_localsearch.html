@@ -45,8 +45,7 @@
             // do stuff when DOM is ready
             var geocoder = new google.maps.Geocoder();
             var address = '{{string_location}}';
-            var map;
-            var geocoder = new google.maps.Geocoder();
+            var business_name = '{{business_item.name}}';
             var map;
         
             // Our global state for LocalSearch
@@ -54,6 +53,7 @@
             var gSelectedResults = [];
             var gCurrentResults = [];
             var gLocalSearch = new GlocalSearch();
+            var localSearchCenter = "{{business_item.city}}, {{business_item.province}}, {{business_item.country}}, {{business_item.zipcode}}";
         
             if (geocoder) {
                 geocoder.geocode({ 'address': address }, function (results, status) {
@@ -64,17 +64,19 @@
                         //Create the Map and center to geocode results latlong
                         var latlng = new google.maps.LatLng(results[0].geometry.location.lat(), results[0].geometry.location.lng());
                         var myOptions = {
-                            zoom: 14,
+                            zoom: 13,
                             center: latlng,
                             mapTypeId: google.maps.MapTypeId.ROADMAP
                         };
         
                         map = new google.maps.Map(document.getElementById("map_canvas"),
                             myOptions);
-        
+                        
+                        gLocalSearch.setCenterPoint(localSearchCenter);
                         gLocalSearch.setSearchCompleteCallback(this, OnLocalSearch);
-                        //gLocalSearch.execute("debra heights wesleyan church");
-                        gLocalSearch.execute("{{business_item.name}}");
+                        
+                        gLocalSearch.execute(business_name);
+                        console.log("string_location: {{string_location}}");
                     } 
                     else {
                         alert('No results found. Check console.log()');
@@ -88,13 +90,30 @@
             Other functions        
             */        
             function OnLocalSearch() {
+                console.log("results: "+gLocalSearch.results);
+                console.log("results length: "+gLocalSearch.results.length);
+                
                 if (gLocalSearch.results[0]) { //This is empty. Why?
-                    var resultLat = gLocalSearch.results[0].lat; 
-                    var resultLng = gLocalSearch.results[0].lng; 
-                    var point = new google.maps.LatLng(resultLat,resultLng); 
-                    callbackFunction(point); 
+                    $.each(gLocalSearch.results, function(i, n){
+                        console.log("result ["+i+"]: "+n);
+                        $.each(n, function(j, k) {
+                            console.log(" > result ["+j+"]: "+k);
+                            
+                            var marker = new google.maps.Marker({
+                                position: new google.maps.LatLng(gLocalSearch.results[i].lat,gLocalSearch.results[i].lng), 
+                                map: map, 
+                                title: gLocalSearch.results[i].streetAddress,
+                            });
+                        });
+                    });
+                    
+                    // Move the map to the first result
+                    //var first = gLocalSearch.results[0];
+                    //map.setCenter(new google.maps.LatLng(parseFloat(gLocalSearch.results[0].lat),
+                    //                                     parseFloat(gLocalSearch.results[0].lng)));
+                    //callbackFunction(point); 
                 }else{ 
-                    alert("not found!"); 
+                    alert("business name not found!"); 
                 } 
             }
         });
