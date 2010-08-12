@@ -37,7 +37,7 @@
     
     <div class="span-12 last ">
         <img src="http://labs.google.com/ridefinder/images/mm_20_red.png" /> = Matches the business name<br/>
-        <img src="http://labs.google.com/ridefinder/images/mm_20_yellow.png" /> = Approximate match
+        <img src="http://labs.google.com/ridefinder/images/mm_20_yellow.png" /> = Area of interest
         
         <div id="map_canvas" style="width: 475px; height: 300px"></div>
         <div id="map_message"></div>
@@ -163,6 +163,9 @@
                     if(centerNewLat != 0 && centerNewLng != 0) {
                         map.setCenter(new google.maps.LatLng(parseFloat(centerNewLat),
                                                          parseFloat(centerNewLng)));
+                    } else {
+                        map.setCenter(new google.maps.LatLng(parseFloat(results[0].lat),
+                                                         parseFloat(results[0].lng)));
                     }
                     
                     //callbackFunction(point); 
