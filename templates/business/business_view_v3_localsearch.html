@@ -36,11 +36,26 @@
     </div>
     
     <div class="span-12 last ">
+        <img src="http://labs.google.com/ridefinder/images/mm_20_red.png" /> = Matches the business name<br/>
+        <img src="http://labs.google.com/ridefinder/images/mm_20_yellow.png" /> = Approximate match
+        
         <div id="map_canvas" style="width: 475px; height: 300px"></div>
         <div id="map_message"></div>
         <div id="searchwell"></div> 
         <script type="text/javascript">
         //<![CDATA[
+        //@ http://jsfromhell.com/string/soundex [v1.0]
+        String.prototype.soundex = function(p){ //v1.0
+            var i, j, r, p = isNaN(p) ? 4 : p > 10 ? 10 : p < 4 ? 4 : p,
+            m = {BFPV: 1, CGJKQSXZ: 2, DT: 3, L: 4, MN: 5, R: 6},
+            r = (s = this.toUpperCase().replace(/[^A-Z]/g, "").split("")).splice(0, 1);
+            for(i in s)
+                for(j in m)
+                    if(j.indexOf(s[i]) + 1 && r[r.length-1] != m[j] && r.push(m[j]))
+                        break;
+            return r.length > p && (r.length = p), r.join("") + (new Array(p - r.length + 1)).join("0");
+        };
+        
         $(document).ready(function() {
             // do stuff when DOM is ready
             var geocoder = new google.maps.Geocoder();
@@ -48,10 +63,24 @@
             var business_name = '{{business_item.name}}';
             var map;
         
+            // Create our "tiny" marker icon
+            var gYellowIcon = new google.maps.MarkerImage(
+                "http://labs.google.com/ridefinder/images/mm_20_yellow.png",
+                new google.maps.Size(12, 20),
+                new google.maps.Point(0, 0),
+                new google.maps.Point(6, 20));
+            var gRedIcon = new google.maps.MarkerImage(
+                "http://labs.google.com/ridefinder/images/mm_20_red.png",
+                new google.maps.Size(12, 20),
+                new google.maps.Point(0, 0),
+                new google.maps.Point(6, 20));
+            var gSmallShadow = new google.maps.MarkerImage(
+                "http://labs.google.com/ridefinder/images/mm_20_shadow.png",
+                new google.maps.Size(22, 20),
+                new google.maps.Point(0, 0),
+                new google.maps.Point(6, 20));
+            
             // Our global state for LocalSearch
-            var gInfoWindow;
-            var gSelectedResults = [];
-            var gCurrentResults = [];
             var gLocalSearch = new GlocalSearch();
             var localSearchCenter = "{{business_item.city}}, {{business_item.province}}, {{business_item.country}}, {{business_item.zipcode}}";
         
@@ -90,32 +119,58 @@
             Other functions        
             */        
             function OnLocalSearch() {
+                var results = gLocalSearch.results;
+                var centerNewLat = 0;
+                var centerNewLng = 0;
                 console.log("results: "+gLocalSearch.results);
-                console.log("results length: "+gLocalSearch.results.length);
+                console.log("results length: "+ results.length);
                 
-                if (gLocalSearch.results[0]) { //This is empty. Why?
-                    $.each(gLocalSearch.results, function(i, n){
+                //alert("business_name.soundex(): "+business_name.soundex()+" results[1].titleNoFormatting: "+results[0].titleNoFormatting.soundex());
+                
+                if (results[0]) {
+                    $.each(results, function(i, n){
                         console.log("result ["+i+"]: "+n);
+                        if ((business_name.soundex() == results[i].titleNoFormatting.soundex())) {
+                            //alert("business_name.soundex(): "+business_name.soundex()+" results.titleNoFormatting: "+results[i].titleNoFormatting.soundex());
+                            var marker = new google.maps.Marker({
+                                position: new google.maps.LatLng(results[i].lat,results[i].lng), 
+                                map: map, 
+                                title: results[i].streetAddress,
+                                icon: gRedIcon,
+                                shadow: gSmallShadow
+                            });
+                            centerNewLat = results[i].lat;
+                            centerNewLng = results[i].lng;
+                        } else {
+                            var marker = new google.maps.Marker({
+                                position: new google.maps.LatLng(results[i].lat,results[i].lng), 
+                                map: map, 
+                                title: results[i].streetAddress,
+                                icon: gYellowIcon,
+                                shadow: gSmallShadow
+                            });
+                        }
+                        
+                        
                         $.each(n, function(j, k) {
                             console.log(" > result ["+j+"]: "+k);
-                            
-                            var marker = new google.maps.Marker({
-                                position: new google.maps.LatLng(gLocalSearch.results[i].lat,gLocalSearch.results[i].lng), 
-                                map: map, 
-                                title: gLocalSearch.results[i].streetAddress,
-                            });
                         });
+                        
                     });
                     
                     // Move the map to the first result
                     //var first = gLocalSearch.results[0];
-                    //map.setCenter(new google.maps.LatLng(parseFloat(gLocalSearch.results[0].lat),
-                    //                                     parseFloat(gLocalSearch.results[0].lng)));
+                    if(centerNewLat != 0 && centerNewLng != 0) {
+                        map.setCenter(new google.maps.LatLng(parseFloat(centerNewLat),
+                                                         parseFloat(centerNewLng)));
+                    }
+                    
                     //callbackFunction(point); 
                 }else{ 
                     alert("business name not found!"); 
                 } 
             }
+            
         });
         //]]>
         </script>
