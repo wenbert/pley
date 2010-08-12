@@ -60,6 +60,7 @@
             // do stuff when DOM is ready
             var geocoder = new google.maps.Geocoder();
             var address = '{{string_location}}';
+            var clean_address = '{{clean_string_location}}';
             var business_name = '{{business_item.name}}';
             var map;
         
@@ -85,7 +86,7 @@
             var localSearchCenter = "{{business_item.city}}, {{business_item.province}}, {{business_item.country}}, {{business_item.zipcode}}";
         
             if (geocoder) {
-                geocoder.geocode({ 'address': address }, function (results, status) {
+                geocoder.geocode({ 'address': clean_address }, function (results, status) {
                     if (status == google.maps.GeocoderStatus.OK) {
                         //alert(results[0].geometry.location.lat())
                         //alert(results[0].geometry.location.lng())
@@ -108,7 +109,8 @@
                         console.log("string_location: {{string_location}}");
                     } 
                     else {
-                        alert('No results found. Check console.log()');
+                        $('#map_message').append('<div class="error">Google could not find the address you are looking for. So, we will display a Google Adsense here instead.</div>');
+                        //alert('No results found. Check console.log()');
                         console.log("Geocoding address: " + address);
                         console.log("Geocoding failed: " + status);
                     }
@@ -170,7 +172,8 @@
                     
                     //callbackFunction(point); 
                 }else{ 
-                    alert("business name not found!"); 
+                    $('#map_message').append('<div class="error">Sorry we could not find the business you are looking for. We will try to find a way so that you can add it in Google Local Search.</div>');
+                    //alert("business name not found!"); 
                 } 
             }
             

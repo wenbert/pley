@@ -34,7 +34,8 @@ def business_view_v3_localsearch(request, business_id):
     #g = geocoders.Google(settings.GOOGLE_MAPS_KEY) 
     
     #string_location = business_item.name + ' near: ' +business_item.address1 + ', ' + business_item.address2 +  ', ' + business_item.province + ', ' + business_item.country + ', ' + business_item.zipcode
-    string_location = business_item.address2 +  ', ' + business_item.city +  ', ' + business_item.province + ', ' + business_item.country + ', ' + business_item.zipcode
+    string_location = business_item.address1 +  ', ' +business_item.address2 +  ', ' + business_item.city +  ', ' + business_item.province + ', ' + business_item.country + ', ' + business_item.zipcode
+    clean_string_location = ''.join([letter for letter in string_location if not letter.isdigit()])
     
     urlencoded_string_location = urllib.quote_plus(string_location)
     
@@ -42,6 +43,7 @@ def business_view_v3_localsearch(request, business_id):
             "phone_list": phone_list,
             "reviews":reviews,
             "string_location":string_location,
+            "clean_string_location":clean_string_location,
             "view_name": request.path,
             "urlencoded_string_location":urlencoded_string_location,
             "google_apikey":google_apikey,
