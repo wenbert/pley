@@ -19,10 +19,11 @@
     
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
     
-    {%if urlencoded_string_location %}
     <script type="text/javascript" src="/js/json_parse.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js "></script>
-    {%endif%}
+    <link type="text/css" href="/css/custom-theme/jquery-ui-1.8.4.custom.css" rel="stylesheet" />
+    <script type="text/javascript" src="/js/jquery-ui-1.8.4.custom.min.js"></script> 
+    
     {% if "business/view_v2" in view_name %}        
         <script src="http://maps.google.com/maps?file=api&v=2.x&key={{google_apikey}}" type="text/javascript"></script> 
         <script src="http://www.google.com/jsapi?key={{google_apikey}}" type="text/javascript"></script>
@@ -35,6 +36,28 @@
         <!-- For V3 API -->
         <script src="http://www.google.com/uds/api?file=uds.js&v=1.0" type="text/javascript"></script>
         <script src="http://maps.google.com/maps/api/js?v=3.1&sensor=false&region=PH"></script>
+        
+        <!-- Other local JS -->
+        <script type="text/javascript" src="/js/soundex.js"></script>
+        <script type="text/javascript" src="/js/marker.js"></script>
+        <script type="text/javascript" src="/js/map.js"></script>
+        
+        <!-- Map V3 and LocalSearch variables -->
+        <script type="text/javascript">
+        //<![CDATA[
+        var address = '{{string_location}}';             //address only, no business_name
+        var clean_address = '{{clean_string_location}}'; //this is used for the soundex
+        var business_name = '{{business_item.name}}';
+        var map;
+        var infowindow;
+        var geocode_lat;
+        var geocode_lng;
+        var business_city = "{{business_item.city}}";
+        var business_province = "{{business_item.province}}";
+        var business_country = "{{business_item.country}}";
+        var business_zipcode = "{{business_item.zipcode}}";
+        //]]>
+        </script>
     {%endif%}
 </head>
 

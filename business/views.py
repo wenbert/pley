@@ -39,6 +39,10 @@ def business_view_v3_localsearch(request, business_id):
     
     urlencoded_string_location = urllib.quote_plus(string_location)
     
+    business_form   = BusinessForm()
+    business_category_form = BusinessCategoryForm()
+    phone_form      = PhoneForm()
+    
     data = {"business_item": business_item,
             "phone_list": phone_list,
             "reviews":reviews,
@@ -47,6 +51,9 @@ def business_view_v3_localsearch(request, business_id):
             "view_name": request.path,
             "urlencoded_string_location":urlencoded_string_location,
             "google_apikey":google_apikey,
+            "business_form": business_form,
+            "business_category_form": business_category_form,
+            "phone_form": phone_form,
             }
     return render_to_response("business/business_view_v3_localsearch.html",
                               data, context_instance=RequestContext(request))
