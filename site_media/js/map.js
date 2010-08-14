@@ -121,34 +121,9 @@ $(document).ready(function() {
         } 
     }
     
-    $("#add_marker").click(function() {
-        //alert("Add a marker!");
-        var marker = new google.maps.Marker({
-            position: new google.maps.LatLng(geocode_lat, geocode_lng), 
-            map: map, 
-            title: "New Marker",
-            draggable: true
-        });
-        
-        //Display infoWindow when marker is clicked
-        google.maps.event.addListener(marker, 'click', function() {
-           infowindow.setContent("<div id='infowindow_title'>"+business_name+"</div><div id='infowindow_content'>Content. Data from pop-up will display here.</div><input type='button' value='Save Marker'/>");
-           infowindow.open(map, marker);
-        });
-        
-        //Event when you dropdown a map
-        google.maps.event.addListener(marker, "dragend", function() {
-            var marker_location = marker.getPosition();
-            map.panTo(marker_location);
-            
-            //for now we log into the console
-            console.log("marker lat: "+marker_location.lat());
-            console.log("marker lng: "+marker_location.lng());
-        });
-    });
     
     function displayInfoWindow(current_result) {
-        return ""+current_result.title +"<br/><span class='infowindow_small'>"+current_result.addressLines+"<br/><a href='"+current_result.url+"'>Place</a><span>";
+        return ""+current_result.title +"<br/><spkan class='infowindow_small'>"+current_result.addressLines+"<br/><a href='"+current_result.url+"'>Place</a><span>";
     }
     
 }); /*End jQuery onLoad here.*/
