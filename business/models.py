@@ -69,4 +69,10 @@ class BusinessCategory(models.Model):
     business        = models.ForeignKey(Business)
     category        = models.ForeignKey(Category)
     
+class BusinessMarkers(models.Model):
+    business        = models.ForeignKey(Business)
+    #lat             = models.
+    #lng             = models.
+    
+    
     

@@ -41,11 +41,11 @@ $(document).ready(function() {
         google.maps.event.addListener(marker, 'click', function() {
            infowindow.setContent("<div id='infowindow_title'>"+container.data("title")+"</div>"+
                                  "<div id='infowindow_content'>"+
-                                 container.data("address1")+", "+
-                                 container.data("address2")+", "+
-                                 container.data("city")+", "+
-                                 container.data("province")+", "+
-                                 container.data("country")+", "+
+                                 container.data("address1")+" "+
+                                 container.data("address2")+" "+
+                                 container.data("city")+" "+
+                                 container.data("province")+" "+
+                                 container.data("country")+" "+
                                  container.data("zipcode")+" "+
                                  "</div><input type='button' value='Save Marker'/>");
            infowindow.open(map, marker);
