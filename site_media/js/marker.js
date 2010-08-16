@@ -3,6 +3,7 @@
 Dynamically add a marker into map.
 */
 $(document).ready(function() {
+    
     $("#add_business_form").validate({
         rules: {
             name: {
@@ -23,6 +24,9 @@ $(document).ready(function() {
                 url: "You need to input a valid URL.",
                 minlength: "URL length not valid."
             }
+        },
+        submitHandler: function(form) {
+            add_marker();
         }
     });
     
@@ -38,9 +42,11 @@ $(document).ready(function() {
         modal: true,
     });
     
-    $("#add_marker").click(function(){
+    $("#add_marker").click(function(){});
+    
+    function add_marker() {
         var container = $('#add_business_container')
-
+        
         //container.dialog('close');
         
         /*Store values from textboxes*/
@@ -88,7 +94,7 @@ $(document).ready(function() {
         
         //once the marker is added, display immediately the infowindow
         google.maps.event.trigger(marker, "click")    
-    });
+    }
     
 });
 
