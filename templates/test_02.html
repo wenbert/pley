@@ -1,0 +1,1051 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"> 
+<head> 
+<title>Coordinates - Point on a map to find coordinates</title> 
+ 
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+    <meta http-equiv="content-language" content="en" /> 
+ 
+    <meta name="description" content="ExpressionEngine Add-ons including Firemail, Sitemap Module, Stand Alone Image Editor, LogMeIn Plugin and Loop Plugin" /> 
+    <meta name="keywords" content="expression, engine, expressionengine, add-on, module, plugin, extension, firemail, sitemap" /> 
+    
+    <link rel="shortcut icon" type="image/ico" href="http://www.putyourlightson.net/public/images/favicon.gif" /> 
+    
+    <link href="http://www.putyourlightson.net/public/css/jquery.lightbox.css" rel="stylesheet" type="text/css" /> 
+    <link href="http://www.putyourlightson.net/public/css/main.css" rel="stylesheet" type="text/css" /> 
+    
+    <script src="http://www.putyourlightson.net/public/js/jquery.js" type="text/javascript"></script> 
+    <script src="http://www.putyourlightson.net/public/js/jquery.lightbox.js" type="text/javascript"></script> 
+    <script src="http://www.putyourlightson.net/public/js/main100203.js" type="text/javascript"></script> 
+    
+</head> 
+ 
+<body> 
+ 
+<div id="wrapper"> 
+    <div id="header"> 
+        <div id="logo">PutYourLightsOn</div> 
+    
+        <ul id="nav"> 
+            <li><a href="http://www.putyourlightson.net/">Home</a></li> 
+            <li id="menu">	
+                <ul class="hidden"> 
+                    <li><a href="http://www.putyourlightson.net/projects/firemail">FireMail</a></li> 
+                    <li><a href="http://www.putyourlightson.net/projects/sitemap">Sitemap Module</a></li> 
+                    <li><a href="http://www.putyourlightson.net/projects/multi_language">Multi Language Module</a></li> 
+                    <li><a href="http://www.putyourlightson.net/projects/cheat_sheet">EE 2.0 Cheat Cheat</a></li> 
+                    <li><a href="http://www.putyourlightson.net/projects/eurolanguages">EuroLanguages</a></li> 
+                    <li><a href="http://www.putyourlightson.net/projects/exchange_rates">Exchange Rates</a></li> 
+                    <li><a href="http://www.putyourlightson.net/projects/image_editor">Stand-Alone Image Editor</a></li> 
+                    <li><a href="http://www.putyourlightson.net/projects/loop">Loop Plugin</a></li> 
+                    <li><a href="http://www.putyourlightson.net/projects/logmein">LogMeIn</a></li> 
+                    <li><a href="http://www.putyourlightson.net/projects/landing_page">Landing Page</a></li> 
+                    <li><a href="http://www.putyourlightson.net/projects/iwebapp">iWebApp Beta</a></li> 
+                    <li><a href="http://www.putyourlightson.net/projects/session_variables">Session Variables</a></li> 
+                    <li><a href="http://www.putyourlightson.net/projects/coordinates">Coordinates</a></li> 
+                    <li><a href="http://www.putyourlightson.net/projects/ubiquity">Guitar Tab</a></li> 
+                </ul> 
+                Projects >
+            </li>	
+            <li><a href="http://www.putyourlightson.net/projects/support">Support</a></li> 
+        </ul> 
+    </div> 
+    <div class="clear"></div> 
+    
+    <div id="main"> 
+        
+        <div id="sidenav"> 
+            <a href="#concept">1. Concept</a> 
+            <a href="#howworks">2. How It Works</a> 
+            <a href="#download">3. Download</a> 
+            <a href="#comments">4. Comments</a> 
+        </div> 
+        
+        
+        <div id="content">	
+                
+            <div class="section"> 
+    
+                <h2>Coordinates</h2> 
+                <p> 
+                <form method="post" action=""> 
+                    Latitude: <input class="required" type="text" name="latitude" id="latitude" value="53.34870686020199" />&nbsp;&nbsp;
+                    Longitude: <input class="required" type="text" name="longitude" id="longitude" value="-6.267356872558594" /> 
+                    <br /><br /> 
+                    <div style="font-style: italic;">Drag the marker on the map to set the coordinates:</div> 
+                    <br /> 
+                    <div id="map" style="width: 600px; height: 420px"></div> 
+                </form> 
+                </p> 
+                
+            </div><!-- end .section --> 
+            
+            
+            <div id="concept" class="section"> 
+            
+                <h3>1. Concept</h3> 
+                <p>Using a google map you can allow your users to set locations by simply dragging a marker on the map.</p>	
+                
+            </div><!-- end .section --> 
+            
+                    
+            <div id="howworks" class="section"> 
+            
+                <h3>2. How It Works</h3>	
+                <p>Two fields - one for longitue and one for latitude - are updated as the marker is dragged on the map. These fields could be hidden as well. Putting them into a form and adding a submit button is all you need to allow users to update locations.</p>	
+                
+            </div><!-- end .section --> 
+    
+            
+            <div id="download" class="section"> 
+            
+                <h3>3. Download</h3> 
+                    <pre>Latitude: &lt;input class="required" type="text" name="latitude" id="latitude" value="53.34870686020199" /&gt; 
+Longitude: &lt;input class="required" type="text" name="longitude" id="longitude" value="-6.267356872558594" /&gt;
+&lt;br /&gt;&lt;br /&gt;
+&lt;div id="map" style="width: 600px; height: 420px"&gt;&lt;/div&gt;
+ 
+&lt;!-- add your map api key here --&gt;
+&lt;script type="text/javascript" src="http://maps.google.com/maps?file=api&amp;v=2&amp;key="&gt;&lt;/script&gt;
+ 
+&lt;script type="text/javascript"&gt;	
+&lt;!--
+if (GBrowserIsCompatible()) 
+{
+    // create map and add controls
+    var map = new GMap2(document.getElementById("map"));
+    map.addControl(new GLargeMapControl());        
+    map.addControl(new GMapTypeControl());
+    
+    // set centre point of map
+    var centrePoint = new GLatLng('53.34870686020199', '-6.267356872558594');
+    map.setCenter(centrePoint, 14);	
+    
+    // add a draggable marker
+    var marker = new GMarker(centrePoint, {draggable: true});
+    map.addOverlay(marker);
+    
+    // add a drag listener to the map
+    GEvent.addListener(marker, "dragend", function() {
+        var point = marker.getPoint();
+        map.panTo(point);
+        document.getElementById("latitude").value = point.lat();
+        document.getElementById("longitude").value = point.lng();
+    });
+}
+//--&gt;
+&lt;/script&gt;
+                    </pre> 
+                
+            </div><!-- endsection --> 
+        
+            
+            <div id="comments"class="section"> 
+                <h3>4. Comments</h3> 
+                
+ 
+        
+        
+        <div class="comment"> 
+        
+        <div class="left"> 
+        <a href="www.bt.com" title="www.bt.com">		<img src="http://www.gravatar.com/avatar.php?gravatar_id=1f45a42e30fe940a927b774ade28253c&amp;default=http://www.putyourlightson.net/public/images/blank_avatar.gif&amp;size=30&amp;rating=PG" alt="Blank Avatar" /> 
+        </a>		<br />	
+        <a href="www.bt.com" title="www.bt.com">		<span class="author">Paulo Antunes</span> 
+        </a>		<br /> 
+        <span class="date">22 December 2007</span> 
+        <br /> 
+        </div> 
+        
+        <div class="right"> 
+        <p><br />Hi Ben,<br /> 
+Great application!!<br /> 
+I was looking for to get coordinates by an street address.<br /> 
+Is this available? for free access.<br /> 
+I'm trying to find some street address coordinates to see them in Google Earth.<br /> 
+Would you give me any hint on how to get this?<br /> 
+Merry Christmas!<br /> 
+Paulo Antunes - +55 11 9135 5188<br /> 
+São Paulo - Brazil</p> 
+        </div> 
+        
+        <div class="clear"></div> 
+    </div>	
+        
+        
+        <div class="admin_comment"> 
+        
+        <div class="left"> 
+        <a href="http://www.putyourlightson.net" title="http://www.putyourlightson.net">		<img src="http://www.gravatar.com/avatar.php?gravatar_id=d456ed535bb974f1721a62a9670d4086&amp;default=http://www.putyourlightson.net/public/images/blank_avatar.gif&amp;size=30&amp;rating=PG" alt="Blank Avatar" /> 
+        </a>		<br />	
+        <a href="http://www.putyourlightson.net" title="http://www.putyourlightson.net">		<span class="author">Ben</span> 
+        </a>		<br /> 
+        <span class="date">26 December 2007</span> 
+        <br /> 
+        </div> 
+        
+        <div class="right"> 
+        <p><br />hi paulo, i will be posting this in the (hopefully) near future.  in the meantime, here is a link to the google maps geocoder, which can be used to get coordinates from addresses:<br /> 
+<br /> 
+http://code.google.com/apis/maps/documentation/services.html#Geocoding<br /> 
+<br /> 
+good luck!</p> 
+        </div> 
+        
+        <div class="clear"></div> 
+    </div>	
+        
+        
+        <div class="comment"> 
+        
+        <div class="left"> 
+                <img src="http://www.gravatar.com/avatar.php?gravatar_id=fe5dda56cf08b77c1f3ab3fc98560d4e&amp;default=http://www.putyourlightson.net/public/images/blank_avatar.gif&amp;size=30&amp;rating=PG" alt="Blank Avatar" /> 
+                <br />	
+                <span class="author">Andrew (Ireland)</span> 
+                <br /> 
+        <span class="date">27 December 2007</span> 
+        <br /> 
+        </div> 
+        
+        <div class="right"> 
+        <p><br />well done on a great site. I've been looking for this kind of simple functionality for some time and to date I was jumping between a couple <br /> 
+of sites in order to find coordinates for geocaching etc. It might be a nice idea to add a page for converting different formats for coordinates also. These are readily available but it might be useful to have it in your site also. Thanks</p> 
+        </div> 
+        
+        <div class="clear"></div> 
+    </div>	
+        
+        
+        <div class="comment"> 
+        
+        <div class="left"> 
+                <img src="http://www.gravatar.com/avatar.php?gravatar_id=038805312290d6c76f990f186b8dfc19&amp;default=http://www.putyourlightson.net/public/images/blank_avatar.gif&amp;size=30&amp;rating=PG" alt="Blank Avatar" /> 
+                <br />	
+                <span class="author">Mark Bowen</span> 
+                <br /> 
+        <span class="date">12 May 2008</span> 
+        <br /> 
+        </div> 
+        
+        <div class="right"> 
+        <p><br />Hi Ben,<br /> 
+<br /> 
+This looks really interesting. Well done on it. Just to answer the other question about getting co-ordinates for an address there is a way to do it without using any of the APIs if you want to. It involves going to the address in [url="http://maps.google.com"]Google Maps[/url] that you want to find the co-ordinates for and then using the following Javascript in your browser [i](make this a bookmark so that you can use it quickly)[/i]<br /> 
+<br /> 
+[code]<br /> 
+javasc*ipt:void(prompt('',gApplication.getMap().getCenter()))<br /> 
+[/code]<br /> 
+[i]I have taken out a few of the letters above so that hopefully the code will show here. Hopefully it should be obvious what to replace the [b]*[/b] symbols with but if not then just get in touch with me and I can send you a file with the code in instead[/i]<br /> 
+<br /> 
+Hope that helps.<br /> 
+<br /> 
+Best wishes,<br /> 
+<br /> 
+Mark<br /> 
+<br /> 
+</p> 
+        </div> 
+        
+        <div class="clear"></div> 
+    </div>	
+        
+        
+        <div class="comment"> 
+        
+        <div class="left"> 
+        <a href="www.atlantanewhomesdirectory.com" title="www.atlantanewhomesdirectory.com">		<img src="http://www.gravatar.com/avatar.php?gravatar_id=cff0e40432cc05d19e8d75793efc7675&amp;default=http://www.putyourlightson.net/public/images/blank_avatar.gif&amp;size=30&amp;rating=PG" alt="Blank Avatar" /> 
+        </a>		<br />	
+        <a href="www.atlantanewhomesdirectory.com" title="www.atlantanewhomesdirectory.com">		<span class="author">steve hess</span> 
+        </a>		<br /> 
+        <span class="date">30 May 2008</span> 
+        <br /> 
+        </div> 
+        
+        <div class="right"> 
+        <p><br />Hi Mark,<br /> 
+i am trying to use this concept...but allow users to give me their address first as the starting point...versus a hardcoded lat/lon. would you be willing to send me the script that would allow for that users input?</p> 
+        </div> 
+        
+        <div class="clear"></div> 
+    </div>	
+        
+        
+        <div class="admin_comment"> 
+        
+        <div class="left"> 
+        <a href="http://www.putyourlightson.net" title="http://www.putyourlightson.net">		<img src="http://www.gravatar.com/avatar.php?gravatar_id=d456ed535bb974f1721a62a9670d4086&amp;default=http://www.putyourlightson.net/public/images/blank_avatar.gif&amp;size=30&amp;rating=PG" alt="Blank Avatar" /> 
+        </a>		<br />	
+        <a href="http://www.putyourlightson.net" title="http://www.putyourlightson.net">		<span class="author">Ben</span> 
+        </a>		<br /> 
+        <span class="date">30 May 2008</span> 
+        <br /> 
+        </div> 
+        
+        <div class="right"> 
+        <p><br />hi steve,<br /> 
+<br /> 
+i assume your question was directed at me?  here is how i would do it.<br /> 
+<br /> 
+<pre>address = "Dublin, Ireland";
+ 
+geocoder = new GClientGeocoder();
+ 
+geocoder.getLatLng(address,  
+  function(point) {
+    if (!point) {
+      alert(address + " not found");
+    } 
+    else {  
+      // set centre of map and add marker to centre of map and make it draggable
+      map.setCenter(point, 12);
+      var marker = new GMarker(point, {draggable: true});
+      map.addOverlay(marker);
+    
+      // add listener to marker
+      GEvent.addListener(marker, "dragend", function() {
+        var point = marker.getPoint();
+        map.panTo(point);
+        document.getElementById("latitude").value = point.lat();
+        document.getElementById("longitude").value = point.lng();
+      });
+    }
+  }
+);
+</pre></p> 
+        </div> 
+        
+        <div class="clear"></div> 
+    </div>	
+        
+        
+        <div class="comment"> 
+        
+        <div class="left"> 
+        <a href="www.atlantanewhomesdirectory.com" title="www.atlantanewhomesdirectory.com">		<img src="http://www.gravatar.com/avatar.php?gravatar_id=cff0e40432cc05d19e8d75793efc7675&amp;default=http://www.putyourlightson.net/public/images/blank_avatar.gif&amp;size=30&amp;rating=PG" alt="Blank Avatar" /> 
+        </a>		<br />	
+        <a href="www.atlantanewhomesdirectory.com" title="www.atlantanewhomesdirectory.com">		<span class="author">steve hess</span> 
+        </a>		<br /> 
+        <span class="date">30 May 2008</span> 
+        <br /> 
+        </div> 
+        
+        <div class="right"> 
+        <p><br />Hi Ben and thanks for the fast response! being a novice at this, could you show your code within the script tags in their entirety? not sure what to replace with your code. thanks again!</p> 
+        </div> 
+        
+        <div class="clear"></div> 
+    </div>	
+        
+        
+        <div class="comment"> 
+        
+        <div class="left"> 
+        <a href="www.atlantanewhomesdirectory.com" title="www.atlantanewhomesdirectory.com">		<img src="http://www.gravatar.com/avatar.php?gravatar_id=cff0e40432cc05d19e8d75793efc7675&amp;default=http://www.putyourlightson.net/public/images/blank_avatar.gif&amp;size=30&amp;rating=PG" alt="Blank Avatar" /> 
+        </a>		<br />	
+        <a href="www.atlantanewhomesdirectory.com" title="www.atlantanewhomesdirectory.com">		<span class="author">steve hess</span> 
+        </a>		<br /> 
+        <span class="date">30 May 2008</span> 
+        <br /> 
+        </div> 
+        
+        <div class="right"> 
+        <p><br />actually...scratch that...but question:<br /> 
+<br /> 
+by leaving all else the same except for accepting a variable address, how does that affect this concept...it doesn't set the initial lat/lon in the form or change the center point. did that make sense?<br /> 
+<br /> 
+<br /> 
+ <br /> 
+&lt;!--<br /> 
+if (GBrowserIsCompatible()) <br /> 
+{<br /> 
+ var map = new GMap2(document.getElementById("map"));<br /> 
+ map.addControl(new GLargeMapControl());        <br /> 
+ map.addControl(new GMapTypeControl());<br /> 
+ <br /> 
+ if ("34.051" == "" || "-84.071" == "")<br /> 
+ {<br /> 
+<br /> 
+<br /> 
+<br /> 
+var address = "";<br /> 
+<br /> 
+var geocoder = new GClientGeocoder();<br /> 
+<br /> 
+geocoder.getLatLng(address,  <br /> 
+  function(point) {<br /> 
+    if (!point) {<br /> 
+      alert&#40;address + " not found"&#41;;<br /> 
+    } <br /> 
+    else {  <br /> 
+      // set centre of map and add marker to centre of map and make it draggable<br /> 
+      map.setCenter(point, 12);<br /> 
+      var marker = new GMarker(point, {draggable: true});<br /> 
+      map.addOverlay(marker);<br /> 
+    <br /> 
+      // add listener to marker<br /> 
+      GEvent.addListener(marker, "dragend", function() {<br /> 
+        var point = marker.getPoint();<br /> 
+        map.panTo(point);<br /> 
+        document.getElementById("latitude").value = point.lat();<br /> 
+        document.getElementById("longitude").value = point.lng();<br /> 
+<br /> 
+<br /> 
+<br /> 
+<br /> 
+<br /> 
+<br /> 
+<br /> 
+<br /> 
+ });<br /> 
+ }<br /> 
+ });<br /> 
+ }<br /> 
+<br /> 
+ else<br /> 
+ {<br /> 
+ var centrePoint = new GLatLng('34.051', '-84.071');<br /> 
+ map.setCenter(centrePoint, 16); <br /> 
+ <br /> 
+ var marker = new GMarker(centrePoint, {draggable: true});<br /> 
+ map.addOverlay(marker);<br /> 
+ <br /> 
+ GEvent.addListener(marker, "dragend", function() {<br /> 
+ var point = marker.getPoint();<br /> 
+ map.panTo(point);<br /> 
+ document.getElementById("latitude").value = point.lat();<br /> 
+ document.getElementById("longitude").value = point.lng();<br /> 
+        });<br /> 
+ } <br /> 
+}<br /> 
+//--&gt;<br /> 
+&lt;/SCRIPT&gt;</p> 
+        </div> 
+        
+        <div class="clear"></div> 
+    </div>	
+        
+        
+        <div class="admin_comment"> 
+        
+        <div class="left"> 
+        <a href="http://www.putyourlightson.net" title="http://www.putyourlightson.net">		<img src="http://www.gravatar.com/avatar.php?gravatar_id=d456ed535bb974f1721a62a9670d4086&amp;default=http://www.putyourlightson.net/public/images/blank_avatar.gif&amp;size=30&amp;rating=PG" alt="Blank Avatar" /> 
+        </a>		<br />	
+        <a href="http://www.putyourlightson.net" title="http://www.putyourlightson.net">		<span class="author">Ben</span> 
+        </a>		<br /> 
+        <span class="date">30 May 2008</span> 
+        <br /> 
+        </div> 
+        
+        <div class="right"> 
+        <p><br />it will set the center point of the map to the address.  in your code above this will only happen if either the latitude or longitude is blank.  so the important line is:<br /> 
+<br /> 
+if ("34.051" == "" || "-84.071" == "")</p> 
+        </div> 
+        
+        <div class="clear"></div> 
+    </div>	
+        
+        
+        <div class="comment"> 
+        
+        <div class="left"> 
+        <a href="www.atlantanewhomesdirectory.com" title="www.atlantanewhomesdirectory.com">		<img src="http://www.gravatar.com/avatar.php?gravatar_id=cff0e40432cc05d19e8d75793efc7675&amp;default=http://www.putyourlightson.net/public/images/blank_avatar.gif&amp;size=30&amp;rating=PG" alt="Blank Avatar" /> 
+        </a>		<br />	
+        <a href="www.atlantanewhomesdirectory.com" title="www.atlantanewhomesdirectory.com">		<span class="author">steve hess</span> 
+        </a>		<br /> 
+        <span class="date">30 May 2008</span> 
+        <br /> 
+        </div> 
+        
+        <div class="right"> 
+        <p><br />ok...gotcha...so i remove the lat/lon and the center point is now set.<br /> 
+<br /> 
+so then is there a way to auto adjust the form fields so that the user doesn't need to move the marker for the form to recognize the center point coordinates?</p> 
+        </div> 
+        
+        <div class="clear"></div> 
+    </div>	
+        
+        
+        <div class="admin_comment"> 
+        
+        <div class="left"> 
+        <a href="http://www.putyourlightson.net" title="http://www.putyourlightson.net">		<img src="http://www.gravatar.com/avatar.php?gravatar_id=d456ed535bb974f1721a62a9670d4086&amp;default=http://www.putyourlightson.net/public/images/blank_avatar.gif&amp;size=30&amp;rating=PG" alt="Blank Avatar" /> 
+        </a>		<br />	
+        <a href="http://www.putyourlightson.net" title="http://www.putyourlightson.net">		<span class="author">Ben</span> 
+        </a>		<br /> 
+        <span class="date">30 May 2008</span> 
+        <br /> 
+        </div> 
+        
+        <div class="right"> 
+        <p><br />just add the following lines under map.setCenter(centrePoint, 16)<br /> 
+<br /> 
+document.getElementById("latitude").value = point.lat();<br /> 
+document.getElementById("longitude").value = point.lng();</p> 
+        </div> 
+        
+        <div class="clear"></div> 
+    </div>	
+        
+        
+        <div class="comment hidden""> 
+        
+        <div class="left"> 
+        <a href="www.atlantanewhomesdirectory.com" title="www.atlantanewhomesdirectory.com">		<img src="http://www.gravatar.com/avatar.php?gravatar_id=cff0e40432cc05d19e8d75793efc7675&amp;default=http://www.putyourlightson.net/public/images/blank_avatar.gif&amp;size=30&amp;rating=PG" alt="Blank Avatar" /> 
+        </a>		<br />	
+        <a href="www.atlantanewhomesdirectory.com" title="www.atlantanewhomesdirectory.com">		<span class="author">steve hess</span> 
+        </a>		<br /> 
+        <span class="date">30 May 2008</span> 
+        <br /> 
+        </div> 
+        
+        <div class="right"> 
+        <p><br />so close....I owe you Ben! <br /> 
+<br /> 
+the form isn't taking new coordinates unless i move the marker. basically, i'm using a query pull the persons address...and have the form use the lat/lon from that as if they had dragged the marker....versus using the forms initial values. does that make sense?<br /> 
+<br /> 
+here's my url:<br /> 
+http://66.155.125.63/maps_getcoordinates4.asp?address=atlanta, ga<br /> 
+<br /> 
+<br /> 
+<br /> 
+here's the script:<br /> 
+<br /> 
+<br /> 
+ <br /> 
+<br /> 
+if (GBrowserIsCompatible()) <br /> 
+{<br /> 
+var map = new GMap2(document.getElementById("map"));<br /> 
+map.addControl(new GLargeMapControl()); <br /> 
+map.addControl(new GMapTypeControl());<br /> 
+<br /> 
+if ("" == "" || "" == "")<br /> 
+{<br /> 
+<br /> 
+<br /> 
+<br /> 
+var address = "";<br /> 
+<br /> 
+var geocoder = new GClientGeocoder();<br /> 
+<br /> 
+geocoder.getLatLng(address, <br /> 
+function(point) {<br /> 
+if (!point) {<br /> 
+alert(address + " not found");<br /> 
+} <br /> 
+else { <br /> 
+// set centre of map and add marker to centre of map and make it draggable<br /> 
+map.setCenter(point, 12);<br /> 
+var marker = new GMarker(point, {draggable: true});<br /> 
+map.addOverlay(marker);<br /> 
+<br /> 
+// add listener to marker<br /> 
+GEvent.addListener(marker, "dragend", function() {<br /> 
+var point = marker.getPoint();<br /> 
+map.panTo(point);<br /> 
+document.getElementById("latitude").value = point.lat();<br /> 
+document.getElementById("longitude").value = point.lng();<br /> 
+});<br /> 
+}<br /> 
+});<br /> 
+}<br /> 
+<br /> 
+else<br /> 
+{<br /> 
+var centrePoint = new GLatLng('34.051', '-84.071');<br /> 
+map.setCenter(centrePoint, 16); <br /> 
+document.getElementById("latitude").value = point.lat();<br /> 
+document.getElementById("longitude").value = point.lng();<br /> 
+<br /> 
+<br /> 
+var marker = new GMarker(centrePoint, {draggable: true});<br /> 
+map.addOverlay(marker);<br /> 
+<br /> 
+GEvent.addListener(marker, "dragend", function() {<br /> 
+var point = marker.getPoint();<br /> 
+map.panTo(point);<br /> 
+document.getElementById("latitude").value = point.lat();<br /> 
+document.getElementById("longitude").value = point.lng();<br /> 
+});<br /> 
+} <br /> 
+}<br /> 
+</p> 
+        </div> 
+        
+        <div class="clear"></div> 
+    </div>	
+        
+        
+        <div class="admin_comment hidden""> 
+        
+        <div class="left"> 
+        <a href="http://www.putyourlightson.net" title="http://www.putyourlightson.net">		<img src="http://www.gravatar.com/avatar.php?gravatar_id=d456ed535bb974f1721a62a9670d4086&amp;default=http://www.putyourlightson.net/public/images/blank_avatar.gif&amp;size=30&amp;rating=PG" alt="Blank Avatar" /> 
+        </a>		<br />	
+        <a href="http://www.putyourlightson.net" title="http://www.putyourlightson.net">		<span class="author">Ben</span> 
+        </a>		<br /> 
+        <span class="date">30 May 2008</span> 
+        <br /> 
+        </div> 
+        
+        <div class="right"> 
+        <p><br />it should be:<br /> 
+<br /> 
+document.getElementById("latitude").value = centrePoint.lat();<br /> 
+document.getElementById("longitude").value = centrePoint.lng();</p> 
+        </div> 
+        
+        <div class="clear"></div> 
+    </div>	
+        
+        
+        <div class="comment hidden""> 
+        
+        <div class="left"> 
+                <img src="http://www.gravatar.com/avatar.php?gravatar_id=15b3d95ead1a8904581d1aad10e6e3e5&amp;default=http://www.putyourlightson.net/public/images/blank_avatar.gif&amp;size=30&amp;rating=PG" alt="Blank Avatar" /> 
+                <br />	
+                <span class="author">Stefan</span> 
+                <br /> 
+        <span class="date">13 September 2008</span> 
+        <br /> 
+        </div> 
+        
+        <div class="right"> 
+        <p><br />Wondering when this module is available. Would be an interesting asset to my site.</p> 
+        </div> 
+        
+        <div class="clear"></div> 
+    </div>	
+        
+        
+        <div class="admin_comment hidden""> 
+        
+        <div class="left"> 
+        <a href="http://www.putyourlightson.net" title="http://www.putyourlightson.net">		<img src="http://www.gravatar.com/avatar.php?gravatar_id=d456ed535bb974f1721a62a9670d4086&amp;default=http://www.putyourlightson.net/public/images/blank_avatar.gif&amp;size=30&amp;rating=PG" alt="Blank Avatar" /> 
+        </a>		<br />	
+        <a href="http://www.putyourlightson.net" title="http://www.putyourlightson.net">		<span class="author">Ben</span> 
+        </a>		<br /> 
+        <span class="date">14 September 2008</span> 
+        <br /> 
+        </div> 
+        
+        <div class="right"> 
+        <p><br />this isn't a module, just some javascript code that i posted as an example of using google maps to set coordinates</p> 
+        </div> 
+        
+        <div class="clear"></div> 
+    </div>	
+        
+        
+        <div class="comment hidden""> 
+        
+        <div class="left"> 
+                <img src="http://www.gravatar.com/avatar.php?gravatar_id=8ca50c357529e2c1f40bbc00fde4f04a&amp;default=http://www.putyourlightson.net/public/images/blank_avatar.gif&amp;size=30&amp;rating=PG" alt="Blank Avatar" /> 
+                <br />	
+                <span class="author">noliy vise</span> 
+                <br /> 
+        <span class="date">26 September 2008</span> 
+        <br /> 
+        </div> 
+        
+        <div class="right"> 
+        <p><br />I can't use your stupid maps.</p> 
+        </div> 
+        
+        <div class="clear"></div> 
+    </div>	
+        
+        
+        <div class="comment hidden""> 
+        
+        <div class="left"> 
+                <img src="http://www.gravatar.com/avatar.php?gravatar_id=0d1b42d6027840edd41a86a37e3a2612&amp;default=http://www.putyourlightson.net/public/images/blank_avatar.gif&amp;size=30&amp;rating=PG" alt="Blank Avatar" /> 
+                <br />	
+                <span class="author">Dave P</span> 
+                <br /> 
+        <span class="date">12 February 2009</span> 
+        <br /> 
+        </div> 
+        
+        <div class="right"> 
+        <p><br />I am taking part in the "Boyne Riders" photographic Rally 2009.  Thay have given a list of places with GP co-ordinates.  I was hoping to use your site to locate positions and then mark them into my OSI Road Atlas which does not have co-ordinated.  However I'm having problems.  Example Dunlavin Courthouse is one location given as Nat GRid 87192 01689 or N 53 03.541 W6 42.017.  When I position The Orange marker as close to these co-ordinates as possible, it shows me I'm in Wicklow Gap and Dunlavin is way off to the left!  Am I doing something wrong or should I expect to be positioned over Dunlavin?<br /> 
+Thanks <br /> 
+Dave</p> 
+        </div> 
+        
+        <div class="clear"></div> 
+    </div>	
+        
+        
+        <div class="admin_comment hidden""> 
+        
+        <div class="left"> 
+                <img src="http://www.gravatar.com/avatar.php?gravatar_id=d456ed535bb974f1721a62a9670d4086&amp;default=http://www.putyourlightson.net/public/images/blank_avatar.gif&amp;size=30&amp;rating=PG" alt="Blank Avatar" /> 
+                <br />	
+                <span class="author">Ben</span> 
+                <br /> 
+        <span class="date">13 February 2009</span> 
+        <br /> 
+        </div> 
+        
+        <div class="right"> 
+        <p><br />hi dave, i checked on google maps and the coordinates of dunlavin are 53.060199,-6.70372. you can get this by searching for dunlavin and once found click on the Link button on the right hand side. this gives you a url which contains the text &ll=53.060199,-6.70372, the latitude and longitude.<br /> 
+<br /> 
+the National Grid coordinates you have are based on a different system of navigation and that is why you are off on the map, see http://www.ordnancesurvey.co.uk/oswebsite/freefun/geofacts/geo0667.html</p> 
+        </div> 
+        
+        <div class="clear"></div> 
+    </div>	
+        
+        
+        <div class="comment hidden""> 
+        
+        <div class="left"> 
+                <img src="http://www.gravatar.com/avatar.php?gravatar_id=79106ccfe22d22c1542e616f6b000eb6&amp;default=http://www.putyourlightson.net/public/images/blank_avatar.gif&amp;size=30&amp;rating=PG" alt="Blank Avatar" /> 
+                <br />	
+                <span class="author">Scott Baldwin</span> 
+                <br /> 
+        <span class="date">17 March 2009</span> 
+        <br /> 
+        </div> 
+        
+        <div class="right"> 
+        <p><br />Thank you for this very useful app.  It would very nice for mariners to have the coordinates in degree, minutes, seconds.  I found this page which does the conversion: http://www.fcc.gov/mb/audio/bickel/DDDMMSS-decimal.html<br /> 
+but it would be nice not to have to do this extra step. <br /> 
+Thanks again.</p> 
+        </div> 
+        
+        <div class="clear"></div> 
+    </div>	
+        
+        
+        <div class="comment hidden""> 
+        
+        <div class="left"> 
+        <a href="www.rsimexico.com" title="www.rsimexico.com">		<img src="http://www.gravatar.com/avatar.php?gravatar_id=1d51aba014ebe894a2854080ba35ffea&amp;default=http://www.putyourlightson.net/public/images/blank_avatar.gif&amp;size=30&amp;rating=PG" alt="Blank Avatar" /> 
+        </a>		<br />	
+        <a href="www.rsimexico.com" title="www.rsimexico.com">		<span class="author">Pablo Bretado</span> 
+        </a>		<br /> 
+        <span class="date">01 April 2009</span> 
+        <br /> 
+        </div> 
+        
+        <div class="right"> 
+        <p><br />Hi dude please give me the source.... this is obsolutte they i need ...<br /> 
+please please</p> 
+        </div> 
+        
+        <div class="clear"></div> 
+    </div>	
+        
+        
+        <div class="admin_comment hidden""> 
+        
+        <div class="left"> 
+                <img src="http://www.gravatar.com/avatar.php?gravatar_id=d456ed535bb974f1721a62a9670d4086&amp;default=http://www.putyourlightson.net/public/images/blank_avatar.gif&amp;size=30&amp;rating=PG" alt="Blank Avatar" /> 
+                <br />	
+                <span class="author">Ben</span> 
+                <br /> 
+        <span class="date">02 April 2009</span> 
+        <br /> 
+        </div> 
+        
+        <div class="right"> 
+        <p><br />the source was always available in the html, but i have now added it to the download section. enjoy!</p> 
+        </div> 
+        
+        <div class="clear"></div> 
+    </div>	
+        
+        
+        <div class="comment hidden""> 
+        
+        <div class="left"> 
+        <a href="x" title="x">		<img src="http://www.gravatar.com/avatar.php?gravatar_id=75ee540051835742aad119a0040d7fb4&amp;default=http://www.putyourlightson.net/public/images/blank_avatar.gif&amp;size=30&amp;rating=PG" alt="Blank Avatar" /> 
+        </a>		<br />	
+        <a href="x" title="x">		<span class="author">ravi</span> 
+        </a>		<br /> 
+        <span class="date">09 April 2009</span> 
+        <br /> 
+        </div> 
+        
+        <div class="right"> 
+        <p><br />I want place the marker at original position when dragging is completed. Please help in  this</p> 
+        </div> 
+        
+        <div class="clear"></div> 
+    </div>	
+        
+        
+        <div class="comment hidden""> 
+        
+        <div class="left"> 
+                <img src="http://www.gravatar.com/avatar.php?gravatar_id=d3cb45a211edc902691049452f20060c&amp;default=http://www.putyourlightson.net/public/images/blank_avatar.gif&amp;size=30&amp;rating=PG" alt="Blank Avatar" /> 
+                <br />	
+                <span class="author">vabs</span> 
+                <br /> 
+        <span class="date">22 September 2009</span> 
+        <br /> 
+        </div> 
+        
+        <div class="right"> 
+        <p><br />hi could u mail me the script that takes latitude and longitude as input to show maps</p> 
+        </div> 
+        
+        <div class="clear"></div> 
+    </div>	
+        
+        
+        <div class="comment hidden""> 
+        
+        <div class="left"> 
+                <img src="http://www.gravatar.com/avatar.php?gravatar_id=58db658115814d70efddc126586a4cc6&amp;default=http://www.putyourlightson.net/public/images/blank_avatar.gif&amp;size=30&amp;rating=PG" alt="Blank Avatar" /> 
+                <br />	
+                <span class="author">jeuue</span> 
+                <br /> 
+        <span class="date">07 February 2010</span> 
+        <br /> 
+        </div> 
+        
+        <div class="right"> 
+        <p><br />good job friends</p> 
+        </div> 
+        
+        <div class="clear"></div> 
+    </div>	
+        
+        
+        <div class="comment hidden""> 
+        
+        <div class="left"> 
+        <a href="www.thoughtfoucs.com" title="www.thoughtfoucs.com">		<img src="http://www.gravatar.com/avatar.php?gravatar_id=6cd11e0ccf90b97800e928e098d435c0&amp;default=http://www.putyourlightson.net/public/images/blank_avatar.gif&amp;size=30&amp;rating=PG" alt="Blank Avatar" /> 
+        </a>		<br />	
+        <a href="www.thoughtfoucs.com" title="www.thoughtfoucs.com">		<span class="author">Amarnath</span> 
+        </a>		<br /> 
+        <span class="date">10 February 2010</span> 
+        <br /> 
+        </div> 
+        
+        <div class="right"> 
+        <p><br />Hi,<br /> 
+<br /> 
+I am able to place the marker on the map on any particular location(with location name as input or latitude and longitude as input).<br /> 
+But now i want to place the markers on the hospitals, banks etc (areas of interest) which are near to the particular input location.<br /> 
+How can I do this using javascript and google maps.</p> 
+        </div> 
+        
+        <div class="clear"></div> 
+    </div>	
+        
+        
+        <div class="comment hidden""> 
+        
+        <div class="left"> 
+        <a href="http://mahmoud.abdel-fattah.net" title="http://mahmoud.abdel-fattah.net">		<img src="http://www.gravatar.com/avatar.php?gravatar_id=d26359eaade8fa09736f1a6cacc59e3c&amp;default=http://www.putyourlightson.net/public/images/blank_avatar.gif&amp;size=30&amp;rating=PG" alt="Blank Avatar" /> 
+        </a>		<br />	
+        <a href="http://mahmoud.abdel-fattah.net" title="http://mahmoud.abdel-fattah.net">		<span class="author">Mahmoud M. Abdel-Fattah</span> 
+        </a>		<br /> 
+        <span class="date">08 March 2010</span> 
+        <br /> 
+        </div> 
+        
+        <div class="right"> 
+        <p><br />Thanks a lot for sharing, I was looking for it long time a go !</p> 
+        </div> 
+        
+        <div class="clear"></div> 
+    </div>	
+        
+        
+        <div class="comment hidden""> 
+        
+        <div class="left"> 
+                <img src="http://www.gravatar.com/avatar.php?gravatar_id=ac2d72a18995858bf9a60194bda8bfde&amp;default=http://www.putyourlightson.net/public/images/blank_avatar.gif&amp;size=30&amp;rating=PG" alt="Blank Avatar" /> 
+                <br />	
+                <span class="author">Fabian</span> 
+                <br /> 
+        <span class="date">14 April 2010</span> 
+        <br /> 
+        </div> 
+        
+        <div class="right"> 
+        <p><br />Hi, Ben: good work!! I need a help with the code to apply this concept but not with draggable marker. I need the visitor can make zoom a move controls to the desired place and  make click  to update position. Because when they use dragable markers go to the desired place and lost the dragable marker in the process of making zoom. Thanks a lot</p> 
+        </div> 
+        
+        <div class="clear"></div> 
+    </div>	
+        
+        
+        <div class="comment hidden""> 
+        
+        <div class="left"> 
+        <a href="i dont have" title="i dont have">		<img src="http://www.gravatar.com/avatar.php?gravatar_id=890c88c9d04f77043f2f2b4f0b58d93f&amp;default=http://www.putyourlightson.net/public/images/blank_avatar.gif&amp;size=30&amp;rating=PG" alt="Blank Avatar" /> 
+        </a>		<br />	
+        <a href="i dont have" title="i dont have">		<span class="author">duminda</span> 
+        </a>		<br /> 
+        <span class="date">09 July 2010</span> 
+        <br /> 
+        </div> 
+        
+        <div class="right"> 
+        <p><br />hi ben,<br /> 
+This code seems really intersting. but when i paste it in visual studio, the<br /> 
+&lt;input class="required" type="text" name="latitude" id="latitude" value="53.34870686020199" /&gt; <br /> 
+Longitude: &lt;input class="required" type="text" name="longitude" id="longitude" value="-6.267356872558594" /&gt; <br /> 
+<br /> 
+that input class="required" part gives an error telling no css class is defined.<br /> 
+<br /> 
+Can you please help me out?<br /> 
+we should put this on the body of the page right?<br /> 
+<br /> 
+Thank you</p> 
+        </div> 
+        
+        <div class="clear"></div> 
+    </div>	
+        
+        
+        <div class="comment hidden""> 
+        
+        <div class="left"> 
+        <a href="http://www.goodnewsdesign.com" title="http://www.goodnewsdesign.com">		<img src="http://www.gravatar.com/avatar.php?gravatar_id=225f487dabc6abcfcda87a675e0a458c&amp;default=http://www.putyourlightson.net/public/images/blank_avatar.gif&amp;size=30&amp;rating=PG" alt="Blank Avatar" /> 
+        </a>		<br />	
+        <a href="http://www.goodnewsdesign.com" title="http://www.goodnewsdesign.com">		<span class="author">Dayton Perkins</span> 
+        </a>		<br /> 
+        <span class="date">03 August 2010</span> 
+        <br /> 
+        </div> 
+        
+        <div class="right"> 
+        <p><br />Hey, thanks, Ben. I am doing a bog mapping project, and I can see from the beginning that Gmap2 is going to be the way to go. Got to find out how to add mouse wheel zoom, but this one was an easy start! Thanks again!</p> 
+        </div> 
+        
+        <div class="clear"></div> 
+    </div>	
+        
+        <br/> 
+    <h4><a href="#" onclick="$('.admin_comment.hidden, .comment.hidden').show(); $(this).hide(); return false;">&raquo; View more comments</a></h4> 
+        
+    <br /> 
+    <h4>Leave A Comment</h4> 
+    
+    <div id="leave">	
+    <form id="comment_form" action="" onsubmit="sendCommentRequest('coordinates'); return false;"> 
+        <div class="field"> 
+        <input type="text" class="required" name="author" id="author" /> 
+        name (required)
+        </div> 
+        <div class="field"> 
+        <input type="text" class="required validate-email" name="author_email" id="author_email" /> 
+        email (required but will be kept completely private)
+        </div> 
+        <div class="field"> 
+        <input type="text" name="website" id="website" /> 
+        website
+        </div> 
+        <p><textarea class="required" name="description" id="description" rows="20" cols="10"></textarea></p> 
+        <div id="comment_indicator" class="ajax" style="display:none;"><img src="http://www.putyourlightson.net/public/images/indicator.gif" alt="Indicator" /></div> 
+        <div id="comment_response" class="ajax"></div> 
+        <div id="submit" class="submit"><input type="submit" value="Submit Comment" /></div> 
+    </form>	
+    
+    </div>	
+        
+            </div><!-- endsection --> 
+            
+        </div> 
+ 
+    </div><!-- endmain --> 
+ 
+ 
+<script type="text/javascript" src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAA8C2KkUNEhJkBf62HRzuQxhSGHLwR-n5j_NjOKA7chW3yDMrcYBQUosT4GTLhPAyvBUNFtXbGLGC9wQ"></script> 
+ 
+<script type="text/javascript">	
+<!--
+if (GBrowserIsCompatible()) 
+{
+    var map = new GMap2(document.getElementById("map"));
+    map.addControl(new GLargeMapControl());        
+    map.addControl(new GMapTypeControl());
+    
+    if ("53.34870686020199" == "" || "-6.267356872558594" == "")
+    {
+        var geocoder = new GClientGeocoder();
+ 
+        geocoder.getLatLng('"Dublin", "Ireland"',	
+            function(point) {
+                if (!point) {
+                    alert(address + " not found");
+                } 
+                else {	
+                    
+                    map.setCenter(point, 12);
+                    var marker = new GMarker(point, {draggable: true});
+                    map.addOverlay(marker);
+                    
+                    
+                    GEvent.addListener(marker, "dragend", function() {
+                        var point = marker.getPoint();
+                        map.panTo(point);
+                        document.getElementById("latitude").value = point.lat();
+                        document.getElementById("longitude").value = point.lng();
+                    });
+            }
+            });
+    }
+ 
+    else
+    {
+    var centrePoint = new GLatLng('53.34870686020199', '-6.267356872558594');
+    map.setCenter(centrePoint, 14);	
+        
+    var marker = new GMarker(centrePoint, {draggable: true});
+    map.addOverlay(marker);
+        
+    GEvent.addListener(marker, "dragend", function() {
+        var point = marker.getPoint();
+        map.panTo(point);
+        document.getElementById("latitude").value = point.lat();
+        document.getElementById("longitude").value = point.lng();
+        });
+    }
+}
+//-->
+</script> 
+ 
+ 
+ 
+    <div id="footer"> 
+        <p>All work is licensed under the <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</a> unless otherwise stated. 
+        <br /> 
+        Feel free to use and modify it however you want but please link back to <a href="http://www.putyourlightson.net/">here</a>.
+        <br /> 
+        Powered by <a href="http://www.codeigniter.com/">CodeIgniter</a>.</p> 
+        
+        <p> 
+        <a href="http://www.codeigniter.com/"> 
+<img alt="CodeIgniter" title="CodeIgniter" style="border-width:0" src="http://www.putyourlightson.net/public/images/button-codeigniter.png" /></a> &nbsp;
+        <a href="http://creativecommons.org/licenses/by/3.0/"> 
+<img alt="Creative Commons License" title="Creative Commons License" style="border-width:0" src="http://www.putyourlightson.net/public/images/button-cc.png" /></a> 
+        </p> 
+    </div> 
+    <!-- [END] #footer --> 
+        
+</div> 
+<!-- [END] #wrapper --> 
+    
+    
+<script type="text/javascript"> 
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script> 
+<script type="text/javascript"> 
+    try {
+    var pageTracker = _gat._getTracker("UA-980830-5");
+    pageTracker._trackPageview();
+    } catch(err) {}
+</script> 
+    
+</body> 
+</html>	

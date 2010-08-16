@@ -139,21 +139,11 @@ class UserProperties(models.Model):
 class BusinessCategory(models.Model):
     business        = models.ForeignKey(Business)
     category        = models.ForeignKey(Category)
-
-'''
-class BusinessDetailsVal(models.Model):
+    
+class BusinessMarkers(models.Model):
     business        = models.ForeignKey(Business)
-
-
-class BusinessDetailsRef(models.Model):
-    prop_code       = models.CharField(max_length=250)
-    prop_title      = models.CharField(max_length=250)
-    prop_type       = models.CharField(max_length=100, choices=PROP_TYPES)
-    weight          = models.FloatField()
-    status          = models.CharField(max_length=10, choices=STATUSES)
-
-class BusinessDetailsRefValueRef(models.Model):
-    business_detail = models.ForeignKey(BusinessDetailsVal)
-    value           = models.CharField(max_length=255)
-    weight          = models.FloatField()
-'''
+    #lat             = models.
+    #lng             = models.
+    
+    
+    
