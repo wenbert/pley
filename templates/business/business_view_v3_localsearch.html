@@ -40,16 +40,18 @@
         <img src="http://labs.google.com/ridefinder/images/mm_20_yellow.png" /> = Area of interest<br/>
         <span id="show_add_marker" style="cursor: pointer;"><img src="/images/icons/add.png" alt=""/> Location not found? Click here to add a Marker for a New Location</span>
         
+    
         <div id="add_business_container" title="Add a business">
-            <h2>Business info</h2>
-        	{{ business_form.as_p }}
-            <h2>Telephone</h2>
-            {{ phone_form.as_p }}
-            <h2>Category</h2>
-            {{ business_category_form.as_p }}
-            <input id="add_marker" type="button" value="Add Marker"/>
-        </div>
-        
+            <form id="add_business_form">
+                <h2>Business info</h2>
+            	{{ business_form.as_p }}
+                <h2>Telephone</h2>
+                {{ phone_form.as_p }}
+                <h2>Category</h2>
+                {{ business_category_form.as_p }}
+                <input id="add_marker" type="button" value="Add Marker"/>
+            </form>
+        </div>        
         
         <div id="map_canvas" style="width: 470px; height: 300px"></div>
         <div id="map_message"></div>

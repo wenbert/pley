@@ -3,6 +3,29 @@
 Dynamically add a marker into map.
 */
 $(document).ready(function() {
+    $("#add_business_form").validate({
+        rules: {
+            name: {
+                required: true,
+                minlength: 2
+            },
+            website: {
+                url: true,
+                minlength: 2
+            }
+        },
+        messages: {
+            name: {
+                required: "Please enter a Business Name",
+                minlength: "Your Business Name must consist of at least 2 characters"
+            },
+            website: {
+                url: "You need to input a valid URL.",
+                minlength: "URL length not valid."
+            }
+        }
+    });
+    
     
     $("#show_add_marker").click(function() {
         $('#add_business_container').dialog('open');
@@ -17,7 +40,9 @@ $(document).ready(function() {
     
     $("#add_marker").click(function(){
         var container = $('#add_business_container')
-        container.dialog('close');
+
+        //container.dialog('close');
+        
         /*Store values from textboxes*/
         container.data("title", $("#id_name").val());
         container.data("website", $("#id_website").val());
