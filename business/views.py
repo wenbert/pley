@@ -159,7 +159,6 @@ def business_add(request):
             address_country = business_form.cleaned_data['country']
             # TODO: zipcode should be found in zipcode table
             address_zipcode = business_form.cleaned_data['zipcode']
-            
             phone_number    = phone_form.cleaned_data['phone_number']
 
             # TODO: catch possible exceptions here
@@ -200,15 +199,13 @@ def business_add(request):
     '''
     Check if save thru AJAX or normal POST
     '''
-    if request.is_ajax() or True:
+    if request.is_ajax() and success:
         results = {"status":"OK", "message":"Business saved."}
         data = json.dumps(results)
         return HttpResponse(data)
-    else:
-        #return HttpResponse(status=400)
+    elif request.is_ajax() and not success:
+        data = json.dumps({"error":error, "POST DATA: ":request.POST})
+        return HttpResponse(data)
+    elif not request.is_ajax():
         return render_to_response("business/business_add.html",
                               data, context_instance=RequestContext(request))
-        
-    
-    
-

@@ -25,7 +25,23 @@ $(document).ready(function() {
                 minlength: "URL length not valid."
             }
         },
+        
         submitHandler: function(form) {
+            $.post("/business/add/", { 
+                name: $("#id_name").val(),
+                website: $("#id_website").val(),
+                category: $("#id_category").val(),
+                address1: $("#id_address1").val(),
+                address2: $("#id_address2").val(),
+                city: $("#id_city").val(),
+                province: $("#id_province").val(),
+                country: $("#id_country").val(),
+                zipcode: $("#id_zipcode").val(),
+                phone_number: $("#id_phone_number").val()
+            },
+            function(data) {
+                    alert(data);
+            });
             add_marker();
         }
     });
@@ -69,8 +85,9 @@ $(document).ready(function() {
         });
         
         //Display infoWindow when marker is clicked
-        google.maps.event.addListener(marker, 'click', function() {
-           infowindow.setContent("<div id='infowindow_title'>"+container.data("title")+"</div>"+
+        if(infowindow) {
+            google.maps.event.addListener(marker, 'click', function() {
+            infowindow.setContent("<div id='infowindow_title'>"+container.data("title")+"</div>"+
                                  "<div id='infowindow_content'>"+
                                  container.data("address1")+" "+
                                  container.data("address2")+" "+
@@ -79,8 +96,10 @@ $(document).ready(function() {
                                  container.data("country")+" "+
                                  container.data("zipcode")+" "+
                                  "</div><input type='button' value='Save Marker'/>");
-           infowindow.open(map, marker);
-        });
+            infowindow.open(map, marker);
+            });
+        }
+        
         
         //Event when you dropdown a map
         google.maps.event.addListener(marker, "dragend", function() {
