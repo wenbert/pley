@@ -14,12 +14,10 @@
     	{% csrf_token %}
     	<h2>Review</h2>
     	{{ review_form.as_p }}
-        <h2>Details</h2>
+        <h2>Optional Business Details</h2>
+		<p>Do you think the business information is inaccurate? Fill in the form below to submit changes. 
+			If the majority says it so, then it will be reflected. (not yet implemented)</p>
         {{ property_form.as_p }}
-        <h2>Parking</h2>
-        {{ parking_form.as_p }}
-        <h2>Serving Time</h2>
-        {{ serving_time_form.as_p }}
     	<div class="buttons">
             <button type="submit" class="positive">
                 <img src="/images/icons/accept.png" alt=""/> 

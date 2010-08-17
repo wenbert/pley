@@ -6,7 +6,11 @@ class BusinessForm(forms.ModelForm):
     class Meta:
         model = Business
         exclude = ('created_at', 'updated_at', 'status', 
-                   'num_reviews', 'rating',)
+                   'num_reviews', 'rating','properties')
+
+class PropertiesForm(forms.ModelForm):
+    class Meta:
+        model = Properties
 
 class BusinessCategoryForm(forms.ModelForm):
     class Meta:
@@ -17,3 +21,4 @@ class PhoneForm(forms.ModelForm):
     class Meta:
         model = Phone
         exclude = ('business')
+

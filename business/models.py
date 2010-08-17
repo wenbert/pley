@@ -85,29 +85,31 @@ class Business(models.Model):
     created_at      = models.DateTimeField(verbose_name='Date Created', default=datetime.now, blank=True)
     updated_at      = models.DateTimeField(verbose_name='Date Updated', default=datetime.now, blank=True)
 
+    properties      = models.OneToOneField('Properties')
+
     def __unicode__(self):
         return self.name
 
 
 class Category(models.Model):
-    name            = models.CharField(max_length=250)
-    slug            = models.CharField(max_length=250)
+    name            = models.CharField(max_length=250, unique=True)
+    slug            = models.CharField(max_length=250, unique=True)
     status          = models.CharField(max_length=3, choices=STATUSES, default='A')
     members         = models.ManyToManyField(Business, through="BusinessCategory")
     def __unicode__(self):
         return self.slug
 
 class Properties(models.Model):
-    credit_card     = models.CharField(max_length=10, verbose_name="Accepts Credit Card?", choices=YES_NO_NOTSURE, default='not_sure')
-    alcohol         = models.CharField(max_length=25, verbose_name="Serves alcohol?", choices=ALCOHOL, default='not_sure')
-    kids            = models.CharField(max_length=10, verbose_name="Good for kids?", choices=YES_NO_NOTSURE, default='not_sure')
-    groups          = models.CharField(max_length=10, verbose_name="Good for groups?", choices=YES_NO_NOTSURE, default='not_sure')
-    reservations    = models.CharField(max_length=10, verbose_name="Takes reservations?", choices=YES_NO_NOTSURE, default='not_sure')
-    takeout         = models.CharField(max_length=10, verbose_name="Take-out?", choices=YES_NO_NOTSURE, default='not_sure')
-    waiters         = models.CharField(max_length=10, verbose_name="Waiter services?", choices=YES_NO_NOTSURE, default='not_sure')
-    outdoor_seating = models.CharField(max_length=10, verbose_name="Outdoor seating?", choices=YES_NO_NOTSURE, default='not_sure')
-    wheelchair      = models.CharField(max_length=10, verbose_name="Wheelchair accessible?", choices=YES_NO_NOTSURE, default='not_sure')
-    attire          = models.CharField(max_length=50, verbose_name="Attire",choices=ATTIRE, default='not_sure')
+    credit_card     = models.CharField(max_length=10, verbose_name="Accepts Credit Card?", choices=YES_NO_NOTSURE, blank=True)
+    alcohol         = models.CharField(max_length=25, verbose_name="Serves alcohol?", choices=ALCOHOL, blank=True)
+    kids            = models.CharField(max_length=10, verbose_name="Good for kids?", choices=YES_NO_NOTSURE, blank=True)
+    groups          = models.CharField(max_length=10, verbose_name="Good for groups?", choices=YES_NO_NOTSURE, blank=True)
+    reservations    = models.CharField(max_length=10, verbose_name="Takes reservations?", choices=YES_NO_NOTSURE, blank=True)
+    takeout         = models.CharField(max_length=10, verbose_name="Take-out?", choices=YES_NO_NOTSURE, blank=True)
+    waiters         = models.CharField(max_length=10, verbose_name="Waiter services?", choices=YES_NO_NOTSURE, blank=True)
+    outdoor_seating = models.CharField(max_length=10, verbose_name="Outdoor seating?", choices=YES_NO_NOTSURE, blank=True)
+    wheelchair      = models.CharField(max_length=10, verbose_name="Wheelchair accessible?", choices=YES_NO_NOTSURE, blank=True)
+    attire          = models.CharField(max_length=50, verbose_name="Attire",choices=ATTIRE, blank=True)
 
     parking_open        = models.BooleanField(verbose_name='Open Parking')
     parking_basement    = models.BooleanField(verbose_name='Basement Parking')
@@ -116,16 +118,8 @@ class Properties(models.Model):
     parking_validated   = models.BooleanField(verbose_name='Validated')
     parking_street      = models.BooleanField(verbose_name='Street Parking')
 
-    # TODO: customize time picker widget with http://source.mihelac.org/2010/02/19/django-time-widget-custom-time-shortcuts/
     open_time       = models.TimeField(blank=True)
     close_time      = models.TimeField(blank=True)
-
-class BusinessProperties(models.Model):
-    '''
-    Normalized properties of a business
-    '''
-    business        = models.OneToOneField(Business, unique=True)
-    properties      = models.OneToOneField(Properties)
 
 class UserProperties(models.Model):
     '''
@@ -136,9 +130,16 @@ class UserProperties(models.Model):
     user            = models.ForeignKey(User)
     properties      = models.ForeignKey(Properties)
 
-class BusinessCategory(models.Model):
+class Phone(models.Model):
     business        = models.ForeignKey(Business)
-    category        = models.ForeignKey(Category)
+    phone           = models.CharField(max_length=250)
+    
+    def __unicode__(self):
+        return self.phone
+
+class BusinessCategory(models.Model):
+    business        = models.ForeignKey(Business,db_index=True)
+    category        = models.ForeignKey(Category,db_index=True)
     
 class BusinessMarkers(models.Model):
     business        = models.ForeignKey(Business)
