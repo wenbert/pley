@@ -7,6 +7,7 @@ from django.db import transaction
 from django.db import IntegrityError
 from django.contrib.auth.decorators import login_required
 from django.core.paginator import Paginator, InvalidPage, EmptyPage
+from django.core import serializers
 from pley.business.models import *
 from pley.review.models import *
 from pley.business.forms import *
@@ -21,7 +22,6 @@ def business_home(request):
     data = {}
     return render_to_response("business/business_home.html",
                           data, context_instance=RequestContext(request))
-
 
 
 def business_view_v3_localsearch(request, business_id):
@@ -101,7 +101,6 @@ def business_view_v2(request, business_id):
     reviews         = Review.objects.filter(business=business_id)
     google_apikey   = settings.GOOGLE_MAPS_KEY
     
-
     string_location = ' '+ business_item.name + ' near: ' +business_item.address1 + ', ' + business_item.address2 + ', ' + business_item.city + ', ' + business_item.province + ', ' + business_item.country
     urlencoded_string_location = urllib.quote_plus(string_location)
     
@@ -189,14 +188,27 @@ def business_add(request):
         business_form   = BusinessForm()
         business_category_form = BusinessCategoryForm()
         phone_form      = PhoneForm()
-        
+    
     data = {
-              "business_form": business_form,
-              "business_category_form": business_category_form,
-              "phone_form": phone_form,
-              "success": success,
-              "error": error
-           }
-    return render_to_response("business/business_add.html",
+        "business_form": business_form,
+        "business_category_form": business_category_form,
+        "phone_form": phone_form,
+        "success": success,
+        "error": error
+    }
+    
+    '''
+    Check if save thru AJAX or normal POST
+    '''
+    if request.is_ajax() or True:
+        results = {"status":"OK", "message":"Business saved."}
+        data = json.dumps(results)
+        return HttpResponse(data)
+    else:
+        #return HttpResponse(status=400)
+        return render_to_response("business/business_add.html",
                               data, context_instance=RequestContext(request))
+        
+    
+    
 
