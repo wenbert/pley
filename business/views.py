@@ -81,7 +81,7 @@ def business_browse(request):
         business_category_list = BusinessCategory.objects.filter(business=business)
         categories = []
         for business_category in business_category_list:
-            categories.append(business_category.category.display)
+            categories.append(business_category.category.name)
         category_list.append(categories)
 
     business_and_categories_list = zip(businesses.object_list, category_list)
@@ -147,8 +147,9 @@ def business_add(request):
         business_form       = BusinessForm(request.POST)
         business_category_form = BusinessCategoryForm(request.POST)
         phone_form          = PhoneForm(request.POST)
+        properties_form     = PropertiesForm(request.POST)
         
-        if (business_form.is_valid() and business_category_form.is_valid() and phone_form.is_valid()):
+        if (business_form.is_valid() and business_category_form.is_valid() and phone_form.is_valid() and properties_form.is_valid()):
             
             business_name   = business_form.cleaned_data['name']
             category        = business_category_form.cleaned_data['category']
@@ -159,17 +160,51 @@ def business_add(request):
             address_country = business_form.cleaned_data['country']
             # TODO: zipcode should be found in zipcode table
             address_zipcode = business_form.cleaned_data['zipcode']
+<<<<<<< HEAD
             phone_number    = phone_form.cleaned_data['phone_number']
+=======
+            phone= phone_form.cleaned_data['phone']
+            #properties
+            credit_card     = properties_form.cleaned_data['credit_card']
+            alcohol         = properties_form.cleaned_data['alcohol']
+            kids            = properties_form.cleaned_data['kids']
+            groups          = properties_form.cleaned_data['groups']
+            reservations    = properties_form.cleaned_data['takeout']
+            waiters         = properties_form.cleaned_data['waiters']
+            outdoor_seating = properties_form.cleaned_data['outdoor_seating']
+            wheelchair      = properties_form.cleaned_data['wheelchair']
+            attire          = properties_form.cleaned_data['attire']
+            takeout         = properties_form.cleaned_data['takeout']
+            parking_open    = properties_form.cleaned_data['parking_open']
+            parking_basement = properties_form.cleaned_data['parking_basement']
+            parking_private_lot = properties_form.cleaned_data['parking_private_lot']
+            parking_valet   = properties_form.cleaned_data['parking_valet']
+            parking_validated = properties_form.cleaned_data['parking_validated']
+            parking_street  = properties_form.cleaned_data['parking_street']
+            open_time       = properties_form.cleaned_data['open_time']
+            close_time      = properties_form.cleaned_data['close_time']
+>>>>>>> fa9a8eb126e8bcb668b569b1e3269804f07ebe8f
 
             # TODO: catch possible exceptions here
             try:
+                properties = Properties(credit_card=credit_card,alcohol=alcohol,kids=kids,
+                                        groups=groups,reservations=reservations,takeout=takeout,
+                                        waiters=waiters,outdoor_seating=outdoor_seating,
+                                        wheelchair=wheelchair,attire=attire,
+                                        parking_open=parking_open,parking_basement=parking_basement,
+                                        parking_private_lot=parking_private_lot,
+                                        parking_valet=parking_valet,parking_validated=parking_validated,
+                                        parking_street=parking_street,open_time=open_time,
+                                        close_time=close_time)
+                properties.save()
                 business = Business(name=business_name,address1=address_1, address2=address_2,
-                                  city=address_city, province=address_province,
-                                  country=address_country,
-                                  zipcode=address_zipcode)
+                                    city=address_city, province=address_province,
+                                    country=address_country,
+                                    zipcode=address_zipcode,properties=properties)
                 business.save()
+
                 
-                phone   = Phone(phone_number=phone_number, business=business)
+                phone   = Phone(phone=phone, business=business)
                 phone.save()
                 
                 business_category = BusinessCategory(business=business,category=category)
@@ -187,6 +222,7 @@ def business_add(request):
         business_form   = BusinessForm()
         business_category_form = BusinessCategoryForm()
         phone_form      = PhoneForm()
+<<<<<<< HEAD
     
     data = {
         "business_form": business_form,
@@ -209,3 +245,18 @@ def business_add(request):
     elif not request.is_ajax():
         return render_to_response("business/business_add.html",
                               data, context_instance=RequestContext(request))
+=======
+        properties_form = PropertiesForm()
+        
+    data = {
+              "business_form": business_form,
+              "business_category_form": business_category_form,
+              "phone_form": phone_form,
+              "properties_form": properties_form,
+              "success": success,
+              "error": error,
+           }
+    return render_to_response("business/business_add.html",
+                              data, context_instance=RequestContext(request))
+
+>>>>>>> fa9a8eb126e8bcb668b569b1e3269804f07ebe8f

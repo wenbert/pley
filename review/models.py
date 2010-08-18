@@ -46,8 +46,8 @@ def validate_max_rating(val):
 
 class Review(models.Model):
     review          = models.TextField()
-    business        = models.ForeignKey(Business, unique=False, db_index=True)
-    user            = models.ForeignKey(User, db_index=True)
+    business        = models.ForeignKey(Business)
+    user            = models.ForeignKey(User)
     rating          = models.IntegerField(validators=[validate_max_rating])
     status          = models.CharField(max_length=1, choices=REVIEW_STATUS, default='A')
     created_at      = models.DateTimeField(verbose_name='Date Created', default=datetime.now, blank=True)
@@ -55,6 +55,7 @@ class Review(models.Model):
     def __unicode__(self):
         return self.review
         
+'''
 class Property(models.Model):
     business        = models.ForeignKey(Business)
     review          = models.OneToOneField(Review)
@@ -88,3 +89,5 @@ class ServingTime(models.Model):
     dinner           = models.BooleanField(verbose_name="Dinner")
     late_night      = models.BooleanField(verbose_name="Late Night")
     dessert         = models.BooleanField(verbose_name="Dessert")
+'''
+
