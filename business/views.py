@@ -160,10 +160,9 @@ def business_add(request):
             address_country = business_form.cleaned_data['country']
             # TODO: zipcode should be found in zipcode table
             address_zipcode = business_form.cleaned_data['zipcode']
-<<<<<<< HEAD
+
             phone_number    = phone_form.cleaned_data['phone_number']
-=======
-            phone= phone_form.cleaned_data['phone']
+
             #properties
             credit_card     = properties_form.cleaned_data['credit_card']
             alcohol         = properties_form.cleaned_data['alcohol']
@@ -183,7 +182,7 @@ def business_add(request):
             parking_street  = properties_form.cleaned_data['parking_street']
             open_time       = properties_form.cleaned_data['open_time']
             close_time      = properties_form.cleaned_data['close_time']
->>>>>>> fa9a8eb126e8bcb668b569b1e3269804f07ebe8f
+
 
             # TODO: catch possible exceptions here
             try:
@@ -222,12 +221,13 @@ def business_add(request):
         business_form   = BusinessForm()
         business_category_form = BusinessCategoryForm()
         phone_form      = PhoneForm()
-<<<<<<< HEAD
+        properties_form = PropertiesForm()
     
     data = {
         "business_form": business_form,
         "business_category_form": business_category_form,
         "phone_form": phone_form,
+        "properties_form": properties_form,
         "success": success,
         "error": error
     }
@@ -245,18 +245,3 @@ def business_add(request):
     elif not request.is_ajax():
         return render_to_response("business/business_add.html",
                               data, context_instance=RequestContext(request))
-=======
-        properties_form = PropertiesForm()
-        
-    data = {
-              "business_form": business_form,
-              "business_category_form": business_category_form,
-              "phone_form": phone_form,
-              "properties_form": properties_form,
-              "success": success,
-              "error": error,
-           }
-    return render_to_response("business/business_add.html",
-                              data, context_instance=RequestContext(request))
-
->>>>>>> fa9a8eb126e8bcb668b569b1e3269804f07ebe8f
