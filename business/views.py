@@ -161,7 +161,7 @@ def business_add(request):
             # TODO: zipcode should be found in zipcode table
             address_zipcode = business_form.cleaned_data['zipcode']
 
-            phone_number    = phone_form.cleaned_data['phone_number']
+            phone    = phone_form.cleaned_data['phone']
 
             #properties
             credit_card     = properties_form.cleaned_data['credit_card']
@@ -201,8 +201,7 @@ def business_add(request):
                                     country=address_country,
                                     zipcode=address_zipcode,properties=properties)
                 business.save()
-
-                
+                                
                 phone   = Phone(phone=phone, business=business)
                 phone.save()
                 
@@ -216,7 +215,6 @@ def business_add(request):
             else:
                 transaction.commit()
                 success = True
-            #redirect to success page
     else:
         business_form   = BusinessForm()
         business_category_form = BusinessCategoryForm()
@@ -235,13 +233,19 @@ def business_add(request):
     '''
     Check if save thru AJAX or normal POST
     '''
-    if request.is_ajax() and success:
-        results = {"status":"success", "message":"Business saved."}
-        data = json.dumps(results)
-        return HttpResponse(data)
-    elif request.is_ajax() and not success:
-        data = json.dumps({"error":error, "POST DATA: ":request.POST})
-        return HttpResponse(data)
-    elif not request.is_ajax():
-        return render_to_response("business/business_add.html",
+    if(success):
+        if request.is_ajax():
+            results = {"status":"success", "message":"Business saved."}
+            data = json.dumps(results)
+            return HttpResponse(data)
+        else:
+            return render_to_response("business/business_add.html",
                               data, context_instance=RequestContext(request))
+    else:
+        if request.is_ajax():
+            data = json.dumps({"error":error, "POST DATA: ":request.POST})
+            return HttpResponse(data)
+        else:
+            return render_to_response("business/business_add.html",
+                              data, context_instance=RequestContext(request))
+        
