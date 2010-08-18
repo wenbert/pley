@@ -243,7 +243,7 @@ def business_add(request):
                               data, context_instance=RequestContext(request))
     else:
         if request.is_ajax():
-            data = json.dumps({"error":error, "POST DATA: ":request.POST})
+            data = json.dumps({"error":error, "data: ":request.POST})
             return HttpResponse(data)
         else:
             return render_to_response("business/business_add.html",

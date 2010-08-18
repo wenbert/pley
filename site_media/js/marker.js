@@ -28,6 +28,7 @@ $(document).ready(function() {
         
         submitHandler: function(form) {
             $.post("/business/add/", { 
+                csrfmiddlewaretoken: $("input[name='csrfmiddlewaretoken']")val(),
                 name: $("#id_name").val(),
                 website: $("#id_website").val(),
                 category: $("#id_category").val(),
@@ -46,6 +47,8 @@ $(document).ready(function() {
                         add_marker();
                     } else {
                         alert('An error occured while adding the marker. Please contact the site administrator.');
+                        console.log("error: "+data.error)
+                        console.log("POST: "+data.data)
                     }
             });
             

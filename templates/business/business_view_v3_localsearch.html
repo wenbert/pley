@@ -43,10 +43,13 @@
     
         <div id="add_business_container" title="Add a business">
             <form id="add_business_form">
+                {% csrf_token %}
                 <h2>Business info</h2>
-            	{{ business_form.as_p }}
+                {{ business_form.as_p }}
                 <h2>Telephone</h2>
                 {{ phone_form.as_p }}
+                <h2>Properties</h2>
+                {{ properties_form.as_p }}
                 <h2>Category</h2>
                 {{ business_category_form.as_p }}
                 <input id="add_marker" class="submit" type="submit" value="Add Marker"/>
