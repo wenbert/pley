@@ -42,6 +42,7 @@ def business_view_v3_localsearch(request, business_id):
     business_form   = BusinessForm()
     business_category_form = BusinessCategoryForm()
     phone_form      = PhoneForm()
+    properties_form     = PropertiesForm()
     
     data = {"business_item": business_item,
             "phone_list": phone_list,
@@ -53,6 +54,7 @@ def business_view_v3_localsearch(request, business_id):
             "google_apikey":google_apikey,
             "business_form": business_form,
             "business_category_form": business_category_form,
+            "properties_form": properties_form,
             "phone_form": phone_form,
             }
     return render_to_response("business/business_view_v3_localsearch.html",
@@ -243,7 +245,7 @@ def business_add(request):
                               data, context_instance=RequestContext(request))
     else:
         if request.is_ajax():
-            data = json.dumps({"error":error, "data: ":request.POST})
+            data = json.dumps({"status":"failed", "error":error, "data":request.POST})
             return HttpResponse(data)
         else:
             return render_to_response("business/business_add.html",

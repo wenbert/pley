@@ -8,7 +8,7 @@
     <h1>Success!</h1>
     {% else %}
         {% if error %}
-            <h2>Test {{ error }}</h2>
+            <h2>Error: {{ error }}</h2>
         {% endif %}
     <form name="business_add" action="" method="post">
         {% csrf_token %}
