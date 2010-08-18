@@ -200,7 +200,7 @@ def business_add(request):
     Check if save thru AJAX or normal POST
     '''
     if request.is_ajax() and success:
-        results = {"status":"OK", "message":"Business saved."}
+        results = {"status":"success", "message":"Business saved."}
         data = json.dumps(results)
         return HttpResponse(data)
     elif request.is_ajax() and not success:

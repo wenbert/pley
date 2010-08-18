@@ -40,9 +40,15 @@ $(document).ready(function() {
                 phone_number: $("#id_phone_number").val()
             },
             function(data) {
-                    alert(data);
+                    data = json_parse(data);
+                    $('#add_business_container').dialog('close');
+                    if(data.status=="success") {
+                        add_marker();
+                    } else {
+                        alert('An error occured while adding the marker. Please contact the site administrator.');
+                    }
             });
-            add_marker();
+            
         }
     });
     

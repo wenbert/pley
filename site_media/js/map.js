@@ -94,7 +94,6 @@ $(document).ready(function() {
                 google.maps.event.addListener(marker, 'click', function() {
                    infowindow.setContent(the_content);
                    infowindow.open(map, marker);
-                   infowindow.setMaxWidth(100);
                 });
                 
                 //Only used for debugging.
