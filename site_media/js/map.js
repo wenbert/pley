@@ -17,13 +17,18 @@ $(document).ready(function() {
         new google.maps.Point(6, 20));
     
     var geocoder = new google.maps.Geocoder();
+    var totalBounds = new google.maps.LatLngBounds();
     var gLocalSearch = new GlocalSearch();
     var localSearchCenter = business_city+", "+business_province+", "+business_country+", "+business_zipcode;
+    
     if (geocoder) {
+        
         geocoder.geocode({ 'address': clean_address }, function (results, status) {
             if (status == google.maps.GeocoderStatus.OK) {
                 //alert(results[0].geometry.location.lat())
                 //alert(results[0].geometry.location.lng())
+            
+                
                 geocode_lat = results[0].geometry.location.lat();
                 geocode_lng = results[0].geometry.location.lng();
                 //Create the Map and center to geocode results latlong
@@ -36,6 +41,12 @@ $(document).ready(function() {
 
                 map = new google.maps.Map(document.getElementById("map_canvas"),
                     myOptions);
+                
+                $.each(results, function(i, n){
+                    totalBounds.union(results[i].geometry.bounds);
+                });
+                map.fitBounds(totalBounds);
+                //map.setZoom(map.getZoom()+2);
                     
                 gLocalSearch.setCenterPoint(localSearchCenter);
                 gLocalSearch.setSearchCompleteCallback(this, OnLocalSearch);
@@ -98,13 +109,14 @@ $(document).ready(function() {
                 
                 //Only used for debugging.
                 $.each(n, function(j, k) {
-                    console.log(" > result ["+j+"]: "+k);
+                    console.log(" >>> result ["+j+"]: "+k);
                 });
                 
                 
             });
             
             // Move map to center if Red Marker is found. If not, set to first result
+            /*
             if(centerNewLat && centerNewLng) {
                 map.setCenter(new google.maps.LatLng(parseFloat(centerNewLat),
                                                      parseFloat(centerNewLng)));
@@ -112,6 +124,14 @@ $(document).ready(function() {
                 map.setCenter(new google.maps.LatLng(parseFloat(results[0].lat),
                                                      parseFloat(results[0].lng)));
             }
+            */
+            
+            
+            // Set the new center of the map
+            // parseFloat converts the lat/lng from a string to a float, which is what
+            // the LatLng constructor takes.
+            //map.setCenter(new google.maps.LatLng(parseFloat(center.lat),
+            //                                     parseFloat(center.lng)));
             
             //callbackFunction(point); 
         }else{ 
@@ -126,4 +146,5 @@ $(document).ready(function() {
     }
     
 }); /*End jQuery onLoad here.*/
+
 //]]>
