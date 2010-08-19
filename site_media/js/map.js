@@ -27,7 +27,6 @@ $(document).ready(function() {
             if (status == google.maps.GeocoderStatus.OK) {
                 //alert(results[0].geometry.location.lat())
                 //alert(results[0].geometry.location.lng())
-            
                 
                 geocode_lat = results[0].geometry.location.lat();
                 geocode_lng = results[0].geometry.location.lng();
@@ -112,39 +111,17 @@ $(document).ready(function() {
                     console.log(" >>> result ["+j+"]: "+k);
                 });
                 
-                
             });
             
-            // Move map to center if Red Marker is found. If not, set to first result
-            /*
-            if(centerNewLat && centerNewLng) {
-                map.setCenter(new google.maps.LatLng(parseFloat(centerNewLat),
-                                                     parseFloat(centerNewLng)));
-            } else {
-                map.setCenter(new google.maps.LatLng(parseFloat(results[0].lat),
-                                                     parseFloat(results[0].lng)));
-            }
-            */
-            
-            
-            // Set the new center of the map
-            // parseFloat converts the lat/lng from a string to a float, which is what
-            // the LatLng constructor takes.
-            //map.setCenter(new google.maps.LatLng(parseFloat(center.lat),
-            //                                     parseFloat(center.lng)));
-            
-            //callbackFunction(point); 
         }else{ 
             $('#map_message').append('<div class="error">Sorry we could not find the business you are looking for. We will try to find a way so that you can add it in Google Local Search.</div>');
             //alert("business name not found!"); 
         } 
     }
     
-    
     function displayInfoWindow(current_result) {
         return ""+current_result.title +"<br/><spkan class='infowindow_small'>"+current_result.addressLines+"<br/><a href='"+current_result.url+"'>Place</a><span>";
     }
     
 }); /*End jQuery onLoad here.*/
-
 //]]>
