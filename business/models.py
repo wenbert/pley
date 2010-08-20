@@ -80,6 +80,9 @@ class Business(models.Model):
     zipcode         = models.CharField(max_length=10, verbose_name="Zipcode")
     num_reviews     = models.IntegerField(default=0)
     rating          = models.IntegerField(default=0, validators=[validate_max_rating])
+    
+    lat             = models.FloatField(default=0.0, verbose_name="Latitude")
+    lng             = models.FloatField(default=0.0, verbose_name="Longitude")
 
     status          = models.CharField(max_length=1, choices=BUSINESS_STATUS, default='A')
     created_at      = models.DateTimeField(verbose_name='Date Created', default=datetime.now, blank=True)

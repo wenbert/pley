@@ -40,7 +40,8 @@
         <img src="http://labs.google.com/ridefinder/images/mm_20_yellow.png" /> = Area of interest<br/>
         
         {% if user.is_authenticated %}
-            <span id="show_add_marker" style="cursor: pointer;"><img src="/images/icons/add.png" alt=""/> Location not found? Click here to add a Marker for a New Location</span>
+            <div id="show_add_marker" style="cursor: pointer;"><img src="/images/icons/add.png" alt=""/>Add a Business</div>
+            <div id="show_add_marker" style="cursor: pointer;"><img src="/images/icons/add.png" alt=""/>Add a Marker for {{business_item.name}} (work on this)</div>
         {% else %}
             <div>Location not found? You must register/login to add a Marker on the map.</div>
         {% endif %}

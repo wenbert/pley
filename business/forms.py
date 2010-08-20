@@ -7,7 +7,8 @@ class BusinessForm(forms.ModelForm):
     class Meta:
         model = Business
         exclude = ('created_at', 'updated_at', 'status', 
-                   'num_reviews', 'rating','properties')
+                   'num_reviews', 'rating','properties',
+                   'lng', 'lat')
         widgets = {
             'name': TextInput(attrs={'class': 'required', 'minlength':'2'}),
             'website': TextInput(attrs={'class': 'url', 'minlength':'2'}),
