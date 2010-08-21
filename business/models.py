@@ -64,15 +64,6 @@ DAYS = (
     ('sun', 'Sunday'),
 )
 
-'''
-PROP_TYPES = (
-    ('checkbox', 'Checkbox'),
-    ('textbox', 'Textbox'),
-    ('radio', 'Radio'),
-    ('select', 'Select'),
-    ('multiple', 'Multiple'),
-)
-'''
 
 def validate_max_rating(val):
     if not val in range(0,6):
@@ -143,3 +134,8 @@ class BusinessPaymentOptions(models.Model):
     cheque          = models.BooleanField(verbose_name="Cheque")
     gift_cert       = models.BooleanField(verbose_name="Gift Certificates")
     others          = models.BooleanField(verbose_name="Others")
+
+class Zipcode(models.Model):
+    zipcode         = models.CharField(max_length='10')
+    major_area      = models.CharField(max_length='50')
+    city            = models.CharField(max_length='50')
