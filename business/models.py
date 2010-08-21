@@ -16,41 +16,10 @@ STATUSES = (
     ('off','Off'),
 )
 
-PROPERTIES = (
-    ('credit_card', 'Credit card'),
-    ('alcohol', 'Alcohol'),
-    ('kids', 'Kids'),
-    ('groups', 'Groups'),
-    ('reservations', 'Reservations'),
-    ('takeout', 'Takeout'),
-    ('waiters', 'Waiters'),
-    ('outdoor_seating', 'Outdoor seating'),
-    ('wheelchair', 'Wheelchair'),
-    ('attire', 'Attire'),
-)
-
 YES_NO_NOTSURE = (
     ('yes', 'Yes'),
     ('no', 'No'),
     ('not_sure', 'Not Sure'),
-    ('not_applicable', 'Not Applicable'),
-)
-
-ALCOHOL = (
-    ('beer','Beer Only'),
-    ('wine','Wine Only'),
-    ('beer_wine','Beer and Wine'),
-    ('full_bar','Full Bar'),
-    ('none','None'),
-    ('not_sure','Not Sure'),
-    ('not_applicable', 'Not Applicable'),
-)
-
-ATTIRE = (
-    ('casual','Casual'),
-    ('dressy','Dressy'),
-    ('formal','Formal (Jacket Required)'),
-    ('not_sure','Not Sure'),
     ('not_applicable', 'Not Applicable'),
 )
 
