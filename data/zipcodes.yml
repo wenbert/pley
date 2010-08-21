@@ -1,0 +1,11354 @@
+%YAML 1.1
+---
+# geo.zipcodes
+-
+  id: 1
+  major_area: Abra
+  zip_code: 2800
+  city: Bangued
+-
+  id: 2
+  major_area: Abra
+  zip_code: 2801
+  city: Dolores
+-
+  id: 3
+  major_area: Abra
+  zip_code: 2802
+  city: Lagangilang
+-
+  id: 4
+  major_area: Abra
+  zip_code: 2803
+  city: Tayum
+-
+  id: 5
+  major_area: Abra
+  zip_code: 2804
+  city: Peñarrubia
+-
+  id: 6
+  major_area: Abra
+  zip_code: 2805
+  city: Bucay
+-
+  id: 7
+  major_area: Abra
+  zip_code: 2806
+  city: Pidigan
+-
+  id: 8
+  major_area: Abra
+  zip_code: 2807
+  city: Langiden
+-
+  id: 9
+  major_area: Abra
+  zip_code: 2808
+  city: San Quintin
+-
+  id: 10
+  major_area: Abra
+  zip_code: 2809
+  city: San Isidro
+-
+  id: 11
+  major_area: Abra
+  zip_code: 2810
+  city: Manabo
+-
+  id: 12
+  major_area: Abra
+  zip_code: 2811
+  city: Villaviciosa
+-
+  id: 13
+  major_area: Abra
+  zip_code: 2812
+  city: Pilar
+-
+  id: 14
+  major_area: Abra
+  zip_code: 2813
+  city: Luba
+-
+  id: 15
+  major_area: Abra
+  zip_code: 2814
+  city: Tubo
+-
+  id: 16
+  major_area: Abra
+  zip_code: 2815
+  city: Boliney
+-
+  id: 17
+  major_area: Abra
+  zip_code: 2816
+  city: Daguioman
+-
+  id: 18
+  major_area: Abra
+  zip_code: 2817
+  city: Bucloc
+-
+  id: 19
+  major_area: Abra
+  zip_code: 2818
+  city: Sallapadan
+-
+  id: 20
+  major_area: Abra
+  zip_code: 2819
+  city: Licuan (Baay)
+-
+  id: 21
+  major_area: Abra
+  zip_code: 2820
+  city: Malibcong
+-
+  id: 22
+  major_area: Abra
+  zip_code: 2821
+  city: Lacub
+-
+  id: 23
+  major_area: Abra
+  zip_code: 2822
+  city: Tineg
+-
+  id: 24
+  major_area: Abra
+  zip_code: 2823
+  city: San Juan
+-
+  id: 25
+  major_area: Abra
+  zip_code: 2824
+  city: Lagayan
+-
+  id: 26
+  major_area: Abra
+  zip_code: 2825
+  city: Danglas
+-
+  id: 27
+  major_area: Abra
+  zip_code: 2826
+  city: La Paz
+-
+  id: 28
+  major_area: Agusan del Norte
+  zip_code: 8600
+  city: Butuan City
+-
+  id: 29
+  major_area: Agusan del Norte
+  zip_code: 8601
+  city: Buenavista
+-
+  id: 30
+  major_area: Agusan del Norte
+  zip_code: 8602
+  city: Nasipit
+-
+  id: 31
+  major_area: Agusan del Norte
+  zip_code: 8603
+  city: Carmen
+-
+  id: 32
+  major_area: Agusan del Norte
+  zip_code: 8605
+  city: Cabadbaran City
+-
+  id: 33
+  major_area: Agusan del Norte
+  zip_code: 8604
+  city: Magallanes
+-
+  id: 34
+  major_area: Agusan del Norte
+  zip_code: 8606
+  city: Tubay
+-
+  id: 35
+  major_area: Agusan del Norte
+  zip_code: 8607
+  city: Jabonga
+-
+  id: 36
+  major_area: Agusan del Norte
+  zip_code: 8608
+  city: Santiago
+-
+  id: 37
+  major_area: Agusan del Norte
+  zip_code: 8609
+  city: Kitcharao
+-
+  id: 38
+  major_area: Agusan del Norte
+  zip_code: 8610
+  city: Las Nieves
+-
+  id: 39
+  major_area: Agusan del Norte
+  zip_code: 8611
+  city: Remedios T. Romualdez
+-
+  id: 40
+  major_area: Agusan del Sur
+  zip_code: 8500
+  city: Prosperidad
+-
+  id: 41
+  major_area: Agusan del Sur
+  zip_code: 8501
+  city: San Francisco
+-
+  id: 42
+  major_area: Agusan del Sur
+  zip_code: 8502
+  city: Bayugan
+-
+  id: 43
+  major_area: Agusan del Sur
+  zip_code: 8503
+  city: Sibagat
+-
+  id: 44
+  major_area: Agusan del Sur
+  zip_code: 8504
+  city: Rosario
+-
+  id: 45
+  major_area: Agusan del Sur
+  zip_code: 8505
+  city: Trento
+-
+  id: 46
+  major_area: Agusan del Sur
+  zip_code: 8506
+  city: Bunawan
+-
+  id: 47
+  major_area: Agusan del Sur
+  zip_code: 8507
+  city: Loreto
+-
+  id: 48
+  major_area: Agusan del Sur
+  zip_code: 8508
+  city: La Paz
+-
+  id: 49
+  major_area: Agusan del Sur
+  zip_code: 8509
+  city: Veruela
+-
+  id: 50
+  major_area: Agusan del Sur
+  zip_code: 8510
+  city: Talacogon
+-
+  id: 51
+  major_area: Agusan del Sur
+  zip_code: 8511
+  city: San Luis
+-
+  id: 52
+  major_area: Agusan del Sur
+  zip_code: 8512
+  city: Santa Josefa
+-
+  id: 53
+  major_area: Agusan del Sur
+  zip_code: 8513
+  city: Esperanza
+-
+  id: 54
+  major_area: Aklan
+  zip_code: 5616
+  city: Altavas
+-
+  id: 55
+  major_area: Aklan
+  zip_code: 5614
+  city: Balete
+-
+  id: 56
+  major_area: Aklan
+  zip_code: 5601
+  city: Banga
+-
+  id: 57
+  major_area: Aklan
+  zip_code: 5615
+  city: Batan
+-
+  id: 58
+  major_area: Aklan
+  zip_code: 5609
+  city: Buruanga
+-
+  id: 59
+  major_area: Aklan
+  zip_code: 5613
+  city: Ibajay
+-
+  id: 60
+  major_area: Aklan
+  zip_code: 5600
+  city: Kalibo
+-
+  id: 61
+  major_area: Aklan
+  zip_code: 5605
+  city: Lezo
+-
+  id: 62
+  major_area: Aklan
+  zip_code: 5602
+  city: Libacao
+-
+  id: 63
+  major_area: Aklan
+  zip_code: 5603
+  city: Madalag
+-
+  id: 64
+  major_area: Aklan
+  zip_code: 5611
+  city: Makato
+-
+  id: 65
+  major_area: Aklan
+  zip_code: 5608
+  city: Malay
+-
+  id: 66
+  major_area: Aklan
+  zip_code: 5606
+  city: Malinao
+-
+  id: 67
+  major_area: Aklan
+  zip_code: 5607
+  city: Nabas
+-
+  id: 68
+  major_area: Aklan
+  zip_code: 5610
+  city: New Washington
+-
+  id: 69
+  major_area: Aklan
+  zip_code: 5604
+  city: Numancia
+-
+  id: 70
+  major_area: Aklan
+  zip_code: 5612
+  city: Tangalan
+-
+  id: 71
+  major_area: Albay
+  zip_code: 4509
+  city: Bacacay
+-
+  id: 72
+  major_area: Albay
+  zip_code: 4502
+  city: Camalig
+-
+  id: 73
+  major_area: Albay
+  zip_code: 4501
+  city: Daraga (Locsin)
+-
+  id: 74
+  major_area: Albay
+  zip_code: 4503
+  city: Guinobatan
+-
+  id: 75
+  major_area: Albay
+  zip_code: 4515
+  city: Jovellar
+-
+  id: 76
+  major_area: Albay
+  zip_code: 4500
+  city: Legazpi City
+-
+  id: 77
+  major_area: Albay
+  zip_code: 4507
+  city: Libon
+-
+  id: 78
+  major_area: Albay
+  zip_code: 4504
+  city: Ligao City
+-
+  id: 79
+  major_area: Albay
+  zip_code: 4510
+  city: Malilipot
+-
+  id: 80
+  major_area: Albay
+  zip_code: 4512
+  city: Malinao
+-
+  id: 81
+  major_area: Albay
+  zip_code: 4514
+  city: Manito
+-
+  id: 82
+  major_area: Albay
+  zip_code: 4505
+  city: Oas
+-
+  id: 83
+  major_area: Albay
+  zip_code: 4516
+  city: Pio Duran (Malacbalac)
+-
+  id: 84
+  major_area: Albay
+  zip_code: 4506
+  city: Polangui
+-
+  id: 85
+  major_area: Albay
+  zip_code: 4517
+  city: Rapu-Rapu
+-
+  id: 86
+  major_area: Albay
+  zip_code: 4508
+  city: Santo Domingo
+-
+  id: 87
+  major_area: Albay
+  zip_code: 4511
+  city: Tabaco City
+-
+  id: 88
+  major_area: Albay
+  zip_code: 4513
+  city: Tiwi
+-
+  id: 89
+  major_area: Antique
+  zip_code: 5717
+  city: Anini-y
+-
+  id: 90
+  major_area: Antique
+  zip_code: 5706
+  city: Barbaza
+-
+  id: 91
+  major_area: Antique
+  zip_code: 5701
+  city: Belison
+-
+  id: 92
+  major_area: Antique
+  zip_code: 5704
+  city: Bugasong
+-
+  id: 93
+  major_area: Antique
+  zip_code: 5711
+  city: Caluya
+-
+  id: 94
+  major_area: Antique
+  zip_code: 5708
+  city: Culasi
+-
+  id: 95
+  major_area: Antique
+  zip_code: 5715
+  city: Hamtic
+-
+  id: 96
+  major_area: Antique
+  zip_code: 5705
+  city: Laua-an
+-
+  id: 97
+  major_area: Antique
+  zip_code: 5710
+  city: Libertad
+-
+  id: 98
+  major_area: Antique
+  zip_code: 5712
+  city: Pandan
+-
+  id: 99
+  major_area: Antique
+  zip_code: 5702
+  city: Patnongon
+-
+  id: 100
+  major_area: Antique
+  zip_code: 5700
+  city: San Jose
+-
+  id: 101
+  major_area: Antique
+  zip_code: 5714
+  city: San Remigio
+-
+  id: 102
+  major_area: Antique
+  zip_code: 5709
+  city: Sebaste
+-
+  id: 103
+  major_area: Antique
+  zip_code: 5713
+  city: Sibalom
+-
+  id: 104
+  major_area: Antique
+  zip_code: 5707
+  city: Tibiao
+-
+  id: 105
+  major_area: Antique
+  zip_code: 5716
+  city: Tobias Fornier (Dao)
+-
+  id: 106
+  major_area: Antique
+  zip_code: 5703
+  city: Valderrama
+-
+  id: 107
+  major_area: Apayao
+  zip_code: 3814
+  city: Calanasan (Bayag)
+-
+  id: 108
+  major_area: Apayao
+  zip_code: 3807
+  city: Conner
+-
+  id: 109
+  major_area: Apayao
+  zip_code: 3810
+  city: Flora
+-
+  id: 110
+  major_area: Apayao
+  zip_code: 3809
+  city: Kabugao
+-
+  id: 111
+  major_area: Apayao
+  zip_code: 3813
+  city: Luna
+-
+  id: 112
+  major_area: Apayao
+  zip_code: 3812
+  city: Pudtol
+-
+  id: 113
+  major_area: Apayao
+  zip_code: 3811
+  city: Santa Marcela
+-
+  id: 114
+  major_area: Aurora
+  zip_code: 3200
+  city: Baler
+-
+  id: 115
+  major_area: Aurora
+  zip_code: 3204
+  city: Casiguran
+-
+  id: 116
+  major_area: Aurora
+  zip_code: 3205
+  city: Dilasag
+-
+  id: 117
+  major_area: Aurora
+  zip_code: 3206
+  city: Dinalungan
+-
+  id: 118
+  major_area: Aurora
+  zip_code: 3207
+  city: Dingalan
+-
+  id: 119
+  major_area: Aurora
+  zip_code: 3203
+  city: Dipaculao
+-
+  id: 120
+  major_area: Aurora
+  zip_code: 3202
+  city: Maria Aurora
+-
+  id: 121
+  major_area: Aurora
+  zip_code: 3201
+  city: San Luis
+-
+  id: 122
+  major_area: Basilan
+  zip_code: 7300
+  city: Isabela City
+-
+  id: 123
+  major_area: Basilan
+  zip_code: 7301
+  city: Lantawan
+-
+  id: 124
+  major_area: Basilan
+  zip_code: 7302
+  city: Lamitan City
+-
+  id: 125
+  major_area: Basilan
+  zip_code: 7303
+  city: Maluso
+-
+  id: 126
+  major_area: Basilan
+  zip_code: 7304
+  city: Tipo-Tipo
+-
+  id: 127
+  major_area: Basilan
+  zip_code: 7305
+  city: Sumisip
+-
+  id: 128
+  major_area: Basilan
+  zip_code: 7306
+  city: Tuburan
+-
+  id: 129
+  major_area: Basilan
+  zip_code: 7308
+  city: Froilie
+-
+  id: 130
+  major_area: Bataan
+  zip_code: 2114
+  city: Abucay
+-
+  id: 131
+  major_area: Bataan
+  zip_code: 2107
+  city: Bagac
+-
+  id: 132
+  major_area: Bataan
+  zip_code: 2100
+  city: Balanga City
+-
+  id: 133
+  major_area: Bataan
+  zip_code: 2106
+  city: Mariveles (Bataan Export Processing Zone)
+-
+  id: 134
+  major_area: Bataan
+  zip_code: 2110
+  city: Dinalupihan
+-
+  id: 135
+  major_area: Bataan
+  zip_code: 2111
+  city: Hermosa
+-
+  id: 136
+  major_area: Bataan
+  zip_code: 2104
+  city: Lamao
+-
+  id: 137
+  major_area: Bataan
+  zip_code: 2103
+  city: Limay
+-
+  id: 138
+  major_area: Bataan
+  zip_code: 2105
+  city: Mariveles
+-
+  id: 139
+  major_area: Bataan
+  zip_code: 2108
+  city: Morong
+-
+  id: 140
+  major_area: Bataan
+  zip_code: 2112
+  city: Orani
+-
+  id: 141
+  major_area: Bataan
+  zip_code: 2102
+  city: Orion
+-
+  id: 142
+  major_area: Bataan
+  zip_code: 2101
+  city: Pilar
+-
+  id: 143
+  major_area: Bataan
+  zip_code: 2109
+  city: Morong (Refugee Processing Center)
+-
+  id: 144
+  major_area: Bataan
+  zip_code: 2113
+  city: Samal
+-
+  id: 145
+  major_area: Batanes
+  zip_code: 3900
+  city: Basco
+-
+  id: 146
+  major_area: Batanes
+  zip_code: 3905
+  city: Itbayat
+-
+  id: 147
+  major_area: Batanes
+  zip_code: 3902
+  city: Ivana
+-
+  id: 148
+  major_area: Batanes
+  zip_code: 3901
+  city: Mahatao
+-
+  id: 149
+  major_area: Batanes
+  zip_code: 3904
+  city: Sabtang
+-
+  id: 150
+  major_area: Batanes
+  zip_code: 3903
+  city: Uyugan
+-
+  id: 151
+  major_area: Batangas
+  zip_code: 4211
+  city: Agoncillo
+-
+  id: 152
+  major_area: Batangas
+  zip_code: 4205
+  city: Alitagtag
+-
+  id: 153
+  major_area: Batangas
+  zip_code: 4213
+  city: Balayan
+-
+  id: 154
+  major_area: Batangas
+  zip_code: 4219
+  city: Balete
+-
+  id: 155
+  major_area: Batangas
+  zip_code: 4200
+  city: Batangas City
+-
+  id: 156
+  major_area: Batangas
+  zip_code: 4201
+  city: Bauan
+-
+  id: 157
+  major_area: Batangas
+  zip_code: 4212
+  city: Calaca
+-
+  id: 158
+  major_area: Batangas
+  zip_code: 4215
+  city: Calatagan, incl. Punta Baluarte
+-
+  id: 159
+  major_area: Batangas
+  zip_code: 4222
+  city: Cuenca
+-
+  id: 160
+  major_area: Batangas
+  zip_code: 4218
+  city: Fernando Airbase
+-
+  id: 161
+  major_area: Batangas
+  zip_code: 4230
+  city: Ibaan
+-
+  id: 162
+  major_area: Batangas
+  zip_code: 4221
+  city: Laurel, incl. Diokno Highway
+-
+  id: 163
+  major_area: Batangas
+  zip_code: 4209
+  city: Lemery
+-
+  id: 164
+  major_area: Batangas
+  zip_code: 4216
+  city: Lian, incl. Matabungkay
+-
+  id: 165
+  major_area: Batangas
+  zip_code: 4217
+  city: Lipa City
+-
+  id: 166
+  major_area: Batangas
+  zip_code: 4229
+  city: Lobo, incl. Laiya
+-
+  id: 167
+  major_area: Batangas
+  zip_code: 4202
+  city: Mabini
+-
+  id: 168
+  major_area: Batangas
+  zip_code: 4233
+  city: Malvar
+-
+  id: 169
+  major_area: Batangas
+  zip_code: 4223
+  city: Mataas na Kahoy
+-
+  id: 170
+  major_area: Batangas
+  zip_code: 4231
+  city: Nasugbu, incl. Punta Fuego and Calaruega
+-
+  id: 171
+  major_area: Batangas
+  zip_code: 4224
+  city: Padre Garcia
+-
+  id: 172
+  major_area: Batangas
+  zip_code: 4225
+  city: Rosario
+-
+  id: 173
+  major_area: Batangas
+  zip_code: 4227
+  city: San Jose
+-
+  id: 174
+  major_area: Batangas
+  zip_code: 4226
+  city: San Juan
+-
+  id: 175
+  major_area: Batangas
+  zip_code: 4210
+  city: San Luis
+-
+  id: 176
+  major_area: Batangas
+  zip_code: 4207
+  city: San Nicolas
+-
+  id: 177
+  major_area: Batangas
+  zip_code: 4204
+  city: San Pascual
+-
+  id: 178
+  major_area: Batangas
+  zip_code: 4206
+  city: Santa Teresita
+-
+  id: 179
+  major_area: Batangas
+  zip_code: 4234
+  city: Santo Tomas
+-
+  id: 180
+  major_area: Batangas
+  zip_code: 4208
+  city: Taal
+-
+  id: 181
+  major_area: Batangas
+  zip_code: 4220
+  city: Talisay
+-
+  id: 182
+  major_area: Batangas
+  zip_code: 4232
+  city: Tanauan City
+-
+  id: 183
+  major_area: Batangas
+  zip_code: 4228
+  city: Taysan
+-
+  id: 184
+  major_area: Batangas
+  zip_code: 4203
+  city: Tingloy
+-
+  id: 185
+  major_area: Batangas
+  zip_code: 4214
+  city: Tuy
+-
+  id: 186
+  major_area: Benguet
+  zip_code: 2612
+  city: Atok
+-
+  id: 187
+  major_area: Benguet
+  zip_code: 2600
+  city: Baguio City
+-
+  id: 188
+  major_area: Benguet
+  zip_code: 2610
+  city: Bakun
+-
+  id: 189
+  major_area: Benguet
+  zip_code: 2605
+  city: Bokod
+-
+  id: 190
+  major_area: Benguet
+  zip_code: 2607
+  city: Buguias
+-
+  id: 191
+  major_area: Benguet
+  zip_code: 2604
+  city: Itogon
+-
+  id: 192
+  major_area: Benguet
+  zip_code: 2606
+  city: Kabayan
+-
+  id: 193
+  major_area: Benguet
+  zip_code: 2613
+  city: Kapangan
+-
+  id: 194
+  major_area: Benguet
+  zip_code: 2611
+  city: Kibungan
+-
+  id: 195
+  major_area: Benguet
+  zip_code: 2601
+  city: La Trinidad, including Pico
+-
+  id: 196
+  major_area: Benguet
+  zip_code: 2609
+  city: Lepanto, Mankayan
+-
+  id: 197
+  major_area: Benguet
+  zip_code: 2608
+  city: Mankayan
+-
+  id: 198
+  major_area: Benguet
+  zip_code: 2602
+  city: Philippine Military Academy
+-
+  id: 199
+  major_area: Benguet
+  zip_code: 2614
+  city: Sablan
+-
+  id: 200
+  major_area: Benguet
+  zip_code: 2603
+  city: Tuba, including Marcos Highway and Kennon Road
+-
+  id: 201
+  major_area: Benguet
+  zip_code: 2615
+  city: Tublay
+-
+  id: 202
+  major_area: Biliran
+  zip_code: 6544
+  city: Almeria
+-
+  id: 203
+  major_area: Biliran
+  zip_code: 6549
+  city: Biliran
+-
+  id: 204
+  major_area: Biliran
+  zip_code: 6550
+  city: Cabucgayan
+-
+  id: 205
+  major_area: Biliran
+  zip_code: 6548
+  city: Caibiran
+-
+  id: 206
+  major_area: Biliran
+  zip_code: 6547
+  city: Culaba
+-
+  id: 207
+  major_area: Biliran
+  zip_code: 6545
+  city: Kawayan
+-
+  id: 208
+  major_area: Biliran
+  zip_code: 6546
+  city: Maripipi
+-
+  id: 209
+  major_area: Biliran
+  zip_code: 6543
+  city: Naval
+-
+  id: 210
+  major_area: Bohol
+  zip_code: 6302
+  city: Alburquerque
+-
+  id: 211
+  major_area: Bohol
+  zip_code: 6314
+  city: Alicia
+-
+  id: 212
+  major_area: Bohol
+  zip_code: 6311
+  city: Anda
+-
+  id: 213
+  major_area: Bohol
+  zip_code: 6335
+  city: Antequera
+-
+  id: 214
+  major_area: Bohol
+  zip_code: 6301
+  city: Baclayon
+-
+  id: 215
+  major_area: Bohol
+  zip_code: 6342
+  city: Balilihan
+-
+  id: 216
+  major_area: Bohol
+  zip_code: 6318
+  city: Batuan
+-
+  id: 217
+  major_area: Bohol
+  zip_code: 6326
+  city: Bien Unido
+-
+  id: 218
+  major_area: Bohol
+  zip_code: 6317
+  city: Bilar
+-
+  id: 219
+  major_area: Bohol
+  zip_code: 6333
+  city: Buenavista
+-
+  id: 220
+  major_area: Bohol
+  zip_code: 6328
+  city: Calape
+-
+  id: 221
+  major_area: Bohol
+  zip_code: 6312
+  city: Candijay
+-
+  id: 222
+  major_area: Bohol
+  zip_code: 6346
+  city: Pres. Carlos P. Garcia (Pitogo)
+-
+  id: 223
+  major_area: Bohol
+  zip_code: 6319
+  city: Carmen
+-
+  id: 224
+  major_area: Bohol
+  zip_code: 6343
+  city: Catigbian
+-
+  id: 225
+  major_area: Bohol
+  zip_code: 6330
+  city: Clarin
+-
+  id: 226
+  major_area: Bohol
+  zip_code: 6337
+  city: Corella
+-
+  id: 227
+  major_area: Bohol
+  zip_code: 6341
+  city: Cortes
+-
+  id: 228
+  major_area: Bohol
+  zip_code: 6322
+  city: Dagohoy
+-
+  id: 229
+  major_area: Bohol
+  zip_code: 6344
+  city: Danao
+-
+  id: 230
+  major_area: Bohol
+  zip_code: 6339
+  city: Dauis
+-
+  id: 231
+  major_area: Bohol
+  zip_code: 6305
+  city: Dimiao
+-
+  id: 232
+  major_area: Bohol
+  zip_code: 6309
+  city: Duero
+-
+  id: 233
+  major_area: Bohol
+  zip_code: 6307
+  city: Garcia Hernandez
+-
+  id: 234
+  major_area: Bohol
+  zip_code: 6310
+  city: Guindulman
+-
+  id: 235
+  major_area: Bohol
+  zip_code: 6332
+  city: Inabanga
+-
+  id: 236
+  major_area: Bohol
+  zip_code: 6308
+  city: Jagna
+-
+  id: 237
+  major_area: Bohol
+  zip_code: 6334
+  city: Jetafe
+-
+  id: 238
+  major_area: Bohol
+  zip_code: 6304
+  city: Lila
+-
+  id: 239
+  major_area: Bohol
+  zip_code: 6202
+  city: Loay
+-
+  id: 240
+  major_area: Bohol
+  zip_code: 6316
+  city: Loboc
+-
+  id: 241
+  major_area: Bohol
+  zip_code: 6327
+  city: Loon
+-
+  id: 242
+  major_area: Bohol
+  zip_code: 6313
+  city: Mabini
+-
+  id: 243
+  major_area: Bohol
+  zip_code: 6336
+  city: Maribojoc
+-
+  id: 244
+  major_area: Bohol
+  zip_code: 6340
+  city: Panglao
+-
+  id: 245
+  major_area: Bohol
+  zip_code: 6321
+  city: Pilar
+-
+  id: 246
+  major_area: Bohol
+  zip_code: 6331
+  city: Sagbayan
+-
+  id: 247
+  major_area: Bohol
+  zip_code: 6345
+  city: San Isidro
+-
+  id: 248
+  major_area: Bohol
+  zip_code: 6323
+  city: San Miguel
+-
+  id: 249
+  major_area: Bohol
+  zip_code: 6347
+  city: Sevilla
+-
+  id: 250
+  major_area: Bohol
+  zip_code: 6320
+  city: Sierra Bullones
+-
+  id: 251
+  major_area: Bohol
+  zip_code: 6338
+  city: Sikatuna
+-
+  id: 252
+  major_area: Bohol
+  zip_code: 6300
+  city: Tagbilaran City
+-
+  id: 253
+  major_area: Bohol
+  zip_code: 6325
+  city: Talibon
+-
+  id: 254
+  major_area: Bohol
+  zip_code: 6324
+  city: Trinidad
+-
+  id: 255
+  major_area: Bohol
+  zip_code: 6329
+  city: Tubigon
+-
+  id: 256
+  major_area: Bohol
+  zip_code: 6315
+  city: Ubay
+-
+  id: 257
+  major_area: Bohol
+  zip_code: 6306
+  city: Valencia
+-
+  id: 258
+  major_area: Bukidnon
+  zip_code: 8707
+  city: Baungon
+-
+  id: 259
+  major_area: Bukidnon
+  zip_code: 8723
+  city: Cabanglasan
+-
+  id: 260
+  major_area: Bukidnon
+  zip_code: 8721
+  city: Damulog
+-
+  id: 261
+  major_area: Bukidnon
+  zip_code: 8719
+  city: Dangcagan
+-
+  id: 262
+  major_area: Bukidnon
+  zip_code: 8712
+  city: Don Carlos
+-
+  id: 263
+  major_area: Bukidnon
+  zip_code: 8702
+  city: Impasugong
+-
+  id: 264
+  major_area: Bukidnon
+  zip_code: 8713
+  city: Kadingilan
+-
+  id: 265
+  major_area: Bukidnon
+  zip_code: 8718
+  city: Kalilangan
+-
+  id: 266
+  major_area: Bukidnon
+  zip_code: 8720
+  city: Kibawe
+-
+  id: 267
+  major_area: Bukidnon
+  zip_code: 8716
+  city: Kitaotao
+-
+  id: 268
+  major_area: Bukidnon
+  zip_code: 8722
+  city: Lantapan
+-
+  id: 269
+  major_area: Bukidnon
+  zip_code: 8706
+  city: Libona
+-
+  id: 270
+  major_area: Bukidnon
+  zip_code: 8700
+  city: Malaybalay City
+-
+  id: 271
+  major_area: Bukidnon
+  zip_code: 8704
+  city: Malitbog
+-
+  id: 272
+  major_area: Bukidnon
+  zip_code: 8703
+  city: Manolo Fortich
+-
+  id: 273
+  major_area: Bukidnon
+  zip_code: 8714
+  city: Maramag
+-
+  id: 274
+  major_area: Bukidnon
+  zip_code: 8710
+  city: Musuan
+-
+  id: 275
+  major_area: Bukidnon
+  zip_code: 8717
+  city: Pangantucan
+-
+  id: 276
+  major_area: Bukidnon
+  zip_code: 8705
+  city: Phillips
+-
+  id: 277
+  major_area: Bukidnon
+  zip_code: 8715
+  city: Quezon
+-
+  id: 278
+  major_area: Bukidnon
+  zip_code: 8711
+  city: San Fernando
+-
+  id: 279
+  major_area: Bukidnon
+  zip_code: 8701
+  city: Sumilao
+-
+  id: 280
+  major_area: Bukidnon
+  zip_code: 8708
+  city: Talakag
+-
+  id: 281
+  major_area: Bukidnon
+  zip_code: 8709
+  city: Valencia City
+-
+  id: 282
+  major_area: Bulacan
+  zip_code: 3012
+  city: Angat
+-
+  id: 283
+  major_area: Bulacan
+  zip_code: 3016
+  city: Balagtas (Bigaa)
+-
+  id: 284
+  major_area: Bulacan
+  zip_code: 3006
+  city: Baliuag
+-
+  id: 285
+  major_area: Bulacan
+  zip_code: 3018
+  city: Bocaue
+-
+  id: 286
+  major_area: Bulacan
+  zip_code: 3017
+  city: Bulacan
+-
+  id: 287
+  major_area: Bulacan
+  zip_code: 3007
+  city: Bustos
+-
+  id: 288
+  major_area: Bulacan
+  zip_code: 3003
+  city: Calumpit
+-
+  id: 289
+  major_area: Bulacan
+  zip_code: 3009
+  city: Dona Remedios Trinidad
+-
+  id: 290
+  major_area: Bulacan
+  zip_code: 3015
+  city: Guiguinto
+-
+  id: 291
+  major_area: Bulacan
+  zip_code: 3002
+  city: Hagonoy
+-
+  id: 292
+  major_area: Bulacan
+  zip_code: 3000
+  city: Malolos City
+-
+  id: 293
+  major_area: Bulacan
+  zip_code: 3019
+  city: Marilao
+-
+  id: 294
+  major_area: Bulacan
+  zip_code: 3020
+  city: Meycauayan City
+-
+  id: 295
+  major_area: Bulacan
+  zip_code: 3013
+  city: Norzagaray
+-
+  id: 296
+  major_area: Bulacan
+  zip_code: 3021
+  city: Obando
+-
+  id: 297
+  major_area: Bulacan
+  zip_code: 3014
+  city: Pandi
+-
+  id: 298
+  major_area: Bulacan
+  zip_code: 3001
+  city: Paombong
+-
+  id: 299
+  major_area: Bulacan
+  zip_code: 3004
+  city: Plaridel
+-
+  id: 300
+  major_area: Bulacan
+  zip_code: 3005
+  city: Pulilan
+-
+  id: 301
+  major_area: Bulacan
+  zip_code: 3010
+  city: San Ildefonso
+-
+  id: 302
+  major_area: Bulacan
+  zip_code: 3023
+  city: San Jose del Monte City
+-
+  id: 303
+  major_area: Bulacan
+  zip_code: 3011
+  city: San Miguel
+-
+  id: 304
+  major_area: Bulacan
+  zip_code: 3008
+  city: San Rafael
+-
+  id: 305
+  major_area: Bulacan
+  zip_code: 3022
+  city: Santa Maria
+-
+  id: 306
+  major_area: Bulacan
+  zip_code: 3024
+  city: Sapang Palay, San Jose del Monte City
+-
+  id: 307
+  major_area: Cagayan
+  zip_code: 3517
+  city: Abulug
+-
+  id: 308
+  major_area: Cagayan
+  zip_code: 3507
+  city: Alcala
+-
+  id: 309
+  major_area: Cagayan
+  zip_code: 3523
+  city: Allacapan
+-
+  id: 310
+  major_area: Cagayan
+  zip_code: 3505
+  city: Amulung
+-
+  id: 311
+  major_area: Cagayan
+  zip_code: 3515
+  city: Aparri
+-
+  id: 312
+  major_area: Cagayan
+  zip_code: 3506
+  city: Baggao
+-
+  id: 313
+  major_area: Cagayan
+  zip_code: 3516
+  city: Ballesteros
+-
+  id: 314
+  major_area: Cagayan
+  zip_code: 3511
+  city: Buguey
+-
+  id: 315
+  major_area: Cagayan
+  zip_code: 3520
+  city: Calayan
+-
+  id: 316
+  major_area: Cagayan
+  zip_code: 3510
+  city: Camalaniugan
+-
+  id: 317
+  major_area: Cagayan
+  zip_code: 3519
+  city: Claveria
+-
+  id: 318
+  major_area: Cagayan
+  zip_code: 3501
+  city: Enrile
+-
+  id: 319
+  major_area: Cagayan
+  zip_code: 3508
+  city: Gattaran
+-
+  id: 320
+  major_area: Cagayan
+  zip_code: 3513
+  city: Gonzaga
+-
+  id: 321
+  major_area: Cagayan
+  zip_code: 3504
+  city: Iguig
+-
+  id: 322
+  major_area: Cagayan
+  zip_code: 3509
+  city: Lal-Lo
+-
+  id: 323
+  major_area: Cagayan
+  zip_code: 3524
+  city: Lasam
+-
+  id: 324
+  major_area: Cagayan
+  zip_code: 3522
+  city: Pamplona
+-
+  id: 325
+  major_area: Cagayan
+  zip_code: 3502
+  city: Peñablanca
+-
+  id: 326
+  major_area: Cagayan
+  zip_code: 3527
+  city: Piat
+-
+  id: 327
+  major_area: Cagayan
+  zip_code: 3526
+  city: Rizal
+-
+  id: 328
+  major_area: Cagayan
+  zip_code: 3518
+  city: Sanchez-Mira
+-
+  id: 329
+  major_area: Cagayan
+  zip_code: 3514
+  city: Santa Ana
+-
+  id: 330
+  major_area: Cagayan
+  zip_code: 3521
+  city: Santa Praxedes
+-
+  id: 331
+  major_area: Cagayan
+  zip_code: 3512
+  city: Santa Teresita
+-
+  id: 332
+  major_area: Cagayan
+  zip_code: 3525
+  city: Santo Niño
+-
+  id: 333
+  major_area: Cagayan
+  zip_code: 3503
+  city: Solana
+-
+  id: 334
+  major_area: Cagayan
+  zip_code: 3528
+  city: Tuao
+-
+  id: 335
+  major_area: Cagayan
+  zip_code: 3500
+  city: Tuguegarao City
+-
+  id: 336
+  major_area: Camarines Norte
+  zip_code: 4608
+  city: Basud
+-
+  id: 337
+  major_area: Camarines Norte
+  zip_code: 4607
+  city: Capalonga
+-
+  id: 338
+  major_area: Camarines Norte
+  zip_code: 4600
+  city: Daet
+-
+  id: 339
+  major_area: Camarines Norte
+  zip_code: 4610
+  city: Imelda / San Lorenzo Ruiz
+-
+  id: 340
+  major_area: Camarines Norte
+  zip_code: 4606
+  city: Jose Panganiban
+-
+  id: 341
+  major_area: Camarines Norte
+  zip_code: 4604
+  city: Labo
+-
+  id: 342
+  major_area: Camarines Norte
+  zip_code: 4601
+  city: Mercedes
+-
+  id: 343
+  major_area: Camarines Norte
+  zip_code: 4605
+  city: Paracale
+-
+  id: 344
+  major_area: Camarines Norte
+  zip_code: 4609
+  city: San Vicente
+-
+  id: 345
+  major_area: Camarines Norte
+  zip_code: 4611
+  city: Santa Elena
+-
+  id: 346
+  major_area: Camarines Norte
+  zip_code: 4602
+  city: Talisay
+-
+  id: 347
+  major_area: Camarines Norte
+  zip_code: 4612
+  city: Tulay-na-Lupa
+-
+  id: 348
+  major_area: Camarines Norte
+  zip_code: 4603
+  city: Vinzons
+-
+  id: 349
+  major_area: Camarines Sur
+  zip_code: 4432
+  city: Baao
+-
+  id: 350
+  major_area: Camarines Sur
+  zip_code: 4436
+  city: Balatan
+-
+  id: 351
+  major_area: Camarines Sur
+  zip_code: 4435
+  city: Bato
+-
+  id: 352
+  major_area: Camarines Sur
+  zip_code: 4404
+  city: Bombon
+-
+  id: 353
+  major_area: Camarines Sur
+  zip_code: 4433
+  city: Buhi
+-
+  id: 354
+  major_area: Camarines Sur
+  zip_code: 4430
+  city: Bula
+-
+  id: 355
+  major_area: Camarines Sur
+  zip_code: 4406
+  city: Cabusao
+-
+  id: 356
+  major_area: Camarines Sur
+  zip_code: 4405
+  city: Calabanga
+-
+  id: 357
+  major_area: Camarines Sur
+  zip_code: 4401
+  city: Camaligan
+-
+  id: 358
+  major_area: Camarines Sur
+  zip_code: 4402
+  city: Canaman
+-
+  id: 359
+  major_area: Camarines Sur
+  zip_code: 4429
+  city: Caramoan
+-
+  id: 360
+  major_area: Camarines Sur
+  zip_code: 4411
+  city: Del Gallego
+-
+  id: 361
+  major_area: Camarines Sur
+  zip_code: 4412
+  city: Gainza
+-
+  id: 362
+  major_area: Camarines Sur
+  zip_code: 4428
+  city: Garchitorena
+-
+  id: 363
+  major_area: Camarines Sur
+  zip_code: 4422
+  city: Goa
+-
+  id: 364
+  major_area: Camarines Sur
+  zip_code: 4431
+  city: Iriga City
+-
+  id: 365
+  major_area: Camarines Sur
+  zip_code: 4425
+  city: Lagonoy
+-
+  id: 366
+  major_area: Camarines Sur
+  zip_code: 4407
+  city: Libmanan
+-
+  id: 367
+  major_area: Camarines Sur
+  zip_code: 4409
+  city: Lupi
+-
+  id: 368
+  major_area: Camarines Sur
+  zip_code: 4403
+  city: Magarao
+-
+  id: 369
+  major_area: Camarines Sur
+  zip_code: 4413
+  city: Milaor
+-
+  id: 370
+  major_area: Camarines Sur
+  zip_code: 4414
+  city: Minalabac
+-
+  id: 371
+  major_area: Camarines Sur
+  zip_code: 4434
+  city: Nabua
+-
+  id: 372
+  major_area: Camarines Sur
+  zip_code: 4400
+  city: Naga City
+-
+  id: 373
+  major_area: Camarines Sur
+  zip_code: 4419
+  city: Ocampo
+-
+  id: 374
+  major_area: Camarines Sur
+  zip_code: 4416
+  city: Pamplona
+-
+  id: 375
+  major_area: Camarines Sur
+  zip_code: 4417
+  city: Pasacao
+-
+  id: 376
+  major_area: Camarines Sur
+  zip_code: 4418
+  city: Pili
+-
+  id: 377
+  major_area: Camarines Sur
+  zip_code: 4424
+  city: Presentacion
+-
+  id: 378
+  major_area: Camarines Sur
+  zip_code: 4410
+  city: Ragay
+-
+  id: 379
+  major_area: Camarines Sur
+  zip_code: 4421
+  city: Sagnay
+-
+  id: 380
+  major_area: Camarines Sur
+  zip_code: 4415
+  city: San Fernando
+-
+  id: 381
+  major_area: Camarines Sur
+  zip_code: 4423
+  city: San Jose
+-
+  id: 382
+  major_area: Camarines Sur
+  zip_code: 4408
+  city: Sipocot
+-
+  id: 383
+  major_area: Camarines Sur
+  zip_code: 4427
+  city: Siruma
+-
+  id: 384
+  major_area: Camarines Sur
+  zip_code: 4420
+  city: Tigaon
+-
+  id: 385
+  major_area: Camarines Sur
+  zip_code: 4426
+  city: Tinambac
+-
+  id: 386
+  major_area: Camiguin
+  zip_code: 9100
+  city: Mambajao
+-
+  id: 387
+  major_area: Camiguin
+  zip_code: 9101
+  city: Mahinog
+-
+  id: 388
+  major_area: Camiguin
+  zip_code: 9102
+  city: Guinsiliban
+-
+  id: 389
+  major_area: Camiguin
+  zip_code: 9103
+  city: Sagay
+-
+  id: 390
+  major_area: Camiguin
+  zip_code: 9104
+  city: Catarman
+-
+  id: 391
+  major_area: Capiz
+  zip_code: 5811
+  city: Cuartero
+-
+  id: 392
+  major_area: Capiz
+  zip_code: 5810
+  city: Dao
+-
+  id: 393
+  major_area: Capiz
+  zip_code: 5813
+  city: Dumalag
+-
+  id: 394
+  major_area: Capiz
+  zip_code: 5812
+  city: Dumarao
+-
+  id: 395
+  major_area: Capiz
+  zip_code: 5805
+  city: Ivisan
+-
+  id: 396
+  major_area: Capiz
+  zip_code: 5808
+  city: Jamindan
+-
+  id: 397
+  major_area: Capiz
+  zip_code: 5809
+  city: Ma-ayon
+-
+  id: 398
+  major_area: Capiz
+  zip_code: 5807
+  city: Mambusao
+-
+  id: 399
+  major_area: Capiz
+  zip_code: 5801
+  city: Panay
+-
+  id: 400
+  major_area: Capiz
+  zip_code: 5815
+  city: Panitan
+-
+  id: 401
+  major_area: Capiz
+  zip_code: 5804
+  city: Pilar
+-
+  id: 402
+  major_area: Capiz
+  zip_code: 5802
+  city: Pontevedra
+-
+  id: 403
+  major_area: Capiz
+  zip_code: 5803
+  city: President Roxas
+-
+  id: 404
+  major_area: Capiz
+  zip_code: 5800
+  city: Roxas City
+-
+  id: 405
+  major_area: Capiz
+  zip_code: 5806
+  city: Sapian
+-
+  id: 406
+  major_area: Capiz
+  zip_code: 5816
+  city: Sigma
+-
+  id: 407
+  major_area: Capiz
+  zip_code: 5814
+  city: Tapaz
+-
+  id: 408
+  major_area: Catanduanes
+  zip_code: 4807
+  city: Bagamanoc
+-
+  id: 409
+  major_area: Catanduanes
+  zip_code: 4803
+  city: Baras
+-
+  id: 410
+  major_area: Catanduanes
+  zip_code: 4801
+  city: Bato
+-
+  id: 411
+  major_area: Catanduanes
+  zip_code: 4808
+  city: Caramoran
+-
+  id: 412
+  major_area: Catanduanes
+  zip_code: 4804
+  city: Gigmoto
+-
+  id: 413
+  major_area: Catanduanes
+  zip_code: 4809
+  city: Pandan
+-
+  id: 414
+  major_area: Catanduanes
+  zip_code: 4806
+  city: Panganiban
+-
+  id: 415
+  major_area: Catanduanes
+  zip_code: 4810
+  city: San Andres
+-
+  id: 416
+  major_area: Catanduanes
+  zip_code: 4802
+  city: San Miguel
+-
+  id: 417
+  major_area: Catanduanes
+  zip_code: 4805
+  city: Viga
+-
+  id: 418
+  major_area: Catanduanes
+  zip_code: 4800
+  city: Virac
+-
+  id: 419
+  major_area: Cavite
+  zip_code: 4133
+  city: Bailen
+-
+  id: 420
+  major_area: Cavite
+  zip_code: 4123
+  city: Alfonso
+-
+  id: 421
+  major_area: Cavite
+  zip_code: 4119
+  city: Amadeo
+-
+  id: 422
+  major_area: Cavite
+  zip_code: 4102
+  city: Bacoor
+-
+  id: 423
+  major_area: Cavite
+  zip_code: 4116
+  city: Carmona
+-
+  id: 424
+  major_area: Cavite
+  zip_code: 4100
+  city: Cavite City
+-
+  id: 425
+  major_area: Cavite
+  zip_code: 4101
+  city: Sangley Point Naval Base
+-
+  id: 426
+  major_area: Cavite
+  zip_code: 4125
+  city: Corregidor Island
+-
+  id: 427
+  major_area: Cavite
+  zip_code: 4114
+  city: Dasmariñas
+-
+  id: 428
+  major_area: Cavite
+  zip_code: 4115
+  city: Dasmarinas Resettlement Area
+-
+  id: 429
+  major_area: Cavite
+  zip_code: 4124
+  city: General Emilio Aguinaldo (Bailen)
+-
+  id: 430
+  major_area: Cavite
+  zip_code: 4117
+  city: General Mariano Alvarez
+-
+  id: 431
+  major_area: Cavite
+  zip_code: 4107
+  city: General Trias
+-
+  id: 432
+  major_area: Cavite
+  zip_code: 4103
+  city: Imus
+-
+  id: 433
+  major_area: Cavite
+  zip_code: 4122
+  city: Indang
+-
+  id: 434
+  major_area: Cavite
+  zip_code: 4104
+  city: Kawit
+-
+  id: 435
+  major_area: Cavite
+  zip_code: 4113
+  city: Magallanes
+-
+  id: 436
+  major_area: Cavite
+  zip_code: 4112
+  city: Maragondon
+-
+  id: 437
+  major_area: Cavite
+  zip_code: 4121
+  city: Mendez (Mendez-Nuñez)
+-
+  id: 438
+  major_area: Cavite
+  zip_code: 4110
+  city: Naic
+-
+  id: 439
+  major_area: Cavite
+  zip_code: 4105
+  city: Noveleta
+-
+  id: 440
+  major_area: Cavite
+  zip_code: 4106
+  city: Rosario
+-
+  id: 441
+  major_area: Cavite
+  zip_code: 4118
+  city: Silang
+-
+  id: 442
+  major_area: Cavite
+  zip_code: 4120
+  city: Tagaytay City
+-
+  id: 443
+  major_area: Cavite
+  zip_code: 4108
+  city: Tanza
+-
+  id: 444
+  major_area: Cavite
+  zip_code: 4111
+  city: Ternate incl. Caylabne Bay & Puerto Azul
+-
+  id: 445
+  major_area: Cavite
+  zip_code: 4109
+  city: Trece Martires City
+-
+  id: 446
+  major_area: Cebu
+  zip_code: 6055
+  city: Alcantara
+-
+  id: 447
+  major_area: Cebu
+  zip_code: 6066
+  city: Alcoy
+-
+  id: 448
+  major_area: Cebu
+  zip_code: 6077
+  city: Alegria
+-
+  id: 449
+  major_area: Cebu
+  zip_code: 6088
+  city: Aloguinsan
+-
+  id: 450
+  major_area: Cebu
+  zip_code: 6099
+  city: Argao
+-
+  id: 451
+  major_area: Cebu
+  zip_code: 6010
+  city: Asturias
+-
+  id: 452
+  major_area: Cebu
+  zip_code: 6011
+  city: Badian
+-
+  id: 453
+  major_area: Cebu
+  zip_code: 6041
+  city: Balamban
+-
+  id: 454
+  major_area: Cebu
+  zip_code: 6052
+  city: Bantayan
+-
+  id: 455
+  major_area: Cebu
+  zip_code: 6036
+  city: Barili
+-
+  id: 456
+  major_area: Cebu
+  zip_code: 6010
+  city: Bogo City
+-
+  id: 457
+  major_area: Cebu
+  zip_code: 6024
+  city: Boljoon
+-
+  id: 458
+  major_area: Cebu
+  zip_code: 6008
+  city: Borbon
+-
+  id: 459
+  major_area: Cebu
+  zip_code: 6019
+  city: Carcar City
+-
+  id: 460
+  major_area: Cebu
+  zip_code: 6005
+  city: Carmen
+-
+  id: 461
+  major_area: Cebu
+  zip_code: 6006
+  city: Catmon
+-
+  id: 462
+  major_area: Cebu
+  zip_code: 6000
+  city: Cebu City
+-
+  id: 463
+  major_area: Cebu
+  zip_code: 6003
+  city: Compostela
+-
+  id: 464
+  major_area: Cebu
+  zip_code: 6001
+  city: Consolacion
+-
+  id: 465
+  major_area: Cebu
+  zip_code: 6017
+  city: Cordova
+-
+  id: 466
+  major_area: Cebu
+  zip_code: 6013
+  city: Daanbantayan
+-
+  id: 467
+  major_area: Cebu
+  zip_code: 6022
+  city: Dalaguete
+-
+  id: 468
+  major_area: Cebu
+  zip_code: 6004
+  city: Danao City
+-
+  id: 469
+  major_area: Cebu
+  zip_code: 6035
+  city: Dumanjug
+-
+  id: 470
+  major_area: Cebu
+  zip_code: 6028
+  city: Ginatilan
+-
+  id: 471
+  major_area: Cebu
+  zip_code: 6015
+  city: Lapu-Lapu City (Opon)
+-
+  id: 472
+  major_area: Cebu
+  zip_code: 6002
+  city: Liloan
+-
+  id: 473
+  major_area: Cebu
+  zip_code: 6016
+  city: Mactan Airport
+-
+  id: 474
+  major_area: Cebu
+  zip_code: 6053
+  city: Madridejos
+-
+  id: 475
+  major_area: Cebu
+  zip_code: 6029
+  city: Malabuyoc
+-
+  id: 476
+  major_area: Cebu
+  zip_code: 6014
+  city: Mandaue City
+-
+  id: 477
+  major_area: Cebu
+  zip_code: 6012
+  city: Medellin
+-
+  id: 478
+  major_area: Cebu
+  zip_code: 6046
+  city: Minglanilla
+-
+  id: 479
+  major_area: Cebu
+  zip_code: 6032
+  city: Moalboal
+-
+  id: 480
+  major_area: Cebu
+  zip_code: 6037
+  city: Naga
+-
+  id: 481
+  major_area: Cebu
+  zip_code: 6025
+  city: Oslob
+-
+  id: 482
+  major_area: Cebu
+  zip_code: 6048
+  city: Pilar
+-
+  id: 483
+  major_area: Cebu
+  zip_code: 6039
+  city: Pinamungahan
+-
+  id: 484
+  major_area: Cebu
+  zip_code: 6049
+  city: Poro
+-
+  id: 485
+  major_area: Cebu
+  zip_code: 6034
+  city: Ronda
+-
+  id: 486
+  major_area: Cebu
+  zip_code: 6027
+  city: Samboan
+-
+  id: 487
+  major_area: Cebu
+  zip_code: 6018
+  city: San Fernando
+-
+  id: 488
+  major_area: Cebu
+  zip_code: 6050
+  city: San Francisco
+-
+  id: 489
+  major_area: Cebu
+  zip_code: 6011
+  city: San Remigio
+-
+  id: 490
+  major_area: Cebu
+  zip_code: 6047
+  city: Santa Fe
+-
+  id: 491
+  major_area: Cebu
+  zip_code: 6026
+  city: Santander
+-
+  id: 492
+  major_area: Cebu
+  zip_code: 6020
+  city: Sibonga
+-
+  id: 493
+  major_area: Cebu
+  zip_code: 6007
+  city: Sogod
+-
+  id: 494
+  major_area: Cebu
+  zip_code: 6009
+  city: Tabogon
+-
+  id: 495
+  major_area: Cebu
+  zip_code: 6044
+  city: Tabuelan
+-
+  id: 496
+  major_area: Cebu
+  zip_code: 6045
+  city: Talisay City
+-
+  id: 497
+  major_area: Cebu
+  zip_code: 6038
+  city: Toledo City
+-
+  id: 498
+  major_area: Cebu
+  zip_code: 6043
+  city: Tuburan
+-
+  id: 499
+  major_area: Cebu
+  zip_code: 6051
+  city: Tudela
+-
+  id: 500
+  major_area: Compostela Valley
+  zip_code: 8109
+  city: Compostela
+-
+  id: 501
+  major_area: Compostela Valley
+  zip_code: 8103
+  city: Laak (San Vicente)
+-
+  id: 502
+  major_area: Compostela Valley
+  zip_code: 8115
+  city: Mabini (Doña Alicia)
+-
+  id: 503
+  major_area: Compostela Valley
+  zip_code: 8114
+  city: Maco
+-
+  id: 504
+  major_area: Compostela Valley
+  zip_code: 8116
+  city: Maragusan (San Mariano)
+-
+  id: 505
+  major_area: Compostela Valley
+  zip_code: 8108
+  city: Mawab
+-
+  id: 506
+  major_area: Compostela Valley
+  zip_code: 8111
+  city: Monkayo
+-
+  id: 507
+  major_area: Compostela Valley
+  zip_code: 8107
+  city: Montevista
+-
+  id: 508
+  major_area: Compostela Valley
+  zip_code: 8106
+  city: Nabunturan
+-
+  id: 509
+  major_area: Compostela Valley
+  zip_code: 8110
+  city: New Bataan
+-
+  id: 510
+  major_area: Compostela Valley
+  zip_code: 8117
+  city: Pantukan
+-
+  id: 511
+  major_area: Cotabato
+  zip_code: 9413
+  city: Alamada
+-
+  id: 512
+  major_area: Cotabato
+  zip_code: 9415
+  city: Aleosan
+-
+  id: 513
+  major_area: Cotabato
+  zip_code: 9414
+  city: Antipas
+-
+  id: 514
+  major_area: Cotabato
+  zip_code: 9417
+  city: Arakan
+-
+  id: 515
+  major_area: Cotabato
+  zip_code: 9416
+  city: Banisilan
+-
+  id: 516
+  major_area: Cotabato
+  zip_code: 9408
+  city: Carmen
+-
+  id: 517
+  major_area: Cotabato
+  zip_code: 9407
+  city: Kabacan
+-
+  id: 518
+  major_area: Cotabato
+  zip_code: 9400
+  city: Kidapawan City
+-
+  id: 519
+  major_area: Cotabato
+  zip_code: 9411
+  city: Libungan
+-
+  id: 520
+  major_area: Cotabato
+  zip_code: 9404
+  city: Magpet
+-
+  id: 521
+  major_area: Cotabato
+  zip_code: 9401
+  city: Makilala
+-
+  id: 522
+  major_area: Cotabato
+  zip_code: 9406
+  city: Matalam
+-
+  id: 523
+  major_area: Cotabato
+  zip_code: 9410
+  city: Midsayap
+-
+  id: 524
+  major_area: Cotabato
+  zip_code: 9402
+  city: M'Lang
+-
+  id: 525
+  major_area: Cotabato
+  zip_code: 9412
+  city: Pigkawayan
+-
+  id: 526
+  major_area: Cotabato
+  zip_code: 9409
+  city: Pikit
+-
+  id: 527
+  major_area: Cotabato
+  zip_code: 9405
+  city: President Roxas
+-
+  id: 528
+  major_area: Cotabato
+  zip_code: 9403
+  city: Tulunan
+-
+  id: 529
+  major_area: Davao del Norte
+  zip_code: 8102
+  city: Asuncion
+-
+  id: 530
+  major_area: Davao del Norte
+  zip_code: 8118
+  city: Babak
+-
+  id: 531
+  major_area: Davao del Norte
+  zip_code: 8101
+  city: Carmen
+-
+  id: 532
+  major_area: Davao del Norte
+  zip_code: 8113
+  city: Kapalong
+-
+  id: 533
+  major_area: Davao del Norte
+  zip_code: 8120
+  city: Kaputian
+-
+  id: 534
+  major_area: Davao del Norte
+  zip_code: 8104
+  city: New Corella
+-
+  id: 535
+  major_area: Davao del Norte
+  zip_code: 8105
+  city: Panabo City
+-
+  id: 536
+  major_area: Davao del Norte
+  zip_code: 8119
+  city: Island Garden City of Samal
+-
+  id: 537
+  major_area: Davao del Norte
+  zip_code: 8112
+  city: Santo Tomas
+-
+  id: 538
+  major_area: Davao del Norte
+  zip_code: 8100
+  city: Tagum City
+-
+  id: 539
+  major_area: Davao del Sur
+  zip_code: 8005
+  city: Bansalan
+-
+  id: 540
+  major_area: Davao del Sur
+  zip_code: 8000
+  city: Davao City
+-
+  id: 541
+  major_area: Davao del Sur
+  zip_code: 8016
+  city: Ateneo de Davao University
+-
+  id: 542
+  major_area: Davao del Sur
+  zip_code: 8002
+  city: Digos City
+-
+  id: 543
+  major_area: Davao del Sur
+  zip_code: 8013
+  city: Don Marcelino
+-
+  id: 544
+  major_area: Davao del Sur
+  zip_code: 8006
+  city: Hagonoy
+-
+  id: 545
+  major_area: Davao del Sur
+  zip_code: 8014
+  city: Jose Abad Santos
+-
+  id: 546
+  major_area: Davao del Sur
+  zip_code: 8008
+  city: Kiblawan
+-
+  id: 547
+  major_area: Davao del Sur
+  zip_code: 8004
+  city: Magsaysay
+-
+  id: 548
+  major_area: Davao del Sur
+  zip_code: 8010
+  city: Malalag
+-
+  id: 549
+  major_area: Davao del Sur
+  zip_code: 8012
+  city: Malita
+-
+  id: 550
+  major_area: Davao del Sur
+  zip_code: 8003
+  city: Matanao
+-
+  id: 551
+  major_area: Davao del Sur
+  zip_code: 8007
+  city: Padada
+-
+  id: 552
+  major_area: Davao del Sur
+  zip_code: 8001
+  city: Santa Cruz
+-
+  id: 553
+  major_area: Davao del Sur
+  zip_code: 8011
+  city: Santa Maria
+-
+  id: 554
+  major_area: Davao del Sur
+  zip_code: 8015
+  city: Sarangani
+-
+  id: 555
+  major_area: Davao del Sur
+  zip_code: 8009
+  city: Sulop
+-
+  id: 556
+  major_area: Davao del Sur
+  zip_code: 8200
+  city: Mati
+-
+  id: 557
+  major_area: Davao del Sur
+  zip_code: 8209
+  city: San Isidro
+-
+  id: 558
+  major_area: Davao del Sur
+  zip_code: 8201
+  city: Tarragona
+-
+  id: 559
+  major_area: Dinagat Islands
+  zip_code: 8413
+  city: Basilisa (Rizal)
+-
+  id: 560
+  major_area: Dinagat Islands
+  zip_code: 8411
+  city: Cagdianao
+-
+  id: 561
+  major_area: Dinagat Islands
+  zip_code: 8412
+  city: Dinagat
+-
+  id: 562
+  major_area: Dinagat Islands
+  zip_code: 8414
+  city: Libjo (Albor)
+-
+  id: 563
+  major_area: Dinagat Islands
+  zip_code: 8415
+  city: Loreto
+-
+  id: 564
+  major_area: Dinagat Islands
+  zip_code: 8427
+  city: San Jose
+-
+  id: 565
+  major_area: Dinagat Islands
+  zip_code: 8426
+  city: Tubajon
+-
+  id: 566
+  major_area: Eastern Samar
+  zip_code: 6822
+  city: Arteche
+-
+  id: 567
+  major_area: Eastern Samar
+  zip_code: 6812
+  city: Balangiga
+-
+  id: 568
+  major_area: Eastern Samar
+  zip_code: 6801
+  city: Balangkayan
+-
+  id: 569
+  major_area: Eastern Samar
+  zip_code: 6800
+  city: Borongan
+-
+  id: 570
+  major_area: Eastern Samar
+  zip_code: 6806
+  city: Can-avid
+-
+  id: 571
+  major_area: Eastern Samar
+  zip_code: 6817
+  city: Dolores
+-
+  id: 572
+  major_area: Eastern Samar
+  zip_code: 6805
+  city: General MacArthur
+-
+  id: 573
+  major_area: Eastern Samar
+  zip_code: 6811
+  city: Giporlos
+-
+  id: 574
+  major_area: Eastern Samar
+  zip_code: 6809
+  city: Guiuan
+-
+  id: 575
+  major_area: Eastern Samar
+  zip_code: 6804
+  city: Hernani
+-
+  id: 576
+  major_area: Eastern Samar
+  zip_code: 6819
+  city: Jipapad
+-
+  id: 577
+  major_area: Eastern Samar
+  zip_code: 6813
+  city: Lawaan
+-
+  id: 578
+  major_area: Eastern Samar
+  zip_code: 6803
+  city: Llorente
+-
+  id: 579
+  major_area: Eastern Samar
+  zip_code: 6820
+  city: Maslog
+-
+  id: 580
+  major_area: Eastern Samar
+  zip_code: 6802
+  city: Maydolong
+-
+  id: 581
+  major_area: Eastern Samar
+  zip_code: 6808
+  city: Mercedes
+-
+  id: 582
+  major_area: Eastern Samar
+  zip_code: 6818
+  city: Oras
+-
+  id: 583
+  major_area: Eastern Samar
+  zip_code: 6810
+  city: Quinapondan
+-
+  id: 584
+  major_area: Eastern Samar
+  zip_code: 6807
+  city: Salcedo
+-
+  id: 585
+  major_area: Eastern Samar
+  zip_code: 6814
+  city: San Julian
+-
+  id: 586
+  major_area: Eastern Samar
+  zip_code: 6821
+  city: San Policarpo
+-
+  id: 587
+  major_area: Eastern Samar
+  zip_code: 6815
+  city: Sulat
+-
+  id: 588
+  major_area: Eastern Samar
+  zip_code: 6816
+  city: Taft
+-
+  id: 589
+  major_area: Guimaras
+  zip_code: 5044
+  city: Buenavista
+-
+  id: 590
+  major_area: Guimaras
+  zip_code: 5045
+  city: Jordan
+-
+  id: 591
+  major_area: Guimaras
+  zip_code: 5046
+  city: Nueva Valencia
+-
+  id: 592
+  major_area: Guimaras
+  zip_code: 5047
+  city: San Lorenzo
+-
+  id: 593
+  major_area: Guimaras
+  zip_code: 5048
+  city: Sibunag
+-
+  id: 594
+  major_area: Ifugao
+  zip_code: 3606
+  city: Aguinaldo
+-
+  id: 595
+  major_area: Ifugao
+  zip_code: 3608
+  city: Alfonso Lista (Potia)
+-
+  id: 596
+  major_area: Ifugao
+  zip_code: 3610
+  city: Asipulo
+-
+  id: 597
+  major_area: Ifugao
+  zip_code: 3601
+  city: Banaue
+-
+  id: 598
+  major_area: Ifugao
+  zip_code: 3607
+  city: Hingyon
+-
+  id: 599
+  major_area: Ifugao
+  zip_code: 3603
+  city: Hungduan
+-
+  id: 600
+  major_area: Ifugao
+  zip_code: 3604
+  city: Kiangan
+-
+  id: 601
+  major_area: Ifugao
+  zip_code: 3600
+  city: Lagawe
+-
+  id: 602
+  major_area: Ifugao
+  zip_code: 3605
+  city: Lamut
+-
+  id: 603
+  major_area: Ifugao
+  zip_code: 3602
+  city: Mayoyao (Mayaoyao)
+-
+  id: 604
+  major_area: Ifugao
+  zip_code: 3609
+  city: Tinoc
+-
+  id: 605
+  major_area: Ilocos Norte
+  zip_code: 2922
+  city: Adams
+-
+  id: 606
+  major_area: Ilocos Norte
+  zip_code: 2916
+  city: Bacarra
+-
+  id: 607
+  major_area: Ilocos Norte
+  zip_code: 2904
+  city: Badoc
+-
+  id: 608
+  major_area: Ilocos Norte
+  zip_code: 2920
+  city: Bangui
+-
+  id: 609
+  major_area: Ilocos Norte
+  zip_code: 2908
+  city: Banna (Espiritu)
+-
+  id: 610
+  major_area: Ilocos Norte
+  zip_code: 2906
+  city: Batac
+-
+  id: 611
+  major_area: Ilocos Norte
+  zip_code: 2918
+  city: Burgos
+-
+  id: 612
+  major_area: Ilocos Norte
+  zip_code: 2911
+  city: Carasi
+-
+  id: 613
+  major_area: Ilocos Norte
+  zip_code: 2903
+  city: Currimao
+-
+  id: 614
+  major_area: Ilocos Norte
+  zip_code: 2913
+  city: Dingras
+-
+  id: 615
+  major_area: Ilocos Norte
+  zip_code: 2921
+  city: Dumalneg
+-
+  id: 616
+  major_area: Ilocos Norte
+  zip_code: 2900
+  city: Laoag City
+-
+  id: 617
+  major_area: Ilocos Norte
+  zip_code: 2907
+  city: Marcos
+-
+  id: 618
+  major_area: Ilocos Norte
+  zip_code: 2909
+  city: Nueva Era
+-
+  id: 619
+  major_area: Ilocos Norte
+  zip_code: 2919
+  city: Pagudpud
+-
+  id: 620
+  major_area: Ilocos Norte
+  zip_code: 2902
+  city: Paoay
+-
+  id: 621
+  major_area: Ilocos Norte
+  zip_code: 2917
+  city: Pasuquin
+-
+  id: 622
+  major_area: Ilocos Norte
+  zip_code: 2912
+  city: Piddig
+-
+  id: 623
+  major_area: Ilocos Norte
+  zip_code: 2905
+  city: Pinili
+-
+  id: 624
+  major_area: Ilocos Norte
+  zip_code: 2901
+  city: San Nicolas
+-
+  id: 625
+  major_area: Ilocos Norte
+  zip_code: 2914
+  city: Sarrat
+-
+  id: 626
+  major_area: Ilocos Norte
+  zip_code: 2910
+  city: Solsona
+-
+  id: 627
+  major_area: Ilocos Norte
+  zip_code: 2915
+  city: Vintar
+-
+  id: 628
+  major_area: Ilocos Sur
+  zip_code: 2716
+  city: Alilem
+-
+  id: 629
+  major_area: Ilocos Sur
+  zip_code: 2708
+  city: Banayoyo
+-
+  id: 630
+  major_area: Ilocos Sur
+  zip_code: 2727
+  city: Bantay
+-
+  id: 631
+  major_area: Ilocos Sur
+  zip_code: 2724
+  city: Burgos
+-
+  id: 632
+  major_area: Ilocos Sur
+  zip_code: 2732
+  city: Cabugao
+-
+  id: 633
+  major_area: Ilocos Sur
+  zip_code: 2710
+  city: Candon City
+-
+  id: 634
+  major_area: Ilocos Sur
+  zip_code: 2702
+  city: Caoayan
+-
+  id: 635
+  major_area: Ilocos Sur
+  zip_code: 2718
+  city: Cervantes
+-
+  id: 636
+  major_area: Ilocos Sur
+  zip_code: 2709
+  city: Galimuyod
+-
+  id: 637
+  major_area: Ilocos Sur
+  zip_code: 2720
+  city: Gregorio del Pilar
+-
+  id: 638
+  major_area: Ilocos Sur
+  zip_code: 2723
+  city: Lidlidda
+-
+  id: 639
+  major_area: Ilocos Sur
+  zip_code: 2730
+  city: Magsingal
+-
+  id: 640
+  major_area: Ilocos Sur
+  zip_code: 2725
+  city: Nagbukel
+-
+  id: 641
+  major_area: Ilocos Sur
+  zip_code: 2704
+  city: Narvacan
+-
+  id: 642
+  major_area: Ilocos Sur
+  zip_code: 2721
+  city: Quirino (Angkaki)
+-
+  id: 643
+  major_area: Ilocos Sur
+  zip_code: 2711
+  city: Salcedo (Baugen)
+-
+  id: 644
+  major_area: Ilocos Sur
+  zip_code: 2722
+  city: San Emilio
+-
+  id: 645
+  major_area: Ilocos Sur
+  zip_code: 2706
+  city: San Esteban
+-
+  id: 646
+  major_area: Ilocos Sur
+  zip_code: 2728
+  city: San Ildefonso
+-
+  id: 647
+  major_area: Ilocos Sur
+  zip_code: 2731
+  city: San Juan (Lapog)
+-
+  id: 648
+  major_area: Ilocos Sur
+  zip_code: 2726
+  city: San Vicente
+-
+  id: 649
+  major_area: Ilocos Sur
+  zip_code: 2703
+  city: Santa
+-
+  id: 650
+  major_area: Ilocos Sur
+  zip_code: 2701
+  city: Santa Catalina
+-
+  id: 651
+  major_area: Ilocos Sur
+  zip_code: 2713
+  city: Santa Cruz
+-
+  id: 652
+  major_area: Ilocos Sur
+  zip_code: 2712
+  city: Santa Lucia
+-
+  id: 653
+  major_area: Ilocos Sur
+  zip_code: 2705
+  city: Santa Maria
+-
+  id: 654
+  major_area: Ilocos Sur
+  zip_code: 2707
+  city: Santiago
+-
+  id: 655
+  major_area: Ilocos Sur
+  zip_code: 2729
+  city: Santo Domingo
+-
+  id: 656
+  major_area: Ilocos Sur
+  zip_code: 2719
+  city: Sigay
+-
+  id: 657
+  major_area: Ilocos Sur
+  zip_code: 2733
+  city: Sinait
+-
+  id: 658
+  major_area: Ilocos Sur
+  zip_code: 2717
+  city: Sugpon
+-
+  id: 659
+  major_area: Ilocos Sur
+  zip_code: 2715
+  city: Suyo
+-
+  id: 660
+  major_area: Ilocos Sur
+  zip_code: 2714
+  city: Tagudin
+-
+  id: 661
+  major_area: Ilocos Sur
+  zip_code: 2700
+  city: Vigan City
+-
+  id: 662
+  major_area: Iloilo
+  zip_code: 5012
+  city: Ajuy
+-
+  id: 663
+  major_area: Iloilo
+  zip_code: 5028
+  city: Alimodian
+-
+  id: 664
+  major_area: Iloilo
+  zip_code: 5009
+  city: Anilao
+-
+  id: 665
+  major_area: Iloilo
+  zip_code: 5033
+  city: Badiangan
+-
+  id: 666
+  major_area: Iloilo
+  zip_code: 5018
+  city: Balasan
+-
+  id: 667
+  major_area: Iloilo
+  zip_code: 5010
+  city: Banate
+-
+  id: 668
+  major_area: Iloilo
+  zip_code: 5007
+  city: Barotoc Nuevo
+-
+  id: 669
+  major_area: Iloilo
+  zip_code: 5011
+  city: Barotoc Viejo
+-
+  id: 670
+  major_area: Iloilo
+  zip_code: 5016
+  city: Batad
+-
+  id: 671
+  major_area: Iloilo
+  zip_code: 5041
+  city: Bingawan
+-
+  id: 672
+  major_area: Iloilo
+  zip_code: 5031
+  city: Cabatuan
+-
+  id: 673
+  major_area: Iloilo
+  zip_code: 5040
+  city: Calinog
+-
+  id: 674
+  major_area: Iloilo
+  zip_code: 5019
+  city: Carles
+-
+  id: 675
+  major_area: Iloilo
+  zip_code: 5013
+  city: Concepcion
+-
+  id: 676
+  major_area: Iloilo
+  zip_code: 5035
+  city: Dingle
+-
+  id: 677
+  major_area: Iloilo
+  zip_code: 5038
+  city: Duenas
+-
+  id: 678
+  major_area: Iloilo
+  zip_code: 5006
+  city: Dumangas
+-
+  id: 679
+  major_area: Iloilo
+  zip_code: 5017
+  city: Estancia
+-
+  id: 680
+  major_area: Iloilo
+  zip_code: 5022
+  city: Guimbal
+-
+  id: 681
+  major_area: Iloilo
+  zip_code: 5029
+  city: Igbaras
+-
+  id: 682
+  major_area: Iloilo
+  zip_code: 5000
+  city: Iloilo City
+-
+  id: 683
+  major_area: Iloilo
+  zip_code: 5034
+  city: Janiuay
+-
+  id: 684
+  major_area: Iloilo
+  zip_code: 5042
+  city: Lambunao
+-
+  id: 685
+  major_area: Iloilo
+  zip_code: 5003
+  city: Leganes
+-
+  id: 686
+  major_area: Iloilo
+  zip_code: 5043
+  city: Lemery
+-
+  id: 687
+  major_area: Iloilo
+  zip_code: 5026
+  city: Leon
+-
+  id: 688
+  major_area: Iloilo
+  zip_code: 5030
+  city: Maasin
+-
+  id: 689
+  major_area: Iloilo
+  zip_code: 5023
+  city: Miagao
+-
+  id: 690
+  major_area: Iloilo
+  zip_code: 5032
+  city: Mina
+-
+  id: 691
+  major_area: Iloilo
+  zip_code: 5005
+  city: New Lucena
+-
+  id: 692
+  major_area: Iloilo
+  zip_code: 5020
+  city: Oton
+-
+  id: 693
+  major_area: Iloilo
+  zip_code: 5037
+  city: Passi City
+-
+  id: 694
+  major_area: Iloilo
+  zip_code: 5001
+  city: Pavia
+-
+  id: 695
+  major_area: Iloilo
+  zip_code: 5008
+  city: Pototan
+-
+  id: 696
+  major_area: Iloilo
+  zip_code: 5015
+  city: San Dionisio
+-
+  id: 697
+  major_area: Iloilo
+  zip_code: 5036
+  city: San Enrique
+-
+  id: 698
+  major_area: Iloilo
+  zip_code: 5024
+  city: San Joaquin
+-
+  id: 699
+  major_area: Iloilo
+  zip_code: 5025
+  city: San Miguel
+-
+  id: 700
+  major_area: Iloilo
+  zip_code: 5039
+  city: San Rafael
+-
+  id: 701
+  major_area: Iloilo
+  zip_code: 5002
+  city: Santa Barbara
+-
+  id: 702
+  major_area: Iloilo
+  zip_code: 5014
+  city: Sara
+-
+  id: 703
+  major_area: Iloilo
+  zip_code: 5021
+  city: Tigbauan
+-
+  id: 704
+  major_area: Iloilo
+  zip_code: 5027
+  city: Tubungan
+-
+  id: 705
+  major_area: Iloilo
+  zip_code: 5004
+  city: Zarraga
+-
+  id: 706
+  major_area: Isabela
+  zip_code: 3306
+  city: Alicia
+-
+  id: 707
+  major_area: Isabela
+  zip_code: 3307
+  city: Angadanan
+-
+  id: 708
+  major_area: Isabela
+  zip_code: 3316
+  city: Aurora
+-
+  id: 709
+  major_area: Isabela
+  zip_code: 3331
+  city: Benito Soliven
+-
+  id: 710
+  major_area: Isabela
+  zip_code: 3322
+  city: Burgos
+-
+  id: 711
+  major_area: Isabela
+  zip_code: 3328
+  city: Cabagan
+-
+  id: 712
+  major_area: Isabela
+  zip_code: 3315
+  city: Cabatuan
+-
+  id: 713
+  major_area: Isabela
+  zip_code: 3305
+  city: Cauayan City
+-
+  id: 714
+  major_area: Isabela
+  zip_code: 3312
+  city: Cordon
+-
+  id: 715
+  major_area: Isabela
+  zip_code: 3326
+  city: Delfin Albano
+-
+  id: 716
+  major_area: Isabela
+  zip_code: 3336
+  city: Dinapigui
+-
+  id: 717
+  major_area: Isabela
+  zip_code: 3335
+  city: Divilacan
+-
+  id: 718
+  major_area: Isabela
+  zip_code: 3309
+  city: Echague
+-
+  id: 719
+  major_area: Isabela
+  zip_code: 3301
+  city: Gamu
+-
+  id: 720
+  major_area: Isabela
+  zip_code: 3300
+  city: Ilagan
+-
+  id: 721
+  major_area: Isabela
+  zip_code: 3313
+  city: Jones
+-
+  id: 722
+  major_area: Isabela
+  zip_code: 3304
+  city: Luna
+-
+  id: 723
+  major_area: Isabela
+  zip_code: 3333
+  city: Maconacon
+-
+  id: 724
+  major_area: Isabela
+  zip_code: 3323
+  city: Mallig
+-
+  id: 725
+  major_area: Isabela
+  zip_code: 3302
+  city: Naguillan
+-
+  id: 726
+  major_area: Isabela
+  zip_code: 3334
+  city: Palanan
+-
+  id: 727
+  major_area: Isabela
+  zip_code: 3324
+  city: Quezon
+-
+  id: 728
+  major_area: Isabela
+  zip_code: 3321
+  city: Quirino
+-
+  id: 729
+  major_area: Isabela
+  zip_code: 3319
+  city: Ramon
+-
+  id: 730
+  major_area: Isabela
+  zip_code: 3303
+  city: Reina Mercedes
+-
+  id: 731
+  major_area: Isabela
+  zip_code: 3320
+  city: Roxas
+-
+  id: 732
+  major_area: Isabela
+  zip_code: 3314
+  city: San Agustin
+-
+  id: 733
+  major_area: Isabela
+  zip_code: 3308
+  city: San Guillermo
+-
+  id: 734
+  major_area: Isabela
+  zip_code: 3310
+  city: San Isidro
+-
+  id: 735
+  major_area: Isabela
+  zip_code: 3317
+  city: San Manuel (Callang)
+-
+  id: 736
+  major_area: Isabela
+  zip_code: 3332
+  city: San Mariano
+-
+  id: 737
+  major_area: Isabela
+  zip_code: 3318
+  city: San Mateo
+-
+  id: 738
+  major_area: Isabela
+  zip_code: 3329
+  city: San Pablo
+-
+  id: 739
+  major_area: Isabela
+  zip_code: 3330
+  city: Santa Maria
+-
+  id: 740
+  major_area: Isabela
+  zip_code: 3311
+  city: Santiago City
+-
+  id: 741
+  major_area: Isabela
+  zip_code: 3327
+  city: Santo Tomas
+-
+  id: 742
+  major_area: Isabela
+  zip_code: 3325
+  city: Tumauini
+-
+  id: 743
+  major_area: Kalinga
+  zip_code: 3801
+  city: Balbalan
+-
+  id: 744
+  major_area: Kalinga
+  zip_code: 3808
+  city: Liwan (Rizal)
+-
+  id: 745
+  major_area: Kalinga
+  zip_code: 3802
+  city: Lubuagan
+-
+  id: 746
+  major_area: Kalinga
+  zip_code: 3803
+  city: Pasil
+-
+  id: 747
+  major_area: Kalinga
+  zip_code: 3806
+  city: Pinukpuk
+-
+  id: 748
+  major_area: Kalinga
+  zip_code: 3800
+  city: Tabuk City
+-
+  id: 749
+  major_area: Kalinga
+  zip_code: 3805
+  city: Tanudan
+-
+  id: 750
+  major_area: Kalinga
+  zip_code: 3804
+  city: Tinglayan
+-
+  id: 751
+  major_area: La Union
+  zip_code: 2504
+  city: Agoo
+-
+  id: 752
+  major_area: La Union
+  zip_code: 2503
+  city: Aringay
+-
+  id: 753
+  major_area: La Union
+  zip_code: 2515
+  city: Bacnotan
+-
+  id: 754
+  major_area: La Union
+  zip_code: 2512
+  city: Bagulin
+-
+  id: 755
+  major_area: La Union
+  zip_code: 2517
+  city: Balaoan
+-
+  id: 756
+  major_area: La Union
+  zip_code: 2519
+  city: Bangar
+-
+  id: 757
+  major_area: La Union
+  zip_code: 2501
+  city: Bauang
+-
+  id: 758
+  major_area: La Union
+  zip_code: 2510
+  city: Burgos
+-
+  id: 759
+  major_area: La Union
+  zip_code: 2502
+  city: Caba
+-
+  id: 760
+  major_area: La Union
+  zip_code: 2507
+  city: Damortis
+-
+  id: 761
+  major_area: La Union
+  zip_code: 2518
+  city: Luna
+-
+  id: 762
+  major_area: La Union
+  zip_code: 2511
+  city: Naguillan
+-
+  id: 763
+  major_area: La Union
+  zip_code: 2508
+  city: Pugo
+-
+  id: 764
+  major_area: La Union
+  zip_code: 2506
+  city: Rosario
+-
+  id: 765
+  major_area: La Union
+  zip_code: 2500
+  city: San Fernando City
+-
+  id: 766
+  major_area: La Union
+  zip_code: 2513
+  city: San Gabriel
+-
+  id: 767
+  major_area: La Union
+  zip_code: 2514
+  city: San Juan
+-
+  id: 768
+  major_area: La Union
+  zip_code: 2505
+  city: Santo Tomas
+-
+  id: 769
+  major_area: La Union
+  zip_code: 2516
+  city: Santol
+-
+  id: 770
+  major_area: La Union
+  zip_code: 2520
+  city: Sudepen
+-
+  id: 771
+  major_area: La Union
+  zip_code: 2509
+  city: Tubao
+-
+  id: 772
+  major_area: Laguna
+  zip_code: 4001
+  city: Alaminos
+-
+  id: 773
+  major_area: Laguna
+  zip_code: 4033
+  city: Bay
+-
+  id: 774
+  major_area: Laguna
+  zip_code: 4024
+  city: Biñan
+-
+  id: 775
+  major_area: Laguna
+  zip_code: 4006
+  city: Botocan, Magdalena
+-
+  id: 776
+  major_area: Laguna
+  zip_code: 4025
+  city: Cabuyao
+-
+  id: 777
+  major_area: Laguna
+  zip_code: 4027
+  city: Calamba City
+-
+  id: 778
+  major_area: Laguna
+  zip_code: 4012
+  city: Calauan
+-
+  id: 779
+  major_area: Laguna
+  zip_code: 4029
+  city: Camp Vicente Lim
+-
+  id: 780
+  major_area: Laguna
+  zip_code: 4028
+  city: Canlubang, Calamba City
+-
+  id: 781
+  major_area: Laguna
+  zip_code: 4013
+  city: Cavinti
+-
+  id: 782
+  major_area: Laguna
+  zip_code: 4021
+  city: Famy
+-
+  id: 783
+  major_area: Laguna
+  zip_code: 4015
+  city: Kalayaan
+-
+  id: 784
+  major_area: Laguna
+  zip_code: 4004
+  city: Liliw
+-
+  id: 785
+  major_area: Laguna
+  zip_code: 4030
+  city: Los Baños
+-
+  id: 786
+  major_area: Laguna
+  zip_code: 4032
+  city: Luisiana
+-
+  id: 787
+  major_area: Laguna
+  zip_code: 4014
+  city: Lumban
+-
+  id: 788
+  major_area: Laguna
+  zip_code: 4020
+  city: Mabitac
+-
+  id: 789
+  major_area: Laguna
+  zip_code: 4007
+  city: Magdalena
+-
+  id: 790
+  major_area: Laguna
+  zip_code: 4005
+  city: Majayjay
+-
+  id: 791
+  major_area: Laguna
+  zip_code: 4002
+  city: Nagcarlan
+-
+  id: 792
+  major_area: Laguna
+  zip_code: 4016
+  city: Paete
+-
+  id: 793
+  major_area: Laguna
+  zip_code: 4008
+  city: Pagsanjan
+-
+  id: 794
+  major_area: Laguna
+  zip_code: 4017
+  city: Pakil
+-
+  id: 795
+  major_area: Laguna
+  zip_code: 4018
+  city: Pangil
+-
+  id: 796
+  major_area: Laguna
+  zip_code: 4010
+  city: Pila
+-
+  id: 797
+  major_area: Laguna
+  zip_code: 4003
+  city: Rizal
+-
+  id: 798
+  major_area: Laguna
+  zip_code: 4000
+  city: San Pablo City
+-
+  id: 799
+  major_area: Laguna
+  zip_code: 4023
+  city: San Pedro
+-
+  id: 800
+  major_area: Laguna
+  zip_code: 4009
+  city: Santa Cruz
+-
+  id: 801
+  major_area: Laguna
+  zip_code: 4022
+  city: Santa Maria
+-
+  id: 802
+  major_area: Laguna
+  zip_code: 4026
+  city: Santa Rosa City
+-
+  id: 803
+  major_area: Laguna
+  zip_code: 4019
+  city: Siniloan
+-
+  id: 804
+  major_area: Laguna
+  zip_code: 4031
+  city: University of the Philippines, Los Baños
+-
+  id: 805
+  major_area: Laguna
+  zip_code: 4011
+  city: Victoria
+-
+  id: 806
+  major_area: Lanao del Norte
+  zip_code: 9205
+  city: Bacolod
+-
+  id: 807
+  major_area: Lanao del Norte
+  zip_code: 9217
+  city: Baloi
+-
+  id: 808
+  major_area: Lanao del Norte
+  zip_code: 9210
+  city: Baroy
+-
+  id: 809
+  major_area: Lanao del Norte
+  zip_code: 9200
+  city: Iligan City
+-
+  id: 810
+  major_area: Lanao del Norte
+  zip_code: 9214
+  city: Kapatagan
+-
+  id: 811
+  major_area: Lanao del Norte
+  zip_code: 9215
+  city: Karomatan
+-
+  id: 812
+  major_area: Lanao del Norte
+  zip_code: 9202
+  city: Kauswagan
+-
+  id: 813
+  major_area: Lanao del Norte
+  zip_code: 9207
+  city: Kolambogan
+-
+  id: 814
+  major_area: Lanao del Norte
+  zip_code: 9211
+  city: Lala
+-
+  id: 815
+  major_area: Lanao del Norte
+  zip_code: 9201
+  city: Linamon
+-
+  id: 816
+  major_area: Lanao del Norte
+  zip_code: 9221
+  city: Magsaysay
+-
+  id: 817
+  major_area: Lanao del Norte
+  zip_code: 9206
+  city: Maigo
+-
+  id: 818
+  major_area: Lanao del Norte
+  zip_code: 9203
+  city: Matungao
+-
+  id: 819
+  major_area: Lanao del Norte
+  zip_code: 9219
+  city: Munai
+-
+  id: 820
+  major_area: Lanao del Norte
+  zip_code: 9216
+  city: Nunungan
+-
+  id: 821
+  major_area: Lanao del Norte
+  zip_code: 9208
+  city: Pantao Ragat
+-
+  id: 822
+  major_area: Lanao del Norte
+  zip_code: 9218
+  city: Pantar
+-
+  id: 823
+  major_area: Lanao del Norte
+  zip_code: 9204
+  city: Poona Piagapo
+-
+  id: 824
+  major_area: Lanao del Norte
+  zip_code: 9212
+  city: Salvador
+-
+  id: 825
+  major_area: Lanao del Norte
+  zip_code: 9213
+  city: Sapad
+-
+  id: 826
+  major_area: Lanao del Norte
+  zip_code: 9222
+  city: Tagoloan
+-
+  id: 827
+  major_area: Lanao del Norte
+  zip_code: 9220
+  city: Tangkal
+-
+  id: 828
+  major_area: Lanao del Norte
+  zip_code: 9209
+  city: Tubod
+-
+  id: 829
+  major_area: Lanao del Sur
+  zip_code: 9316
+  city: Bacolod Kalawi
+-
+  id: 830
+  major_area: Lanao del Sur
+  zip_code: 9302
+  city: Balabagan
+-
+  id: 831
+  major_area: Lanao del Sur
+  zip_code: 9318
+  city: Balindong
+-
+  id: 832
+  major_area: Lanao del Sur
+  zip_code: 9309
+  city: Bayang
+-
+  id: 833
+  major_area: Lanao del Sur
+  zip_code: 9310
+  city: Binidayan
+-
+  id: 834
+  major_area: Lanao del Sur
+  zip_code: 9714
+  city: Buadiposo Buntong
+-
+  id: 835
+  major_area: Lanao del Sur
+  zip_code: 9708
+  city: Bubong
+-
+  id: 836
+  major_area: Lanao del Sur
+  zip_code: 9320
+  city: Bumbaran
+-
+  id: 837
+  major_area: Lanao del Sur
+  zip_code: 9305
+  city: Butig
+-
+  id: 838
+  major_area: Lanao del Sur
+  zip_code: 9319
+  city: Calanogas
+-
+  id: 839
+  major_area: Lanao del Sur
+  zip_code: 9311
+  city: Ganassi
+-
+  id: 840
+  major_area: Lanao del Sur
+  zip_code: 9709
+  city: Kapai
+-
+  id: 841
+  major_area: Lanao del Sur
+  zip_code: 9703
+  city: Lumba Bayabao
+-
+  id: 842
+  major_area: Lanao del Sur
+  zip_code: 9307
+  city: Lumbatan
+-
+  id: 843
+  major_area: Lanao del Sur
+  zip_code: 9306
+  city: Lumbayanague
+-
+  id: 844
+  major_area: Lanao del Sur
+  zip_code: 9308
+  city: Macadar Andong
+-
+  id: 845
+  major_area: Lanao del Sur
+  zip_code: 9315
+  city: Madalum
+-
+  id: 846
+  major_area: Lanao del Sur
+  zip_code: 9314
+  city: Madamba
+-
+  id: 847
+  major_area: Lanao del Sur
+  zip_code: 9715
+  city: Maguing
+-
+  id: 848
+  major_area: Lanao del Sur
+  zip_code: 9300
+  city: Malabang
+-
+  id: 849
+  major_area: Lanao del Sur
+  zip_code: 9303
+  city: Marogong
+-
+  id: 850
+  major_area: Lanao del Sur
+  zip_code: 9711
+  city: Marantao
+-
+  id: 851
+  major_area: Lanao del Sur
+  zip_code: 9700
+  city: Marawi City
+-
+  id: 852
+  major_area: Lanao del Sur
+  zip_code: 9706
+  city: Masui
+-
+  id: 853
+  major_area: Lanao del Sur
+  zip_code: 9702
+  city: Mulondo
+-
+  id: 854
+  major_area: Lanao del Sur
+  zip_code: 9312
+  city: Pagayawan
+-
+  id: 855
+  major_area: Lanao del Sur
+  zip_code: 9710
+  city: Piagapo
+-
+  id: 856
+  major_area: Lanao del Sur
+  zip_code: 9705
+  city: Poona Bayabao
+-
+  id: 857
+  major_area: Lanao del Sur
+  zip_code: 9313
+  city: Pualas
+-
+  id: 858
+  major_area: Lanao del Sur
+  zip_code: 9713
+  city: Ramain-Ditsaan
+-
+  id: 859
+  major_area: Lanao del Sur
+  zip_code: 9701
+  city: Saguiaran
+-
+  id: 860
+  major_area: Lanao del Sur
+  zip_code: 9301
+  city: Picong(Sultan Gumander)
+-
+  id: 861
+  major_area: Lanao del Sur
+  zip_code: 9321
+  city: Tagoloan-II
+-
+  id: 862
+  major_area: Lanao del Sur
+  zip_code: 9704
+  city: Tamparan
+-
+  id: 863
+  major_area: Lanao del Sur
+  zip_code: 9712
+  city: Taraka
+-
+  id: 864
+  major_area: Lanao del Sur
+  zip_code: 9304
+  city: Tubaran
+-
+  id: 865
+  major_area: Lanao del Sur
+  zip_code: 9317
+  city: Tugaya
+-
+  id: 866
+  major_area: Lanao del Sur
+  zip_code: 9716
+  city: Wao
+-
+  id: 867
+  major_area: Leyte
+  zip_code: 6510
+  city: Abuyog
+-
+  id: 868
+  major_area: Leyte
+  zip_code: 6517
+  city: Alangalang
+-
+  id: 869
+  major_area: Leyte
+  zip_code: 6542
+  city: Albuera
+-
+  id: 870
+  major_area: Leyte
+  zip_code: 6520
+  city: Babatngon
+-
+  id: 871
+  major_area: Leyte
+  zip_code: 6519
+  city: Barugo
+-
+  id: 872
+  major_area: Leyte
+  zip_code: 6525
+  city: Bato
+-
+  id: 873
+  major_area: Leyte
+  zip_code: 6521
+  city: Baybay
+-
+  id: 874
+  major_area: Leyte
+  zip_code: 6516
+  city: Burauen
+-
+  id: 875
+  major_area: Leyte
+  zip_code: 6534
+  city: Calubian
+-
+  id: 876
+  major_area: Leyte
+  zip_code: 6530
+  city: Capoocan
+-
+  id: 877
+  major_area: Leyte
+  zip_code: 6529
+  city: Carigara
+-
+  id: 878
+  major_area: Leyte
+  zip_code: 6515
+  city: Dagami
+-
+  id: 879
+  major_area: Leyte
+  zip_code: 6505
+  city: Dulag
+-
+  id: 880
+  major_area: Leyte
+  zip_code: 6524
+  city: Hilongos
+-
+  id: 881
+  major_area: Leyte
+  zip_code: 6523
+  city: Hindang
+-
+  id: 882
+  major_area: Leyte
+  zip_code: 6522
+  city: Inopacan
+-
+  id: 883
+  major_area: Leyte
+  zip_code: 6539
+  city: Isabel
+-
+  id: 884
+  major_area: Leyte
+  zip_code: 6527
+  city: Jaro
+-
+  id: 885
+  major_area: Leyte
+  zip_code: 6511
+  city: Javier
+-
+  id: 886
+  major_area: Leyte
+  zip_code: 6506
+  city: Julita
+-
+  id: 887
+  major_area: Leyte
+  zip_code: 6531
+  city: Kananga
+-
+  id: 888
+  major_area: Leyte
+  zip_code: 6508
+  city: La Paz
+-
+  id: 889
+  major_area: Leyte
+  zip_code: 6533
+  city: Leyte
+-
+  id: 890
+  major_area: Leyte
+  zip_code: 6509
+  city: Macarthur
+-
+  id: 891
+  major_area: Leyte
+  zip_code: 6512
+  city: Mahaplag
+-
+  id: 892
+  major_area: Leyte
+  zip_code: 6532
+  city: Matag-ob
+-
+  id: 893
+  major_area: Leyte
+  zip_code: 6526
+  city: Matalom
+-
+  id: 894
+  major_area: Leyte
+  zip_code: 6507
+  city: Mayorga
+-
+  id: 895
+  major_area: Leyte
+  zip_code: 6540
+  city: Merida
+-
+  id: 896
+  major_area: Leyte
+  zip_code: 6541
+  city: Ormoc City
+-
+  id: 897
+  major_area: Leyte
+  zip_code: 6501
+  city: Palo
+-
+  id: 898
+  major_area: Leyte
+  zip_code: 6538
+  city: Palompon
+-
+  id: 899
+  major_area: Leyte
+  zip_code: 6514
+  city: Pastrana
+-
+  id: 900
+  major_area: Leyte
+  zip_code: 6535
+  city: San Isidro
+-
+  id: 901
+  major_area: Leyte
+  zip_code: 6518
+  city: San Miguel
+-
+  id: 902
+  major_area: Leyte
+  zip_code: 6513
+  city: Santa Fe
+-
+  id: 903
+  major_area: Leyte
+  zip_code: 6536
+  city: Tabango
+-
+  id: 904
+  major_area: Leyte
+  zip_code: 6504
+  city: Tabontabon
+-
+  id: 905
+  major_area: Leyte
+  zip_code: 6500
+  city: Tacloban City
+-
+  id: 906
+  major_area: Leyte
+  zip_code: 6502
+  city: Tanuan
+-
+  id: 907
+  major_area: Leyte
+  zip_code: 6503
+  city: Tolosa
+-
+  id: 908
+  major_area: Leyte
+  zip_code: 6528
+  city: Tunga
+-
+  id: 909
+  major_area: Leyte
+  zip_code: 6537
+  city: Villaba
+-
+  id: 910
+  major_area: Maguindanao
+  zip_code: 9600
+  city: Cotabato City
+-
+  id: 911
+  major_area: Maguindanao
+  zip_code: 9609
+  city: Ampatuan
+-
+  id: 912
+  major_area: Maguindanao
+  zip_code: 9616
+  city: Buluan
+-
+  id: 913
+  major_area: Maguindanao
+  zip_code: 9617
+  city: Datu Paglas
+-
+  id: 914
+  major_area: Maguindanao
+  zip_code: 9607
+  city: Datu Piang
+-
+  id: 915
+  major_area: Maguindanao
+  zip_code: 9618
+  city: Gen. S.K. Pendatun
+-
+  id: 916
+  major_area: Maguindanao
+  zip_code: 9608
+  city: Sarip Aguak (Maganoy)
+-
+  id: 917
+  major_area: Maguindanao
+  zip_code: 9610
+  city: Pagalungan
+-
+  id: 918
+  major_area: Maguindanao
+  zip_code: 9603
+  city: South Upi
+-
+  id: 919
+  major_area: Maguindanao
+  zip_code: 9611
+  city: Sultan sa Barongis
+-
+  id: 920
+  major_area: Maguindanao
+  zip_code: 9612
+  city: Talayan
+-
+  id: 921
+  major_area: Marinduque
+  zip_code: 4900
+  city: Boac
+-
+  id: 922
+  major_area: Marinduque
+  zip_code: 4901
+  city: Mogpog
+-
+  id: 923
+  major_area: Marinduque
+  zip_code: 4902
+  city: Santa Cruz
+-
+  id: 924
+  major_area: Marinduque
+  zip_code: 4903
+  city: Torrijos
+-
+  id: 925
+  major_area: Marinduque
+  zip_code: 4904
+  city: Buenavista
+-
+  id: 926
+  major_area: Marinduque
+  zip_code: 4905
+  city: Gasan
+-
+  id: 927
+  major_area: Masbate
+  zip_code: 5414
+  city: Aroroy
+-
+  id: 928
+  major_area: Masbate
+  zip_code: 5413
+  city: Baleno
+-
+  id: 929
+  major_area: Masbate
+  zip_code: 5412
+  city: Balud
+-
+  id: 930
+  major_area: Masbate
+  zip_code: 5415
+  city: Batuan
+-
+  id: 931
+  major_area: Masbate
+  zip_code: 5421
+  city: Buenavista
+-
+  id: 932
+  major_area: Masbate
+  zip_code: 5405
+  city: Cataingan
+-
+  id: 933
+  major_area: Masbate
+  zip_code: 5409
+  city: Cawayan
+-
+  id: 934
+  major_area: Masbate
+  zip_code: 5419
+  city: Claveria
+-
+  id: 935
+  major_area: Masbate
+  zip_code: 5403
+  city: Dimasalang
+-
+  id: 936
+  major_area: Masbate
+  zip_code: 5407
+  city: Esperanza
+-
+  id: 937
+  major_area: Masbate
+  zip_code: 5411
+  city: Mandaon
+-
+  id: 938
+  major_area: Masbate
+  zip_code: 5400
+  city: Masbate City
+-
+  id: 939
+  major_area: Masbate
+  zip_code: 5410
+  city: Milagros
+-
+  id: 940
+  major_area: Masbate
+  zip_code: 5401
+  city: Mobo
+-
+  id: 941
+  major_area: Masbate
+  zip_code: 5418
+  city: Monreal
+-
+  id: 942
+  major_area: Masbate
+  zip_code: 5404
+  city: Palanas
+-
+  id: 943
+  major_area: Masbate
+  zip_code: 5406
+  city: Pio V. Corpuz
+-
+  id: 944
+  major_area: Masbate
+  zip_code: 5408
+  city: Placer
+-
+  id: 945
+  major_area: Masbate
+  zip_code: 5416
+  city: San Fernando
+-
+  id: 946
+  major_area: Masbate
+  zip_code: 5417
+  city: San Jacinto
+-
+  id: 947
+  major_area: Masbate
+  zip_code: 5420
+  city: San Pascual
+-
+  id: 948
+  major_area: Masbate
+  zip_code: 5402
+  city: Uson
+-
+  id: 949
+  major_area: Caloocan City
+  zip_code: 1420
+  city: Kaybiga/Deparo
+-
+  id: 950
+  major_area: Caloocan City
+  zip_code: 1421
+  city: Bagumbong/Pag-asa
+-
+  id: 951
+  major_area: Caloocan City
+  zip_code: 1422
+  city: Novaliches North
+-
+  id: 952
+  major_area: Caloocan City
+  zip_code: 1423
+  city: Lilles Ville Subdivision
+-
+  id: 953
+  major_area: Caloocan City
+  zip_code: 1424
+  city: Captol Parkland Subdivision
+-
+  id: 954
+  major_area: Caloocan City
+  zip_code: 1425
+  city: Amparo Subdivision
+-
+  id: 955
+  major_area: Caloocan City
+  zip_code: 1426
+  city: Bankers Village
+-
+  id: 956
+  major_area: Caloocan City
+  zip_code: 1427
+  city: Tala Leprosarium and Victory Heights
+-
+  id: 957
+  major_area: Caloocan City
+  zip_code: 1428
+  city: Bagong Silang
+-
+  id: 958
+  major_area: Caloocan City
+  zip_code: 1400
+  city: Caloocan City Central Post Office
+-
+  id: 959
+  major_area: Caloocan City
+  zip_code: 1401
+  city: Baesa
+-
+  id: 960
+  major_area: Caloocan City
+  zip_code: 1402
+  city: Santa Quiteria
+-
+  id: 961
+  major_area: Caloocan City
+  zip_code: 1403
+  city: Grace Park East
+-
+  id: 962
+  major_area: Caloocan City
+  zip_code: 1404
+  city: San Jose
+-
+  id: 963
+  major_area: Caloocan City
+  zip_code: 1405
+  city: First Avenue to Seventh Avenue West
+-
+  id: 964
+  major_area: Caloocan City
+  zip_code: 1406
+  city: Grace Park West
+-
+  id: 965
+  major_area: Caloocan City
+  zip_code: 1407
+  city: University Hills
+-
+  id: 966
+  major_area: Caloocan City
+  zip_code: 1408
+  city: Sangandaan
+-
+  id: 967
+  major_area: Caloocan City
+  zip_code: 1409
+  city: Kaunlaran Village (shared with Malabon City and Navotas)
+-
+  id: 968
+  major_area: Caloocan City
+  zip_code: 1410
+  city: Maypajo
+-
+  id: 969
+  major_area: Caloocan City
+  zip_code: 1411
+  city: Fish Market (shared with Navotas)
+-
+  id: 970
+  major_area: Caloocan City
+  zip_code: 1412
+  city: Isla de Cocomo
+-
+  id: 971
+  major_area: Caloocan City
+  zip_code: 1413
+  city: Kapitbayahan
+-
+  id: 972
+  major_area: Las Piñas City
+  zip_code: 1740
+  city: Las Piñas Central Post Office
+-
+  id: 973
+  major_area: Las Piñas City
+  zip_code: 1741
+  city: Greymarville Subdivision
+-
+  id: 974
+  major_area: Las Piñas City
+  zip_code: 1742
+  city: Pulang Lupa and Zapote
+-
+  id: 975
+  major_area: Las Piñas City
+  zip_code: 1743
+  city: Cut-cut
+-
+  id: 976
+  major_area: Las Piñas City
+  zip_code: 1744
+  city: Manuyo
+-
+  id: 977
+  major_area: Las Piñas City
+  zip_code: 1745
+  city: Gatchalian Subdivision
+-
+  id: 978
+  major_area: Las Piñas City
+  zip_code: 1746
+  city: Verdant Acres Subdivision
+-
+  id: 979
+  major_area: Las Piñas City
+  zip_code: 1747
+  city: Moonwalk Subdivision and Talon
+-
+  id: 980
+  major_area: Las Piñas City
+  zip_code: 1748
+  city: Manila Doctors Village
+-
+  id: 981
+  major_area: Las Piñas City
+  zip_code: 1749
+  city: Angela Village
+-
+  id: 982
+  major_area: Las Piñas City
+  zip_code: 1750
+  city: Almanza
+-
+  id: 983
+  major_area: Las Piñas City
+  zip_code: 1751
+  city: T.S. Cruz Subdivision
+-
+  id: 984
+  major_area: Las Piñas City
+  zip_code: 1752
+  city: Soldiers Hills Subdivision
+-
+  id: 985
+  major_area: Makati City
+  zip_code: 1200
+  city: Makati Central Post Office
+-
+  id: 986
+  major_area: Makati City
+  zip_code: 1201
+  city: Fort Bonifacio (now part of Taguig City)
+-
+  id: 987
+  major_area: Makati City
+  zip_code: 1202
+  city: Fort Bonifacio Naval Station
+-
+  id: 988
+  major_area: Makati City
+  zip_code: 1203
+  city: San Antonio Village
+-
+  id: 989
+  major_area: Makati City
+  zip_code: 1204
+  city: La Paz, Singkamas, and Tejeros
+-
+  id: 990
+  major_area: Makati City
+  zip_code: 1205
+  city: Santa Cruz
+-
+  id: 991
+  major_area: Makati City
+  zip_code: 1206
+  city: Kasilawan
+-
+  id: 992
+  major_area: Makati City
+  zip_code: 1207
+  city: Carmona and Olympia
+-
+  id: 993
+  major_area: Makati City
+  zip_code: 1208
+  city: Valenzuela (includes Rizal, San Miguel, and Santiago Villages)
+-
+  id: 994
+  major_area: Makati City
+  zip_code: 1209
+  city: Bel-Air
+-
+  id: 995
+  major_area: Makati City
+  zip_code: 1210
+  city: Poblacion
+-
+  id: 996
+  major_area: Makati City
+  zip_code: 1211
+  city: Guadalupe Viejo (includes Palm Village)
+-
+  id: 997
+  major_area: Makati City
+  zip_code: 1212
+  city: Guadalupe Nuevo (includes Visayan Village)
+-
+  id: 998
+  major_area: Makati City
+  zip_code: 1213
+  city: Pinagkaisahan - Pitogo
+-
+  id: 999
+  major_area: Makati City
+  zip_code: 1214
+  city: Cembo
+-
+  id: 1000
+  major_area: Makati City
+  zip_code: 1215
+  city: West Rembo
+-
+  id: 1001
+  major_area: Makati City
+  zip_code: 1216
+  city: East Rembo and Malapad na Bato
+-
+  id: 1002
+  major_area: Makati City
+  zip_code: 1217
+  city: Comembo
+-
+  id: 1003
+  major_area: Makati City
+  zip_code: 1218
+  city: Pembo
+-
+  id: 1004
+  major_area: Makati City
+  zip_code: 1219
+  city: Forbes Park North
+-
+  id: 1005
+  major_area: Makati City
+  zip_code: 1220
+  city: Forbes Park South
+-
+  id: 1006
+  major_area: Makati City
+  zip_code: 1221
+  city: Dasmariñas Village North
+-
+  id: 1007
+  major_area: Makati City
+  zip_code: 1222
+  city: Dasmariñas Village South
+-
+  id: 1008
+  major_area: Makati City
+  zip_code: 1223
+  city: San Lorenzo Village
+-
+  id: 1009
+  major_area: Makati City
+  zip_code: 1224
+  city: Makati Commercial Center
+-
+  id: 1010
+  major_area: Makati City
+  zip_code: 1225
+  city: Urdaneta Village
+-
+  id: 1011
+  major_area: Makati City
+  zip_code: 1226
+  city: Ayala Avenue-Paseo de Roxas
+-
+  id: 1012
+  major_area: Makati City
+  zip_code: 1227
+  city: Salcedo Village
+-
+  id: 1013
+  major_area: Makati City
+  zip_code: 1228
+  city: Greenbelt
+-
+  id: 1014
+  major_area: Makati City
+  zip_code: 1229
+  city: Legaspi Village
+-
+  id: 1015
+  major_area: Makati City
+  zip_code: 1230
+  city: Pio del Pilar
+-
+  id: 1016
+  major_area: Makati City
+  zip_code: 1231
+  city: Pasong Tamo and Ecology Village
+-
+  id: 1017
+  major_area: Makati City
+  zip_code: 1232
+  city: Magallanes Village
+-
+  id: 1018
+  major_area: Makati City
+  zip_code: 1233
+  city: Bangkal
+-
+  id: 1019
+  major_area: Makati City
+  zip_code: 1234
+  city: San Isidro
+-
+  id: 1020
+  major_area: Makati City
+  zip_code: 1235
+  city: Palanan
+-
+  id: 1021
+  major_area: Makati City
+  zip_code: 700
+  city: Plain-Truth
+-
+  id: 1022
+  major_area: Makati City
+  zip_code: 701
+  city: Colgate Palmolive Philippines
+-
+  id: 1023
+  major_area: Makati City
+  zip_code: 702
+  city: Citibank
+-
+  id: 1024
+  major_area: Makati City
+  zip_code: 703
+  city: Sarmiento Enterprises
+-
+  id: 1025
+  major_area: Makati City
+  zip_code: 704
+  city: Producers Bank
+-
+  id: 1026
+  major_area: Makati City
+  zip_code: 705
+  city: Union Ajinomoto
+-
+  id: 1027
+  major_area: Makati City
+  zip_code: 706
+  city: Faith Embassy
+-
+  id: 1028
+  major_area: Makati City
+  zip_code: 707
+  city: Canadian Embassy
+-
+  id: 1029
+  major_area: Makati City
+  zip_code: 708
+  city: Philippine National Oil Company
+-
+  id: 1030
+  major_area: Makati City
+  zip_code: 709
+  city: A-Z Direct Marketing
+-
+  id: 1031
+  major_area: Makati City
+  zip_code: 710
+  city: American Express
+-
+  id: 1032
+  major_area: Makati City
+  zip_code: 711
+  city: Land Bank of the Philippines
+-
+  id: 1033
+  major_area: Makati City
+  zip_code: 712
+  city: Prudential Bank
+-
+  id: 1034
+  major_area: Makati City
+  zip_code: 713
+  city: BPI Family Savings Bank
+-
+  id: 1035
+  major_area: Makati City
+  zip_code: 714
+  city: Philippine Manila Mission
+-
+  id: 1036
+  major_area: Makati City
+  zip_code: 715
+  city: Marcopper Mining Corporation
+-
+  id: 1037
+  major_area: Makati City
+  zip_code: 716
+  city: Allied Bank
+-
+  id: 1038
+  major_area: Makati City
+  zip_code: 717
+  city: Diners Club
+-
+  id: 1039
+  major_area: Makati City
+  zip_code: 718
+  city: International Center for Aquatic Resources
+-
+  id: 1040
+  major_area: Makati City
+  zip_code: 719
+  city: Security Bank
+-
+  id: 1041
+  major_area: Makati City
+  zip_code: 720
+  city: Bank of the Philippine Islands
+-
+  id: 1042
+  major_area: Makati City
+  zip_code: 721
+  city: Philippine Long Distance Telephone Company
+-
+  id: 1043
+  major_area: Makati City
+  zip_code: 722
+  city: World Executive Digest
+-
+  id: 1044
+  major_area: Makati City
+  zip_code: 723
+  city: Japanese Embassy
+-
+  id: 1045
+  major_area: Makati City
+  zip_code: 724
+  city: Sun Life Financial
+-
+  id: 1046
+  major_area: Makati City
+  zip_code: 725
+  city: Insular Life Assurance Company
+-
+  id: 1047
+  major_area: Makati City
+  zip_code: 726
+  city: Equitable PCI Bank
+-
+  id: 1048
+  major_area: Makati City
+  zip_code: 727
+  city: Rizal Commercial Banking Corporation
+-
+  id: 1049
+  major_area: Makati City
+  zip_code: 728
+  city: United Coconut Planters Bank
+-
+  id: 1050
+  major_area: Makati City
+  zip_code: 729
+  city: Not used
+-
+  id: 1051
+  major_area: Makati City
+  zip_code: 730
+  city: Zuellig Pharma
+-
+  id: 1052
+  major_area: Makati City
+  zip_code: 731
+  city: BCD Direct Marketing
+-
+  id: 1053
+  major_area: Makati City
+  zip_code: 732
+  city: Export and Industry Bank
+-
+  id: 1054
+  major_area: Makati City
+  zip_code: 0733-0739
+  city: Not used
+-
+  id: 1055
+  major_area: Makati City
+  zip_code: 740
+  city: Sycip, Gorres and Velayo
+-
+  id: 1056
+  major_area: Makati City
+  zip_code: 750
+  city: Philippine Airlines
+-
+  id: 1057
+  major_area: Makati City
+  zip_code: 760
+  city: Pilipinas Shell (subsidiary of Royal Dutch Shell)
+-
+  id: 1058
+  major_area: Makati City
+  zip_code: 770
+  city: ACCRA Law Offices
+-
+  id: 1059
+  major_area: Makati City
+  zip_code: 780
+  city: Mead Johnson Philippines
+-
+  id: 1060
+  major_area: Makati City
+  zip_code: 788
+  city: Directories Pilipinas Corporation
+-
+  id: 1061
+  major_area: Makati City
+  zip_code: 790
+  city: Atlantic, Gulf and Pacific
+-
+  id: 1062
+  major_area: Makati City
+  zip_code: 1250
+  city: Makati CPO-PO Box# 1000 to 1099
+-
+  id: 1063
+  major_area: Makati City
+  zip_code: 1251
+  city: Makati CPO-PO Box# 1100 to 1199
+-
+  id: 1064
+  major_area: Makati City
+  zip_code: 1252
+  city: Makati CPO-PO Box# 1200 to 1299
+-
+  id: 1065
+  major_area: Makati City
+  zip_code: 1253
+  city: Makati CPO-PO Box# 1300 to 1399
+-
+  id: 1066
+  major_area: Makati City
+  zip_code: 1254
+  city: Makati CPO-PO Box# 1400 to 1499
+-
+  id: 1067
+  major_area: Makati City
+  zip_code: 1255
+  city: Makati CPO-PO Box# 1500 to 1599
+-
+  id: 1068
+  major_area: Makati City
+  zip_code: 1256
+  city: Makati CPO-PO Box# 1600 to 1699
+-
+  id: 1069
+  major_area: Makati City
+  zip_code: 1257
+  city: Makati CPO-PO Box# 1700 to 1799
+-
+  id: 1070
+  major_area: Makati City
+  zip_code: 1258
+  city: Makati CPO-PO Box# 1800 to 1899
+-
+  id: 1071
+  major_area: Makati City
+  zip_code: 1259
+  city: Makati CPO-PO Box# 1900 to 1999
+-
+  id: 1072
+  major_area: Makati City
+  zip_code: 1260
+  city: Makati CPO-PO Box# 2000 to 2099
+-
+  id: 1073
+  major_area: Makati City
+  zip_code: 1261
+  city: Makati CPO-PO Box# 2100 to 2199
+-
+  id: 1074
+  major_area: Makati City
+  zip_code: 1262
+  city: Makati CPO-PO Box# 2200 to 2299
+-
+  id: 1075
+  major_area: Makati City
+  zip_code: 1263
+  city: Makati CPO-PO Box# 2300 to 2399
+-
+  id: 1076
+  major_area: Makati City
+  zip_code: 1264
+  city: Makati CPO-PO Box# 2400 to 2499
+-
+  id: 1077
+  major_area: Makati City
+  zip_code: 1265
+  city: Makati CPO-PO Box# 2500 to 2599
+-
+  id: 1078
+  major_area: Makati City
+  zip_code: 1266
+  city: Makati CPO-PO Box# 2600 to 2699
+-
+  id: 1079
+  major_area: Makati City
+  zip_code: 1267
+  city: Makati CPO-PO Box# 2700 to 2799
+-
+  id: 1080
+  major_area: Makati City
+  zip_code: 1268
+  city: Makati CPO-PO Box# 2800 to 2899
+-
+  id: 1081
+  major_area: Makati City
+  zip_code: 1269
+  city: Makati CPO-PO Box# 2900 to 2999
+-
+  id: 1082
+  major_area: Makati City
+  zip_code: 1270
+  city: Makati CPO-PO Box# 3000 to 3099
+-
+  id: 1083
+  major_area: Makati City
+  zip_code: 1271
+  city: Makati CPO-PO Box# 3100 to 3199
+-
+  id: 1084
+  major_area: Makati City
+  zip_code: 1272
+  city: Makati CPO-PO Box# 3200 to 3299
+-
+  id: 1085
+  major_area: Makati City
+  zip_code: 1273
+  city: Makati CPO-PO Box# 3300 to 3399
+-
+  id: 1086
+  major_area: Makati City
+  zip_code: 1274
+  city: Makati CPO-PO Box# 3400 to 3499
+-
+  id: 1087
+  major_area: Makati City
+  zip_code: 1275
+  city: Makati CPO-PO Box# 3500 to 3599
+-
+  id: 1088
+  major_area: Makati City
+  zip_code: 1276
+  city: Makati CPO-PO Box# 3600 to 3699
+-
+  id: 1089
+  major_area: Makati City
+  zip_code: 1277
+  city: Makati CPO-PO Box# 3700 to 3799
+-
+  id: 1090
+  major_area: Makati City
+  zip_code: 1278
+  city: Makati CPO-PO Box# 3800 to 3899
+-
+  id: 1091
+  major_area: Makati City
+  zip_code: 1279
+  city: Makati CPO-PO Box# 3900 to 3999
+-
+  id: 1092
+  major_area: Makati City
+  zip_code: 1280
+  city: Makati CPO-PO Box# 4000 to 4099
+-
+  id: 1093
+  major_area: Makati City
+  zip_code: 1281
+  city: Makati CPO-PO Box# 4100 to 4199
+-
+  id: 1094
+  major_area: Makati City
+  zip_code: 1282
+  city: Makati CPO-PO Box# 4200 to 4299
+-
+  id: 1095
+  major_area: Makati City
+  zip_code: 1283
+  city: Makati CPO-PO Box# 4300 to 4399
+-
+  id: 1096
+  major_area: Makati City
+  zip_code: 1284
+  city: Makati CPO-PO Box# 4400 to 4499
+-
+  id: 1097
+  major_area: Makati City
+  zip_code: 1285
+  city: Makati CPO-PO Box# 4500 to 4599
+-
+  id: 1098
+  major_area: Makati City
+  zip_code: 1286
+  city: Makati CPO-PO Box# 4600 to 4699
+-
+  id: 1099
+  major_area: Makati City
+  zip_code: 1287
+  city: Makati CPO-PO Box# 4700 to 4799
+-
+  id: 1100
+  major_area: Makati City
+  zip_code: 1288
+  city: Makati CPO-PO Box# 4800 to 4899
+-
+  id: 1101
+  major_area: Makati City
+  zip_code: 1289
+  city: Makati CPO-PO Box# 4900 to 4999
+-
+  id: 1102
+  major_area: Makati City
+  zip_code: 1290
+  city: Makati CPO-PO Box# 5000 to 5099
+-
+  id: 1103
+  major_area: Makati City
+  zip_code: 1291
+  city: Makati CPO-PO Box# 5100 to 5199
+-
+  id: 1104
+  major_area: Makati City
+  zip_code: 1292
+  city: Makati CPO-PO Box# 5200 to 5299
+-
+  id: 1105
+  major_area: Makati City
+  zip_code: 1293
+  city: Makati CPO-PO Box# 5300 to 5399
+-
+  id: 1106
+  major_area: Makati City
+  zip_code: 1294
+  city: Makati CPO-PO Box# 5400 to 5499
+-
+  id: 1107
+  major_area: Makati City
+  zip_code: 1295
+  city: Makati CPO-PO Box# 5500 to 5599
+-
+  id: 1108
+  major_area: Makati City
+  zip_code: 1296
+  city: Makati CPO-PO Box# 5600 to 5699
+-
+  id: 1109
+  major_area: Makati City
+  zip_code: 1297
+  city: Makati CPO-PO Box# 5700 to 5799
+-
+  id: 1110
+  major_area: Makati City
+  zip_code: 1298
+  city: Makati CPO-PO Box# 5800 to 5899
+-
+  id: 1111
+  major_area: Makati City
+  zip_code: 1299
+  city: Makati CPO-PO Box# 5900 to 5999
+-
+  id: 1112
+  major_area: Malabon City
+  zip_code: 1409
+  city: Kaunlaran Village (shared with Caloocan City and Navotas)
+-
+  id: 1113
+  major_area: Malabon City
+  zip_code: 1470
+  city: Malabon
+-
+  id: 1114
+  major_area: Malabon City
+  zip_code: 1471
+  city: Flores
+-
+  id: 1115
+  major_area: Malabon City
+  zip_code: 1472
+  city: Longos
+-
+  id: 1116
+  major_area: Malabon City
+  zip_code: 1473
+  city: Tonsuya
+-
+  id: 1117
+  major_area: Malabon City
+  zip_code: 1474
+  city: Acacia
+-
+  id: 1118
+  major_area: Malabon City
+  zip_code: 1475
+  city: Potrero
+-
+  id: 1119
+  major_area: Malabon City
+  zip_code: 1476
+  city: Araneta Subdivision
+-
+  id: 1120
+  major_area: Malabon City
+  zip_code: 1477
+  city: Maysilo
+-
+  id: 1121
+  major_area: Malabon City
+  zip_code: 1478
+  city: Santolan
+-
+  id: 1122
+  major_area: Malabon City
+  zip_code: 1479
+  city: Muzon
+-
+  id: 1123
+  major_area: Malabon City
+  zip_code: 1480
+  city: Dampalit
+-
+  id: 1124
+  major_area: Malabon City
+  zip_code: 1470
+  city: Tinajeros
+-
+  id: 1125
+  major_area: Mandaluyong City
+  zip_code: 1550
+  city: Mandaluyong Central Post Office
+-
+  id: 1126
+  major_area: Mandaluyong City
+  zip_code: 1551
+  city: Vergara
+-
+  id: 1127
+  major_area: Mandaluyong City
+  zip_code: 1552
+  city: Shaw Boulevard
+-
+  id: 1128
+  major_area: Mandaluyong City
+  zip_code: 1553
+  city: National Center for Mental Health
+-
+  id: 1129
+  major_area: Mandaluyong City
+  zip_code: 1554
+  city: East EDSA
+-
+  id: 1130
+  major_area: Mandaluyong City
+  zip_code: 1555
+  city: Wack Wack
+-
+  id: 1131
+  major_area: Mandaluyong City
+  zip_code: 1556
+  city: Greenhills South
+-
+  id: 1132
+  major_area: Manila
+  zip_code: 1000
+  city: Manila Central Post Office
+-
+  id: 1133
+  major_area: Manila
+  zip_code: 1001
+  city: Quiapo
+-
+  id: 1134
+  major_area: Manila
+  zip_code: 1002
+  city: Intramuros
+-
+  id: 1135
+  major_area: Manila
+  zip_code: 1003
+  city: Santa Cruz South
+-
+  id: 1136
+  major_area: Manila
+  zip_code: 1004
+  city: Malate
+-
+  id: 1137
+  major_area: Manila
+  zip_code: 1005
+  city: San Miguel
+-
+  id: 1138
+  major_area: Manila
+  zip_code: 1006
+  city: Binondo
+-
+  id: 1139
+  major_area: Manila
+  zip_code: 1007
+  city: Paco
+-
+  id: 1140
+  major_area: Manila
+  zip_code: 1008
+  city: Sampaloc East
+-
+  id: 1141
+  major_area: Manila
+  zip_code: 1009
+  city: Santa Ana
+-
+  id: 1142
+  major_area: Manila
+  zip_code: 1010
+  city: San Nicolas
+-
+  id: 1143
+  major_area: Manila
+  zip_code: 1011
+  city: Pandacan
+-
+  id: 1144
+  major_area: Manila
+  zip_code: 1012
+  city: Tondo South
+-
+  id: 1145
+  major_area: Manila
+  zip_code: 1013
+  city: Tondo North
+-
+  id: 1146
+  major_area: Manila
+  zip_code: 1014
+  city: Santa Cruz North
+-
+  id: 1147
+  major_area: Manila
+  zip_code: 1015
+  city: Sampaloc West
+-
+  id: 1148
+  major_area: Manila
+  zip_code: 1016
+  city: Santa Mesa
+-
+  id: 1149
+  major_area: Manila
+  zip_code: 1017
+  city: San Andres
+-
+  id: 1150
+  major_area: Manila
+  zip_code: 1018
+  city: Port Area South
+-
+  id: 1151
+  major_area: Manila
+  zip_code: 900
+  city: Manila Bulletin
+-
+  id: 1152
+  major_area: Manila
+  zip_code: 901
+  city: Adventist University of the Philippines
+-
+  id: 1153
+  major_area: Manila
+  zip_code: 902
+  city: Far East Broadcasting Corporation
+-
+  id: 1154
+  major_area: Manila
+  zip_code: 903
+  city: Manila Hilton
+-
+  id: 1155
+  major_area: Manila
+  zip_code: 904
+  city: Midland Hotel
+-
+  id: 1156
+  major_area: Manila
+  zip_code: 905
+  city: The Philippine Star
+-
+  id: 1157
+  major_area: Manila
+  zip_code: 906
+  city: Manila Medical Center
+-
+  id: 1158
+  major_area: Manila
+  zip_code: 907
+  city: San Miguel Corporation
+-
+  id: 1159
+  major_area: Manila
+  zip_code: 908
+  city: Pan-Filipino Shipping
+-
+  id: 1160
+  major_area: Manila
+  zip_code: 909
+  city: Summer Institute of Linguistics
+-
+  id: 1161
+  major_area: Manila
+  zip_code: 910
+  city: Department of Labor and Employment
+-
+  id: 1162
+  major_area: Manila
+  zip_code: 911
+  city: National Statistics Office
+-
+  id: 1163
+  major_area: Manila
+  zip_code: 912
+  city: Bureau of Plant Industry
+-
+  id: 1164
+  major_area: Manila
+  zip_code: 913
+  city: Manila Hotel
+-
+  id: 1165
+  major_area: Manila
+  zip_code: 914
+  city: Philippine Refining Company and Unilever Philippines
+-
+  id: 1166
+  major_area: Manila
+  zip_code: 915
+  city: International Correspondence Institute
+-
+  id: 1167
+  major_area: Manila
+  zip_code: 916
+  city: Radio Veritas
+-
+  id: 1168
+  major_area: Manila
+  zip_code: 917
+  city: Ateneo de Manila University
+-
+  id: 1169
+  major_area: Manila
+  zip_code: 918
+  city: Fil-Japan Shipping Company
+-
+  id: 1170
+  major_area: Manila
+  zip_code: 919
+  city: Manila Police District
+-
+  id: 1171
+  major_area: Manila
+  zip_code: 920
+  city: Sunbursts Publications
+-
+  id: 1172
+  major_area: Manila
+  zip_code: 921
+  city: Philippine Plaza Hotel
+-
+  id: 1173
+  major_area: Manila
+  zip_code: 922
+  city: De La Salle University
+-
+  id: 1174
+  major_area: Manila
+  zip_code: 923
+  city: Don Stewart Evangelistic Association
+-
+  id: 1175
+  major_area: Manila
+  zip_code: 924
+  city: World Map
+-
+  id: 1176
+  major_area: Manila
+  zip_code: 925
+  city: Chinabank
+-
+  id: 1177
+  major_area: Manila
+  zip_code: 926
+  city: Caltex Philippines
+-
+  id: 1178
+  major_area: Manila
+  zip_code: 927
+  city: Philippine Veterans Affairs Office
+-
+  id: 1179
+  major_area: Manila
+  zip_code: 928
+  city: Philippine Campus Crusade
+-
+  id: 1180
+  major_area: Manila
+  zip_code: 929
+  city: Not used
+-
+  id: 1181
+  major_area: Manila
+  zip_code: 930
+  city: United States Embassy
+-
+  id: 1182
+  major_area: Manila
+  zip_code: 940
+  city: Philippine National Bank
+-
+  id: 1183
+  major_area: Manila
+  zip_code: 950
+  city: Manila Midtown Hotel
+-
+  id: 1184
+  major_area: Manila
+  zip_code: 960
+  city: International Rice Research Institute
+-
+  id: 1185
+  major_area: Manila
+  zip_code: 970
+  city: Department of Justice
+-
+  id: 1186
+  major_area: Manila
+  zip_code: 980
+  city: Asian Development Bank
+-
+  id: 1187
+  major_area: Manila
+  zip_code: 990
+  city: Philamlife
+-
+  id: 1188
+  major_area: Manila
+  zip_code: 1035
+  city: Santa Mesa P.O. Box
+-
+  id: 1189
+  major_area: Manila
+  zip_code: 1040
+  city: Santa Cruz P.O. Box
+-
+  id: 1190
+  major_area: Manila
+  zip_code: 1045
+  city: Ermita P.O. Box
+-
+  id: 1191
+  major_area: Manila
+  zip_code: 1050
+  city: Manila CPO-PO Box# 1000 to 1099
+-
+  id: 1192
+  major_area: Manila
+  zip_code: 1051
+  city: Manila CPO-PO Box# 1100 to 1199
+-
+  id: 1193
+  major_area: Manila
+  zip_code: 1052
+  city: Manila CPO-PO Box# 1200 to 1299
+-
+  id: 1194
+  major_area: Manila
+  zip_code: 1053
+  city: Manila CPO-PO Box# 1300 to 1399
+-
+  id: 1195
+  major_area: Manila
+  zip_code: 1054
+  city: Manila CPO-PO Box# 1400 to 1499
+-
+  id: 1196
+  major_area: Manila
+  zip_code: 1055
+  city: Manila CPO-PO Box# 1500 to 1599
+-
+  id: 1197
+  major_area: Manila
+  zip_code: 1056
+  city: Manila CPO-PO Box# 1600 to 1699
+-
+  id: 1198
+  major_area: Manila
+  zip_code: 1057
+  city: Manila CPO-PO Box# 1700 to 1799
+-
+  id: 1199
+  major_area: Manila
+  zip_code: 1058
+  city: Manila CPO-PO Box# 1800 to 1899
+-
+  id: 1200
+  major_area: Manila
+  zip_code: 1059
+  city: Manila CPO-PO Box# 1900 to 1999
+-
+  id: 1201
+  major_area: Manila
+  zip_code: 1060
+  city: Manila CPO-PO Box# 2000 to 2099
+-
+  id: 1202
+  major_area: Manila
+  zip_code: 1061
+  city: Manila CPO-PO Box# 2100 to 2199
+-
+  id: 1203
+  major_area: Manila
+  zip_code: 1062
+  city: Manila CPO-PO Box# 2200 to 2299
+-
+  id: 1204
+  major_area: Manila
+  zip_code: 1063
+  city: Manila CPO-PO Box# 2300 to 2399
+-
+  id: 1205
+  major_area: Manila
+  zip_code: 1064
+  city: Manila CPO-PO Box# 2400 to 2499
+-
+  id: 1206
+  major_area: Manila
+  zip_code: 1065
+  city: Manila CPO-PO Box# 2500 to 2599
+-
+  id: 1207
+  major_area: Manila
+  zip_code: 1066
+  city: Manila CPO-PO Box# 2600 to 2699
+-
+  id: 1208
+  major_area: Manila
+  zip_code: 1067
+  city: Manila CPO-PO Box# 2700 to 2799
+-
+  id: 1209
+  major_area: Manila
+  zip_code: 1068
+  city: Manila CPO-PO Box# 2800 to 2899
+-
+  id: 1210
+  major_area: Manila
+  zip_code: 1069
+  city: Manila CPO-PO Box# 2900 to 2999
+-
+  id: 1211
+  major_area: Manila
+  zip_code: 1070
+  city: Manila CPO-PO Box# 3000 to 3099
+-
+  id: 1212
+  major_area: Manila
+  zip_code: 1071
+  city: Manila CPO-PO Box# 3100 to 3199
+-
+  id: 1213
+  major_area: Manila
+  zip_code: 1072
+  city: Manila CPO-PO Box# 3200 to 3299
+-
+  id: 1214
+  major_area: Manila
+  zip_code: 1073
+  city: Manila CPO-PO Box# 3300 to 3399
+-
+  id: 1215
+  major_area: Manila
+  zip_code: 1074
+  city: Manila CPO-PO Box# 3400 to 3499
+-
+  id: 1216
+  major_area: Manila
+  zip_code: 1075
+  city: Manila CPO-PO Box# 3500 to 3599
+-
+  id: 1217
+  major_area: Manila
+  zip_code: 1076
+  city: Manila CPO-PO Box# 3600 to 3699
+-
+  id: 1218
+  major_area: Manila
+  zip_code: 1077
+  city: Manila CPO-PO Box# 3700 to 3799
+-
+  id: 1219
+  major_area: Manila
+  zip_code: 1078
+  city: Manila CPO-PO Box# 3800 to 3899
+-
+  id: 1220
+  major_area: Manila
+  zip_code: 1079
+  city: Manila CPO-PO Box# 3900 to 3999
+-
+  id: 1221
+  major_area: Manila
+  zip_code: 1080
+  city: Manila CPO-PO Box# 4000 to 4099
+-
+  id: 1222
+  major_area: Manila
+  zip_code: 1081
+  city: Manila CPO-PO Box# 4100 to 4199
+-
+  id: 1223
+  major_area: Manila
+  zip_code: 1082
+  city: Manila CPO-PO Box# 4200 to 4299
+-
+  id: 1224
+  major_area: Manila
+  zip_code: 1083
+  city: Manila CPO-PO Box# 4300 to 4399
+-
+  id: 1225
+  major_area: Manila
+  zip_code: 1084
+  city: Manila CPO-PO Box# 4400 to 4499
+-
+  id: 1226
+  major_area: Manila
+  zip_code: 1085
+  city: Manila CPO-PO Box# 4500 to 4599
+-
+  id: 1227
+  major_area: Manila
+  zip_code: 1086
+  city: Manila CPO-PO Box# 4600 to 4699
+-
+  id: 1228
+  major_area: Manila
+  zip_code: 1087
+  city: Manila CPO-PO Box# 4700 to 4799
+-
+  id: 1229
+  major_area: Manila
+  zip_code: 1088
+  city: Manila CPO-PO Box# 4800 to 4899
+-
+  id: 1230
+  major_area: Manila
+  zip_code: 1089
+  city: Manila CPO-PO Box# 4900 to 4999
+-
+  id: 1231
+  major_area: Manila
+  zip_code: 1090
+  city: Manila CPO-PO Box# 5000 to 5099
+-
+  id: 1232
+  major_area: Manila
+  zip_code: 1091
+  city: Manila CPO-PO Box# 5100 to 5199
+-
+  id: 1233
+  major_area: Manila
+  zip_code: 1092
+  city: Manila CPO-PO Box# 5200 to 5299
+-
+  id: 1234
+  major_area: Manila
+  zip_code: 1093
+  city: Manila CPO-PO Box# 5300 to 5399
+-
+  id: 1235
+  major_area: Manila
+  zip_code: 1094
+  city: Manila CPO-PO Box# 5400 to 5499
+-
+  id: 1236
+  major_area: Manila
+  zip_code: 1095
+  city: Manila CPO-PO Box# 5500 to 5599
+-
+  id: 1237
+  major_area: Manila
+  zip_code: 1096
+  city: Manila CPO-PO Box# 5600 to 5699
+-
+  id: 1238
+  major_area: Marikina City
+  zip_code: 1800
+  city: Marikina Central Post Office
+-
+  id: 1239
+  major_area: Marikina City
+  zip_code: 1801
+  city: San Roque-Calumpang
+-
+  id: 1240
+  major_area: Marikina City
+  zip_code: 1802
+  city: Industrial Valley
+-
+  id: 1241
+  major_area: Marikina City
+  zip_code: 1803
+  city: Barangka and Tañong
+-
+  id: 1242
+  major_area: Marikina City
+  zip_code: 1804
+  city: J. De La Peña
+-
+  id: 1243
+  major_area: Marikina City
+  zip_code: 1805
+  city: Malanday
+-
+  id: 1244
+  major_area: Marikina City
+  zip_code: 1806
+  city: Northern and Western Marikina River
+-
+  id: 1245
+  major_area: Marikina City
+  zip_code: 1807
+  city: Concepcion tarlac
+-
+  id: 1246
+  major_area: Marikina City
+  zip_code: 1808
+  city: Nangka
+-
+  id: 1247
+  major_area: Marikina City
+  zip_code: 1809
+  city: Parang
+-
+  id: 1248
+  major_area: Marikina City
+  zip_code: 1810
+  city: Marikina Heights
+-
+  id: 1249
+  major_area: Marikina City
+  zip_code: 1811
+  city: Concepcion 2
+-
+  id: 1250
+  major_area: Marikina City
+  zip_code: 1812-1819
+  city: Not used
+-
+  id: 1251
+  major_area: Marikina City
+  zip_code: 1820
+  city: Bagong Nayon, Cupang, Mambagat, and Mayamot
+-
+  id: 1252
+  major_area: Muntinlupa City
+  zip_code: 1770
+  city: Muntinlupa Central Post Office
+-
+  id: 1253
+  major_area: Muntinlupa City
+  zip_code: 1771
+  city: Buli/Cupang
+-
+  id: 1254
+  major_area: Muntinlupa City
+  zip_code: 1772
+  city: Bayanan/Putatan
+-
+  id: 1255
+  major_area: Muntinlupa City
+  zip_code: 1772
+  city: Soldiers' Hills
+-
+  id: 1256
+  major_area: Muntinlupa City
+  zip_code: 1773
+  city: Tunasan
+-
+  id: 1257
+  major_area: Muntinlupa City
+  zip_code: 1774
+  city: Susana Heights
+-
+  id: 1258
+  major_area: Muntinlupa City
+  zip_code: 1775
+  city: Pearl Heights
+-
+  id: 1259
+  major_area: Muntinlupa City
+  zip_code: 1776
+  city: Poblacion
+-
+  id: 1260
+  major_area: Muntinlupa City
+  zip_code: 1777
+  city: Pleasant Village
+-
+  id: 1261
+  major_area: Muntinlupa City
+  zip_code: 1780
+  city: Ayala Alabang Subdivision
+-
+  id: 1262
+  major_area: Muntinlupa City
+  zip_code: 1799
+  city: Ayala Alabang P.O. Boxes
+-
+  id: 1263
+  major_area: Navotas City
+  zip_code: 1411
+  city: Fish Market
+-
+  id: 1264
+  major_area: Navotas City
+  zip_code: 1412
+  city: Isla de Cocomo
+-
+  id: 1265
+  major_area: Navotas City
+  zip_code: 1413
+  city: Kapitbahayan [East]
+-
+  id: 1266
+  major_area: Navotas City
+  zip_code: 1409
+  city: Kaunlaran Village
+-
+  id: 1267
+  major_area: Navotas City
+  zip_code: 1485
+  city: Navotas
+-
+  id: 1268
+  major_area: Navotas City
+  zip_code: 1489
+  city: Tangos
+-
+  id: 1269
+  major_area: Navotas City
+  zip_code: 1490
+  city: Tanza
+-
+  id: 1270
+  major_area: Parañaque City
+  zip_code: 1714
+  city: Aeropark Subdivision
+-
+  id: 1271
+  major_area: Parañaque City
+  zip_code: 1702
+  city: Baclaran
+-
+  id: 1272
+  major_area: Parañaque City
+  zip_code: 1711
+  city: Better Living Subdivision
+-
+  id: 1273
+  major_area: Parañaque City
+  zip_code: 1720
+  city: BF Homes 1
+-
+  id: 1274
+  major_area: Parañaque City
+  zip_code: 1718
+  city: BF Homes 2
+-
+  id: 1275
+  major_area: Parañaque City
+  zip_code: 1375
+  city: Domestic Airport P.O. - P.O. Box Nos. 1000 to 1099
+-
+  id: 1276
+  major_area: Parañaque City
+  zip_code: 1376
+  city: Domestic Airport P.O. - P.O. Box Nos. 1100 to 1199
+-
+  id: 1277
+  major_area: Parañaque City
+  zip_code: 1377
+  city: Domestic Airport P.O. - P.O. Box Nos. 1200 to 1299
+-
+  id: 1278
+  major_area: Parañaque City
+  zip_code: 1378
+  city: Domestic Airport P.O. - P.O. Box Nos. 1300 to 1399
+-
+  id: 1279
+  major_area: Parañaque City
+  zip_code: 1379
+  city: Domestic Airport P.O. - P.O. Box Nos. 1400 to 1499
+-
+  id: 1280
+  major_area: Parañaque City
+  zip_code: 1380
+  city: Domestic Airport P.O. - P.O. Box Nos. 1500 to 1599
+-
+  id: 1281
+  major_area: Parañaque City
+  zip_code: 1381
+  city: Domestic Airport P.O. - P.O. Box Nos. 1600 to 1699
+-
+  id: 1282
+  major_area: Parañaque City
+  zip_code: 1710
+  city: Executive Heights Subdivision
+-
+  id: 1283
+  major_area: Parañaque City
+  zip_code: 1719
+  city: Ireneville Subdivision I & III
+-
+  id: 1284
+  major_area: Parañaque City
+  zip_code: 1714
+  city: Ireneville Subdivision II
+-
+  id: 1285
+  major_area: Parañaque City
+  zip_code: 1717
+  city: Manila Memorial Park
+-
+  id: 1286
+  major_area: Parañaque City
+  zip_code: 1703
+  city: Marina Subdivision (Reclamation)
+-
+  id: 1287
+  major_area: Parañaque City
+  zip_code: 1719
+  city: Maywood Village I
+-
+  id: 1288
+  major_area: Parañaque City
+  zip_code: 1716
+  city: Maywood Village II
+-
+  id: 1289
+  major_area: Parañaque City
+  zip_code: 1712
+  city: Miramar Subdivision
+-
+  id: 1290
+  major_area: Parañaque City
+  zip_code: 1708
+  city: Multinational Village
+-
+  id: 1291
+  major_area: Parañaque City
+  zip_code: 1705
+  city: Ninoy Aquino International Airport
+-
+  id: 1292
+  major_area: Parañaque City
+  zip_code: 1700
+  city: Parañaque CPO
+-
+  id: 1293
+  major_area: Parañaque City
+  zip_code: 1706
+  city: Pulo
+-
+  id: 1294
+  major_area: Parañaque City
+  zip_code: 1715
+  city: San Antonio Valley 1
+-
+  id: 1295
+  major_area: Parañaque City
+  zip_code: 1707
+  city: San Antonio Valley 11 & 12
+-
+  id: 1296
+  major_area: Parañaque City
+  zip_code: 1704
+  city: Santo Niño
+-
+  id: 1297
+  major_area: Parañaque City
+  zip_code: 1709
+  city: South Admiral Village, Merville Park & Moonwalk Subdivision
+-
+  id: 1298
+  major_area: Parañaque City
+  zip_code: 1701
+  city: Tambo
+-
+  id: 1299
+  major_area: Parañaque City
+  zip_code: 1713
+  city: United Parañaque Subdivision
+-
+  id: 1300
+  major_area: Pasay City
+  zip_code: 1300
+  city: Pasay City Central Post Office
+-
+  id: 1301
+  major_area: Pasay City
+  zip_code: 1301
+  city: Domestic Airport P.O.
+-
+  id: 1302
+  major_area: Pasay City
+  zip_code: 1302
+  city: San Rafael
+-
+  id: 1303
+  major_area: Pasay City
+  zip_code: 1303
+  city: San Roque
+-
+  id: 1304
+  major_area: Pasay City
+  zip_code: 1304
+  city: Santa Clara
+-
+  id: 1305
+  major_area: Pasay City
+  zip_code: 1305
+  city: San Jose
+-
+  id: 1306
+  major_area: Pasay City
+  zip_code: 1306
+  city: San Isidro
+-
+  id: 1307
+  major_area: Pasay City
+  zip_code: 1307
+  city: Philippine International Convention Center
+-
+  id: 1308
+  major_area: Pasay City
+  zip_code: 1308
+  city: Bay City
+-
+  id: 1309
+  major_area: Pasay City
+  zip_code: 1309
+  city: Villamor Airbase
+-
+  id: 1310
+  major_area: Pasay City
+  zip_code: 1350
+  city: Pasay City CPO - P.O. Box Nos. 1000 to 1099
+-
+  id: 1311
+  major_area: Pasay City
+  zip_code: 1351
+  city: Pasay City CPO - P.O. Box Nos. 1100 to 1199
+-
+  id: 1312
+  major_area: Pasay City
+  zip_code: 1352
+  city: Pasay City CPO - P.O. Box Nos. 1200 to 1299
+-
+  id: 1313
+  major_area: Pasay City
+  zip_code: 1353
+  city: Pasay City CPO - P.O. Box Nos. 1300 to 1399
+-
+  id: 1314
+  major_area: Pasay City
+  zip_code: 1354
+  city: Pasay City CPO - P.O. Box Nos. 1400 to 1499
+-
+  id: 1315
+  major_area: Pasig City
+  zip_code: 1600
+  city: Pasig Central Post Office
+-
+  id: 1316
+  major_area: Pasig City
+  zip_code: 1601
+  city: San Joaquin
+-
+  id: 1317
+  major_area: Pasig City
+  zip_code: 1602
+  city: Pinagbuhatan
+-
+  id: 1318
+  major_area: Pasig City
+  zip_code: 1603
+  city: Kapitolyo
+-
+  id: 1319
+  major_area: Pasig City
+  zip_code: 1604
+  city: Ugong
+-
+  id: 1320
+  major_area: Pasig City
+  zip_code: 1605
+  city: Ortigas Post Office
+-
+  id: 1321
+  major_area: Pasig City
+  zip_code: 1606
+  city: Caniogan
+-
+  id: 1322
+  major_area: Pasig City
+  zip_code: 1607
+  city: Maybunga
+-
+  id: 1323
+  major_area: Pasig City
+  zip_code: 1608
+  city: Santa Lucia
+-
+  id: 1324
+  major_area: Pasig City
+  zip_code: 1609
+  city: Rosario
+-
+  id: 1325
+  major_area: Pasig City
+  zip_code: 1610
+  city: Santolan
+-
+  id: 1326
+  major_area: Pasig City
+  zip_code: 1611
+  city: Manggahan
+-
+  id: 1327
+  major_area: Pasig City
+  zip_code: 1612
+  city: Green Park
+-
+  id: 1328
+  major_area: Pasig City
+  zip_code: 1650
+  city: Pasig Ortigas CTR-PO Box# 1000 to 1099
+-
+  id: 1329
+  major_area: Pasig City
+  zip_code: 1651
+  city: Pasig Ortigas CTR-PO Box# 1100 to 1199
+-
+  id: 1330
+  major_area: Pasig City
+  zip_code: 1652
+  city: Pasig Ortigas CTR-PO Box# 1200 to 1299
+-
+  id: 1331
+  major_area: Pasig City
+  zip_code: 1653
+  city: Pasig Ortigas CTR-PO Box# 1300 to 1399
+-
+  id: 1332
+  major_area: Pasig City
+  zip_code: 1654
+  city: Pasig Ortigas CTR-PO Box# 1400 to 1499
+-
+  id: 1333
+  major_area: Pasig City
+  zip_code: 1655
+  city: Pasig Ortigas CTR-PO Box# 1500 to 1599
+-
+  id: 1334
+  major_area: Pasig City
+  zip_code: 1656
+  city: Pasig Ortigas CTR-PO Box# 1600 to 1699
+-
+  id: 1335
+  major_area: Pasig City
+  zip_code: 1657
+  city: Pasig Ortigas CTR-PO Box# 1700 to 1799
+-
+  id: 1336
+  major_area: Pasig City
+  zip_code: 1658
+  city: Pasig Ortigas CTR-PO Box# 1800 to 1899
+-
+  id: 1337
+  major_area: Pasig City
+  zip_code: 1659
+  city: Pasig Ortigas CTR-PO Box# 1900 to 1999
+-
+  id: 1338
+  major_area: Pasig City
+  zip_code: 1660
+  city: Pasig Ortigas CTR-PO Box# 2000 to 2099
+-
+  id: 1339
+  major_area: Pasig City
+  zip_code: 1661
+  city: Pasig Ortigas CTR-PO Box# 2100 to 2199
+-
+  id: 1340
+  major_area: Pasig City
+  zip_code: 1662
+  city: Pasig Ortigas CTR-PO Box# 2200 to 2299
+-
+  id: 1341
+  major_area: Pasig City
+  zip_code: 1663
+  city: Pasig Ortigas CTR-PO Box# 2300 to 2399
+-
+  id: 1342
+  major_area: Pasig City
+  zip_code: 1664
+  city: Pasig Ortigas CTR-PO Box# 2400 to 2499
+-
+  id: 1343
+  major_area: Pasig City
+  zip_code: 1665
+  city: Pasig Ortigas CTR-PO Box# 2500 to 2599
+-
+  id: 1344
+  major_area: Pasig City
+  zip_code: 1666
+  city: Pasig Ortigas CTR-PO Box# 2600 to 2699
+-
+  id: 1345
+  major_area: Pasig City
+  zip_code: 1667
+  city: Pasig Ortigas CTR-PO Box# 2700 to 2799
+-
+  id: 1346
+  major_area: Pasig City
+  zip_code: 1668
+  city: Pasig Ortigas CTR-PO Box# 2800 to 2899
+-
+  id: 1347
+  major_area: Pasig City
+  zip_code: 1669
+  city: Pasig Ortigas CTR-PO Box# 2900 to 2999
+-
+  id: 1348
+  major_area: Pasig City
+  zip_code: 1670
+  city: Pasig Ortigas CTR-PO Box# 3000 to 3099
+-
+  id: 1349
+  major_area: Pasig City
+  zip_code: 1671
+  city: Pasig Ortigas CTR-PO Box# 3100 to 3199
+-
+  id: 1350
+  major_area: Pasig City
+  zip_code: 1672
+  city: Pasig Ortigas CTR-PO Box# 3200 to 3299
+-
+  id: 1351
+  major_area: Pasig City
+  zip_code: 1673
+  city: Pasig Ortigas CTR-PO Box# 3300 to 3399
+-
+  id: 1352
+  major_area: Pasig City
+  zip_code: 1674
+  city: Pasig Ortigas CTR-PO Box# 3400 to 3499
+-
+  id: 1353
+  major_area: Pasig City
+  zip_code: 1675
+  city: Pasig Ortigas CTR-PO Box# 3500 to 3599
+-
+  id: 1354
+  major_area: Pasig City
+  zip_code: 1676
+  city: Pasig Ortigas CTR-PO Box# 3600 to 3699
+-
+  id: 1355
+  major_area: Pasig City
+  zip_code: 1677
+  city: Pasig Ortigas CTR-PO Box# 3700 to 3799
+-
+  id: 1356
+  major_area: Pasig City
+  zip_code: 1678
+  city: Pasig Ortigas CTR-PO Box# 3800 to 3899
+-
+  id: 1357
+  major_area: Pasig City
+  zip_code: 1679
+  city: Pasig Ortigas CTR-PO Box# 3900 to 3999
+-
+  id: 1358
+  major_area: Pasig City
+  zip_code: 1680
+  city: Pasig Ortigas CTR-PO Box# 4000 to 4099
+-
+  id: 1359
+  major_area: Pasig City
+  zip_code: 1681
+  city: Pasig Ortigas CTR-PO Box# 4100 to 4199
+-
+  id: 1360
+  major_area: Pasig City
+  zip_code: 1682
+  city: Pasig Ortigas CTR-PO Box# 4200 to 4299
+-
+  id: 1361
+  major_area: Pasig City
+  zip_code: 1683
+  city: Pasig Ortigas CTR-PO Box# 4300 to 4399
+-
+  id: 1362
+  major_area: Pasig City
+  zip_code: 1684
+  city: Pasig Ortigas CTR-PO Box# 4400 to 4499
+-
+  id: 1363
+  major_area: Pasig City
+  zip_code: 1685
+  city: Pasig Ortigas CTR-PO Box# 4500 to 4599
+-
+  id: 1364
+  major_area: Pasig City
+  zip_code: 1686
+  city: Pasig Ortigas CTR-PO Box# 4600 to 4699
+-
+  id: 1365
+  major_area: Pasig City
+  zip_code: 1687
+  city: Pasig Ortigas CTR-PO Box# 4700 to 4799
+-
+  id: 1366
+  major_area: Pasig City
+  zip_code: 1688
+  city: Pasig Ortigas CTR-PO Box# 4800 to 4899
+-
+  id: 1367
+  major_area: Pasig City
+  zip_code: 1689
+  city: Pasig Ortigas CTR-PO Box# 4900 to 4999
+-
+  id: 1368
+  major_area: Pasig City
+  zip_code: 1690
+  city: Pasig Ortigas CTR-PO Box# 5000 to 5099
+-
+  id: 1369
+  major_area: Pasig City
+  zip_code: 1691
+  city: Pasig Ortigas CTR-PO Box# 5100 to 5199
+-
+  id: 1370
+  major_area: Pasig City
+  zip_code: 1692
+  city: Pasig Ortigas CTR-PO Box# 5200 to 5299
+-
+  id: 1371
+  major_area: Pasig City
+  zip_code: 1693
+  city: Pasig Ortigas CTR-PO Box# 5300 to 5399
+-
+  id: 1372
+  major_area: Pasig City
+  zip_code: 1694
+  city: Pasig Ortigas CTR-PO Box# 5400 to 5499
+-
+  id: 1373
+  major_area: Pasig City
+  zip_code: 1695
+  city: Pasig Ortigas CTR-PO Box# 5500 to 5599
+-
+  id: 1374
+  major_area: Pasig City
+  zip_code: 1696
+  city: Pasig Ortigas CTR-PO Box# 5600 to 5699
+-
+  id: 1375
+  major_area: Pasig City
+  zip_code: 1697
+  city: Pasig Ortigas CTR-PO Box# 5700 to 5799
+-
+  id: 1376
+  major_area: Pasig City
+  zip_code: 1698
+  city: Pasig Ortigas CTR-PO Box# 5800 to 5899
+-
+  id: 1377
+  major_area: Pasig City
+  zip_code: 1699
+  city: Pasig Ortigas CTR-PO Box# 5900 to 5999
+-
+  id: 1378
+  major_area: Pateros
+  zip_code: 1620
+  city: Aguho
+-
+  id: 1379
+  major_area: Pateros
+  zip_code: 1621
+  city: Santa Ana
+-
+  id: 1380
+  major_area: Quezon City
+  zip_code: 1105
+  city: Alicia
+-
+  id: 1381
+  major_area: Quezon City
+  zip_code: 1102
+  city: Amihan
+-
+  id: 1382
+  major_area: Quezon City
+  zip_code: 1106
+  city: Apolonio Samson
+-
+  id: 1383
+  major_area: Quezon City
+  zip_code: 810
+  city: Araneta Center
+-
+  id: 1384
+  major_area: Quezon City
+  zip_code: 1135
+  city: Araneta Center P.O. Boxes
+-
+  id: 1385
+  major_area: Quezon City
+  zip_code: 1106
+  city: Baesa
+-
+  id: 1386
+  major_area: Quezon City
+  zip_code: 1116
+  city: Bagbag
+-
+  id: 1387
+  major_area: Quezon City
+  zip_code: 1110
+  city: Bagong Bayan
+-
+  id: 1388
+  major_area: Quezon City
+  zip_code: 1109
+  city: Bagong Buhay
+-
+  id: 1389
+  major_area: Quezon City
+  zip_code: 1111
+  city: Bagong Lipunan
+-
+  id: 1390
+  major_area: Quezon City
+  zip_code: 1105
+  city: Bagong Pag-Asa
+-
+  id: 1391
+  major_area: Quezon City
+  zip_code: 1119
+  city: Bagong Silangan
+-
+  id: 1392
+  major_area: Quezon City
+  zip_code: 1106
+  city: Bahay Toro
+-
+  id: 1393
+  major_area: Quezon City
+  zip_code: 1115
+  city: Balingasa
+-
+  id: 1394
+  major_area: Quezon City
+  zip_code: 1106
+  city: Balintawak
+-
+  id: 1395
+  major_area: Quezon City
+  zip_code: 1106
+  city: Balumbato
+-
+  id: 1396
+  major_area: Quezon City
+  zip_code: 1126
+  city: Batasan Hills
+-
+  id: 1397
+  major_area: Quezon City
+  zip_code: 1109
+  city: Bayanihan
+-
+  id: 1398
+  major_area: Quezon City
+  zip_code: 1120
+  city: BF Homes
+-
+  id: 1399
+  major_area: Quezon City
+  zip_code: 1109
+  city: Blue Ridge
+-
+  id: 1400
+  major_area: Quezon City
+  zip_code: 1101
+  city: Botocan
+-
+  id: 1401
+  major_area: Quezon City
+  zip_code: 1141
+  city: Broadway Center P.O. Boxes
+-
+  id: 1402
+  major_area: Quezon City
+  zip_code: 1105
+  city: Bungad
+-
+  id: 1403
+  major_area: Quezon City
+  zip_code: 820
+  city: Bureau of Internal Revenue
+-
+  id: 1404
+  major_area: Quezon City
+  zip_code: 1110
+  city: Camp Aguinaldo
+-
+  id: 1405
+  major_area: Quezon City
+  zip_code: 802
+  city: Camp Aguinaldo
+-
+  id: 1406
+  major_area: Quezon City
+  zip_code: 801
+  city: Camp Crame
+-
+  id: 1407
+  major_area: Quezon City
+  zip_code: 1126
+  city: Capitol Hills/Park
+-
+  id: 1408
+  major_area: Quezon City
+  zip_code: 1117
+  city: Capri
+-
+  id: 1409
+  major_area: Quezon City
+  zip_code: 1100
+  city: Central
+-
+  id: 1410
+  major_area: Quezon City
+  zip_code: 1102
+  city: Claro
+-
+  id: 1411
+  major_area: Quezon City
+  zip_code: 880
+  city: Commission on Audit
+-
+  id: 1412
+  major_area: Quezon City
+  zip_code: 1121
+  city: Commonwealth
+-
+  id: 1413
+  major_area: Quezon City
+  zip_code: 1111
+  city: Crame
+-
+  id: 1414
+  major_area: Quezon City
+  zip_code: 1109
+  city: Cubao
+-
+  id: 1415
+  major_area: Quezon City
+  zip_code: 1128
+  city: Culiat
+-
+  id: 1416
+  major_area: Quezon City
+  zip_code: 1115
+  city: Damar
+-
+  id: 1417
+  major_area: Quezon City
+  zip_code: 1104
+  city: Damayan
+-
+  id: 1418
+  major_area: Quezon City
+  zip_code: 1112
+  city: Damayan Lagi
+-
+  id: 1419
+  major_area: Quezon City
+  zip_code: 1123
+  city: Damong Maliit
+-
+  id: 1420
+  major_area: Quezon City
+  zip_code: 1105
+  city: Del Monte
+-
+  id: 1421
+  major_area: Quezon City
+  zip_code: 1104
+  city: Diliman
+-
+  id: 1422
+  major_area: Quezon City
+  zip_code: 1109
+  city: Dioquino Zobel
+-
+  id: 1423
+  major_area: Quezon City
+  zip_code: 1113
+  city: Don Manuel
+-
+  id: 1424
+  major_area: Quezon City
+  zip_code: 1113
+  city: Doña Aurora
+-
+  id: 1425
+  major_area: Quezon City
+  zip_code: 1125
+  city: Doña Faustina Subdivision
+-
+  id: 1426
+  major_area: Quezon City
+  zip_code: 1113
+  city: Doña Imelda
+-
+  id: 1427
+  major_area: Quezon City
+  zip_code: 1113
+  city: Doña Josefa
+-
+  id: 1428
+  major_area: Quezon City
+  zip_code: 1102
+  city: Duyan-Duyan
+-
+  id: 1429
+  major_area: Quezon City
+  zip_code: 1102
+  city: E. Rodriguez
+-
+  id: 1430
+  major_area: Quezon City
+  zip_code: 1109
+  city: Escopa
+-
+  id: 1431
+  major_area: Quezon City
+  zip_code: 1118
+  city: Fairview
+-
+  id: 1432
+  major_area: Quezon City
+  zip_code: 1121
+  city: Fairview [North]
+-
+  id: 1433
+  major_area: Quezon City
+  zip_code: 1122
+  city: Fairview [South]
+-
+  id: 1434
+  major_area: Quezon City
+  zip_code: 1114
+  city: Gintong Silahis
+-
+  id: 1435
+  major_area: Quezon City
+  zip_code: 1117
+  city: Gulod
+-
+  id: 1436
+  major_area: Quezon City
+  zip_code: 1127
+  city: Holy Spirit
+-
+  id: 1437
+  major_area: Quezon City
+  zip_code: 1112
+  city: Horseshoe
+-
+  id: 1438
+  major_area: Quezon City
+  zip_code: 1111
+  city: Immaculate Concepcion
+-
+  id: 1439
+  major_area: Quezon City
+  zip_code: 1124
+  city: Kaligayahan
+-
+  id: 1440
+  major_area: Quezon City
+  zip_code: 1112
+  city: Kalusugan
+-
+  id: 1441
+  major_area: Quezon City
+  zip_code: 1102
+  city: Kamias
+-
+  id: 1442
+  major_area: Quezon City
+  zip_code: 1103
+  city: Kamuning
+-
+  id: 1443
+  major_area: Quezon City
+  zip_code: 1105
+  city: Katipunan
+-
+  id: 1444
+  major_area: Quezon City
+  zip_code: 1111
+  city: Kaunlaran
+-
+  id: 1445
+  major_area: Quezon City
+  zip_code: 1112
+  city: Kristong Hari
+-
+  id: 1446
+  major_area: Quezon City
+  zip_code: 1101
+  city: Krus na Ligas
+-
+  id: 1447
+  major_area: Quezon City
+  zip_code: 1114
+  city: La Loma
+-
+  id: 1448
+  major_area: Quezon City
+  zip_code: 1103
+  city: Laging Handa
+-
+  id: 1449
+  major_area: Quezon City
+  zip_code: 1110
+  city: Libis
+-
+  id: 1450
+  major_area: Quezon City
+  zip_code: 1114
+  city: Lourdes
+-
+  id: 1451
+  major_area: Quezon City
+  zip_code: 1108
+  city: Loyola Heights
+-
+  id: 1452
+  major_area: Quezon City
+  zip_code: 1114
+  city: Maharlika
+-
+  id: 1453
+  major_area: Quezon City
+  zip_code: 1101
+  city: Malaya
+-
+  id: 1454
+  major_area: Quezon City
+  zip_code: 1109
+  city: Mangga
+-
+  id: 1455
+  major_area: Quezon City
+  zip_code: 1115
+  city: Manresa
+-
+  id: 1456
+  major_area: Quezon City
+  zip_code: 1112
+  city: Mariana
+-
+  id: 1457
+  major_area: Quezon City
+  zip_code: 1104
+  city: Mariblo
+-
+  id: 1458
+  major_area: Quezon City
+  zip_code: 1109
+  city: Marilag
+-
+  id: 1459
+  major_area: Quezon City
+  zip_code: 1109
+  city: Masagana
+-
+  id: 1460
+  major_area: Quezon City
+  zip_code: 1115
+  city: Masambong
+-
+  id: 1461
+  major_area: Quezon City
+  zip_code: 1114
+  city: Matalahib
+-
+  id: 1462
+  major_area: Quezon City
+  zip_code: 1119
+  city: Matandang Balara
+-
+  id: 1463
+  major_area: Quezon City
+  zip_code: 1109
+  city: Milagrosa
+-
+  id: 1464
+  major_area: Quezon City
+  zip_code: 1138
+  city: Murphy District P.O. Boxes
+-
+  id: 1465
+  major_area: Quezon City
+  zip_code: 1125
+  city: Nagkaisang Nayon
+-
+  id: 1466
+  major_area: Quezon City
+  zip_code: 830
+  city: National Irrigation Administration
+-
+  id: 1467
+  major_area: Quezon City
+  zip_code: 1104
+  city: Nayon Kaunlaran
+-
+  id: 1468
+  major_area: Quezon City
+  zip_code: 1107
+  city: New Era
+-
+  id: 1469
+  major_area: Quezon City
+  zip_code: 1147
+  city: Novaliches P.O. Boxes
+-
+  id: 1470
+  major_area: Quezon City
+  zip_code: 1123
+  city: Novaliches Proper
+-
+  id: 1471
+  major_area: Quezon City
+  zip_code: 1103
+  city: Obrero
+-
+  id: 1472
+  major_area: Quezon City
+  zip_code: 1101
+  city: Old Capitol Site
+-
+  id: 1473
+  major_area: Quezon City
+  zip_code: 1114
+  city: Paang Bundok
+-
+  id: 1474
+  major_area: Quezon City
+  zip_code: 1115
+  city: Pag-Ibig sa Nayon
+-
+  id: 1475
+  major_area: Quezon City
+  zip_code: 1103
+  city: Paligsahan
+-
+  id: 1476
+  major_area: Quezon City
+  zip_code: 1105
+  city: Paltok
+-
+  id: 1477
+  major_area: Quezon City
+  zip_code: 1108
+  city: Pansol
+-
+  id: 1478
+  major_area: Quezon City
+  zip_code: 1104
+  city: Paraiso
+-
+  id: 1479
+  major_area: Quezon City
+  zip_code: 1118
+  city: Pasong Putik
+-
+  id: 1480
+  major_area: Quezon City
+  zip_code: 1107
+  city: Pasong Tamo
+-
+  id: 1481
+  major_area: Quezon City
+  zip_code: 1119
+  city: Payatas
+-
+  id: 1482
+  major_area: Quezon City
+  zip_code: 1104
+  city: Phil-Am
+-
+  id: 1483
+  major_area: Quezon City
+  zip_code: 850
+  city: Philippine Heart Center
+-
+  id: 1484
+  major_area: Quezon City
+  zip_code: 1111
+  city: Pinagkaisahan
+-
+  id: 1485
+  major_area: Quezon City
+  zip_code: 1100
+  city: Piñahan
+-
+  id: 1486
+  major_area: Quezon City
+  zip_code: 1109
+  city: Project 4
+-
+  id: 1487
+  major_area: Quezon City
+  zip_code: 1100
+  city: Project 6
+-
+  id: 1488
+  major_area: Quezon City
+  zip_code: 1105
+  city: Project 7
+-
+  id: 1489
+  major_area: Quezon City
+  zip_code: 1106
+  city: Project 8
+-
+  id: 1490
+  major_area: Quezon City
+  zip_code: 1100
+  city: Quezon City CPO
+-
+  id: 1491
+  major_area: Quezon City
+  zip_code: 1150
+  city: Quezon City CPO - P.O. Box Nos. 1000 to 1099
+-
+  id: 1492
+  major_area: Quezon City
+  zip_code: 1151
+  city: Quezon City CPO - P.O. Box Nos. 1100 to 1199
+-
+  id: 1493
+  major_area: Quezon City
+  zip_code: 1152
+  city: Quezon City CPO - P.O. Box Nos. 1200 to 1299
+-
+  id: 1494
+  major_area: Quezon City
+  zip_code: 1153
+  city: Quezon City CPO - P.O. Box Nos. 1300 to 1399
+-
+  id: 1495
+  major_area: Quezon City
+  zip_code: 1154
+  city: Quezon City CPO - P.O. Box Nos. 1400 to 1499
+-
+  id: 1496
+  major_area: Quezon City
+  zip_code: 1155
+  city: Quezon City CPO - P.O. Box Nos. 1500 to 1599
+-
+  id: 1497
+  major_area: Quezon City
+  zip_code: 1156
+  city: Quezon City CPO - P.O. Box Nos. 1600 to 1699
+-
+  id: 1498
+  major_area: Quezon City
+  zip_code: 1157
+  city: Quezon City CPO - P.O. Box Nos. 1700 to 1799
+-
+  id: 1499
+  major_area: Quezon City
+  zip_code: 1158
+  city: Quezon City CPO - P.O. Box Nos. 1800 to 1899
+-
+  id: 1500
+  major_area: Quezon City
+  zip_code: 1159
+  city: Quezon City CPO - P.O. Box Nos. 1900 to 1999
+-
+  id: 1501
+  major_area: Quezon City
+  zip_code: 1160
+  city: Quezon City CPO - P.O. Box Nos. 2000 to 2099
+-
+  id: 1502
+  major_area: Quezon City
+  zip_code: 1161
+  city: Quezon City CPO - P.O. Box Nos. 2100 to 2199
+-
+  id: 1503
+  major_area: Quezon City
+  zip_code: 1162
+  city: Quezon City CPO - P.O. Box Nos. 2200 to 2299
+-
+  id: 1504
+  major_area: Quezon City
+  zip_code: 1163
+  city: Quezon City CPO - P.O. Box Nos. 2300 to 2399
+-
+  id: 1505
+  major_area: Quezon City
+  zip_code: 1164
+  city: Quezon City CPO - P.O. Box Nos. 2400 to 2499
+-
+  id: 1506
+  major_area: Quezon City
+  zip_code: 1165
+  city: Quezon City CPO - P.O. Box Nos. 2500 to 2599
+-
+  id: 1507
+  major_area: Quezon City
+  zip_code: 1166
+  city: Quezon City CPO - P.O. Box Nos. 2600 to 2699
+-
+  id: 1508
+  major_area: Quezon City
+  zip_code: 1167
+  city: Quezon City CPO - P.O. Box Nos. 2700 to 2799
+-
+  id: 1509
+  major_area: Quezon City
+  zip_code: 1168
+  city: Quezon City CPO - P.O. Box Nos. 2800 to 2899
+-
+  id: 1510
+  major_area: Quezon City
+  zip_code: 1169
+  city: Quezon City CPO - P.O. Box Nos. 2900 to 2999
+-
+  id: 1511
+  major_area: Quezon City
+  zip_code: 1170
+  city: Quezon City CPO - P.O. Box Nos. 3000 to 3099
+-
+  id: 1512
+  major_area: Quezon City
+  zip_code: 1171
+  city: Quezon City CPO - P.O. Box Nos. 3100 to 3199
+-
+  id: 1513
+  major_area: Quezon City
+  zip_code: 1172
+  city: Quezon City CPO - P.O. Box Nos. 3200 to 3299
+-
+  id: 1514
+  major_area: Quezon City
+  zip_code: 1173
+  city: Quezon City CPO - P.O. Box Nos. 3300 to 3399
+-
+  id: 1515
+  major_area: Quezon City
+  zip_code: 1174
+  city: Quezon City CPO - P.O. Box Nos. 3400 to 3499
+-
+  id: 1516
+  major_area: Quezon City
+  zip_code: 1175
+  city: Quezon City CPO - P.O. Box Nos. 3500 to 3599
+-
+  id: 1517
+  major_area: Quezon City
+  zip_code: 1176
+  city: Quezon City CPO - P.O. Box Nos. 3600 to 3699
+-
+  id: 1518
+  major_area: Quezon City
+  zip_code: 1177
+  city: Quezon City CPO - P.O. Box Nos. 3700 to 3799
+-
+  id: 1519
+  major_area: Quezon City
+  zip_code: 860
+  city: Quezon City Hall
+-
+  id: 1520
+  major_area: Quezon City
+  zip_code: 1102
+  city: Quirino District (Project 2 & 3)
+-
+  id: 1521
+  major_area: Quezon City
+  zip_code: 1105
+  city: R. Magsaysay
+-
+  id: 1522
+  major_area: Quezon City
+  zip_code: 1103
+  city: Roxas District
+-
+  id: 1523
+  major_area: Quezon City
+  zip_code: 1103
+  city: Sacred Heart
+-
+  id: 1524
+  major_area: Quezon City
+  zip_code: 1114
+  city: Salvacion
+-
+  id: 1525
+  major_area: Quezon City
+  zip_code: 1117
+  city: San Agustin
+-
+  id: 1526
+  major_area: Quezon City
+  zip_code: 1105
+  city: San Antonio, Quezon City
+-
+  id: 1527
+  major_area: Quezon City
+  zip_code: 1116
+  city: San Bartolome
+-
+  id: 1528
+  major_area: Quezon City
+  zip_code: 1113
+  city: San Isidro
+-
+  id: 1529
+  major_area: Quezon City
+  zip_code: 1114
+  city: San Isidro Labrador
+-
+  id: 1530
+  major_area: Quezon City
+  zip_code: 1115
+  city: San Jose
+-
+  id: 1531
+  major_area: Quezon City
+  zip_code: 1109
+  city: San Roque
+-
+  id: 1532
+  major_area: Quezon City
+  zip_code: 1101
+  city: San Vicente
+-
+  id: 1533
+  major_area: Quezon City
+  zip_code: 1116
+  city: Sangandaan
+-
+  id: 1534
+  major_area: Quezon City
+  zip_code: 1104
+  city: Santa Cruz
+-
+  id: 1535
+  major_area: Quezon City
+  zip_code: 1117
+  city: Santa Lucia
+-
+  id: 1536
+  major_area: Quezon City
+  zip_code: 1117
+  city: Santa Monica
+-
+  id: 1537
+  major_area: Quezon City
+  zip_code: 1114
+  city: Santa Teresita
+-
+  id: 1538
+  major_area: Quezon City
+  zip_code: 1105
+  city: Santo Cristo
+-
+  id: 1539
+  major_area: Quezon City
+  zip_code: 1113
+  city: Santo Niño
+-
+  id: 1540
+  major_area: Quezon City
+  zip_code: 1113
+  city: Santol
+-
+  id: 1541
+  major_area: Quezon City
+  zip_code: 1116
+  city: Sauyo
+-
+  id: 1542
+  major_area: Quezon City
+  zip_code: 1114
+  city: Sienna
+-
+  id: 1543
+  major_area: Quezon City
+  zip_code: 1101
+  city: Sikatuna Village
+-
+  id: 1544
+  major_area: Quezon City
+  zip_code: 1102
+  city: Silangan
+-
+  id: 1545
+  major_area: Quezon City
+  zip_code: 800
+  city: Social Security System
+-
+  id: 1546
+  major_area: Quezon City
+  zip_code: 1109
+  city: Socorro
+-
+  id: 1547
+  major_area: Quezon City
+  zip_code: 1103
+  city: South Triangle
+-
+  id: 1548
+  major_area: Quezon City
+  zip_code: 1110
+  city: St. Ignatius
+-
+  id: 1549
+  major_area: Quezon City
+  zip_code: 1111
+  city: St. Martin de Porres
+-
+  id: 1550
+  major_area: Quezon City
+  zip_code: 1114
+  city: St. Peter
+-
+  id: 1551
+  major_area: Quezon City
+  zip_code: 1109
+  city: Tagumpay
+-
+  id: 1552
+  major_area: Quezon City
+  zip_code: 1110
+  city: Talampas
+-
+  id: 1553
+  major_area: Quezon City
+  zip_code: 1104
+  city: Talayan
+-
+  id: 1554
+  major_area: Quezon City
+  zip_code: 1116
+  city: Talipapa
+-
+  id: 1555
+  major_area: Quezon City
+  zip_code: 1116
+  city: Tandang Sora
+-
+  id: 1556
+  major_area: Quezon City
+  zip_code: 1113
+  city: Tatalon
+-
+  id: 1557
+  major_area: Quezon City
+  zip_code: 1101
+  city: Teachers Village
+-
+  id: 1558
+  major_area: Quezon City
+  zip_code: 1110
+  city: Ugong Norte
+-
+  id: 1559
+  major_area: Quezon City
+  zip_code: 1106
+  city: Unang Sigaw
+-
+  id: 1560
+  major_area: Quezon City
+  zip_code: 1101
+  city: University of the Philippines Post Office
+-
+  id: 1561
+  major_area: Quezon City
+  zip_code: 1144
+  city: University of the Philippines P.O. Boxes
+-
+  id: 1562
+  major_area: Quezon City
+  zip_code: 1101
+  city: University of the Philippines Village
+-
+  id: 1563
+  major_area: Quezon City
+  zip_code: 840
+  city: V. Luna Hospital
+-
+  id: 1564
+  major_area: Quezon City
+  zip_code: 1112
+  city: Valencia
+-
+  id: 1565
+  major_area: Quezon City
+  zip_code: 1128
+  city: Vasra
+-
+  id: 1566
+  major_area: Quezon City
+  zip_code: 870
+  city: Veterans Hospital
+-
+  id: 1567
+  major_area: Quezon City
+  zip_code: 1105
+  city: Veterans Village
+-
+  id: 1568
+  major_area: Quezon City
+  zip_code: 1109
+  city: Villa Maria Clara
+-
+  id: 1569
+  major_area: Quezon City
+  zip_code: 1120
+  city: Violago Homes
+-
+  id: 1570
+  major_area: Quezon City
+  zip_code: 1104
+  city: West Triangle
+-
+  id: 1571
+  major_area: Quezon City
+  zip_code: 1110
+  city: White Plains
+-
+  id: 1572
+  major_area: San Juan City
+  zip_code: 1504
+  city: Eisenhower - Crame
+-
+  id: 1573
+  major_area: San Juan City
+  zip_code: 1502
+  city: Greenhills Post Office
+-
+  id: 1574
+  major_area: San Juan City
+  zip_code: 1503
+  city: Greenhills [North]
+-
+  id: 1575
+  major_area: San Juan City
+  zip_code: 1500
+  city: San Juan Central Post Office
+-
+  id: 1576
+  major_area: San Juan City
+  zip_code: 400
+  city: International Correspondence School
+-
+  id: 1577
+  major_area: San Juan City
+  zip_code: 401
+  city: Asian Development Bank
+-
+  id: 1578
+  major_area: San Juan City
+  zip_code: 410
+  city: Radio Bible Class
+-
+  id: 1579
+  major_area: San Juan City
+  zip_code: 420
+  city: Bible School on the Air
+-
+  id: 1580
+  major_area: San Juan City
+  zip_code: 1530
+  city: Greenhills P.O. Box Nos. 1000 to 1099
+-
+  id: 1581
+  major_area: San Juan City
+  zip_code: 1531
+  city: Greenhills P.O. Box Nos. 1100 to 1199
+-
+  id: 1582
+  major_area: San Juan City
+  zip_code: 1532
+  city: Greenhills P.O. Box Nos. 1200 to 1299
+-
+  id: 1583
+  major_area: San Juan City
+  zip_code: 1533
+  city: Greenhills P.O. Box Nos. 1300 to 1399
+-
+  id: 1584
+  major_area: San Juan City
+  zip_code: 1534
+  city: Greenhills P.O. Box Nos. 1400 to 1499
+-
+  id: 1585
+  major_area: San Juan City
+  zip_code: 1535
+  city: Greenhills P.O. Box Nos. 1500 to 1599
+-
+  id: 1586
+  major_area: San Juan City
+  zip_code: 1536
+  city: Greenhills P.O. Box Nos. 1600 to 1699
+-
+  id: 1587
+  major_area: Taguig City
+  zip_code: 1636
+  city: Bay Breeze Executive Village
+-
+  id: 1588
+  major_area: Taguig City
+  zip_code: 1631
+  city: Bicutan
+-
+  id: 1589
+  major_area: Taguig City
+  zip_code: 1632
+  city: ususan
+-
+  id: 1590
+  major_area: Taguig City
+  zip_code: 1633
+  city: Upper Bicutan
+-
+  id: 1591
+  major_area: Taguig City
+  zip_code: 1630
+  city: Western Bicutan (including Food Terminal, Inc. complex)
+-
+  id: 1592
+  major_area: Taguig City
+  zip_code: 1638
+  city: Ligid
+-
+  id: 1593
+  major_area: Taguig City
+  zip_code: 1634
+  city: Nichols - McKinley
+-
+  id: 1594
+  major_area: Taguig City
+  zip_code: 1637
+  city: Tuktukan
+-
+  id: 1595
+  major_area: Valenzuela City
+  zip_code: 1444
+  city: Arkong Bato
+-
+  id: 1596
+  major_area: Valenzuela City
+  zip_code: 1445
+  city: Balangkas - Caloong
+-
+  id: 1597
+  major_area: Valenzuela City
+  zip_code: 1443
+  city: Dalandanan - West Canumay
+-
+  id: 1598
+  major_area: Valenzuela City
+  zip_code: 1447
+  city: East Canumay - Lawang Bato Punturin
+-
+  id: 1599
+  major_area: Valenzuela City
+  zip_code: 1442
+  city: Fortune Village
+-
+  id: 1600
+  major_area: Valenzuela City
+  zip_code: 1442
+  city: General T. de Leon
+-
+  id: 1601
+  major_area: Valenzuela City
+  zip_code: 1441
+  city: Karuhatan
+-
+  id: 1602
+  major_area: Valenzuela City
+  zip_code: 1446
+  city: Lingunan
+-
+  id: 1603
+  major_area: Valenzuela City
+  zip_code: 1444
+  city: Mabolo
+-
+  id: 1604
+  major_area: Valenzuela City
+  zip_code: 1444
+  city: Malanday
+-
+  id: 1605
+  major_area: Valenzuela City
+  zip_code: 1448
+  city: Mapulang Lupa
+-
+  id: 1606
+  major_area: Valenzuela City
+  zip_code: 1442
+  city: Paso de Blas
+-
+  id: 1607
+  major_area: Valenzuela City
+  zip_code: 1444
+  city: Pasolo
+-
+  id: 1608
+  major_area: Valenzuela City
+  zip_code: 1444
+  city: Polo
+-
+  id: 1609
+  major_area: Valenzuela City
+  zip_code: 1444
+  city: Rincon
+-
+  id: 1610
+  major_area: Valenzuela City
+  zip_code: 1440
+  city: Valenzuela Central Post Office - Malinta
+-
+  id: 1611
+  major_area: Valenzuela City
+  zip_code: 1469
+  city: Valenzuela P.O. Boxes
+-
+  id: 1612
+  major_area: Valenzuela City
+  zip_code: 560
+  city: Far East Broadcasting Corporation
+-
+  id: 1613
+  major_area: Valenzuela City
+  zip_code: 550
+  city: Febias College of Bible
+-
+  id: 1614
+  major_area: Misamis Occidental
+  zip_code: 7206
+  city: Aloran
+-
+  id: 1615
+  major_area: Misamis Occidental
+  zip_code: 7211
+  city: Baliangao
+-
+  id: 1616
+  major_area: Misamis Occidental
+  zip_code: 7215
+  city: Bonifacio
+-
+  id: 1617
+  major_area: Misamis Occidental
+  zip_code: 7210
+  city: Calamba
+-
+  id: 1618
+  major_area: Misamis Occidental
+  zip_code: 7201
+  city: Clarin
+-
+  id: 1619
+  major_area: Misamis Occidental
+  zip_code: 7213
+  city: Concepcion
+-
+  id: 1620
+  major_area: Misamis Occidental
+  zip_code: 7204
+  city: Jimenez
+-
+  id: 1621
+  major_area: Misamis Occidental
+  zip_code: 7208
+  city: Lopez Jaena
+-
+  id: 1622
+  major_area: Misamis Occidental
+  zip_code: 7207
+  city: Oroquieta City
+-
+  id: 1623
+  major_area: Misamis Occidental
+  zip_code: 7200
+  city: Ozamis City
+-
+  id: 1624
+  major_area: Misamis Occidental
+  zip_code: 7205
+  city: Panaon
+-
+  id: 1625
+  major_area: Misamis Occidental
+  zip_code: 7209
+  city: Plaridel
+-
+  id: 1626
+  major_area: Misamis Occidental
+  zip_code: 7212
+  city: Sapang Dalaga
+-
+  id: 1627
+  major_area: Misamis Occidental
+  zip_code: 7203
+  city: Sinacaban
+-
+  id: 1628
+  major_area: Misamis Occidental
+  zip_code: 7214
+  city: Tangub City
+-
+  id: 1629
+  major_area: Misamis Occidental
+  zip_code: 7202
+  city: Tudela
+-
+  id: 1630
+  major_area: Misamis Oriental
+  zip_code: 9018
+  city: Alubijid
+-
+  id: 1631
+  major_area: Misamis Oriental
+  zip_code: 9005
+  city: Balingasag
+-
+  id: 1632
+  major_area: Misamis Oriental
+  zip_code: 9011
+  city: Balinguan
+-
+  id: 1633
+  major_area: Misamis Oriental
+  zip_code: 9008
+  city: Binuangan
+-
+  id: 1634
+  major_area: Misamis Oriental
+  zip_code: 9000
+  city: Cagayan de Oro City
+-
+  id: 1635
+  major_area: Misamis Oriental
+  zip_code: 9004
+  city: Claveria
+-
+  id: 1636
+  major_area: Misamis Oriental
+  zip_code: 9017
+  city: El Salvador
+-
+  id: 1637
+  major_area: Misamis Oriental
+  zip_code: 9014
+  city: Gingoog City
+-
+  id: 1638
+  major_area: Misamis Oriental
+  zip_code: 9020
+  city: Gitagum
+-
+  id: 1639
+  major_area: Misamis Oriental
+  zip_code: 9022
+  city: Initao
+-
+  id: 1640
+  major_area: Misamis Oriental
+  zip_code: 9003
+  city: Jasaan
+-
+  id: 1641
+  major_area: Misamis Oriental
+  zip_code: 9010
+  city: Kinogitan
+-
+  id: 1642
+  major_area: Misamis Oriental
+  zip_code: 9006
+  city: Lagonglong
+-
+  id: 1643
+  major_area: Misamis Oriental
+  zip_code: 9019
+  city: Laguindingan
+-
+  id: 1644
+  major_area: Misamis Oriental
+  zip_code: 9021
+  city: Libertad
+-
+  id: 1645
+  major_area: Misamis Oriental
+  zip_code: 9025
+  city: Lugait
+-
+  id: 1646
+  major_area: Misamis Oriental
+  zip_code: 9015
+  city: Magsaysay
+-
+  id: 1647
+  major_area: Misamis Oriental
+  zip_code: 9024
+  city: Manticao
+-
+  id: 1648
+  major_area: Misamis Oriental
+  zip_code: 9013
+  city: Medina
+-
+  id: 1649
+  major_area: Misamis Oriental
+  zip_code: 9023
+  city: Naawan
+-
+  id: 1650
+  major_area: Misamis Oriental
+  zip_code: 9016
+  city: Opol
+-
+  id: 1651
+  major_area: Misamis Oriental
+  zip_code: 9007
+  city: Salay
+-
+  id: 1652
+  major_area: Misamis Oriental
+  zip_code: 9009
+  city: Sugbungcogon
+-
+  id: 1653
+  major_area: Misamis Oriental
+  zip_code: 9001
+  city: Tagoloan
+-
+  id: 1654
+  major_area: Misamis Oriental
+  zip_code: 9012
+  city: Talisayan
+-
+  id: 1655
+  major_area: Misamis Oriental
+  zip_code: 9002
+  city: Villanueva
+-
+  id: 1656
+  major_area: Mountain Province
+  zip_code: 2623
+  city: Barlig
+-
+  id: 1657
+  major_area: Mountain Province
+  zip_code: 2621
+  city: Bauko
+-
+  id: 1658
+  major_area: Mountain Province
+  zip_code: 2618
+  city: Besao
+-
+  id: 1659
+  major_area: Mountain Province
+  zip_code: 2616
+  city: Bontoc
+-
+  id: 1660
+  major_area: Mountain Province
+  zip_code: 2624
+  city: Natonin
+-
+  id: 1661
+  major_area: Mountain Province
+  zip_code: 2625
+  city: Paracelis
+-
+  id: 1662
+  major_area: Mountain Province
+  zip_code: 2622
+  city: Sabangan
+-
+  id: 1663
+  major_area: Mountain Province
+  zip_code: 2617
+  city: Sadanga
+-
+  id: 1664
+  major_area: Mountain Province
+  zip_code: 2619
+  city: Sagada
+-
+  id: 1665
+  major_area: Mountain Province
+  zip_code: 2620
+  city: Tadian
+-
+  id: 1666
+  major_area: Negros Occidental
+  zip_code: 6100
+  city: Bacolod City
+-
+  id: 1667
+  major_area: Negros Occidental
+  zip_code: 6101
+  city: Bago City
+-
+  id: 1668
+  major_area: Negros Occidental
+  zip_code: 6107
+  city: Binalbagan City
+-
+  id: 1669
+  major_area: Negros Occidental
+  zip_code: 6121
+  city: Cadiz City
+-
+  id: 1670
+  major_area: Negros Occidental
+  zip_code: 6126
+  city: Calatrava
+-
+  id: 1671
+  major_area: Negros Occidental
+  zip_code: 6110
+  city: Candoni
+-
+  id: 1672
+  major_area: Negros Occidental
+  zip_code: 6118
+  city: Enrique Magalona
+-
+  id: 1673
+  major_area: Negros Occidental
+  zip_code: 6124
+  city: Escalante City
+-
+  id: 1674
+  major_area: Negros Occidental
+  zip_code: 6108
+  city: Himamaylan City
+-
+  id: 1675
+  major_area: Negros Occidental
+  zip_code: 6106
+  city: Hinigaran City
+-
+  id: 1676
+  major_area: Negros Occidental
+  zip_code: 6114
+  city: Hinoba-an
+-
+  id: 1677
+  major_area: Negros Occidental
+  zip_code: 6109
+  city: Ilog
+-
+  id: 1678
+  major_area: Negros Occidental
+  zip_code: 6128
+  city: Isabela
+-
+  id: 1679
+  major_area: Negros Occidental
+  zip_code: 6111
+  city: Kabankalan City
+-
+  id: 1680
+  major_area: Negros Occidental
+  zip_code: 6112
+  city: Cauayan
+-
+  id: 1681
+  major_area: Negros Occidental
+  zip_code: 6130
+  city: La Carlota City
+-
+  id: 1682
+  major_area: Negros Occidental
+  zip_code: 6131
+  city: La Castillana
+-
+  id: 1683
+  major_area: Negros Occidental
+  zip_code: 6120
+  city: Manapla
+-
+  id: 1684
+  major_area: Negros Occidental
+  zip_code: 6132
+  city: Moises Padilla
+-
+  id: 1685
+  major_area: Negros Occidental
+  zip_code: 6129
+  city: Murcia
+-
+  id: 1686
+  major_area: Negros Occidental
+  zip_code: 6123
+  city: Paraiso (Fabrica)
+-
+  id: 1687
+  major_area: Negros Occidental
+  zip_code: 6105
+  city: Pontevedra
+-
+  id: 1688
+  major_area: Negros Occidental
+  zip_code: 6102
+  city: Pulupandan
+-
+  id: 1689
+  major_area: Negros Occidental
+  zip_code: 6122
+  city: Sagay City
+-
+  id: 1690
+  major_area: Negros Occidental
+  zip_code: 6127
+  city: San Carlos City
+-
+  id: 1691
+  major_area: Negros Occidental
+  zip_code: 6104
+  city: San Enrique
+-
+  id: 1692
+  major_area: Negros Occidental
+  zip_code: 6116
+  city: Silay City
+-
+  id: 1693
+  major_area: Negros Occidental
+  zip_code: 6117
+  city: Silay Hawaiian Central
+-
+  id: 1694
+  major_area: Negros Occidental
+  zip_code: 6113
+  city: Sipalay City
+-
+  id: 1695
+  major_area: Negros Occidental
+  zip_code: 6115
+  city: Talisay City
+-
+  id: 1696
+  major_area: Negros Occidental
+  zip_code: 6125
+  city: Toboso
+-
+  id: 1697
+  major_area: Negros Occidental
+  zip_code: 6103
+  city: Valladolid
+-
+  id: 1698
+  major_area: Negros Occidental
+  zip_code: 6119
+  city: Victorias City
+-
+  id: 1699
+  major_area: Negros Oriental
+  zip_code: 6203
+  city: Amlan
+-
+  id: 1700
+  major_area: Negros Oriental
+  zip_code: 6210
+  city: Ayungon
+-
+  id: 1701
+  major_area: Negros Oriental
+  zip_code: 6216
+  city: Bacong
+-
+  id: 1702
+  major_area: Negros Oriental
+  zip_code: 6206
+  city: Bais City
+-
+  id: 1703
+  major_area: Negros Oriental
+  zip_code: 6222
+  city: Basay
+-
+  id: 1704
+  major_area: Negros Oriental
+  zip_code: 6221
+  city: Bayawan City
+-
+  id: 1705
+  major_area: Negros Oriental
+  zip_code: 6209
+  city: Bindoy
+-
+  id: 1706
+  major_area: Negros Oriental
+  zip_code: 6223
+  city: Canlaon City
+-
+  id: 1707
+  major_area: Negros Oriental
+  zip_code: 6217
+  city: Dauin
+-
+  id: 1708
+  major_area: Negros Oriental
+  zip_code: 6200
+  city: Dumaguete City
+-
+  id: 1709
+  major_area: Negros Oriental
+  zip_code: 6214
+  city: Guihulngan
+-
+  id: 1710
+  major_area: Negros Oriental
+  zip_code: 6212
+  city: Jimalalud
+-
+  id: 1711
+  major_area: Negros Oriental
+  zip_code: 6213
+  city: La Libertad
+-
+  id: 1712
+  major_area: Negros Oriental
+  zip_code: 6207
+  city: Mabinay
+-
+  id: 1713
+  major_area: Negros Oriental
+  zip_code: 6208
+  city: Manjuyod
+-
+  id: 1714
+  major_area: Negros Oriental
+  zip_code: 6205
+  city: Pamplona
+-
+  id: 1715
+  major_area: Negros Oriental
+  zip_code: 6202
+  city: San Jose
+-
+  id: 1716
+  major_area: Negros Oriental
+  zip_code: 6219
+  city: Siaton
+-
+  id: 1717
+  major_area: Negros Oriental
+  zip_code: 6201
+  city: Sibulan
+-
+  id: 1718
+  major_area: Negros Oriental
+  zip_code: 6220
+  city: Sta. Catalina
+-
+  id: 1719
+  major_area: Negros Oriental
+  zip_code: 6204
+  city: Tanjay City
+-
+  id: 1720
+  major_area: Negros Oriental
+  zip_code: 6211
+  city: Tayasan
+-
+  id: 1721
+  major_area: Negros Oriental
+  zip_code: 6215
+  city: Valencia
+-
+  id: 1722
+  major_area: Negros Oriental
+  zip_code: 6224
+  city: Valle Hermoso
+-
+  id: 1723
+  major_area: Negros Oriental
+  zip_code: 6218
+  city: Zamboanguita
+-
+  id: 1724
+  major_area: Northern Samar
+  zip_code: 6405
+  city: Allen
+-
+  id: 1725
+  major_area: Northern Samar
+  zip_code: 6410
+  city: Biri
+-
+  id: 1726
+  major_area: Northern Samar
+  zip_code: 6401
+  city: Bobon
+-
+  id: 1727
+  major_area: Northern Samar
+  zip_code: 6408
+  city: Capul
+-
+  id: 1728
+  major_area: Northern Samar
+  zip_code: 6400
+  city: Catarman
+-
+  id: 1729
+  major_area: Northern Samar
+  zip_code: 6418
+  city: Catubig
+-
+  id: 1730
+  major_area: Northern Samar
+  zip_code: 6422
+  city: Gamay
+-
+  id: 1731
+  major_area: Northern Samar
+  zip_code: 6411
+  city: Laoang
+-
+  id: 1732
+  major_area: Northern Samar
+  zip_code: 6423
+  city: Lapinig
+-
+  id: 1733
+  major_area: Northern Samar
+  zip_code: 6420
+  city: Las Navas
+-
+  id: 1734
+  major_area: Northern Samar
+  zip_code: 6404
+  city: Lavezares
+-
+  id: 1735
+  major_area: Northern Samar
+  zip_code: 6403
+  city: Lope de Vega
+-
+  id: 1736
+  major_area: Northern Samar
+  zip_code: 6412
+  city: Mapanas
+-
+  id: 1737
+  major_area: Northern Samar
+  zip_code: 6417
+  city: Mondragon
+-
+  id: 1738
+  major_area: Northern Samar
+  zip_code: 6421
+  city: Palapag
+-
+  id: 1739
+  major_area: Northern Samar
+  zip_code: 6413
+  city: Pambujan
+-
+  id: 1740
+  major_area: Northern Samar
+  zip_code: 6416
+  city: Rosario
+-
+  id: 1741
+  major_area: Northern Samar
+  zip_code: 6407
+  city: San Antonio
+-
+  id: 1742
+  major_area: Northern Samar
+  zip_code: 6409
+  city: San Isidro
+-
+  id: 1743
+  major_area: Northern Samar
+  zip_code: 6402
+  city: San Jose
+-
+  id: 1744
+  major_area: Northern Samar
+  zip_code: 6415
+  city: San Roque
+-
+  id: 1745
+  major_area: Northern Samar
+  zip_code: 6419
+  city: San Vicente
+-
+  id: 1746
+  major_area: Northern Samar
+  zip_code: 6414
+  city: Silvino Lobos
+-
+  id: 1747
+  major_area: Northern Samar
+  zip_code: 6406
+  city: Victoria
+-
+  id: 1748
+  major_area: Nueva Ecija
+  zip_code: 3111
+  city: Aliaga
+-
+  id: 1749
+  major_area: Nueva Ecija
+  zip_code: 3128
+  city: Bongabon
+-
+  id: 1750
+  major_area: Nueva Ecija
+  zip_code: 3100
+  city: Cabanatuan City
+-
+  id: 1751
+  major_area: Nueva Ecija
+  zip_code: 3107
+  city: Cabiao
+-
+  id: 1752
+  major_area: Nueva Ecija
+  zip_code: 3123
+  city: Carranglan
+-
+  id: 1753
+  major_area: Nueva Ecija
+  zip_code: 3120
+  city: Central Luzon State University
+-
+  id: 1754
+  major_area: Nueva Ecija
+  zip_code: 3117
+  city: Cuyapo
+-
+  id: 1755
+  major_area: Nueva Ecija
+  zip_code: 3130
+  city: Fort Magsaysay
+-
+  id: 1756
+  major_area: Nueva Ecija
+  zip_code: 3131
+  city: Gabaldon
+-
+  id: 1757
+  major_area: Nueva Ecija
+  zip_code: 3105
+  city: Gapan City
+-
+  id: 1758
+  major_area: Nueva Ecija
+  zip_code: 3125
+  city: General M. Natividad
+-
+  id: 1759
+  major_area: Nueva Ecija
+  zip_code: 3104
+  city: General Tinio
+-
+  id: 1760
+  major_area: Nueva Ecija
+  zip_code: 3115
+  city: Guimba
+-
+  id: 1761
+  major_area: Nueva Ecija
+  zip_code: 3109
+  city: Jaen
+-
+  id: 1762
+  major_area: Nueva Ecija
+  zip_code: 3129
+  city: Laur
+-
+  id: 1763
+  major_area: Nueva Ecija
+  zip_code: 3112
+  city: Licab
+-
+  id: 1764
+  major_area: Nueva Ecija
+  zip_code: 3126
+  city: Llanera
+-
+  id: 1765
+  major_area: Nueva Ecija
+  zip_code: 3122
+  city: Lupao
+-
+  id: 1766
+  major_area: Nueva Ecija
+  zip_code: 3119
+  city: Science City of Muñoz
+-
+  id: 1767
+  major_area: Nueva Ecija
+  zip_code: 3116
+  city: Nampicuan
+-
+  id: 1768
+  major_area: Nueva Ecija
+  zip_code: 3132
+  city: Palayan City
+-
+  id: 1769
+  major_area: Nueva Ecija
+  zip_code: 3124
+  city: Pantabangan
+-
+  id: 1770
+  major_area: Nueva Ecija
+  zip_code: 3103
+  city: Peñaranda
+-
+  id: 1771
+  major_area: Nueva Ecija
+  zip_code: 3113
+  city: Quezon
+-
+  id: 1772
+  major_area: Nueva Ecija
+  zip_code: 3127
+  city: Rizal
+-
+  id: 1773
+  major_area: Nueva Ecija
+  zip_code: 3108
+  city: San Antonio
+-
+  id: 1774
+  major_area: Nueva Ecija
+  zip_code: 3106
+  city: San Isidro
+-
+  id: 1775
+  major_area: Nueva Ecija
+  zip_code: 3121
+  city: San Jose City
+-
+  id: 1776
+  major_area: Nueva Ecija
+  zip_code: 3102
+  city: San Leonardo
+-
+  id: 1777
+  major_area: Nueva Ecija
+  zip_code: 3101
+  city: Santa Rosa
+-
+  id: 1778
+  major_area: Nueva Ecija
+  zip_code: 3133
+  city: Santo Domingo
+-
+  id: 1779
+  major_area: Nueva Ecija
+  zip_code: 3114
+  city: Talavera
+-
+  id: 1780
+  major_area: Nueva Ecija
+  zip_code: 3118
+  city: Talugtog
+-
+  id: 1781
+  major_area: Nueva Ecija
+  zip_code: 3110
+  city: Zaragoza
+-
+  id: 1782
+  major_area: Nueva Vizcaya
+  zip_code: 3714
+  city: Alfonso Castañeda
+-
+  id: 1783
+  major_area: Nueva Vizcaya
+  zip_code: 3701
+  city: Ambaguio
+-
+  id: 1784
+  major_area: Nueva Vizcaya
+  zip_code: 3704
+  city: Aritao
+-
+  id: 1785
+  major_area: Nueva Vizcaya
+  zip_code: 3711
+  city: Bagabag
+-
+  id: 1786
+  major_area: Nueva Vizcaya
+  zip_code: 3702
+  city: Bambang
+-
+  id: 1787
+  major_area: Nueva Vizcaya
+  zip_code: 3700
+  city: Bayombong
+-
+  id: 1788
+  major_area: Nueva Vizcaya
+  zip_code: 3712
+  city: Diadi
+-
+  id: 1789
+  major_area: Nueva Vizcaya
+  zip_code: 3706
+  city: Dupax del Norte
+-
+  id: 1790
+  major_area: Nueva Vizcaya
+  zip_code: 3707
+  city: Dupax del Sur
+-
+  id: 1791
+  major_area: Nueva Vizcaya
+  zip_code: 3703
+  city: Kasibu
+-
+  id: 1792
+  major_area: Nueva Vizcaya
+  zip_code: 3708
+  city: Kayapa
+-
+  id: 1793
+  major_area: Nueva Vizcaya
+  zip_code: 3714
+  city: Quezon
+-
+  id: 1794
+  major_area: Nueva Vizcaya
+  zip_code: 3709
+  city: Solano
+-
+  id: 1795
+  major_area: Nueva Vizcaya
+  zip_code: 3705
+  city: Santa Fe (Imugan)
+-
+  id: 1796
+  major_area: Nueva Vizcaya
+  zip_code: 3710
+  city: Villa Verde (Ibung)
+-
+  id: 1797
+  major_area: Occidental Mindoro
+  zip_code: 5108
+  city: Abra de Ilog
+-
+  id: 1798
+  major_area: Occidental Mindoro
+  zip_code: 5102
+  city: Calintaan
+-
+  id: 1799
+  major_area: Occidental Mindoro
+  zip_code: 5111
+  city: Looc
+-
+  id: 1800
+  major_area: Occidental Mindoro
+  zip_code: 5109
+  city: Lubang
+-
+  id: 1801
+  major_area: Occidental Mindoro
+  zip_code: 5101
+  city: Magsaysay
+-
+  id: 1802
+  major_area: Occidental Mindoro
+  zip_code: 5106
+  city: Mamburao
+-
+  id: 1803
+  major_area: Occidental Mindoro
+  zip_code: 5107
+  city: Paluan
+-
+  id: 1804
+  major_area: Occidental Mindoro
+  zip_code: 5103
+  city: Rizal
+-
+  id: 1805
+  major_area: Occidental Mindoro
+  zip_code: 5104
+  city: Sablayan
+-
+  id: 1806
+  major_area: Occidental Mindoro
+  zip_code: 5100
+  city: San Jose
+-
+  id: 1807
+  major_area: Occidental Mindoro
+  zip_code: 5105
+  city: Santa Cruz
+-
+  id: 1808
+  major_area: Occidental Mindoro
+  zip_code: 5110
+  city: Tilik
+-
+  id: 1809
+  major_area: Oriental Mindoro
+  zip_code: 5201
+  city: Baco
+-
+  id: 1810
+  major_area: Oriental Mindoro
+  zip_code: 5210
+  city: Bansud
+-
+  id: 1811
+  major_area: Oriental Mindoro
+  zip_code: 5211
+  city: Bongabon
+-
+  id: 1812
+  major_area: Oriental Mindoro
+  zip_code: 5214
+  city: Bulalacao
+-
+  id: 1813
+  major_area: Oriental Mindoro
+  zip_code: 5200
+  city: Calapan
+-
+  id: 1814
+  major_area: Oriental Mindoro
+  zip_code: 5209
+  city: Gloria
+-
+  id: 1815
+  major_area: Oriental Mindoro
+  zip_code: 5213
+  city: Mansalay
+-
+  id: 1816
+  major_area: Oriental Mindoro
+  zip_code: 5204
+  city: Naujan
+-
+  id: 1817
+  major_area: Oriental Mindoro
+  zip_code: 5208
+  city: Pinamalayan
+-
+  id: 1818
+  major_area: Oriental Mindoro
+  zip_code: 5206
+  city: Pola
+-
+  id: 1819
+  major_area: Oriental Mindoro
+  zip_code: 5203
+  city: Puerto Galera
+-
+  id: 1820
+  major_area: Oriental Mindoro
+  zip_code: 5212
+  city: Roxas
+-
+  id: 1821
+  major_area: Oriental Mindoro
+  zip_code: 5202
+  city: San Teodoro
+-
+  id: 1822
+  major_area: Oriental Mindoro
+  zip_code: 5207
+  city: Socorro
+-
+  id: 1823
+  major_area: Oriental Mindoro
+  zip_code: 5205
+  city: Victoria
+-
+  id: 1824
+  major_area: Palawan
+  zip_code: 5300
+  city: Puerto Princesa
+-
+  id: 1825
+  major_area: Palawan
+  zip_code: 5301
+  city: Iwahig Penal Colony
+-
+  id: 1826
+  major_area: Palawan
+  zip_code: 5302
+  city: Aborlan
+-
+  id: 1827
+  major_area: Palawan
+  zip_code: 5303
+  city: Narra (Panacan)
+-
+  id: 1828
+  major_area: Palawan
+  zip_code: 5304
+  city: Quezon
+-
+  id: 1829
+  major_area: Palawan
+  zip_code: 5305
+  city: Brooke's Point
+-
+  id: 1830
+  major_area: Palawan
+  zip_code: 5306
+  city: Bataraza
+-
+  id: 1831
+  major_area: Palawan
+  zip_code: 5307
+  city: Balabac
+-
+  id: 1832
+  major_area: Palawan
+  zip_code: 5308
+  city: Roxas
+-
+  id: 1833
+  major_area: Palawan
+  zip_code: 5309
+  city: San Vicente
+-
+  id: 1834
+  major_area: Palawan
+  zip_code: 5310
+  city: Dumaran
+-
+  id: 1835
+  major_area: Palawan
+  zip_code: 5311
+  city: Araceli
+-
+  id: 1836
+  major_area: Palawan
+  zip_code: 5312
+  city: Taytay
+-
+  id: 1837
+  major_area: Palawan
+  zip_code: 5313
+  city: El Nido (Bacuit)
+-
+  id: 1838
+  major_area: Palawan
+  zip_code: 5314
+  city: Linapacan
+-
+  id: 1839
+  major_area: Palawan
+  zip_code: 5315
+  city: Culion
+-
+  id: 1840
+  major_area: Palawan
+  zip_code: 5316
+  city: Coron
+-
+  id: 1841
+  major_area: Palawan
+  zip_code: 5317
+  city: Busuanga
+-
+  id: 1842
+  major_area: Palawan
+  zip_code: 5318
+  city: Cuyo
+-
+  id: 1843
+  major_area: Palawan
+  zip_code: 5319
+  city: Magsaysay
+-
+  id: 1844
+  major_area: Palawan
+  zip_code: 5320
+  city: Agutaya
+-
+  id: 1845
+  major_area: Palawan
+  zip_code: 5321
+  city: Cagayancillo
+-
+  id: 1846
+  major_area: Palawan
+  zip_code: 5322
+  city: Kalayaan
+-
+  id: 1847
+  major_area: Pampanga
+  zip_code: 2009
+  city: Angeles City/Clark Special Economic ZoneBalibago a Barangay in Angeles city has its own zip code 2024
+-
+  id: 1848
+  major_area: Pampanga
+  zip_code: 2016
+  city: Apalit
+-
+  id: 1849
+  major_area: Pampanga
+  zip_code: 2012
+  city: Arayat
+-
+  id: 1850
+  major_area: Pampanga
+  zip_code: 2001
+  city: Bacolor
+-
+  id: 1851
+  major_area: Pampanga
+  zip_code: 2007
+  city: Basa Airbase
+-
+  id: 1852
+  major_area: Pampanga
+  zip_code: 2013
+  city: Candaba
+-
+  id: 1853
+  major_area: Pampanga
+  zip_code: 2006
+  city: Floridablanca
+-
+  id: 1854
+  major_area: Pampanga
+  zip_code: 2003
+  city: Guagua
+-
+  id: 1855
+  major_area: Pampanga
+  zip_code: 2005
+  city: Lubao
+-
+  id: 1856
+  major_area: Pampanga
+  zip_code: 2010
+  city: Mabalacat
+-
+  id: 1857
+  major_area: Pampanga
+  zip_code: 2018
+  city: Macabebe
+-
+  id: 1858
+  major_area: Pampanga
+  zip_code: 2011
+  city: Magalang
+-
+  id: 1859
+  major_area: Pampanga
+  zip_code: 2017
+  city: Masantol
+-
+  id: 1860
+  major_area: Pampanga
+  zip_code: 2021
+  city: Mexico
+-
+  id: 1861
+  major_area: Pampanga
+  zip_code: 2019
+  city: Minalin
+-
+  id: 1862
+  major_area: Pampanga
+  zip_code: 2008
+  city: Porac
+-
+  id: 1863
+  major_area: Pampanga
+  zip_code: 2000
+  city: City of San Fernando
+-
+  id: 1864
+  major_area: Pampanga
+  zip_code: 2014
+  city: San Luis
+-
+  id: 1865
+  major_area: Pampanga
+  zip_code: 2015
+  city: San Simon
+-
+  id: 1866
+  major_area: Pampanga
+  zip_code: 2022
+  city: Santa Ana
+-
+  id: 1867
+  major_area: Pampanga
+  zip_code: 2002
+  city: Santa Rita
+-
+  id: 1868
+  major_area: Pampanga
+  zip_code: 2020
+  city: Santo Tomas
+-
+  id: 1869
+  major_area: Pampanga
+  zip_code: 2004
+  city: Sasmuan (Sexmoan)
+-
+  id: 1870
+  major_area: Pangasinan
+  zip_code: 2408
+  city: Agno
+-
+  id: 1871
+  major_area: Pangasinan
+  zip_code: 2415
+  city: Aguilar
+-
+  id: 1872
+  major_area: Pangasinan
+  zip_code: 2404
+  city: Alaminos
+-
+  id: 1873
+  major_area: Pangasinan
+  zip_code: 2425
+  city: Alcala
+-
+  id: 1874
+  major_area: Pangasinan
+  zip_code: 2405
+  city: Anda
+-
+  id: 1875
+  major_area: Pangasinan
+  zip_code: 2439
+  city: Asingan
+-
+  id: 1876
+  major_area: Pangasinan
+  zip_code: 2442
+  city: Balungao
+-
+  id: 1877
+  major_area: Pangasinan
+  zip_code: 2407
+  city: Bani
+-
+  id: 1878
+  major_area: Pangasinan
+  zip_code: 2422
+  city: Basista
+-
+  id: 1879
+  major_area: Pangasinan
+  zip_code: 2424
+  city: Bautista
+-
+  id: 1880
+  major_area: Pangasinan
+  zip_code: 2423
+  city: Bayambang
+-
+  id: 1881
+  major_area: Pangasinan
+  zip_code: 2436
+  city: Binalonan
+-
+  id: 1882
+  major_area: Pangasinan
+  zip_code: 2417
+  city: Binmaley
+-
+  id: 1883
+  major_area: Pangasinan
+  zip_code: 2406
+  city: Bolinao
+-
+  id: 1884
+  major_area: Pangasinan
+  zip_code: 2416
+  city: Bugallon
+-
+  id: 1885
+  major_area: Pangasinan
+  zip_code: 2410
+  city: Burgos
+-
+  id: 1886
+  major_area: Pangasinan
+  zip_code: 2418
+  city: Calasiao
+-
+  id: 1887
+  major_area: Pangasinan
+  zip_code: 2400
+  city: Dagupan City
+-
+  id: 1888
+  major_area: Pangasinan
+  zip_code: 2411
+  city: Dasol
+-
+  id: 1889
+  major_area: Pangasinan
+  zip_code: 2412
+  city: Infanta
+-
+  id: 1890
+  major_area: Pangasinan
+  zip_code: 2402
+  city: Labrador
+-
+  id: 1891
+  major_area: Pangasinan
+  zip_code: 2437
+  city: Laoac
+-
+  id: 1892
+  major_area: Pangasinan
+  zip_code: 2401
+  city: Lingayen
+-
+  id: 1893
+  major_area: Pangasinan
+  zip_code: 2409
+  city: Mabini
+-
+  id: 1894
+  major_area: Pangasinan
+  zip_code: 2421
+  city: Malasiqui
+-
+  id: 1895
+  major_area: Pangasinan
+  zip_code: 2430
+  city: Manaoag
+-
+  id: 1896
+  major_area: Pangasinan
+  zip_code: 2432
+  city: Mangaldan
+-
+  id: 1897
+  major_area: Pangasinan
+  zip_code: 2413
+  city: Mangatarem
+-
+  id: 1898
+  major_area: Pangasinan
+  zip_code: 2429
+  city: Mapandan
+-
+  id: 1899
+  major_area: Pangasinan
+  zip_code: 2446
+  city: Natividad
+-
+  id: 1900
+  major_area: Pangasinan
+  zip_code: 2435
+  city: Pozorrubio
+-
+  id: 1901
+  major_area: Pangasinan
+  zip_code: 2441
+  city: Rosales
+-
+  id: 1902
+  major_area: Pangasinan
+  zip_code: 2420
+  city: San Carlos City
+-
+  id: 1903
+  major_area: Pangasinan
+  zip_code: 2433
+  city: San Fabian
+-
+  id: 1904
+  major_area: Pangasinan
+  zip_code: 2431
+  city: San Jacinto
+-
+  id: 1905
+  major_area: Pangasinan
+  zip_code: 2438
+  city: San Manuel
+-
+  id: 1906
+  major_area: Pangasinan
+  zip_code: 2447
+  city: San Nicolas
+-
+  id: 1907
+  major_area: Pangasinan
+  zip_code: 2444
+  city: San Quintin
+-
+  id: 1908
+  major_area: Pangasinan
+  zip_code: 2419
+  city: Santa Barbara
+-
+  id: 1909
+  major_area: Pangasinan
+  zip_code: 2440
+  city: Santa Maria
+-
+  id: 1910
+  major_area: Pangasinan
+  zip_code: 2426
+  city: Santo Tomas
+-
+  id: 1911
+  major_area: Pangasinan
+  zip_code: 2434
+  city: Sison
+-
+  id: 1912
+  major_area: Pangasinan
+  zip_code: 2403
+  city: Sual
+-
+  id: 1913
+  major_area: Pangasinan
+  zip_code: 2445
+  city: Tayug
+-
+  id: 1914
+  major_area: Pangasinan
+  zip_code: 2443
+  city: Umingan
+-
+  id: 1915
+  major_area: Pangasinan
+  zip_code: 2414
+  city: Urbiztondo
+-
+  id: 1916
+  major_area: Pangasinan
+  zip_code: 2428
+  city: Urdaneta
+-
+  id: 1917
+  major_area: Pangasinan
+  zip_code: 2427
+  city: Villasis
+-
+  id: 1918
+  major_area: Quezon
+  zip_code: 4304
+  city: Agdangan
+-
+  id: 1919
+  major_area: Quezon
+  zip_code: 4333
+  city: Alabat
+-
+  id: 1920
+  major_area: Quezon
+  zip_code: 4331
+  city: Atimonan
+-
+  id: 1921
+  major_area: Quezon
+  zip_code: 4320
+  city: Buenavista
+-
+  id: 1922
+  major_area: Quezon
+  zip_code: 4340
+  city: Burdeos
+-
+  id: 1923
+  major_area: Quezon
+  zip_code: 4318
+  city: Calauag
+-
+  id: 1924
+  major_area: Quezon
+  zip_code: 4323
+  city: Candelaria
+-
+  id: 1925
+  major_area: Quezon
+  zip_code: 4311
+  city: Catanauan
+-
+  id: 1926
+  major_area: Quezon
+  zip_code: 4326
+  city: Dolores
+-
+  id: 1927
+  major_area: Quezon
+  zip_code: 4310
+  city: General Antonio Luna
+-
+  id: 1928
+  major_area: Quezon
+  zip_code: 4338
+  city: General Nakar
+-
+  id: 1929
+  major_area: Quezon
+  zip_code: 4319
+  city: Guinayangan
+-
+  id: 1930
+  major_area: Quezon
+  zip_code: 4307
+  city: Gumaca
+-
+  id: 1931
+  major_area: Quezon
+  zip_code: 4317
+  city: Hondagua
+-
+  id: 1932
+  major_area: Quezon
+  zip_code: 4336
+  city: Infanta
+-
+  id: 1933
+  major_area: Quezon
+  zip_code: 4342
+  city: Jomalig
+-
+  id: 1934
+  major_area: Quezon
+  zip_code: 4316
+  city: Lopez
+-
+  id: 1935
+  major_area: Quezon
+  zip_code: 4328
+  city: Lucban
+-
+  id: 1936
+  major_area: Quezon
+  zip_code: 4301
+  city: Lucena City
+-
+  id: 1937
+  major_area: Quezon
+  zip_code: 4309
+  city: Macalelon
+-
+  id: 1938
+  major_area: Quezon
+  zip_code: 4330
+  city: Mauban
+-
+  id: 1939
+  major_area: Quezon
+  zip_code: 4312
+  city: Mulanay
+-
+  id: 1940
+  major_area: Quezon
+  zip_code: 4303
+  city: Padre Burgos
+-
+  id: 1941
+  major_area: Quezon
+  zip_code: 4302
+  city: Pagbilao
+-
+  id: 1942
+  major_area: Quezon
+  zip_code: 4337
+  city: Panukulan
+-
+  id: 1943
+  major_area: Quezon
+  zip_code: 4341
+  city: Patnanungan
+-
+  id: 1944
+  major_area: Quezon
+  zip_code: 4334
+  city: Perez
+-
+  id: 1945
+  major_area: Quezon
+  zip_code: 4308
+  city: Pitogo
+-
+  id: 1946
+  major_area: Quezon
+  zip_code: 4306
+  city: Plaridel
+-
+  id: 1947
+  major_area: Quezon
+  zip_code: 4339
+  city: Polilio
+-
+  id: 1948
+  major_area: Quezon
+  zip_code: 4332
+  city: Quezon
+-
+  id: 1949
+  major_area: Quezon
+  zip_code: 4300
+  city: Provincial Capitol, Lucena City
+-
+  id: 1950
+  major_area: Quezon
+  zip_code: 4335
+  city: Real
+-
+  id: 1951
+  major_area: Quezon
+  zip_code: 4329
+  city: Sampaloc
+-
+  id: 1952
+  major_area: Quezon
+  zip_code: 4314
+  city: San Andres
+-
+  id: 1953
+  major_area: Quezon
+  zip_code: 4324
+  city: San Antonio
+-
+  id: 1954
+  major_area: Quezon
+  zip_code: 4315
+  city: San Francisco (Aurora)
+-
+  id: 1955
+  major_area: Quezon
+  zip_code: 4313
+  city: San Narciso
+-
+  id: 1956
+  major_area: Quezon
+  zip_code: 4322
+  city: Sariaya
+-
+  id: 1957
+  major_area: Quezon
+  zip_code: 4321
+  city: Tagkawayan
+-
+  id: 1958
+  major_area: Quezon
+  zip_code: 4327
+  city: Tayabas
+-
+  id: 1959
+  major_area: Quezon
+  zip_code: 4325
+  city: Tiaong
+-
+  id: 1960
+  major_area: Quezon
+  zip_code: 4305
+  city: Unisan
+-
+  id: 1961
+  major_area: Quirino
+  zip_code: 3400
+  city: Cabarroguis
+-
+  id: 1962
+  major_area: Quirino
+  zip_code: 3401
+  city: Diffun
+-
+  id: 1963
+  major_area: Quirino
+  zip_code: 3402
+  city: Saguday
+-
+  id: 1964
+  major_area: Quirino
+  zip_code: 3403
+  city: Aglipay
+-
+  id: 1965
+  major_area: Quirino
+  zip_code: 3404
+  city: Maddela
+-
+  id: 1966
+  major_area: Quirino
+  zip_code: 3405
+  city: Nagtipunan (Abbag)
+-
+  id: 1967
+  major_area: Rizal
+  zip_code: 1850
+  city: San Mateo
+-
+  id: 1968
+  major_area: Rizal
+  zip_code: 1860
+  city: Rodriguez
+-
+  id: 1969
+  major_area: Rizal
+  zip_code: 1870
+  city: Antipolo City
+-
+  id: 1970
+  major_area: Rizal
+  zip_code: 1880
+  city: Teresa
+-
+  id: 1971
+  major_area: Rizal
+  zip_code: 1900
+  city: Cainta
+-
+  id: 1972
+  major_area: Rizal
+  zip_code: 1910
+  city: Pililla
+-
+  id: 1973
+  major_area: Rizal
+  zip_code: 1920
+  city: Taytay
+-
+  id: 1974
+  major_area: Rizal
+  zip_code: 1930
+  city: Angono
+-
+  id: 1975
+  major_area: Rizal
+  zip_code: 1940
+  city: Binangonan
+-
+  id: 1976
+  major_area: Rizal
+  zip_code: 1950
+  city: Cardona
+-
+  id: 1977
+  major_area: Rizal
+  zip_code: 1960
+  city: Morong
+-
+  id: 1978
+  major_area: Rizal
+  zip_code: 1970
+  city: Baras
+-
+  id: 1979
+  major_area: Rizal
+  zip_code: 1980
+  city: Tanay
+-
+  id: 1980
+  major_area: Rizal
+  zip_code: 1900
+  city: Jalajala
+-
+  id: 1981
+  major_area: Romblon
+  zip_code: 5509
+  city: Alcantara
+-
+  id: 1982
+  major_area: Romblon
+  zip_code: 5515
+  city: Banton (Jones)
+-
+  id: 1983
+  major_area: Romblon
+  zip_code: 5512
+  city: Cajidiocan
+-
+  id: 1984
+  major_area: Romblon
+  zip_code: 5503
+  city: Calatrava
+-
+  id: 1985
+  major_area: Romblon
+  zip_code: 5516
+  city: Concepcion
+-
+  id: 1986
+  major_area: Romblon
+  zip_code: 5514
+  city: Corcuera
+-
+  id: 1987
+  major_area: Romblon
+  zip_code: 5506
+  city: Ferrol
+-
+  id: 1988
+  major_area: Romblon
+  zip_code: 5502
+  city: Imelda
+-
+  id: 1989
+  major_area: Romblon
+  zip_code: 5507
+  city: Looc
+-
+  id: 1990
+  major_area: Romblon
+  zip_code: 5511
+  city: Magdiwang
+-
+  id: 1991
+  major_area: Romblon
+  zip_code: 5505
+  city: Odiongan
+-
+  id: 1992
+  major_area: Romblon
+  zip_code: 5500
+  city: Romblon
+-
+  id: 1993
+  major_area: Romblon
+  zip_code: 5501
+  city: San Agustin
+-
+  id: 1994
+  major_area: Romblon
+  zip_code: 5504
+  city: San Andres
+-
+  id: 1995
+  major_area: Romblon
+  zip_code: 5513
+  city: San Fernando
+-
+  id: 1996
+  major_area: Romblon
+  zip_code: 5510
+  city: San Jose
+-
+  id: 1997
+  major_area: Romblon
+  zip_code: 5508
+  city: Santa Fe
+-
+  id: 1998
+  major_area: Sarangani
+  zip_code: 9501
+  city: Alabel
+-
+  id: 1999
+  major_area: Sarangani
+  zip_code: 9517
+  city: Glan
+-
+  id: 2000
+  major_area: Sarangani
+  zip_code: 9514
+  city: Kiamba
+-
+  id: 2001
+  major_area: Sarangani
+  zip_code: 9502
+  city: Maasim
+-
+  id: 2002
+  major_area: Sarangani
+  zip_code: 9515
+  city: Maitum
+-
+  id: 2003
+  major_area: Sarangani
+  zip_code: 9516
+  city: Malapatan
+-
+  id: 2004
+  major_area: Sarangani
+  zip_code: 9503
+  city: Malungon
+-
+  id: 2005
+  major_area: Shariff Kabunsuan
+  zip_code: 9614
+  city: Barira
+-
+  id: 2006
+  major_area: Shariff Kabunsuan
+  zip_code: 9615
+  city: Buldon
+-
+  id: 2007
+  major_area: Shariff Kabunsuan
+  zip_code: 9601
+  city: Datu Odin Sinsuat (Dinaig)
+-
+  id: 2008
+  major_area: Shariff Kabunsuan
+  zip_code: 9606
+  city: Kabuntalan/Northern Kabuntalan
+-
+  id: 2009
+  major_area: Shariff Kabunsuan
+  zip_code: 9613
+  city: Matanog
+-
+  id: 2010
+  major_area: Shariff Kabunsuan
+  zip_code: 9604
+  city: Parang
+-
+  id: 2011
+  major_area: Shariff Kabunsuan
+  zip_code: 9605
+  city: Sultan Kudarat/Sultan Mastura
+-
+  id: 2012
+  major_area: Shariff Kabunsuan
+  zip_code: 9602
+  city: Upi/Datu Blah T. Sinsuat
+-
+  id: 2013
+  major_area: Shariff Kabunsuan
+  zip_code: 9603
+  city: Ampatuan City
+-
+  id: 2014
+  major_area: Siquijor
+  zip_code: 6230
+  city: Enrique Villanueva
+-
+  id: 2015
+  major_area: Siquijor
+  zip_code: 6226
+  city: Larena
+-
+  id: 2016
+  major_area: Siquijor
+  zip_code: 6228
+  city: Lazi
+-
+  id: 2017
+  major_area: Siquijor
+  zip_code: 6229
+  city: Maria
+-
+  id: 2018
+  major_area: Siquijor
+  zip_code: 6227
+  city: San Juan
+-
+  id: 2019
+  major_area: Siquijor
+  zip_code: 6225
+  city: Siquij
+-
+  id: 2020
+  major_area: Sorsogon
+  zip_code: 4701
+  city: Bacon
+-
+  id: 2021
+  major_area: Sorsogon
+  zip_code: 4712
+  city: Barcelona
+-
+  id: 2022
+  major_area: Sorsogon
+  zip_code: 4706
+  city: Bulan
+-
+  id: 2023
+  major_area: Sorsogon
+  zip_code: 4704
+  city: Bulusan
+-
+  id: 2024
+  major_area: Sorsogon
+  zip_code: 4702
+  city: Casiguran
+-
+  id: 2025
+  major_area: Sorsogon
+  zip_code: 4713
+  city: Castilla
+-
+  id: 2026
+  major_area: Sorsogon
+  zip_code: 4715
+  city: Donsol
+-
+  id: 2027
+  major_area: Sorsogon
+  zip_code: 4710
+  city: Gubat
+-
+  id: 2028
+  major_area: Sorsogon
+  zip_code: 4707
+  city: Irosin
+-
+  id: 2029
+  major_area: Sorsogon
+  zip_code: 4703
+  city: Juban
+-
+  id: 2030
+  major_area: Sorsogon
+  zip_code: 4705
+  city: Magallanes
+-
+  id: 2031
+  major_area: Sorsogon
+  zip_code: 4708
+  city: Matnog
+-
+  id: 2032
+  major_area: Sorsogon
+  zip_code: 4714
+  city: Pilar
+-
+  id: 2033
+  major_area: Sorsogon
+  zip_code: 4711
+  city: Prieto Diaz
+-
+  id: 2034
+  major_area: Sorsogon
+  zip_code: 4709
+  city: Santa Magdalena
+-
+  id: 2035
+  major_area: Sorsogon
+  zip_code: 4700
+  city: Sorsogon
+-
+  id: 2036
+  major_area: South Cotabato
+  zip_code: 9511
+  city: Banga
+-
+  id: 2037
+  major_area: South Cotabato
+  zip_code: 9500
+  city: General Santos City (Dadiangas)
+-
+  id: 2038
+  major_area: South Cotabato
+  zip_code: 9506
+  city: Koronadal City
+-
+  id: 2039
+  major_area: South Cotabato
+  zip_code: 9508
+  city: Norala
+-
+  id: 2040
+  major_area: South Cotabato
+  zip_code: 9504
+  city: Polomolok
+-
+  id: 2041
+  major_area: South Cotabato
+  zip_code: 9509
+  city: Sto. Niño
+-
+  id: 2042
+  major_area: South Cotabato
+  zip_code: 9512
+  city: Surallah
+-
+  id: 2043
+  major_area: South Cotabato
+  zip_code: 9507
+  city: Tampakan
+-
+  id: 2044
+  major_area: South Cotabato
+  zip_code: 9510
+  city: Tantangan
+-
+  id: 2045
+  major_area: South Cotabato
+  zip_code: 9513
+  city: T'Boli
+-
+  id: 2046
+  major_area: South Cotabato
+  zip_code: 9505
+  city: Tupi
+-
+  id: 2047
+  major_area: Southern Leyte
+  zip_code: 6610
+  city: Anahawan
+-
+  id: 2048
+  major_area: Southern Leyte
+  zip_code: 6604
+  city: Bontoc
+-
+  id: 2049
+  major_area: Southern Leyte
+  zip_code: 6608
+  city: Hinunangan
+-
+  id: 2050
+  major_area: Southern Leyte
+  zip_code: 6609
+  city: Hinundayan
+-
+  id: 2051
+  major_area: Southern Leyte
+  zip_code: 6615
+  city: Libagon
+-
+  id: 2052
+  major_area: Southern Leyte
+  zip_code: 6612
+  city: Liloan
+-
+  id: 2053
+  major_area: Southern Leyte
+  zip_code: 6600
+  city: Maasin
+-
+  id: 2054
+  major_area: Southern Leyte
+  zip_code: 6601
+  city: Macrohon
+-
+  id: 2055
+  major_area: Southern Leyte
+  zip_code: 6603
+  city: Malitbog
+-
+  id: 2056
+  major_area: Southern Leyte
+  zip_code: 6602
+  city: Padre Burgos
+-
+  id: 2057
+  major_area: Southern Leyte
+  zip_code: 6614
+  city: Pintuyan
+-
+  id: 2058
+  major_area: Southern Leyte
+  zip_code: 6613
+  city: San Francisco
+-
+  id: 2059
+  major_area: Southern Leyte
+  zip_code: 6611
+  city: San Juan (Cabalian)
+-
+  id: 2060
+  major_area: Southern Leyte
+  zip_code: 6617
+  city: San Ricardo
+-
+  id: 2061
+  major_area: Southern Leyte
+  zip_code: 6607
+  city: Silago
+-
+  id: 2062
+  major_area: Southern Leyte
+  zip_code: 6606
+  city: Sogod
+-
+  id: 2063
+  major_area: Southern Leyte
+  zip_code: 6616
+  city: St. Bernard
+-
+  id: 2064
+  major_area: Southern Leyte
+  zip_code: 6605
+  city: Tomas Oppus
+-
+  id: 2065
+  major_area: Sultan Kudarat
+  zip_code: 9810
+  city: Bagumbayan
+-
+  id: 2066
+  major_area: Sultan Kudarat
+  zip_code: 9801
+  city: Columbio
+-
+  id: 2067
+  major_area: Sultan Kudarat
+  zip_code: 9806
+  city: Esperanza (Ampatuan)
+-
+  id: 2068
+  major_area: Sultan Kudarat
+  zip_code: 9805
+  city: Isulan
+-
+  id: 2069
+  major_area: Sultan Kudarat
+  zip_code: 9808
+  city: Kalamansig
+-
+  id: 2070
+  major_area: Sultan Kudarat
+  zip_code: 9807
+  city: Lebak (Salaman)
+-
+  id: 2071
+  major_area: Sultan Kudarat
+  zip_code: 9803
+  city: Lutayan
+-
+  id: 2072
+  major_area: Sultan Kudarat
+  zip_code: 9802
+  city: Mariano Marcos
+-
+  id: 2073
+  major_area: Sultan Kudarat
+  zip_code: 9809
+  city: Palimbang
+-
+  id: 2074
+  major_area: Sultan Kudarat
+  zip_code: 9804
+  city: Pres. Quirino
+-
+  id: 2075
+  major_area: Sultan Kudarat
+  zip_code: 9811
+  city: Sen. Ninoy Aquino
+-
+  id: 2076
+  major_area: Sultan Kudarat
+  zip_code: 9800
+  city: Tacurong
+-
+  id: 2077
+  major_area: Sulu
+  zip_code: 7407
+  city: Indanan
+-
+  id: 2078
+  major_area: Sulu
+  zip_code: 7400
+  city: Jolo
+-
+  id: 2079
+  major_area: Sulu
+  zip_code: 7416
+  city: Kalingalan Kalauang
+-
+  id: 2080
+  major_area: Sulu
+  zip_code: 7411
+  city: Lugus
+-
+  id: 2081
+  major_area: Sulu
+  zip_code: 7404
+  city: Luuk
+-
+  id: 2082
+  major_area: Sulu
+  zip_code: 7409
+  city: Maimbung
+-
+  id: 2083
+  major_area: Sulu
+  zip_code: 7413
+  city: Marungas
+-
+  id: 2084
+  major_area: Sulu
+  zip_code: 7402
+  city: Panamao
+-
+  id: 2085
+  major_area: Sulu
+  zip_code: 7415
+  city: Panglima Estino
+-
+  id: 2086
+  major_area: Sulu
+  zip_code: 7414
+  city: Panguntaran
+-
+  id: 2087
+  major_area: Sulu
+  zip_code: 7408
+  city: Parang
+-
+  id: 2088
+  major_area: Sulu
+  zip_code: 7405
+  city: Pata
+-
+  id: 2089
+  major_area: Sulu
+  zip_code: 7401
+  city: Patikul
+-
+  id: 2090
+  major_area: Sulu
+  zip_code: 7412
+  city: Siasi
+-
+  id: 2091
+  major_area: Sulu
+  zip_code: 7403
+  city: Talipao
+-
+  id: 2092
+  major_area: Sulu
+  zip_code: 7410
+  city: Tapul
+-
+  id: 2093
+  major_area: Sulu
+  zip_code: 7406
+  city: Tongkil
+-
+  id: 2094
+  major_area: Surigao del Norte
+  zip_code: 8425
+  city: Alegria
+-
+  id: 2095
+  major_area: Surigao del Norte
+  zip_code: 8408
+  city: Bacuag
+-
+  id: 2096
+  major_area: Surigao del Norte
+  zip_code: 8424
+  city: Burgos
+-
+  id: 2097
+  major_area: Surigao del Norte
+  zip_code: 8410
+  city: Claver
+-
+  id: 2098
+  major_area: Surigao del Norte
+  zip_code: 8417
+  city: Dapa
+-
+  id: 2099
+  major_area: Surigao del Norte
+  zip_code: 8418
+  city: Del Carmen
+-
+  id: 2100
+  major_area: Surigao del Norte
+  zip_code: 8419
+  city: Gen. Luna
+-
+  id: 2101
+  major_area: Surigao del Norte
+  zip_code: 8409
+  city: Gigaquit
+-
+  id: 2102
+  major_area: Surigao del Norte
+  zip_code: 8407
+  city: Mainit
+-
+  id: 2103
+  major_area: Surigao del Norte
+  zip_code: 8402
+  city: Malimano
+-
+  id: 2104
+  major_area: Surigao del Norte
+  zip_code: 8420
+  city: Pilar
+-
+  id: 2105
+  major_area: Surigao del Norte
+  zip_code: 8405
+  city: Placer
+-
+  id: 2106
+  major_area: Surigao del Norte
+  zip_code: 8423
+  city: San Benito
+-
+  id: 2107
+  major_area: Surigao del Norte
+  zip_code: 8401
+  city: San Francisco
+-
+  id: 2108
+  major_area: Surigao del Norte
+  zip_code: 8421
+  city: San Isidro
+-
+  id: 2109
+  major_area: Surigao del Norte
+  zip_code: 8422
+  city: Santa Monica
+-
+  id: 2110
+  major_area: Surigao del Norte
+  zip_code: 8404
+  city: Sison
+-
+  id: 2111
+  major_area: Surigao del Norte
+  zip_code: 8416
+  city: Socorro
+-
+  id: 2112
+  major_area: Surigao del Norte
+  zip_code: 8400
+  city: Surigao City
+-
+  id: 2113
+  major_area: Surigao del Norte
+  zip_code: 8403
+  city: Tagana-an
+-
+  id: 2114
+  major_area: Surigao del Norte
+  zip_code: 8406
+  city: Tubod
+-
+  id: 2115
+  major_area: Surigao del Sur
+  zip_code: 8309
+  city: Barobo
+-
+  id: 2116
+  major_area: Surigao del Sur
+  zip_code: 8303
+  city: Bayabas
+-
+  id: 2117
+  major_area: Surigao del Sur
+  zip_code: 8311
+  city: Bislig
+-
+  id: 2118
+  major_area: Surigao del Sur
+  zip_code: 8304
+  city: Cagwait
+-
+  id: 2119
+  major_area: Surigao del Sur
+  zip_code: 8317
+  city: Cantillan
+-
+  id: 2120
+  major_area: Surigao del Sur
+  zip_code: 8315
+  city: Carmen
+-
+  id: 2121
+  major_area: Surigao del Sur
+  zip_code: 8318
+  city: Carrascal
+-
+  id: 2122
+  major_area: Surigao del Sur
+  zip_code: 8313
+  city: Cortez
+-
+  id: 2123
+  major_area: Surigao del Sur
+  zip_code: 8310
+  city: Hinatuan
+-
+  id: 2124
+  major_area: Surigao del Sur
+  zip_code: 8314
+  city: Lanuza
+-
+  id: 2125
+  major_area: Surigao del Sur
+  zip_code: 8307
+  city: Lianga
+-
+  id: 2126
+  major_area: Surigao del Sur
+  zip_code: 8312
+  city: Lingig
+-
+  id: 2127
+  major_area: Surigao del Sur
+  zip_code: 8316
+  city: Madrid
+-
+  id: 2128
+  major_area: Surigao del Sur
+  zip_code: 8306
+  city: Marihatag
+-
+  id: 2129
+  major_area: Surigao del Sur
+  zip_code: 8305
+  city: San Agustin
+-
+  id: 2130
+  major_area: Surigao del Sur
+  zip_code: 8301
+  city: San Miguel
+-
+  id: 2131
+  major_area: Surigao del Sur
+  zip_code: 8308
+  city: Tagbina
+-
+  id: 2132
+  major_area: Surigao del Sur
+  zip_code: 8302
+  city: Tago
+-
+  id: 2133
+  major_area: Surigao del Sur
+  zip_code: 8300
+  city: Tandag
+-
+  id: 2134
+  major_area: Tarlac
+  zip_code: 2310
+  city: Anao
+-
+  id: 2135
+  major_area: Tarlac
+  zip_code: 2317
+  city: Bamban
+-
+  id: 2136
+  major_area: Tarlac
+  zip_code: 2306
+  city: Camiling
+-
+  id: 2137
+  major_area: Tarlac
+  zip_code: 2333
+  city: Capas
+-
+  id: 2138
+  major_area: Tarlac
+  zip_code: 2316
+  city: Concepcion
+-
+  id: 2139
+  major_area: Tarlac
+  zip_code: 2302
+  city: Gerona
+-
+  id: 2140
+  major_area: Tarlac
+  zip_code: 2314
+  city: La Paz
+-
+  id: 2141
+  major_area: Tarlac
+  zip_code: 2304
+  city: Mayantoc
+-
+  id: 2142
+  major_area: Tarlac
+  zip_code: 2334
+  city: Moncada
+-
+  id: 2143
+  major_area: Tarlac
+  zip_code: 2307
+  city: [Paniqui]
+-
+  id: 2144
+  major_area: Tarlac
+  zip_code: 2312
+  city: Pura
+-
+  id: 2145
+  major_area: Tarlac
+  zip_code: 2311
+  city: Ramos
+-
+  id: 2146
+  major_area: Tarlac
+  zip_code: 2305
+  city: San Clemente
+-
+  id: 2147
+  major_area: Tarlac
+  zip_code: 2309
+  city: San Manuel
+-
+  id: 2148
+  major_area: Tarlac
+  zip_code: 2301
+  city: San Jose
+-
+  id: 2149
+  major_area: Tarlac
+  zip_code: 2303
+  city: Santa Ignacia
+-
+  id: 2150
+  major_area: Tarlac
+  zip_code: 2300
+  city: Tarlac City
+-
+  id: 2151
+  major_area: Tarlac
+  zip_code: 2313
+  city: Victoria
+-
+  id: 2152
+  major_area: Tarlac
+  zip_code: 7500
+  city: Bongao
+-
+  id: 2153
+  major_area: Tarlac
+  zip_code: 7508
+  city: Mapun (Cagayan de Sulu)
+-
+  id: 2154
+  major_area: Tarlac
+  zip_code: 7509
+  city: Languyan
+-
+  id: 2155
+  major_area: Tarlac
+  zip_code: 7501
+  city: Panglima Sugala (Balimbing)
+-
+  id: 2156
+  major_area: Tarlac
+  zip_code: 7503
+  city: Sapa-Sapa
+-
+  id: 2157
+  major_area: Tarlac
+  zip_code: 7505
+  city: Simunul
+-
+  id: 2158
+  major_area: Tarlac
+  zip_code: 7506
+  city: Sitangkai
+-
+  id: 2159
+  major_area: Tarlac
+  zip_code: 7504
+  city: South Ubian
+-
+  id: 2160
+  major_area: Tarlac
+  zip_code: 7507
+  city: Turtle Island (Taganak)
+-
+  id: 2161
+  major_area: Tarlac
+  zip_code: 7502
+  city: Tandubas
+-
+  id: 2162
+  major_area: Western Samar
+  zip_code: 6724
+  city: Almagro
+-
+  id: 2163
+  major_area: Western Samar
+  zip_code: 6720
+  city: Basey
+-
+  id: 2164
+  major_area: Western Samar
+  zip_code: 6710
+  city: Calbayog City
+-
+  id: 2165
+  major_area: Western Samar
+  zip_code: 6715
+  city: Calbiga
+-
+  id: 2166
+  major_area: Western Samar
+  zip_code: 6700
+  city: Catbalogan
+-
+  id: 2167
+  major_area: Western Samar
+  zip_code: 6722
+  city: Daram
+-
+  id: 2168
+  major_area: Western Samar
+  zip_code: 6706
+  city: Gandara
+-
+  id: 2169
+  major_area: Western Samar
+  zip_code: 6713
+  city: Hinabangan
+-
+  id: 2170
+  major_area: Western Samar
+  zip_code: 6701
+  city: Jiabong
+-
+  id: 2171
+  major_area: Western Samar
+  zip_code: 6721
+  city: Marabut
+-
+  id: 2172
+  major_area: Western Samar
+  zip_code: 6708
+  city: Matuguinao
+-
+  id: 2173
+  major_area: Western Samar
+  zip_code: 6702
+  city: Motiong
+-
+  id: 2174
+  major_area: Western Samar
+  zip_code: 6705
+  city: Pagsanghan
+-
+  id: 2175
+  major_area: Western Samar
+  zip_code: 6703
+  city: Paranas (Wright)
+-
+  id: 2176
+  major_area: Western Samar
+  zip_code: 6716
+  city: Pinabacdao
+-
+  id: 2177
+  major_area: Western Samar
+  zip_code: 6707
+  city: San Jorge
+-
+  id: 2178
+  major_area: Western Samar
+  zip_code: 6723
+  city: San Jose De Buan
+-
+  id: 2179
+  major_area: Western Samar
+  zip_code: 6714
+  city: San Sebastian
+-
+  id: 2180
+  major_area: Western Samar
+  zip_code: 6709
+  city: Santa Margarita
+-
+  id: 2181
+  major_area: Western Samar
+  zip_code: 6718
+  city: Santa Rita
+-
+  id: 2182
+  major_area: Western Samar
+  zip_code: 6711
+  city: Santo Niño
+-
+  id: 2183
+  major_area: Western Samar
+  zip_code: 6712
+  city: Tagapul-an
+-
+  id: 2184
+  major_area: Western Samar
+  zip_code: 6719
+  city: Talalora
+-
+  id: 2185
+  major_area: Western Samar
+  zip_code: 6704
+  city: Tarangnan
+-
+  id: 2186
+  major_area: Western Samar
+  zip_code: 6717
+  city: Villareal
+-
+  id: 2187
+  major_area: Western Samar
+  zip_code: 6725
+  city: Zumarraga
+-
+  id: 2188
+  major_area: Zambales
+  zip_code: 2202
+  city: Botolan
+-
+  id: 2189
+  major_area: Zambales
+  zip_code: 2203
+  city: Cabangan
+-
+  id: 2190
+  major_area: Zambales
+  zip_code: 2212
+  city: Candelaria
+-
+  id: 2191
+  major_area: Zambales
+  zip_code: 2208
+  city: Castillejos
+-
+  id: 2192
+  major_area: Zambales
+  zip_code: 2201
+  city: Iba
+-
+  id: 2193
+  major_area: Zambales
+  zip_code: 2211
+  city: Masinloc
+-
+  id: 2194
+  major_area: Zambales
+  zip_code: 2200
+  city: Olongapo City
+-
+  id: 2195
+  major_area: Zambales
+  zip_code: 2210
+  city: Palauig & Scarborough Shoal
+-
+  id: 2196
+  major_area: Zambales
+  zip_code: 2206
+  city: San Antonio
+-
+  id: 2197
+  major_area: Zambales
+  zip_code: 2204
+  city: San Felipe
+-
+  id: 2198
+  major_area: Zambales
+  zip_code: 2207
+  city: San Marcelino
+-
+  id: 2199
+  major_area: Zambales
+  zip_code: 2205
+  city: San Narciso
+-
+  id: 2200
+  major_area: Zambales
+  zip_code: 2213
+  city: Santa Cruz
+-
+  id: 2201
+  major_area: Zambales
+  zip_code: 2209
+  city: Subic
+-
+  id: 2202
+  major_area: Zambales
+  zip_code: 2222
+  city: Subic Bay Freeport Zone (Metro Subic)
+-
+  id: 2203
+  major_area: Zamboanga del Norte
+  zip_code: 7123
+  city: Baliguian
+-
+  id: 2204
+  major_area: Zamboanga del Norte
+  zip_code: 7101
+  city: Dapitan City
+-
+  id: 2205
+  major_area: Zamboanga del Norte
+  zip_code: 7100
+  city: Dipolog City
+-
+  id: 2206
+  major_area: Zamboanga del Norte
+  zip_code: 7118
+  city: Gutalac
+-
+  id: 2207
+  major_area: Zamboanga del Norte
+  zip_code: 7111
+  city: Jose Dalman (Ponot)
+-
+  id: 2208
+  major_area: Zamboanga del Norte
+  zip_code: 7124
+  city: Kalawit
+-
+  id: 2209
+  major_area: Zamboanga del Norte
+  zip_code: 7109
+  city: Katipunan
+-
+  id: 2210
+  major_area: Zamboanga del Norte
+  zip_code: 7119
+  city: La Libertad
+-
+  id: 2211
+  major_area: Zamboanga del Norte
+  zip_code: 7117
+  city: Labason
+-
+  id: 2212
+  major_area: Zamboanga del Norte
+  zip_code: 7115
+  city: Liloy
+-
+  id: 2213
+  major_area: Zamboanga del Norte
+  zip_code: 7110
+  city: Manukan
+-
+  id: 2214
+  major_area: Zamboanga del Norte
+  zip_code: 7107
+  city: Mutia
+-
+  id: 2215
+  major_area: Zamboanga del Norte
+  zip_code: 7105
+  city: Pinan
+-
+  id: 2216
+  major_area: Zamboanga del Norte
+  zip_code: 7106
+  city: Polanco
+-
+  id: 2217
+  major_area: Zamboanga del Norte
+  zip_code: 7104
+  city: Rizal
+-
+  id: 2218
+  major_area: Zamboanga del Norte
+  zip_code: 7102
+  city: Roxas
+-
+  id: 2219
+  major_area: Zamboanga del Norte
+  zip_code: 7114
+  city: Salug
+-
+  id: 2220
+  major_area: Zamboanga del Norte
+  zip_code: 7108
+  city: Sergio Osmeña
+-
+  id: 2221
+  major_area: Zamboanga del Norte
+  zip_code: 7113
+  city: Siayan
+-
+  id: 2222
+  major_area: Zamboanga del Norte
+  zip_code: 7122
+  city: Sibuco
+-
+  id: 2223
+  major_area: Zamboanga del Norte
+  zip_code: 7103
+  city: Sibutad
+-
+  id: 2224
+  major_area: Zamboanga del Norte
+  zip_code: 7112
+  city: Sindangan (Leon B. Postigo)
+-
+  id: 2225
+  major_area: Zamboanga del Norte
+  zip_code: 7120
+  city: Siocon
+-
+  id: 2226
+  major_area: Zamboanga del Norte
+  zip_code: 7121
+  city: Siraway
+-
+  id: 2227
+  major_area: Zamboanga del Norte
+  zip_code: 7116
+  city: Tampilisan
+-
+  id: 2228
+  major_area: Zamboanga del Sur
+  zip_code: 7020
+  city: Aurora
+-
+  id: 2229
+  major_area: Zamboanga del Sur
+  zip_code: 7011
+  city: Bayog
+-
+  id: 2230
+  major_area: Zamboanga del Sur
+  zip_code: 7032
+  city: Dimataling
+-
+  id: 2231
+  major_area: Zamboanga del Sur
+  zip_code: 7030
+  city: Dinas
+-
+  id: 2232
+  major_area: Zamboanga del Sur
+  zip_code: 7015
+  city: Dumalinao
+-
+  id: 2233
+  major_area: Zamboanga del Sur
+  zip_code: 7028
+  city: Dumingag
+-
+  id: 2234
+  major_area: Zamboanga del Sur
+  zip_code: 7042
+  city: Guipos
+-
+  id: 2235
+  major_area: Zamboanga del Sur
+  zip_code: 7027
+  city: Josefina
+-
+  id: 2236
+  major_area: Zamboanga del Sur
+  zip_code: 7005
+  city: Kumalarang
+-
+  id: 2237
+  major_area: Zamboanga del Sur
+  zip_code: 7017
+  city: Labangan
+-
+  id: 2238
+  major_area: Zamboanga del Sur
+  zip_code: 7014
+  city: Lakewood
+-
+  id: 2239
+  major_area: Zamboanga del Sur
+  zip_code: 7037
+  city: Lapuyan
+-
+  id: 2240
+  major_area: Zamboanga del Sur
+  zip_code: 7026
+  city: Mahayag
+-
+  id: 2241
+  major_area: Zamboanga del Sur
+  zip_code: 7035
+  city: Margosatubig
+-
+  id: 2242
+  major_area: Zamboanga del Sur
+  zip_code: 7021
+  city: Midsalip
+-
+  id: 2243
+  major_area: Zamboanga del Sur
+  zip_code: 7023
+  city: Molave
+-
+  id: 2244
+  major_area: Zamboanga del Sur
+  zip_code: 7016
+  city: Pagadian City
+-
+  id: 2245
+  major_area: Zamboanga del Sur
+  zip_code: 7033
+  city: Pitogo
+-
+  id: 2246
+  major_area: Zamboanga del Sur
+  zip_code: 7024
+  city: Ramon Magsaysay (Liargo)
+-
+  id: 2247
+  major_area: Zamboanga del Sur
+  zip_code: 7029
+  city: San Miguel
+-
+  id: 2248
+  major_area: Zamboanga del Sur
+  zip_code: 7031
+  city: San Pablo
+-
+  id: 2249
+  major_area: Zamboanga del Sur
+  zip_code: 7022
+  city: Sominot (Don Mariano Marcos)
+-
+  id: 2250
+  major_area: Zamboanga del Sur
+  zip_code: 7034
+  city: Tabina
+-
+  id: 2251
+  major_area: Zamboanga del Sur
+  zip_code: 7025
+  city: Tambulig
+-
+  id: 2252
+  major_area: Zamboanga del Sur
+  zip_code: 7000
+  city: Zamboanga City
+-
+  id: 2253
+  major_area: Zamboanga del Sur
+  zip_code: 7043
+  city: Tigbao
+-
+  id: 2254
+  major_area: Zamboanga del Sur
+  zip_code: 7019
+  city: Tukuran
+-
+  id: 2255
+  major_area: Zamboanga del Sur
+  zip_code: 7036
+  city: Vincenzo A. Sagun
+-
+  id: 2256
+  major_area: Zamboanga Sibugay
+  zip_code: 7040
+  city: Alicia
+-
+  id: 2257
+  major_area: Zamboanga Sibugay
+  zip_code: 7009
+  city: Buug
+-
+  id: 2258
+  major_area: Zamboanga Sibugay
+  zip_code: 7039
+  city: Diplahan
+-
+  id: 2259
+  major_area: Zamboanga Sibugay
+  zip_code: 7007
+  city: Imelda
+-
+  id: 2260
+  major_area: Zamboanga Sibugay
+  zip_code: 7001
+  city: Ipil
+-
+  id: 2261
+  major_area: Zamboanga Sibugay
+  zip_code: 7005
+  city: Kabasalan
+-
+  id: 2262
+  major_area: Zamboanga Sibugay
+  zip_code: 7010
+  city: Mabuhay
+-
+  id: 2263
+  major_area: Zamboanga Sibugay
+  zip_code: 7038
+  city: Malangas
+-
+  id: 2264
+  major_area: Zamboanga Sibugay
+  zip_code: 7004
+  city: Naga
+-
+  id: 2265
+  major_area: Zamboanga Sibugay
+  zip_code: 7041
+  city: Olutanga
+-
+  id: 2266
+  major_area: Zamboanga Sibugay
+  zip_code: 7008
+  city: Payao
+-
+  id: 2267
+  major_area: Zamboanga Sibugay
+  zip_code: 7002
+  city: Roseller T. Lim
+-
+  id: 2268
+  major_area: Zamboanga Sibugay
+  zip_code: 7006
+  city: Siay
+-
+  id: 2269
+  major_area: Zamboanga Sibugay
+  zip_code: 7012
+  city: Talusan
+-
+  id: 2270
+  major_area: Zamboanga Sibugay
+  zip_code: 7003
+  city: Titay
+...
