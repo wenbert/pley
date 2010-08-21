@@ -24,7 +24,7 @@ SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 --
 -- Table structure for table `zipcodes`
 --
-
+/*
 CREATE TABLE IF NOT EXISTS `zipcodes` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `major_area` varchar(300) NOT NULL,
@@ -35,7 +35,7 @@ CREATE TABLE IF NOT EXISTS `zipcodes` (
   KEY `zip_code` (`zip_code`),
   KEY `city` (`city`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2271 ;
-
+*/
 --
 -- Dumping data for table `zipcodes`
 --
