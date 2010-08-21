@@ -103,6 +103,11 @@ INSTALLED_APPS = (
     # 'django.contrib.admin',
 )
 
+FIXTURE_DIRS = (
+    #os.path.join(os.path.dirname(__file__), 'business','fixtures'),
+    'Users/john/Projects/pley/business/fixtures',
+)
+
 PAGE_ITEMS = 10
 LOGIN_URL = "/accounts/login"
 LOGIN_REDIRECT_URL = "/"

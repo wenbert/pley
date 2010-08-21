@@ -15,9 +15,6 @@ class BusinessForm(forms.ModelForm):
         }
   
 
-class PropertiesForm(forms.ModelForm):
-    class Meta:
-        model = Properties
 
 class BusinessCategoryForm(forms.ModelForm):
     class Meta:

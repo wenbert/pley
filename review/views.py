@@ -8,7 +8,6 @@ from django.db import IntegrityError, DatabaseError
 from django.contrib.auth.decorators import login_required
 from django.core.paginator import Paginator, InvalidPage, EmptyPage
 from pley.business.models import *
-from pley.business.forms import PropertiesForm
 from pley.review.models import *
 from pley.review.forms import *
 

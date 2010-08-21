@@ -21,5 +21,4 @@ class BusinessAdmin(admin.ModelAdmin):
     
 admin.site.register(Business, BusinessAdmin)
 admin.site.register(Category, CategoryAdmin)
-admin.site.register(Properties)
 #admin.site.register(Category)
