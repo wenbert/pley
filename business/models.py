@@ -54,6 +54,16 @@ ATTIRE = (
     ('not_applicable', 'Not Applicable'),
 )
 
+DAYS = (
+    ('mon','Monday'),
+    ('tue','Tuesday'),
+    ('wed','Wednesday'),
+    ('thu','Thursday'),
+    ('fri', 'Friday'),
+    ('sat', 'Saturday'),
+    ('sun', 'Sunday'),
+)
+
 '''
 PROP_TYPES = (
     ('checkbox', 'Checkbox'),
@@ -76,10 +86,11 @@ class Business(models.Model):
     address2        = models.CharField(max_length=250, verbose_name="Address 2", blank=True)
     city            = models.CharField(max_length=250, verbose_name="City")
     province        = models.CharField(max_length=250, verbose_name="Province / State")
-    country         = models.CharField(max_length=250, verbose_name="Country") #default this to Philippines?
+    country         = models.CharField(max_length=250, verbose_name="Country", default="Philippines")
     zipcode         = models.CharField(max_length=10, verbose_name="Zipcode")
     num_reviews     = models.IntegerField(default=0)
     rating          = models.IntegerField(default=0, validators=[validate_max_rating])
+    desc            = models.TextField(max_length=500 ,blank=True)
     
     lat             = models.FloatField(default=0.0, verbose_name="Latitude")
     lng             = models.FloatField(default=0.0, verbose_name="Longitude")
@@ -88,11 +99,8 @@ class Business(models.Model):
     created_at      = models.DateTimeField(verbose_name='Date Created', default=datetime.now, blank=True)
     updated_at      = models.DateTimeField(verbose_name='Date Updated', default=datetime.now, blank=True)
 
-    properties      = models.OneToOneField('Properties')
-
     def __unicode__(self):
         return self.name
-
 
 class Category(models.Model):
     name            = models.CharField(max_length=250, unique=True)
@@ -101,37 +109,6 @@ class Category(models.Model):
     members         = models.ManyToManyField(Business, through="BusinessCategory")
     def __unicode__(self):
         return self.slug
-
-class Properties(models.Model):
-    credit_card     = models.CharField(max_length=10, verbose_name="Accepts Credit Card?", choices=YES_NO_NOTSURE, blank=True)
-    alcohol         = models.CharField(max_length=25, verbose_name="Serves alcohol?", choices=ALCOHOL, blank=True)
-    kids            = models.CharField(max_length=10, verbose_name="Good for kids?", choices=YES_NO_NOTSURE, blank=True)
-    groups          = models.CharField(max_length=10, verbose_name="Good for groups?", choices=YES_NO_NOTSURE, blank=True)
-    reservations    = models.CharField(max_length=10, verbose_name="Takes reservations?", choices=YES_NO_NOTSURE, blank=True)
-    takeout         = models.CharField(max_length=10, verbose_name="Take-out?", choices=YES_NO_NOTSURE, blank=True)
-    waiters         = models.CharField(max_length=10, verbose_name="Waiter services?", choices=YES_NO_NOTSURE, blank=True)
-    outdoor_seating = models.CharField(max_length=10, verbose_name="Outdoor seating?", choices=YES_NO_NOTSURE, blank=True)
-    wheelchair      = models.CharField(max_length=10, verbose_name="Wheelchair accessible?", choices=YES_NO_NOTSURE, blank=True)
-    attire          = models.CharField(max_length=50, verbose_name="Attire",choices=ATTIRE, blank=True)
-
-    parking_open        = models.BooleanField(verbose_name='Open Parking')
-    parking_basement    = models.BooleanField(verbose_name='Basement Parking')
-    parking_private_lot = models.BooleanField(verbose_name='Private Lot')
-    parking_valet       = models.BooleanField(verbose_name='Valet Parking')
-    parking_validated   = models.BooleanField(verbose_name='Validated')
-    parking_street      = models.BooleanField(verbose_name='Street Parking')
-
-    open_time       = models.TimeField(blank=True)
-    close_time      = models.TimeField(blank=True)
-
-class UserProperties(models.Model):
-    '''
-    User submitted properties.
-    To be normalized. 
-    '''
-    business        = models.ForeignKey(Business)
-    user            = models.ForeignKey(User)
-    properties      = models.ForeignKey(Properties)
 
 class Phone(models.Model):
     business        = models.ForeignKey(Business)
@@ -144,10 +121,25 @@ class BusinessCategory(models.Model):
     business        = models.ForeignKey(Business,db_index=True)
     category        = models.ForeignKey(Category,db_index=True)
     
-class BusinessMarkers(models.Model):
+class BusinessDetails(models.Model):
     business        = models.ForeignKey(Business)
-    #lat             = models.
-    #lng             = models.
+    field_name      = models.CharField(max_length=100, verbose_name="Field Name")
+    field_value     = models.CharField(max_length=250, verbose_name="Field Value")
     
+class BusinessHours(models.Model):
+    business        = models.ForeignKey(Business)
+    day             = models.CharField(max_length=3, verbose_name="Day",choices=DAYS, blank=True)
+    time_open_1     = models.TimeField(blank=True)
+    time_open_2     = models.TimeField(blank=True)
+    time_close_1    = models.TimeField(blank=True)
+    time_close_2    = models.TimeField(blank=True)
+    closed          = models.BooleanField()
     
-    
+class BusinessPaymentOptions(models.Model):
+    business        = models.ForeignKey(Business)
+    cash            = models.BooleanField(verbose_name="Cash")
+    credit_card     = models.BooleanField(verbose_name="Credit Card")
+    debit_card      = models.BooleanField(verbose_name="Debit Card")
+    cheque          = models.BooleanField(verbose_name="Cheque")
+    gift_cert       = models.BooleanField(verbose_name="Gift Certificates")
+    others          = models.BooleanField(verbose_name="Others")
