@@ -13,9 +13,7 @@ class BusinessForm(forms.ModelForm):
             'name': TextInput(attrs={'class': 'required', 'minlength':'2'}),
             'website': TextInput(attrs={'class': 'url', 'minlength':'2'}),
         }
-  
-
-
+        
 class BusinessCategoryForm(forms.ModelForm):
     class Meta:
         model = BusinessCategory

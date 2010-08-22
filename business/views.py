@@ -226,6 +226,7 @@ def business_add(request):
         "success": success,
         "error": error
     }
+    
     '''
     Check if save thru AJAX or normal POST
     '''
@@ -244,4 +245,3 @@ def business_add(request):
         else:
             return render_to_response("business/business_add.html",
                               data, context_instance=RequestContext(request))
-
