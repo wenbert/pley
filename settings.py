@@ -105,7 +105,6 @@ INSTALLED_APPS = (
 
 FIXTURE_DIRS = (
     #os.path.join(os.path.dirname(__file__), 'business','fixtures'),
-    'Users/john/Projects/pley/business/fixtures',
 )
 
 PAGE_ITEMS = 10

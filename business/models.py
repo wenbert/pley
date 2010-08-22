@@ -77,6 +77,14 @@ class Phone(models.Model):
     def __unicode__(self):
         return self.phone
 
+class Zipcode(models.Model):
+    zipcode         = models.CharField(max_length='10')
+    major_area      = models.CharField(max_length='50')
+    city            = models.CharField(max_length='50')
+
+    def __unicode__(self):
+        return self.zipcode
+
 class BusinessCategory(models.Model):
     business        = models.ForeignKey(Business,db_index=True)
     category        = models.ForeignKey(Category,db_index=True)
@@ -104,7 +112,3 @@ class BusinessPaymentOptions(models.Model):
     gift_cert       = models.BooleanField(verbose_name="Gift Certificates")
     others          = models.BooleanField(verbose_name="Others")
 
-class Zipcode(models.Model):
-    zipcode         = models.CharField(max_length='10')
-    major_area      = models.CharField(max_length='50')
-    city            = models.CharField(max_length='50')
