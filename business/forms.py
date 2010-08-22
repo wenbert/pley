@@ -19,14 +19,24 @@ class BusinessForm(forms.ModelForm):
 class BusinessCategoryForm(forms.ModelForm):
     class Meta:
         model = BusinessCategory
-        exclude = ('business')
+        exclude = ('business',)
         
 class PhoneForm(forms.ModelForm):
     class Meta:
         model = Phone
-        exclude = ('business')
+        exclude = ('business',)
 
 class BusinessHoursForm(forms.ModelForm):
     class Meta:
         model = BusinessHours
-        exclude = ('business')
+        exclude = ('business',)
+
+class BusinessDetailsForm(forms.ModelForm):
+    class Meta:
+        model = BusinessDetails
+        exclude = ('business',)
+
+class BusinessPaymentOptionsForm(forms.ModelForm):
+    class Meta:
+        model = BusinessPaymentOptions
+        exclude = ('business',)

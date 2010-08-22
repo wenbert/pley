@@ -147,9 +147,13 @@ def business_add(request):
         business_form       = BusinessForm(request.POST)
         business_category_form = BusinessCategoryForm(request.POST)
         phone_form          = PhoneForm(request.POST)
-        
-        if (business_form.is_valid() and business_category_form.is_valid() and phone_form.is_valid()) :
-            
+        business_details_form = BusinessDetailsForm(request.POST)
+        business_payment_options_form = BusinessPaymentOptionsForm(request.POST)
+        businss_hours_form = BusinessHoursForm(request.POST)
+
+        if (business_form.is_valid() and business_category_form.is_valid() and phone_form.is_valid() and
+            businss_details_form.is_valid() and business_payment_options_form.is_valid() and business_hours_form.is_valid()):
+
             business_name   = business_form.cleaned_data['name']
             category        = business_category_form.cleaned_data['category']
             address_1       = business_form.cleaned_data['address1']
@@ -159,22 +163,19 @@ def business_add(request):
             address_country = business_form.cleaned_data['country']
             # TODO: zipcode should be found in zipcode table
             address_zipcode = business_form.cleaned_data['zipcode']
-
             phone    = phone_form.cleaned_data['phone']
-
             # TODO: catch possible exceptions here
             try:
                 business = Business(name=business_name,address1=address_1, address2=address_2,
                                     city=address_city, province=address_province,
                                     country=address_country)
                 business.save()
-                                
+
                 phone   = Phone(phone=phone, business=business)
                 phone.save()
-                
+
                 business_category = BusinessCategory(business=business,category=category)
                 business_category.save()
-                
             except IntegrityError, e:
                 transaction.rollback()
                 success = False
@@ -186,15 +187,19 @@ def business_add(request):
         business_form   = BusinessForm()
         business_category_form = BusinessCategoryForm()
         phone_form      = PhoneForm()
-    
+        business_details_form = BusinessDetailsForm()
+        business_payment_options_form = BusinessPaymentOptionsForm()
+        business_hours_form = BusinessHoursForm()
     data = {
         "business_form": business_form,
         "business_category_form": business_category_form,
         "phone_form": phone_form,
+        "business_details_form": business_details_form,
+        "business_payment_options_form": business_payment_options_form,
+        "business_hours_form": business_hours_form,
         "success": success,
         "error": error
     }
-    
     '''
     Check if save thru AJAX or normal POST
     '''
@@ -213,4 +218,4 @@ def business_add(request):
         else:
             return render_to_response("business/business_add.html",
                               data, context_instance=RequestContext(request))
-        
+
