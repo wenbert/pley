@@ -88,12 +88,12 @@ class Zipcode(models.Model):
 class BusinessCategory(models.Model):
     business        = models.ForeignKey(Business,db_index=True)
     category        = models.ForeignKey(Category,db_index=True)
-    
+
 class BusinessDetails(models.Model):
     business        = models.ForeignKey(Business)
     field_name      = models.CharField(max_length=100, verbose_name="Field Name")
     field_value     = models.CharField(max_length=250, verbose_name="Field Value")
-    
+
 class BusinessHours(models.Model):
     business        = models.ForeignKey(Business)
     day             = models.CharField(max_length=3, verbose_name="Day",choices=DAYS, blank=True)
@@ -102,7 +102,7 @@ class BusinessHours(models.Model):
     time_close_1    = models.TimeField(blank=True)
     time_close_2    = models.TimeField(blank=True)
     closed          = models.BooleanField()
-    
+
 class BusinessPaymentOptions(models.Model):
     business        = models.ForeignKey(Business)
     cash            = models.BooleanField(verbose_name="Cash")

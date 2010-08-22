@@ -15,7 +15,7 @@ from django.core import serializers
 import simplejson as json
 import urllib
 
-from geopy import geocoders  
+from geopy import geocoders
 from django.conf import settings
 
 def business_home(request):
@@ -151,11 +151,17 @@ def business_add(request):
         business_payment_options_form = BusinessPaymentOptionsForm(request.POST)
         businss_hours_form = BusinessHoursForm(request.POST)
 
+        business_category_form_list = [BusinessCategoryForm(data=request.POST, prefix='business_category_form_'+str(i))
+                                       for i in range(5)]
+
+        business_hours_form_list = [BusinessHoursForm(data=request.POST,
+                                                      prefix='business_hours_form_'+DAYS[i])
+                                   for i in len(DAYS)]
+
         if (business_form.is_valid() and business_category_form.is_valid() and phone_form.is_valid() and
             businss_details_form.is_valid() and business_payment_options_form.is_valid() and business_hours_form.is_valid()):
 
             business_name   = business_form.cleaned_data['name']
-            category        = business_category_form.cleaned_data['category']
             address_1       = business_form.cleaned_data['address1']
             address_2       = business_form.cleaned_data['address2']
             address_city    = business_form.cleaned_data['city']
@@ -163,7 +169,20 @@ def business_add(request):
             address_country = business_form.cleaned_data['country']
             # TODO: zipcode should be found in zipcode table
             address_zipcode = business_form.cleaned_data['zipcode']
-            phone    = phone_form.cleaned_data['phone']
+
+            category        = business_category_form.cleaned_data['category']
+
+            phone           = phone_form.cleaned_data['phone']
+
+            payment_cash    = business_payment_options_form.cleaned_data['cash']
+            payment_credit_card = business_payment_options_form.cleaned_data['credit_card']
+            payment_debit_card = business_payment_options_form.cleaned_data['debit_card']
+            payment_cheque    = business_payment_options_form.cleaned_data['cheque']
+            payment_gift_cert = business_payment_options_form.cleaned_data['gift_cert']
+            payment_others    = business_payment_options_form.cleaned_data['others']
+
+
+
             # TODO: catch possible exceptions here
             try:
                 business = Business(name=business_name,address1=address_1, address2=address_2,
@@ -189,7 +208,12 @@ def business_add(request):
         phone_form      = PhoneForm()
         business_details_form = BusinessDetailsForm()
         business_payment_options_form = BusinessPaymentOptionsForm()
-        business_hours_form = BusinessHoursForm()
+        business_hours_form = BusinessHoursForm(initial={'day':'mon'})
+        business_category_form_list = [BusinessCategoryForm(prefix='business_category_form_'+str(i))
+                                       for i in range(5)]
+        business_hours_form_list = [BusinessHoursForm(initial={'day':i[0]},
+                                                      prefix='business_hours_form_'+i[0])
+                                   for i in DAYS]
     data = {
         "business_form": business_form,
         "business_category_form": business_category_form,
@@ -197,6 +221,8 @@ def business_add(request):
         "business_details_form": business_details_form,
         "business_payment_options_form": business_payment_options_form,
         "business_hours_form": business_hours_form,
+        "business_category_form_list": business_category_form_list,
+        "business_hours_form_list": business_hours_form_list,
         "success": success,
         "error": error
     }
