@@ -155,8 +155,8 @@ def business_add(request):
                                        for i in range(5)]
 
         business_hours_form_list = [BusinessHoursForm(data=request.POST,
-                                                      prefix='business_hours_form_'+DAYS[i])
-                                   for i in len(DAYS)]
+                                                      prefix='business_hours_form_'+i[0])
+                                   for i in DAYS]
 
         if (business_form.is_valid() and business_category_form.is_valid() and phone_form.is_valid() and
             businss_details_form.is_valid() and business_payment_options_form.is_valid() and business_hours_form.is_valid()):
