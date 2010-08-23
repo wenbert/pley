@@ -72,7 +72,10 @@ class Category(models.Model):
 
 class Phone(models.Model):
     business        = models.ForeignKey(Business)
-    phone           = models.CharField(max_length=250)
+    phone           = models.CharField(max_length=250, verbose_name='Main Phone')
+    alternate       = models.CharField(max_length=250, blank=True, null=True, verbose_name='Alternate Phone')
+    fax             = models.CharField(max_length=250, blank=True, null=True, verbose_name='Fax')
+    mobile          = models.CharField(max_length=250, blank=True, null=True, verbose_name='Mobile Phone')
     
     def __unicode__(self):
         return self.phone
@@ -97,10 +100,10 @@ class BusinessDetails(models.Model):
 class BusinessHours(models.Model):
     business        = models.ForeignKey(Business)
     day             = models.CharField(max_length=3, verbose_name="Day",choices=DAYS, blank=True)
-    time_open_1     = models.TimeField(blank=True)
-    time_open_2     = models.TimeField(blank=True)
-    time_close_1    = models.TimeField(blank=True)
-    time_close_2    = models.TimeField(blank=True)
+    time_open_1     = models.TimeField(blank=True, null=True)
+    time_open_2     = models.TimeField(blank=True, null=True)
+    time_close_1    = models.TimeField(blank=True, null=True)
+    time_close_2    = models.TimeField(blank=True, null=True)
     closed          = models.BooleanField()
 
 class BusinessPaymentOptions(models.Model):
