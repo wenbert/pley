@@ -1,0 +1,1 @@
+INSERT INTO business_businesscategory (business_id, category_id) VALUES (1, 1);

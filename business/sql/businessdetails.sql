@@ -1,0 +1,1 @@
+INSERT INTO business_businessdetails (business_id, field_name, field_value) VALUES (1, 'Parking', 'Street Parking, Validated Parking');

@@ -1,0 +1,2 @@
+INSERT INTO business_business (name, website, address1, address2, city, province, country, zipcode, num_reviews, rating, desc, lat, lng, status) 
+    VALUES ('Figaro', 'http://blog.ekini.net', 'Asiatown IT Park','Lahug', 'Cebu City', 'Cebu', 'Philippines', '6000', 0, 0, 'Test for Figaro', 0.0, 0.0, 'A');

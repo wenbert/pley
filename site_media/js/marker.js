@@ -125,8 +125,6 @@ $(document).ready(function() {
         $(this).val('Saved');
     });
     
-    
-    
     /**
      * save_data(obj)
      * obj: The DOM of #save_marker button

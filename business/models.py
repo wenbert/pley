@@ -41,23 +41,23 @@ def validate_max_rating(val):
 
 class Business(models.Model):
     name            = models.CharField(max_length=250)
-    website         = models.CharField(max_length=250, blank=True)
+    website         = models.CharField(max_length=250, blank=True, null=True)
     address1        = models.CharField(max_length=250, verbose_name="Address 1")
-    address2        = models.CharField(max_length=250, verbose_name="Address 2", blank=True)
+    address2        = models.CharField(max_length=250, verbose_name="Address 2", blank=True, null=True)
     city            = models.CharField(max_length=250, verbose_name="City")
     province        = models.CharField(max_length=250, verbose_name="Province / State")
     country         = models.CharField(max_length=250, verbose_name="Country", default="Philippines")
     zipcode         = models.CharField(max_length=10, verbose_name="Zipcode")
     num_reviews     = models.IntegerField(default=0)
     rating          = models.IntegerField(default=0, validators=[validate_max_rating])
-    desc            = models.TextField(max_length=500 ,blank=True)
+    desc            = models.TextField(max_length=500 ,blank=True, null=True)
     
     lat             = models.FloatField(default=0.0, verbose_name="Latitude")
     lng             = models.FloatField(default=0.0, verbose_name="Longitude")
 
     status          = models.CharField(max_length=1, choices=BUSINESS_STATUS, default='A')
-    created_at      = models.DateTimeField(verbose_name='Date Created', default=datetime.now, blank=True)
-    updated_at      = models.DateTimeField(verbose_name='Date Updated', default=datetime.now, blank=True)
+    created_at      = models.DateTimeField(verbose_name='Date Created', default=datetime.now, blank=True, null=True)
+    updated_at      = models.DateTimeField(verbose_name='Date Updated', default=datetime.now, blank=True, null=True)
 
     def __unicode__(self):
         return self.name
