@@ -34,9 +34,9 @@
         <ul class="boxed_list">
         {% for review in reviews %}
 		{% if review.user.first_name == '' and review.user.last_name == '' %}
-			<li>&ldquo;{{review.title}}&rdquo; by {{review.user.username}} ({{review.created_at}})</li>
+		<li>&ldquo;{{review.title}}&rdquo; {{review.rating}}/5 by {{review.user.username}} ({{review.created_at}})</li>
 		{%else%}
-			<li>&ldquo;{{review.title}}&rdquo; by {{review.user.first_name}} {{review.user.last_name}}({{review.created_at}})</li>
+			<li>&ldquo;{{review.title}}&rdquo; {{review.rating}}/5 by {{review.user.first_name}} {{review.user.last_name}}({{review.created_at}})</li>
 		{%endif%}
         {% endfor %}
         </ul>
