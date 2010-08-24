@@ -51,7 +51,6 @@ class Business(models.Model):
     num_reviews     = models.IntegerField(default=0)
     rating          = models.IntegerField(default=0, validators=[validate_max_rating])
     desc            = models.TextField(max_length=500 ,blank=True, null=True)
-    
     lat             = models.FloatField(default=0.0, verbose_name="Latitude")
     lng             = models.FloatField(default=0.0, verbose_name="Longitude")
 
@@ -76,7 +75,6 @@ class Phone(models.Model):
     alternate       = models.CharField(max_length=250, blank=True, null=True, verbose_name='Alternate Phone')
     fax             = models.CharField(max_length=250, blank=True, null=True, verbose_name='Fax')
     mobile          = models.CharField(max_length=250, blank=True, null=True, verbose_name='Mobile Phone')
-    
     def __unicode__(self):
         return self.phone
 
