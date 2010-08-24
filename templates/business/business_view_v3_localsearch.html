@@ -28,7 +28,8 @@
         
         <div class="buttons">
             <a href="/review/add/{{business_item.id}}" class="button"><img src="/images/icons/add.png" alt=""/> <span>Add Review</span></a> 
-            <a href="/review/add/{{business_item.id}}" class="button"><img src="/images/icons/image_add.png" alt=""/> <span>Add Photos</span></a> 
+            <a href="#" class="button"><img src="/images/icons/image_add.png" alt=""/> <span>Add Photos</span></a>
+            <span id="add_mark_button" class="button"><img src="/images/icons/add.png" alt=""/> Add Marker</span></a>
         </div>
         <h2>Reviews</h2>
         <ul class="boxed_list">
@@ -39,6 +40,7 @@
     </div>
     
     <div class="span-16 last ">
+        <div id="map_canvas" style="width: 640px; height: 400px"></div>
         <img src="http://labs.google.com/ridefinder/images/mm_20_red.png" /> = Matches the business name<br/>
         <img src="http://labs.google.com/ridefinder/images/mm_20_yellow.png" /> = Area of interest<br/>
         
@@ -56,7 +58,6 @@
             </form>
         </div>
         
-        <div id="map_canvas" style="width: 470px; height: 300px"></div>
         <div id="map_message"></div>
         <div id="searchwell"></div> 
         
