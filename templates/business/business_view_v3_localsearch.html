@@ -15,6 +15,9 @@
                 {{ business_item.city }}, {{ business_item.province }}, {{ business_item.country }}<br/>
                 {{ business_item.zipcode }}<br/>
             </li>
+            <input type="hidden" id="business_id" value="{{business_item.id}}" />
+            <input type="hidden" id="business_name" value="{{business_item.name}}" />
+            <input type="hidden" id="business_address" value="{{business_item.address1}}, {{ business_item.address2 }}, {{ business_item.city }}, {{ business_item.province }}, {{ business_item.zipcode }}"/>
         </ul>
         <h2>Contact Number</h2>
         <ul class="boxed_list">
@@ -40,26 +43,18 @@
         <img src="http://labs.google.com/ridefinder/images/mm_20_yellow.png" /> = Area of interest<br/>
         
         {% if user.is_authenticated %}
-            <div id="show_add_marker" style="cursor: pointer;"><img src="/images/icons/add.png" alt=""/>Add a Business</div>
-            <div id="show_add_marker" style="cursor: pointer;"><img src="/images/icons/add.png" alt=""/>Add a Marker for {{business_item.name}} (work on this)</div>
+            <!-- <div id="show_add_marker" style="cursor: pointer;"><img src="/images/icons/add.png" alt=""/>Add a Business</div> -->
+            <div id="add_mark_button" style="cursor: pointer;"><img src="/images/icons/add.png" alt=""/>Add a Marker for {{business_item.name}} (work on this)</div>
         {% else %}
             <div>Location not found? You must register/login to add a Marker on the map.</div>
         {% endif %}
     
-        <div id="add_business_container" title="Add a business">
-            <form id="add_business_form">
+        <div style="display: none;">
+            <form id="latlng_form">
                 {% csrf_token %}
-                <h2>Business info</h2>
-                {{ business_form.as_p }}
-                <h2>Telephone</h2>
-                {{ phone_form.as_p }}
-                <h2>Properties</h2>
-                {{ properties_form.as_p }}
-                <h2>Category</h2>
-                {{ business_category_form.as_p }}
-                <input id="add_marker" class="submit" type="submit" value="Add Marker"/>
+                {{ latlng_form.as_p }}
             </form>
-        </div>        
+        </div>
         
         <div id="map_canvas" style="width: 470px; height: 300px"></div>
         <div id="map_message"></div>
