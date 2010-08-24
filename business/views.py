@@ -28,18 +28,22 @@ def business_view_v3_localsearch(request, business_id):
     business_item   = Business.objects.select_related().get(id=business_id)
     phone_list      = Phone.objects.filter(business=business_item)
     reviews         = Review.objects.filter(business=business_id)
+
+    ###############
+    # Google Maps #
+    ###############
     google_apikey   = settings.GOOGLE_MAPS_KEY
-    
     string_location = business_item.address1 +  ', ' +business_item.address2 +  ', ' + business_item.city +  ', ' + business_item.province + ', ' + business_item.country + ', ' + business_item.zipcode
     clean_string_location = ''.join([letter for letter in string_location if not letter.isdigit()])
-    
+
     urlencoded_string_location = urllib.quote_plus(string_location)
-    
+
     business_form   = BusinessForm()
     business_category_form = BusinessCategoryForm()
     phone_form      = PhoneForm()
     latlng_form     = BusinessFormSaveLatLng()
-    
+    ###############
+
     data = {"business_item": business_item,
             "phone_list": phone_list,
             "reviews":reviews,

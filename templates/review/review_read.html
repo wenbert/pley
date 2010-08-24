@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Reading review for{{ review.business.name }} by {{ review.user.username }}{% endblock %}
+{% block page_name %}Reading review for {{ review.business.name }} by {{ review.user.username }}{% endblock %}
+
+{% block content %}
+<div class="span-24 last">
+	<h1>{{ review.user.first_name }} {{review.user.last_name }}'s review for {{ review.business.name }} </h1>
+	<h2>&ldquo;{{ review.title }}&rdquo;</h2>
+	<p>
+		{{ review.rating }}/5
+	</p>
+	<p>
+		{{ review.review }}
+	</p>
+</div>
+{% endblock %}

@@ -34,7 +34,7 @@
         <h2>Reviews</h2>
         <ul class="boxed_list">
         {% for review in reviews %}
-            <li>{{review.review}} ({{review.created_at}})</li>
+		<li><a href="/review/read/{{ business_item.id }}/{{review.user.username}}">&ldquo;{{review.title}}&rdquo;</a> {{review.rating}}/5 by {{review.user.first_name}} {{review.user.last_name}} ({{review.created_at}})</li>
         {% endfor %}
         </ul>
     </div>
