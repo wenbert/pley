@@ -3,7 +3,13 @@
 {% block page_name %}Welcome!{% endblock %}
 
 {% block content %}
-<div class="span-22">
+<div class="span-24 last">
+    <b>Search for:</b> <input type="text" /> (eg: massage, pizza, coffee, Starbuck's)
+    <b>Near:</b> <input type="text" /> (Address, Barangay, City, Province or Zipcode)
+    <input type="submit" value="Search"/>
+</div>
+<div class="span-24 last">
+    <h1>Lorem Ipsum</h1>
     {% load webdesign %}
     {% lorem 3 p %}
     This file is found in templates/business/business_home.html
