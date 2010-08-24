@@ -30,10 +30,6 @@ def business_view_v3_localsearch(request, business_id):
     reviews         = Review.objects.filter(business=business_id)
     google_apikey   = settings.GOOGLE_MAPS_KEY
     
-    #sakto ni? ang GOOGLE_MAP_KEY kay string bya
-    #g = geocoders.Google(settings.GOOGLE_MAPS_KEY) 
-    
-    #string_location = business_item.name + ' near: ' +business_item.address1 + ', ' + business_item.address2 +  ', ' + business_item.province + ', ' + business_item.country + ', ' + business_item.zipcode
     string_location = business_item.address1 +  ', ' +business_item.address2 +  ', ' + business_item.city +  ', ' + business_item.province + ', ' + business_item.country + ', ' + business_item.zipcode
     clean_string_location = ''.join([letter for letter in string_location if not letter.isdigit()])
     
@@ -42,6 +38,7 @@ def business_view_v3_localsearch(request, business_id):
     business_form   = BusinessForm()
     business_category_form = BusinessCategoryForm()
     phone_form      = PhoneForm()
+    latlng_form     = BusinessFormSaveLatLng()
     
     data = {"business_item": business_item,
             "phone_list": phone_list,
@@ -53,6 +50,7 @@ def business_view_v3_localsearch(request, business_id):
             "google_apikey":google_apikey,
             "business_form": business_form,
             "business_category_form": business_category_form,
+            "latlng_form": latlng_form,
             "phone_form": phone_form,
             }
     return render_to_response("business/business_view_v3_localsearch.html",
@@ -134,6 +132,38 @@ def business_view(request, business_id):
     return render_to_response("business/business_view.html",
                               data, context_instance=RequestContext(request))
 
+@login_required
+@transaction.commit_manually
+def save_latlng(request, business_id):
+    success = False
+    error = None
+    if request.method == 'POST' and request.is_ajax():
+        latlng_form = BusinessFormSaveLatLng(request.POST)
+        if(latlng_form.is_valid()):
+            try:
+                lat  = latlng_form.cleaned_data['lat']
+                lng  = latlng_form.cleaned_data['lng']
+                
+                business = Business.objects.get(id=business_id)
+                business.lat = lat
+                business.lng = lng
+                business.save()
+            except IntegrityError, e:
+                transaction.rollback()
+                success = False
+                error = e    
+                data = json.dumps({"status":"failed", "error": error})
+                return HttpResponse(data)
+            else:
+                transaction.commit()
+                success = True
+    else:
+        data = json.dumps({"status":"failed", "error": "Not POST / AJAX."})
+        return HttpResponse(data)
+    
+    data = json.dumps({"status":"success"})
+    return HttpResponse(data)
+        
 @login_required
 @transaction.commit_manually
 def business_add(request):

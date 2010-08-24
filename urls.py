@@ -33,6 +33,7 @@ urlpatterns = patterns('',
     (r'^business/view/(?P<business_id>\d+)/$', business_view),
     (r'^business/view_v2/(?P<business_id>\d+)/$', business_view_v2),
     (r'^business/view_v3_localsearch/(?P<business_id>\d+)/$', business_view_v3_localsearch),
+    (r'^business/save_latlng/(?P<business_id>\d+)/$', save_latlng),
     (r'^review/add/(?P<business_id>\d+)/$', review_add),
     (r'^accounts/', include('accounts.urls')),
 )
