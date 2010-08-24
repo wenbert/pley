@@ -46,8 +46,12 @@ $(document).ready(function() {
     $('#save_marker').live('click', function() {
         $(this).attr('disabled','disabled');
         $(this).val('Saving...');
-        store_data();
-        $(this).val('Saved');
+        if(store_data()) {
+            $(this).val('Saved');
+        } else {
+            alert('Error. Please contact site administrator.');
+        }
+        
     });
     
     /**
