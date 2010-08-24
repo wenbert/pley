@@ -24,13 +24,15 @@ def review_add(request, business_id):
         review_form         = ReviewForm(request.POST)
 
         if(review_form.is_valid()):
+            title           = review_form.cleaned_data['title']
             review_text     = review_form.cleaned_data['review']
             rating          = review_form.cleaned_data['rating']
 
             try:
                 #DO THE SAVES HERE
                 review = Review(review=review_text, business=business,
-                                user=request.user, rating=rating)
+                                user=request.user, rating=rating,
+                                title=title)
                 review.save()
 
                 #edit business num_reviews and average rating
@@ -55,7 +57,7 @@ def review_add(request, business_id):
         else:
             pass
     else:
-        review_form         = ReviewForm()
+        review_form = ReviewForm()
     data = {
                 "review_form": review_form,
                 "success": success,

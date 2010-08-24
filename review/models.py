@@ -13,22 +13,6 @@ REVIEW_STATUS = (
     ('I', 'Inactive'),
 )
 
-ALCOHOL = (
-    ('beer','Beer Only'),
-    ('wine','Wine Only'),
-    ('beer_wine','Beer and Wine'),
-    ('full_bar','Full Bar'),
-    ('none','None'),
-    ('not_sure','Not Sure'),
-)
-
-ATTIRE = (
-    ('casual','Casual'),
-    ('dressy','Dressy'),
-    ('formal','Formal (Jacket Required)'),
-    ('not_sure','Not Sure'),
-)
-
 YES_NO_NOTSURE = (
     ('yes', 'Yes'),
     ('no', 'No'),
@@ -45,6 +29,7 @@ def validate_max_rating(val):
         raise ValidationError(u'%s is not a valid rating.' % val)
 
 class Review(models.Model):
+    title           = models.CharField(max_length=150, help_text='Short summary of your review')
     review          = models.TextField()
     business        = models.ForeignKey(Business)
     user            = models.ForeignKey(User)
