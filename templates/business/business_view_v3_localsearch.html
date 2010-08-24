@@ -33,7 +33,11 @@
         <h2>Reviews</h2>
         <ul class="boxed_list">
         {% for review in reviews %}
-            <li>{{review.review}} ({{review.created_at}})</li>
+		{% if review.user.first_name == '' and review.user.last_name == '' %}
+			<li>{{review.review}} by {{review.user.username}} ({{review.created_at}})</li>
+		{%else%}
+			<li>{{review.review}} by {{review.user.first_name}} {{review.user.last_name}}({{review.created_at}})</li>
+		{%endif%}
         {% endfor %}
         </ul>
     </div>
