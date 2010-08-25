@@ -35,6 +35,7 @@ urlpatterns = patterns('',
     (r'^review/add/(?P<business_id>\d+)/$', review_add),
     (r'^review/read/(?P<business_id>\d+)/(?P<user_name>\w+)$', review_read),
     (r'^accounts/', include('accounts.urls')),
+    (r'^profiles/', include('profiles.urls')),
 )
 
 if settings.DEBUG:

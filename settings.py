@@ -94,19 +94,20 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.sites',
     'django.contrib.messages',
-    'registration',
-    'pley.business',
-    'pley.review', 
     'django.contrib.admin',
     'django.contrib.webdesign',
-    # Uncomment the next line to enable the admin:
-    # 'django.contrib.admin',
+    'registration',
+    'profiles',
+    'pley.business',
+    'pley.review',
+    'pley.accounts',
 )
 
 FIXTURE_DIRS = (
     #os.path.join(os.path.dirname(__file__), 'business','fixtures'),
 )
 
+AUTH_PROFILE_MODULE = 'accounts.UserProfile'
 PAGE_ITEMS = 10
 LOGIN_URL = "/accounts/login"
 LOGIN_REDIRECT_URL = "/"
