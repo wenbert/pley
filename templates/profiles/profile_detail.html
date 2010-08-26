@@ -2,4 +2,23 @@
 {% block title %}Profile for {{ user }} {% endblock %}
 {% block content %}
 <h1>Info for {{ user }} </h1>
+<p>
+	<strong>Name:</strong> {{user.first_name}} {{user.last_name}}
+</p>
+<p>
+	<strong>Address:</strong> {{profile.address1}}, {{profile.address2}}
+</p>
+<p>
+	<strong>Province:</strong> {{profile.province}}
+</p>
+<p>
+	<strong>City:</strong> {{profile.city}}
+</p>
+<p>
+	<strong>Zipcode:</strong> {{profile.zipcode}}
+</p>
+<p>
+	<a href="/profiles/edit">Edit</a>
+</p>
+
 {% endblock %}

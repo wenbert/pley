@@ -1,15 +1,10 @@
 from django.conf.urls.defaults import *
 from django.conf import settings
-from django.views.generic.create_update import create_object
-from django.views.generic import list_detail
-
 from pley.business.models import Business
 from pley.review.models import Review
 from pley.business.views import *
 from pley.review.views import *
 from pley.accounts.views import *
-
-from django.views.generic.simple import direct_to_template
 
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
