@@ -114,7 +114,7 @@ LOGIN_REDIRECT_URL = "/"
 #LOGOUT_URL = "/business/browse"
 ACCOUNT_ACTIVATION_DAYS = 7
 EMAIL_BACKEND = 'django.core.mail.backends.filebased.EmailBackend'
-EMAIL_FILE_PATH = 'C:/django/pley/_app_messages' # change this to a proper location
+EMAIL_FILE_PATH = os.path.join(os.path.dirname(__file__), '_app_messages')
 
 IMAGES_DOC_ROOT = os.path.join(os.path.dirname(__file__), 'site_media/images')
 JS_DOC_ROOT = os.path.join(os.path.dirname(__file__), 'site_media/js')
