@@ -7,6 +7,7 @@ from django.contrib.auth.decorators import login_required
 from django.core.paginator import Paginator, InvalidPage, EmptyPage
 from django.core import serializers
 from django.forms.formsets import formset_factory
+from django.core.exceptions import ObjectDoesNotExist
 
 from pley.business.models import *
 from pley.review.models import *
@@ -30,7 +31,10 @@ def business_view_v3_localsearch(request, business_id):
     reviews         = Review.objects.filter(business=business_id)
 
     # Check if user already reviewed this business
-    user_review = Review.objects.get(business=business_item)
+    try:
+        user_review = Review.objects.get(business=business_item)
+    except ObjectDoesNotExist:
+        user_review = None
 
     ###############
     # Google Maps #

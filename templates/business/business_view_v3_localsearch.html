@@ -39,12 +39,14 @@
         <ul class="boxed_list">
         {% for review in reviews %}
 		<li><a href="/review/read/{{ business_item.id }}/{{review.user.username}}">&ldquo;{{review.title}}&rdquo;</a> {{review.rating}}/5 by 
-			{% if review.user == user_review.user %}
+			{% if user_review and review.user == user_review.user %}
 			you
 			{%else%}
 			{{review.user.first_name}} {{review.user.last_name}}
 			{%endif%} 
 			({{review.created_at}})</li>
+		{% empty %}
+		<p>No reviews for this business found. </p>
         {% endfor %}
         </ul>
     </div>
