@@ -27,14 +27,24 @@
         </ul>
         
         <div class="buttons">
+			{% if user_review %}
+            <a href="/review/edit/{{business_item.id}}" class="button"><img src="/images/icons/add.png" alt=""/> <span>Add Review</span></a> 
+			{% else %}
             <a href="/review/add/{{business_item.id}}" class="button"><img src="/images/icons/add.png" alt=""/> <span>Add Review</span></a> 
+			{% endif %}
             <a href="#" class="button"><img src="/images/icons/image_add.png" alt=""/> <span>Add Photos</span></a>
             <span id="add_mark_button" class="button"><img src="/images/icons/add.png" alt=""/> Add Marker</span></a>
         </div>
         <h2>Reviews</h2>
         <ul class="boxed_list">
         {% for review in reviews %}
-		<li><a href="/review/read/{{ business_item.id }}/{{review.user.username}}">&ldquo;{{review.title}}&rdquo;</a> {{review.rating}}/5 by {{review.user.first_name}} {{review.user.last_name}} ({{review.created_at}})</li>
+		<li><a href="/review/read/{{ business_item.id }}/{{review.user.username}}">&ldquo;{{review.title}}&rdquo;</a> {{review.rating}}/5 by 
+			{% if review.user == user_review.user %}
+			you
+			{%else%}
+			{{review.user.first_name}} {{review.user.last_name}}
+			{%endif%} 
+			({{review.created_at}})</li>
         {% endfor %}
         </ul>
     </div>

@@ -29,6 +29,9 @@ def business_view_v3_localsearch(request, business_id):
     phone_list      = Phone.objects.filter(business=business_item)
     reviews         = Review.objects.filter(business=business_id)
 
+    # Check if user already reviewed this business
+    user_review = Review.objects.get(business=business_item)
+
     ###############
     # Google Maps #
     ###############
@@ -56,6 +59,7 @@ def business_view_v3_localsearch(request, business_id):
             "business_category_form": business_category_form,
             "latlng_form": latlng_form,
             "phone_form": phone_form,
+            "user_review": user_review,
             }
     return render_to_response("business/business_view_v3_localsearch.html",
                               data, context_instance=RequestContext(request))
@@ -124,7 +128,7 @@ def save_latlng(request, business_id):
     
     data = json.dumps({"status":"success"})
     return HttpResponse(data)
-        
+
 @login_required
 @transaction.commit_manually
 def business_add(request):
