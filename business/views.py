@@ -32,10 +32,11 @@ def business_view_v3_localsearch(request, business_id):
 
     # Check if user already reviewed this business
     try:
-        user_review = Review.objects.get(business=business_item)
+        user_review = Review.objects.get(business=business_item, user=request.user)
     except ObjectDoesNotExist:
         user_review = None
 
+    print user_review
     ###############
     # Google Maps #
     ###############
