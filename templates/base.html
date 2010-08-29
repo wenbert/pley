@@ -95,7 +95,7 @@
 <div class="container">
     <div id="page_name" class="span-24 last">
         {% if user.is_authenticated %}
-            <p>Welcome, {{ user.username }}. Thanks for logging in.</p>
+		<p>Welcome, <a href="/profiles/{{user.username}}">{{ user.username }}</a>. Thanks for logging in.</p>
         {% else %}
             <p>Hello! If you want to submit a review or add a business, please register here.</p>
         {% endif %}
