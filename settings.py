@@ -125,4 +125,5 @@ GOOGLE_MAPS_KEY = "ABQIAAAAyZeVfLsw2c4InVCRmyfl2BSpgwgf-O3xmR2IWVPKtW4-h_pDPRQcG
 
 HAYSTACK_SITECONF = 'pley.search_sites'
 HAYSTACK_SEARCH_ENGINE = 'whoosh'
-HAYSTACK_WHOOSH_PATH = 'c:\django\pley\whoosh_index'
+HAYSTACK_WHOOSH_PATH = os.path.join(os.path.dirname(__file__), 'whoosh_index')
+
