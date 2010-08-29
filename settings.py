@@ -101,6 +101,7 @@ INSTALLED_APPS = (
     'pley.business',
     'pley.review',
     'pley.accounts',
+    'haystack',
 )
 
 FIXTURE_DIRS = (
@@ -121,3 +122,7 @@ JS_DOC_ROOT = os.path.join(os.path.dirname(__file__), 'site_media/js')
 CSS_DOC_ROOT = os.path.join(os.path.dirname(__file__), 'site_media/css')
 
 GOOGLE_MAPS_KEY = "ABQIAAAAyZeVfLsw2c4InVCRmyfl2BSpgwgf-O3xmR2IWVPKtW4-h_pDPRQcGlNEJiKj1ckO2JsfT1qfN3akcw"
+
+HAYSTACK_SITECONF = 'pley.search_sites'
+HAYSTACK_SEARCH_ENGINE = 'whoosh'
+HAYSTACK_WHOOSH_PATH = 'c:\django\pley\whoosh_index'
