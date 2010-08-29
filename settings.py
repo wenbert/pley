@@ -96,12 +96,13 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.admin',
     'django.contrib.webdesign',
+    'haystack',
     'registration',
     'profiles',
     'pley.business',
     'pley.review',
     'pley.accounts',
-    'haystack',
+    
 )
 
 FIXTURE_DIRS = (

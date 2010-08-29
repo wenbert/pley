@@ -10,9 +10,6 @@ from pley.accounts.views import *
 from django.contrib import admin
 admin.autodiscover()
 
-import django.haystack
-haystack.autodiscover()
-
 #to be used in generic views
 #business_info = {
 #    "queryset": Business.objects.all(),
