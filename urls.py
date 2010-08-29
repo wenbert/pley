@@ -10,6 +10,9 @@ from pley.accounts.views import *
 from django.contrib import admin
 admin.autodiscover()
 
+import django.haystack
+haystack.autodiscover()
+
 #to be used in generic views
 #business_info = {
 #    "queryset": Business.objects.all(),
@@ -32,6 +35,7 @@ urlpatterns = patterns('',
     (r'^review/read/(?P<business_id>\d+)/(?P<user_name>\w+)$', review_read),
     (r'^accounts/', include('accounts.urls')),
     (r'^profiles/', include('profiles.urls')),
+    (r'^search/', include('haystack.urls')),
 )
 
 if settings.DEBUG:
