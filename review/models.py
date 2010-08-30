@@ -31,6 +31,7 @@ def validate_max_rating(val):
 class Review(models.Model):
     title           = models.CharField(max_length=150, help_text='Short summary of your review')
     review          = models.TextField()
+    excerpt         = models.CharField(max_length=100, default='')
     business        = models.ForeignKey(Business)
     user            = models.ForeignKey(User)
     rating          = models.IntegerField(validators=[validate_max_rating])

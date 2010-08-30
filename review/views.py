@@ -20,8 +20,6 @@ def review_add(request, business_id):
     error = None
 
     business = get_object_or_404(Business, id=business_id)
-    # TODO: a user can only make one review per business. prompt him to edit his previous review instead
-
     if request.method == 'POST':
         review_form         = ReviewForm(request.POST)
 
@@ -29,12 +27,13 @@ def review_add(request, business_id):
             title           = review_form.cleaned_data['title']
             review_text     = review_form.cleaned_data['review']
             rating          = review_form.cleaned_data['rating']
-
+            excerpt         = ' '.join(review_text.split(' ')[:10]) + '...'
             try:
                 #DO THE SAVES HERE
                 review = Review(review=review_text, business=business,
                                 user=request.user, rating=rating,
-                                title=title)
+                                title=title, excerpt=excerpt)
+                print excerpt
                 review.save()
 
                 #edit business num_reviews and average rating

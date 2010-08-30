@@ -32,7 +32,10 @@ def business_view_v3_localsearch(request, business_id):
 
     # Check if user already reviewed this business
     try:
-        user_review = Review.objects.get(business=business_item, user=request.user)
+        if request.user.is_authenticated():
+            user_review = Review.objects.get(business=business_item, user=request.user)
+        else:
+            raise ObjectDoesNotExist
     except ObjectDoesNotExist:
         user_review = None
 
