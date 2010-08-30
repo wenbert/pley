@@ -33,7 +33,7 @@ def business_view_v3_localsearch(request, business_id):
     # Check if user already reviewed this business
     try:
         if request.user.is_authenticated():
-            user_review = Review.objects.get(business=business_item, user=request.user)
+            user_review = Review.objects.get(business=business_item, user=request.user, status='A')
         else:
             raise ObjectDoesNotExist
     except ObjectDoesNotExist:
@@ -75,7 +75,7 @@ def business_view_v3_localsearch(request, business_id):
 
 def business_browse(request):
     #my_objects = get_list_or_404(MyModel, published=True)
-    business_list = Business.objects.all().order_by('-created_at')
+    business_list = Business.objects.filter(status='A').order_by('-created_at')
     paginator = Paginator(business_list, settings.PAGE_ITEMS)
     try:
         page = int(request.GET.get('page','1'))

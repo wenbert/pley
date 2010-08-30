@@ -19,11 +19,6 @@ YES_NO_NOTSURE = (
     ('not_sure', 'Not Sure'),
 )
 
-STATUSES = (
-    ('on','On'),
-    ('off','Off'),
-)
-
 def validate_max_rating(val):
     if not val in range(0,6):
         raise ValidationError(u'%s is not a valid rating.' % val)
