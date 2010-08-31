@@ -42,7 +42,7 @@
 			{% if user_review and review.user == user_review.user %}
 			you
 			{%else%}
-			{{review.user.first_name}} {{review.user.last_name}}
+			<a href="/profiles/{{review.user.username}}/">{{review.user.first_name}} {{review.user.last_name}}</a>
 			{%endif%} 
 			({{review.created_at}})</li>
 		{% empty %}
