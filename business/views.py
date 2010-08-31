@@ -142,26 +142,36 @@ def save_latlng(request, business_id):
 def business_add(request):
     success = False
     error = None
-    CategoryFormSet = formset_factory(BusinessCategoryForm, extra=5, max_num=5)
+    category_count = 5
+    detail_count = 5
+    CategoriesFormSet = formset_factory(BusinessCategoryForm, extra=category_count, max_num=5)
     HoursFormSet    = formset_factory(BusinessHoursForm, extra=7, max_num=7)
+    DetailsFormSet = formset_factory(BusinessDetailsForm, extra=detail_count)
 
     if request.method == 'POST':
         business_form       = BusinessForm(request.POST)
-        business_category_form = BusinessCategoryForm(request.POST)
+        hidden_form = HiddenForm(request.POST)
+        phone_form     = PhoneForm(request.POST)
+        business_payment_options_form = BusinessPaymentOptionsForm(request.POST)
 
-        category_formset_additional_data = {
-            'form-TOTAL_FORMS': u'5',
-            'form-INITIAL_FORMS': u'5',
+        if hidden_form.is_valid():
+            category_count = hidden_form.cleaned_data['category_count']
+            detail_count = hidden_form.cleaned_data['detail_count']
+            if category_count > 5:
+                category_count = 5
+        else:
+            category_count = 1
+            detail_count = 1
+
+        # Business Categories Formset
+        categories_formset_additional_data = {
+            'form-TOTAL_FORMS': u'%d' % category_count,
+            'form-INITIAL_FORMS': u'%d' % category_count,
             'form-MAX_NUM_FORMS': u'5',
         }
-        category_formset = CategoryFormSet(dict(request.POST.items() + category_formset_additional_data.items()))
+        categories_formset = CategoriesFormSet(dict(request.POST.items() + categories_formset_additional_data.items()))
 
-        phone_form     = PhoneForm(request.POST)
-
-        business_details_form = BusinessDetailsForm(request.POST)
-        business_payment_options_form = BusinessPaymentOptionsForm(request.POST)
-        business_hours_form = BusinessHoursForm(request.POST)
-
+        # Business Hours Formset
         hours_formset_additional_data = {
             'form-TOTAL_FORMS': u'7',
             'form-INITIAL_FORMS': u'7',
@@ -169,12 +179,16 @@ def business_add(request):
         }
         hours_formset = HoursFormSet(dict(request.POST.items() + hours_formset_additional_data.items()))
 
-        #business_hours_form_list = [BusinessHoursForm(data=request.POST,
-        #                                              prefix='business_hours_form_'+i[0])
-        #                           for i in DAYS]
+        # Business Details Formset
+        details_formset_additional_data = {
+            'form-TOTAL_FORMS': u'%d' % detail_count,
+            'form-INITIAL_FORMS': u'%d' % detail_count,
+            'form-MAX_NUM_FORMS': u'',
+        }
+        details_formset = DetailsFormSet(dict(request.POST.items() + details_formset_additional_data.items()))
 
-        if (business_form.is_valid() and category_formset.is_valid() and phone_form.is_valid() and
-            business_details_form.is_valid() and business_payment_options_form.is_valid() and hours_formset.is_valid()):
+        if (business_form.is_valid() and categories_formset.is_valid() and phone_form.is_valid() and
+            business_details_form.is_valid() and business_payment_options_form.is_valid() and hours_formset.is_valid() and details_formset.is_valid()):
 
             business_name   = business_form.cleaned_data['name']
             address_1       = business_form.cleaned_data['address1']
@@ -208,10 +222,9 @@ def business_add(request):
 
                 phone   = Phone(business=business, phone=phone, alternate=alt, fax=fax, mobile=mobile)
                 print 'phone created'
-                print phone.alternate, phone.fax, phone.business, phone.mobile
                 phone.save()
                 print 'business and phone saved'
-                for category_form in category_formset.forms:
+                for category_form in categories_formset.forms:
                     category = category_form.cleaned_data['category']
                     business_category = BusinessCategory(business=business,category=category)
                     business_category.save()
@@ -225,7 +238,13 @@ def business_add(request):
                     business_hours = BusinessHours(business=business,day=day,time_open_1=open1,time_open_2=open2,
                                                   time_close_1=close1,time_close_2=close2,closed=closed)
                     business_hours.save()
-                print 'OK'
+                for detail_form in details_formset.forms:
+                    field_name = detail_form.cleaned_data['field_name']
+                    field_value = detail_form.cleaned_data['field_value']
+                    business_detail = BusinessDetail(business=business,
+                                                     field_name=field_name,
+                                                     field_value=field_value)
+                    business_detail.save()
             except IntegrityError, e:
                 transaction.rollback()
                 success = False
@@ -234,14 +253,13 @@ def business_add(request):
                 transaction.commit()
                 success = True
     else:
+        hidden_form = HiddenForm()
         business_form   = BusinessForm()
-        business_category_form = BusinessCategoryForm()
-        category_formset = CategoryFormSet()
+        categories_formset = CategoriesFormSet()
         phone_form      = PhoneForm()
-        business_details_form = BusinessDetailsForm()
         business_payment_options_form = BusinessPaymentOptionsForm()
-        business_hours_form = BusinessHoursForm(initial={'day':'mon'})
-
+        hidden_form = HiddenForm()
+        details_formset = DetailsFormSet()
         initial_days = [
             {'day':u'mon'},
             {'day':u'tue'},
@@ -252,19 +270,14 @@ def business_add(request):
             {'day':u'sun'},
         ]
         hours_formset = HoursFormSet(initial=initial_days)
-        #business_hours_form_list = [BusinessHoursForm(initial={'day':i[0]},
-        #                                              prefix='business_hours_form_'+i[0])
-        #                           for i in DAYS]
     data = {
         "business_form": business_form,
-        "business_category_form": business_category_form,
         "phone_form": phone_form,
-        "business_details_form": business_details_form,
         "business_payment_options_form": business_payment_options_form,
-        "business_hours_form": business_hours_form,
-        "category_formset": category_formset,
+        "hidden_form": hidden_form,
+        "categories_formset": categories_formset,
         "hours_formset": hours_formset,
-        #"business_hours_form_list": business_hours_form_list,
+        "details_formset": details_formset,
         "success": success,
         "error": error
     }

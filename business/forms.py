@@ -23,7 +23,6 @@ class BusinessFormSaveLatLng(forms.ModelForm):
             'lat': HiddenInput(attrs={'id': 'business_lat'}),
             'lng': HiddenInput(attrs={'id': 'business_lng'}),
         }
-        
 
 class BusinessCategoryForm(forms.ModelForm):
     class Meta:
@@ -49,3 +48,8 @@ class BusinessPaymentOptionsForm(forms.ModelForm):
     class Meta:
         model = BusinessPaymentOptions
         exclude = ('business',)
+
+class HiddenForm(forms.Form):
+    category_count = forms.IntegerField(initial='5', widget=forms.HiddenInput)
+    detail_count = forms.IntegerField(initial='5', widget=forms.HiddenInput)
+
