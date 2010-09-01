@@ -216,7 +216,7 @@ def business_add(request):
                 print 'saving'
                 business = Business(name=business_name,address1=address_1, address2=address_2,
                                     city=address_city, province=address_province,
-                                    country=address_country)
+                                    country=address_country, created_by=request.user)
                 business.save()
                 print 'businss saved'
 

@@ -41,6 +41,7 @@ def validate_max_rating(val):
 
 class Business(models.Model):
     name            = models.CharField(max_length=250)
+    user            = models.ForeignKey(User)
     website         = models.CharField(max_length=250, blank=True, null=True)
     address1        = models.CharField(max_length=250, verbose_name="Address 1")
     address2        = models.CharField(max_length=250, verbose_name="Address 2", blank=True, null=True)
