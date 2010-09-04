@@ -3,5 +3,6 @@
 *.pyc
 *.log
 *.sqlite
+.DS_Store
 
 # For more info: http://help.github.com/git-ignore/ 
