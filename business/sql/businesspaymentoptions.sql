@@ -1,1 +1,0 @@
-INSERT INTO business_businesspaymentoptions (business_id, cash, credit_card, debit_card, cheque, gift_cert, others) VALUES (1, 1, 1, 1, 0, 0, 0);
