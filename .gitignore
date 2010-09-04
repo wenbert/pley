@@ -4,5 +4,6 @@
 *.log
 *.sqlite
 .DS_Store
+.Thumbs.db
 
 # For more info: http://help.github.com/git-ignore/ 
