@@ -9,7 +9,7 @@ class BusinessForm(forms.ModelForm):
         model = Business
         exclude = ('created_at', 'updated_at', 'status', 
                    'num_reviews', 'rating',
-                   'lng', 'lat')
+                   'lng', 'lat', 'created_by')
         widgets = {
             'name': TextInput(attrs={'class': 'required', 'minlength':'2'}),
             'website': TextInput(attrs={'class': 'url', 'minlength':'2'}),
@@ -50,6 +50,6 @@ class BusinessPaymentOptionsForm(forms.ModelForm):
         exclude = ('business',)
 
 class HiddenForm(forms.Form):
-    category_count = forms.IntegerField(initial='5', widget=forms.HiddenInput)
-    detail_count = forms.IntegerField(initial='5', widget=forms.HiddenInput)
+    category_count = forms.IntegerField(initial='1', widget=forms.HiddenInput)
+    detail_count = forms.IntegerField(initial='1', widget=forms.HiddenInput)
 

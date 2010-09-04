@@ -102,7 +102,7 @@ INSTALLED_APPS = (
     'pley.business',
     'pley.review',
     'pley.accounts',
-    
+    'pley.categories',
 )
 
 FIXTURE_DIRS = (

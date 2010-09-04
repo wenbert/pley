@@ -124,7 +124,7 @@ def save_latlng(request, business_id):
             except IntegrityError, e:
                 transaction.rollback()
                 success = False
-                error = e    
+                error = e
                 data = json.dumps({"status":"failed", "error": error})
                 return HttpResponse(data)
             else:
@@ -142,8 +142,8 @@ def save_latlng(request, business_id):
 def business_add(request):
     success = False
     error = None
-    category_count = 5
-    detail_count = 5
+    category_count = 1
+    detail_count = 1
     CategoriesFormSet = formset_factory(BusinessCategoryForm, extra=category_count, max_num=5)
     HoursFormSet    = formset_factory(BusinessHoursForm, extra=7, max_num=7)
     DetailsFormSet = formset_factory(BusinessDetailsForm, extra=detail_count)
@@ -187,10 +187,12 @@ def business_add(request):
         }
         details_formset = DetailsFormSet(dict(request.POST.items() + details_formset_additional_data.items()))
 
-        if (business_form.is_valid() and categories_formset.is_valid() and phone_form.is_valid() and
-            business_details_form.is_valid() and business_payment_options_form.is_valid() and hours_formset.is_valid() and details_formset.is_valid()):
+        if (business_form.is_valid() and categories_formset.is_valid() and
+            phone_form.is_valid() and business_payment_options_form.is_valid() and
+            hours_formset.is_valid() and details_formset.is_valid()):
 
             business_name   = business_form.cleaned_data['name']
+            website         = business_form.cleaned_data['website']
             address_1       = business_form.cleaned_data['address1']
             address_2       = business_form.cleaned_data['address2']
             address_city    = business_form.cleaned_data['city']
@@ -198,6 +200,7 @@ def business_add(request):
             address_country = business_form.cleaned_data['country']
             # TODO: zipcode should be found in zipcode table
             address_zipcode = business_form.cleaned_data['zipcode']
+            description     = business_form.cleaned_data['description']
 
             phone           = phone_form.cleaned_data['phone']
             alt             = phone_form.cleaned_data['alternate']
@@ -216,7 +219,9 @@ def business_add(request):
                 print 'saving'
                 business = Business(name=business_name,address1=address_1, address2=address_2,
                                     city=address_city, province=address_province,
-                                    country=address_country, created_by=request.user)
+                                    country=address_country, created_by=request.user,
+                                    zipcode=address_zipcode, description=description,
+                                    website=website)
                 business.save()
                 print 'businss saved'
 
@@ -228,6 +233,7 @@ def business_add(request):
                     category = category_form.cleaned_data['category']
                     business_category = BusinessCategory(business=business,category=category)
                     business_category.save()
+                print 'categories done'
                 for hours_form in hours_formset.forms:
                     day = hours_form.cleaned_data['day']
                     open1 = hours_form.cleaned_data['time_open_1']
@@ -238,17 +244,20 @@ def business_add(request):
                     business_hours = BusinessHours(business=business,day=day,time_open_1=open1,time_open_2=open2,
                                                   time_close_1=close1,time_close_2=close2,closed=closed)
                     business_hours.save()
+                print 'hours done'
                 for detail_form in details_formset.forms:
                     field_name = detail_form.cleaned_data['field_name']
                     field_value = detail_form.cleaned_data['field_value']
-                    business_detail = BusinessDetail(business=business,
+                    business_detail = BusinessDetails(business=business,
                                                      field_name=field_name,
                                                      field_value=field_value)
                     business_detail.save()
+                print 'details done'
             except IntegrityError, e:
                 transaction.rollback()
                 success = False
                 error = e
+                raise e
             else:
                 transaction.commit()
                 success = True

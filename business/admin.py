@@ -18,8 +18,9 @@ class CategoryAdmin(admin.ModelAdmin):
 class BusinessAdmin(admin.ModelAdmin):
     radio_fields = {}
     inlines = [BusinessCategoryInline, ]
-    
+
 admin.site.register(Business, BusinessAdmin)
 admin.site.register(Category, CategoryAdmin)
 admin.site.register(Zipcode)
+admin.site.register(BusinessCategory)
 #admin.site.register(Category)

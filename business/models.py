@@ -2,7 +2,8 @@ from django.db import models
 from django.core.exceptions import ValidationError
 from django.contrib.auth.models import User
 
-from datetime import datetime 
+from datetime import datetime
+from pley.categories.models import Category
 # Create your models here.
 
 BUSINESS_STATUS = (
@@ -41,7 +42,6 @@ def validate_max_rating(val):
 
 class Business(models.Model):
     name            = models.CharField(max_length=250)
-    user            = models.ForeignKey(User)
     website         = models.CharField(max_length=250, blank=True, null=True)
     address1        = models.CharField(max_length=250, verbose_name="Address 1")
     address2        = models.CharField(max_length=250, verbose_name="Address 2", blank=True, null=True)
@@ -51,24 +51,29 @@ class Business(models.Model):
     zipcode         = models.CharField(max_length=10, verbose_name="Zipcode")
     num_reviews     = models.IntegerField(default=0)
     rating          = models.IntegerField(default=0, validators=[validate_max_rating])
-    desc            = models.TextField(max_length=500 ,blank=True, null=True)
+    description     = models.TextField(max_length=500 ,blank=True, null=True)
     lat             = models.FloatField(default=0.0, verbose_name="Latitude")
     lng             = models.FloatField(default=0.0, verbose_name="Longitude")
 
     status          = models.CharField(max_length=1, choices=BUSINESS_STATUS, default='A')
     created_at      = models.DateTimeField(verbose_name='Date Created', default=datetime.now, blank=True, null=True)
     updated_at      = models.DateTimeField(verbose_name='Date Updated', default=datetime.now, blank=True, null=True)
+    created_by      = models.ForeignKey(User)
 
     def __unicode__(self):
         return self.name
 
-class Category(models.Model):
-    name            = models.CharField(max_length=250, unique=True)
-    slug            = models.CharField(max_length=250, unique=True)
-    status          = models.CharField(max_length=3, choices=STATUSES, default='A')
-    members         = models.ManyToManyField(Business, through="BusinessCategory")
-    def __unicode__(self):
-        return self.slug
+    class Meta:
+        verbose_name = "business"
+        verbose_name_plural = "businesses"
+
+#class Category(models.Model):
+#    name            = models.CharField(max_length=250, unique=True)
+#    slug            = models.CharField(max_length=250, unique=True)
+#    status          = models.CharField(max_length=3, choices=STATUSES, default='A')
+#    members         = models.ManyToManyField(Business, through="BusinessCategory")
+#    def __unicode__(self):
+#        return self.slug
 
 class Phone(models.Model):
     business        = models.ForeignKey(Business)
@@ -85,11 +90,20 @@ class Zipcode(models.Model):
     city            = models.CharField(max_length='50')
 
     def __unicode__(self):
-        return self.zipcode
+        return '%s : %s : %s' % (self.zipcode, self.major_area, self.city)
+
+    class Meta:
+        ordering = ['zipcode']
 
 class BusinessCategory(models.Model):
     business        = models.ForeignKey(Business,db_index=True)
     category        = models.ForeignKey(Category,db_index=True)
+
+    def __unicode__(self):
+        return '%s : %s' % (self.category, self.business)
+
+    class Meta:
+        unique_together = (('business', 'category'),)
 
 class BusinessDetails(models.Model):
     business        = models.ForeignKey(Business)
