@@ -16,15 +16,15 @@
 
         {% if query %}
             <h3>Results</h3>
-
+            <ol>
             {% for result in page.object_list %}
-                <p>
-                    <a href="{{ result.object.get_absolute_url }}">{{ result.object.title }}</a>
-                </p>
+                <li>
+                    <a href="/business/view/{{ result.object.id }}">{{ result.object.name }}</a>
+                </li>
             {% empty %}
-                <p>No results found.</p>
+                <li>No results found.</li>
             {% endfor %}
-
+            </ol>
             {% if page.has_previous or page.has_next %}
                 <div>
                     {% if page.has_previous %}<a href="?q={{ query }}&amp;page={{ page.previous_page_number }}">{% endif %}&laquo; Previous{% if page.has_previous %}</a>{% endif %}
