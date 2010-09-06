@@ -5,6 +5,7 @@ from pley.review.models import Review
 from pley.business.views import *
 from pley.review.views import *
 from pley.accounts.views import *
+from pley.categories.views import *
 
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
@@ -27,6 +28,7 @@ urlpatterns = patterns('',
     (r'^business/browse/$', business_browse),
     (r'^business/view_v3_localsearch/(?P<business_id>\d+)/$', business_view_v3_localsearch),
     (r'^business/save_latlng/(?P<business_id>\d+)/$', save_latlng),
+    (r'^category/filter/$', category_filter),
     (r'^review/add/(?P<business_id>\d+)/$', review_add),
     (r'^review/edit/(?P<business_id>\d+)/$', review_edit),
     (r'^review/read/(?P<business_id>\d+)/(?P<user_name>\w+)$', review_read),
