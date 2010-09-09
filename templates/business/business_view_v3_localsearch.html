@@ -38,7 +38,7 @@
         <h2>Reviews</h2>
         <ul class="boxed_list">
         {% for review in reviews %}
-		<li><a href="{{ business_item.get_absolute_view_url }}">{{review.title}}</a> &ldquo;{{ review.excerpt }}&rdquo; {{review.rating}}/5 by 
+		<li><a href="{{ review.get_absolute_url }}">{{review.title}}</a> &ldquo;{{ review.excerpt }}&rdquo; {{review.rating}}/5 by 
 			{% if user_review and review.user == user_review.user %}
 			you
 			{%else%}

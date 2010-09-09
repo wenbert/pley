@@ -33,14 +33,12 @@ class Review(models.Model):
     status          = models.CharField(max_length=1, choices=REVIEW_STATUS, default='A')
     created_at      = models.DateTimeField(verbose_name='Date Created', default=datetime.now, blank=True)
     updated_at      = models.DateTimeField(verbose_name='Date Updated', default=datetime.now, blank=True)
-    
-    def get_absolute_view_url(self):
-        return "/review/view/%i/" % self.id
-        
+
+    def get_absolute_url(self):
+        return "/review/read/%i/" % self.id
     def __unicode__(self):
         return self.title
 
-    
 '''
 class Property(models.Model):
     business        = models.ForeignKey(Business)

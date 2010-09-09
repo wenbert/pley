@@ -18,7 +18,7 @@
             <tr>
                 <td>
                     {{ business.name }} [
-                    <a href="{{business.get_absolute_view_url}}">View Details</a> <!-- | 
+					<a href="{{ business.get_absolute_url }}">View Details</a> <!-- | 
                     <a href="/business/view/{{business.id}}">V3 Only</a> | 
                     <a href="/business/view_v2/{{business.id}}">V2</a> -->]
                 </td>
