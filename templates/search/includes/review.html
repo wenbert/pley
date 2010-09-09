@@ -1,4 +1,4 @@
-<a href="/review/read/{{ result.object.id }}">{{ result.object.title }}</a> by {{ result.object.user }}
+<a href="{{ result.object.get_absolute_view_url }}">{{ result.object.title }}</a> by {{ result.object.user }}
 <div>
     {{ result.object.review|truncatewords:"100" }}
 </div>

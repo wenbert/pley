@@ -62,6 +62,9 @@ class Business(models.Model):
 
     def __unicode__(self):
         return self.name
+        
+    def get_absolute_view_url(self):
+        return "/business/view/%i/" % self.id
 
     class Meta:
         verbose_name = "business"
