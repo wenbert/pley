@@ -19,7 +19,14 @@
             <ol>
             {% for result in page.object_list %}
                 <li>
-                    <a href="/business/view/{{ result.object.id }}">{{ result.object.name }}</a>
+                    <!--- START --->
+                    {% if result.app_label == 'business' %}
+                        {% include "search/includes/business.html" %}
+                    {% endif %}
+                    {% if result.app_label == 'review' %}
+                        {% include "search/includes/review.html" %}
+                    {% endif %}
+                    <!--- END --->
                 </li>
             {% empty %}
                 <li>No results found.</li>
