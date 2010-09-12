@@ -103,7 +103,7 @@ class BusinessCategory(models.Model):
     category        = models.ForeignKey(Category,db_index=True)
 
     def __unicode__(self):
-        return self.category
+        return '%s - %s' % (self.business.name, self.category.name)
 
     class Meta:
         unique_together = (('business', 'category'),)
