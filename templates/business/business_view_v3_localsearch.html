@@ -19,10 +19,46 @@
             <input type="hidden" id="business_name" value="{{business_item.name}}" />
             <input type="hidden" id="business_address" value="{{business_item.address1}}, {{ business_item.address2 }}, {{ business_item.city }}, {{ business_item.province }}, {{ business_item.zipcode }}"/>
         </ul>
+        <h2>Categories</h2>
+        <ul class="boxed_list">
+        {% for category in category_list %}
+            <li>{{category.category}}</li>
+        {% endfor %}
+        </ul>
         <h2>Contact Number</h2>
         <ul class="boxed_list">
         {% for phone in phone_list %}
-            <li>{{phone.phone_number}}</li>
+            <li>Phone: {{phone.phone}}</li>
+            <li>Alternate: {{phone.alternate}}</li>
+            <li>Fax: {{phone.fax}}</li>
+            <li>Mobile: {{phone.mobile}}</li>
+        {% endfor %}
+        </ul>
+        <h2>Business Hours</h2>
+        <ul class="boxed_list">
+        {% for hours in time_list %}
+		<li>
+			Day: {{hours.get_day_display}}<br/>
+			AM Opening time: {{hours.time_open_1}}<br/>
+			AM Closing time: {{hours.time_close_1}}<br/>
+			PM Opening time: {{hours.time_open_2}}<br/>
+			PM Closing time: {{hours.time_close_2}}<br/><br/>
+		</li>
+        {% endfor %}
+        </ul>
+        <h2>Payment Options</h2>
+        <ul class="boxed_list">
+		<li> Cash: {{payment_options.cash}}</li>
+		<li> Credit Card: {{payment_options.credit_card}}</li>
+		<li> Debit Card: {{payment_options.debit_card}}</li>
+		<li> Cheque: {{payment_options.cheque}}</li>
+		<li> Gift Certificate: {{payment_options.gift_cert}}</li>
+		<li> Others: {{payment_options.others}}</li>
+        </ul>
+        <h2>Details</h2>
+        <ul class="boxed_list">
+        {% for detail in detail_list %}
+			<li>{{detail.field_name}}: {{detail.field_value}}</li>
         {% endfor %}
         </ul>
         

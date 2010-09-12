@@ -27,9 +27,13 @@ def business_home(request):
 
 def business_view_v3_localsearch(request, business_id):
     business_item   = Business.objects.select_related().get(id=business_id)
-    phone_list      = Phone.objects.filter(business=business_item)
+    phone_list      = Phone.objects.filter(business=business_id)
     reviews         = Review.objects.filter(business=business_id)
-
+    detail_list     = BusinessDetails.objects.filter(business=business_id)
+    time_list       = BusinessHours.objects.filter(business=business_id)
+    category_list   = BusinessCategory.objects.filter(business=business_id)
+    payment_options = BusinessPaymentOptions.objects.filter(business=business_id)
+    print 'Payment: ', payment_options
     # Check if user already reviewed this business
     try:
         if request.user.is_authenticated():
@@ -57,6 +61,10 @@ def business_view_v3_localsearch(request, business_id):
 
     data = {"business_item": business_item,
             "phone_list": phone_list,
+            "detail_list": detail_list,
+            "time_list": time_list,
+            "category_list": category_list,
+            "payment_options": payment_options,
             "reviews":reviews,
             "string_location":string_location,
             "clean_string_location":clean_string_location,
@@ -229,6 +237,16 @@ def business_add(request):
                 print 'phone created'
                 phone.save()
                 print 'business and phone saved'
+
+                payment_options = BusinessPaymentOptions(business=business,
+                                                         cash=payment_cash,
+                                                         credit_card=payment_credit_card,
+                                                         debit_card=payment_debit_card,
+                                                         cheque=payment_cheque,
+                                                         gift_cert=payment_gift_cert,
+                                                         others=payment_others)
+                print 'payment saved'
+
                 for category_form in categories_formset.forms:
                     category = category_form.cleaned_data['category']
                     business_category = BusinessCategory(business=business,category=category)

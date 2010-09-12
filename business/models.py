@@ -103,7 +103,7 @@ class BusinessCategory(models.Model):
     category        = models.ForeignKey(Category,db_index=True)
 
     def __unicode__(self):
-        return '%s : %s' % (self.category, self.business)
+        return self.category
 
     class Meta:
         unique_together = (('business', 'category'),)
@@ -123,6 +123,7 @@ class BusinessHours(models.Model):
     closed          = models.BooleanField()
 
 class BusinessPaymentOptions(models.Model):
+    #TODO: change this to OneToOneField
     business        = models.ForeignKey(Business)
     cash            = models.BooleanField(verbose_name="Cash")
     credit_card     = models.BooleanField(verbose_name="Credit Card")
