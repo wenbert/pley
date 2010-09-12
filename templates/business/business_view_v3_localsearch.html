@@ -48,12 +48,12 @@
         </ul>
         <h2>Payment Options</h2>
         <ul class="boxed_list">
-		<li> Cash: {{payment_options.cash}}</li>
-		<li> Credit Card: {{payment_options.credit_card}}</li>
-		<li> Debit Card: {{payment_options.debit_card}}</li>
-		<li> Cheque: {{payment_options.cheque}}</li>
-		<li> Gift Certificate: {{payment_options.gift_cert}}</li>
-		<li> Others: {{payment_options.others}}</li>
+			<li>{% if payment_options.cash %} Cash {% endif %}</li>
+			<li>{% if payment_options.credit_card %} Credit Card {% endif %}</li>
+			<li>{% if payment_options.debit_card %} Debit Card {% endif %}</li>
+			<li>{% if payment_options.cheque %} Cheque {% endif %}</li>
+			<li>{% if payment_options.gift_cert %} Gift Certificate {% endif %}</li>
+			<li>{% if payment_options.others %} Others {% endif %}</li>
         </ul>
         <h2>Details</h2>
         <ul class="boxed_list">
