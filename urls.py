@@ -5,6 +5,7 @@ from pley.review.models import Review
 from pley.business.views import *
 from pley.review.views import *
 from pley.accounts.views import *
+from pley.pley_profiles.forms import ProfileForm
 from pley.categories.views import *
 
 # Uncomment the next two lines to enable the admin:
@@ -33,6 +34,7 @@ urlpatterns = patterns('',
     (r'^review/edit/(?P<business_id>\d+)/$', review_edit),
     (r'^review/read/(?P<business_id>\d+)/$', review_read),
     (r'^accounts/', include('accounts.urls')),
+    (r'^profiles/edit', 'profiles.views.edit_profile', {'form_class': ProfileForm,}),
     (r'^profiles/', include('profiles.urls')),
     (r'^search/', include('haystack.urls')),
 )

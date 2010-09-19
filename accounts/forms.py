@@ -1,8 +1,8 @@
-import profiles
+#import profiles
 
 from django import forms
 from registration.forms import RegistrationFormUniqueEmail
-from accounts.models import UserProfile
+#from accounts.models import UserProfile
 
 class CustomRegistrationForm(RegistrationFormUniqueEmail):
     first_name = forms.CharField(max_length=100)
@@ -13,6 +13,7 @@ class CustomRegistrationForm(RegistrationFormUniqueEmail):
     province = forms.CharField(max_length=250, required=False)
     zipcode = forms.CharField(max_length=10, required=False)
 
+'''
 class ProfileForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         super(profiles.ProfileForm, self).__init__(*args, **kwargs)
@@ -32,4 +33,5 @@ class ProfileForm(forms.ModelForm):
         u.save()
         profile = super(profiles.ProfileForm, self).save(*args, **kwargs)
         return profile
+'''
 

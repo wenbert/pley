@@ -1,8 +1,8 @@
 from django.conf.urls.defaults import *
 from django.views.generic.simple import direct_to_template
+from django.contrib.auth.views import login, logout, password_change, password_reset
 from registration.views import register, activate
 from registration.forms import *
-from django.contrib.auth.views import login, logout, password_change, password_reset
 from pley.accounts.forms import CustomRegistrationForm
 
 urlpatterns = patterns('',
