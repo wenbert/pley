@@ -34,10 +34,12 @@ class Review(models.Model):
     created_at      = models.DateTimeField(verbose_name='Date Created', default=datetime.now, blank=True)
     updated_at      = models.DateTimeField(verbose_name='Date Updated', default=datetime.now, blank=True)
 
-    def get_absolute_url(self):
-        return "/review/read/%i/" % self.id
     def __unicode__(self):
         return self.title
+
+    def get_absolute_url(self):
+        return "/review/read/%i/why_is_this_not_return_the_right_id" % self.id
+        
 
 '''
 class Property(models.Model):
