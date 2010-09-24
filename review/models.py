@@ -38,7 +38,7 @@ class Review(models.Model):
         return self.title
 
     def get_absolute_url(self):
-        return "/review/read/%i/why_is_this_not_return_the_right_id" % self.id
+        return "/review/read/%i/" % self.id
         
 
 '''

@@ -134,8 +134,8 @@ def review_edit(request, business_id):
     return render_to_response("review/review_add.html",
                               data, context_instance=RequestContext(request))
 
-def review_read(request, business_id):
+def review_read(request, review_id):
     error = None
-    review = get_object_or_404(Review, business=business_id)
+    review = get_object_or_404(Review, id=review_id)
     return render_to_response('review/review_read.html', {'review':review})
 
