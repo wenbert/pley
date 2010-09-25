@@ -25,6 +25,12 @@
             <li>{{category.category.name}}</li>
         {% endfor %}
         </ul>
+        <h2>Tags</h2>
+        <ul class="boxed_list">
+        {% for category in category_list %}
+            <li>{{category.category.name}}</li>
+        {% endfor %}
+        </ul>
         <h2>Contact Number</h2>
         <ul class="boxed_list">
         {% for phone in phone_list %}

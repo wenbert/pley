@@ -4,6 +4,8 @@ from django.contrib.auth.models import User
 
 from datetime import datetime
 from pley.categories.models import Category
+
+from taggit.managers import TaggableManager
 # Create your models here.
 
 BUSINESS_STATUS = (
@@ -59,6 +61,8 @@ class Business(models.Model):
     created_at      = models.DateTimeField(verbose_name='Date Created', default=datetime.now, blank=True, null=True)
     updated_at      = models.DateTimeField(verbose_name='Date Updated', default=datetime.now, blank=True, null=True)
     created_by      = models.ForeignKey(User)
+
+    tags = TaggableManager()
 
     def __unicode__(self):
         return self.name

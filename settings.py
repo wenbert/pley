@@ -99,6 +99,7 @@ INSTALLED_APPS = (
     'haystack',
     'registration',
     'profiles',
+    'taggit',
     'pley.business',
     'pley.review',
     'pley.accounts',
