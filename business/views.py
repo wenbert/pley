@@ -34,6 +34,7 @@ def business_view_v3_localsearch(request, business_id):
     category_list   = BusinessCategory.objects.filter(business=business_id)
     payment_options = BusinessPaymentOptions.objects.filter(business=business_id)
     print 'Payment: ', payment_options
+    tags            = business_item.tags.all()
     # Check if user already reviewed this business
     try:
         if request.user.is_authenticated():
@@ -76,6 +77,7 @@ def business_view_v3_localsearch(request, business_id):
             "latlng_form": latlng_form,
             "phone_form": phone_form,
             "user_review": user_review,
+            "tags": tags,
             }
     return render_to_response("business/business_view_v3_localsearch.html",
                               data, context_instance=RequestContext(request))
@@ -199,6 +201,7 @@ def business_add(request):
             phone_form.is_valid() and business_payment_options_form.is_valid() and
             hours_formset.is_valid() and details_formset.is_valid()):
 
+            tags            = business_form.cleaned_data['tags']
             business_name   = business_form.cleaned_data['name']
             website         = business_form.cleaned_data['website']
             address_1       = business_form.cleaned_data['address1']
@@ -263,6 +266,9 @@ def business_add(request):
                                                   time_close_1=close1,time_close_2=close2,closed=closed)
                     business_hours.save()
                 print 'hours done'
+                for tag in tags:
+                    business.tags.add(tag)
+
                 for detail_form in details_formset.forms:
                     field_name = detail_form.cleaned_data['field_name']
                     field_value = detail_form.cleaned_data['field_value']
