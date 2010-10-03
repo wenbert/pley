@@ -7,3 +7,4 @@ REQUIREMENTS:
 6) Install whoosh (http://pypi.python.org/pypi/Whoosh/0.3.18)
    As of now 0.3.18 is required or else haystack will not work.
 7) Install django-haystack (http://haystacksearch.org/)
+8) Install django-taggit (http://github.com/alex/django-taggit)
