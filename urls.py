@@ -4,7 +4,6 @@ from pley.business.models import Business
 from pley.review.models import Review
 from pley.business.views import *
 from pley.review.views import *
-from pley.accounts.views import *
 from pley.pley_profiles.forms import ProfileForm
 from pley.categories.views import *
 

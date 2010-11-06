@@ -104,13 +104,14 @@ INSTALLED_APPS = (
     'pley.review',
     'pley.accounts',
     'pley.categories',
+    'pley.pley_profiles',
 )
 
 FIXTURE_DIRS = (
     #os.path.join(os.path.dirname(__file__), 'business','fixtures'),
 )
 
-AUTH_PROFILE_MODULE = 'accounts.UserProfile'
+AUTH_PROFILE_MODULE = 'pley_profiles.UserProfile'
 PAGE_ITEMS = 10
 LOGIN_URL = "/accounts/login"
 LOGIN_REDIRECT_URL = "/"
