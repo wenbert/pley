@@ -1,4 +1,4 @@
-from django.db import models
+from django.db import models, transaction, IntegrityError
 from django.contrib.auth.models import User
 from registration import signals
 
@@ -19,6 +19,7 @@ class UserProfile(models.Model):
         return ('profiles_profile_detail', (), {'username': self.user.username})
     get_absolute_url = models.permalink(get_absolute_url)
 
+@transaction.commit_manually
 def create_user_profile(sender, **kwargs):
     '''Create a user profile for the user after registering'''
     print 'creating user profile'
@@ -36,8 +37,16 @@ def create_user_profile(sender, **kwargs):
                           zipcode=zipcode)
     user.first_name = first_name
     user.last_name = last_name
-    user.save()
-    profile.save()
+
+    try:
+        profile.save()
+    except IntegrityError:
+        print "registration.signals.user_registered triggered twice. "
+        transaction.rollback()
+    else:
+        user.save()
+        transaction.commit()
+
 
 
 #NOTE: this is triggered twice. not sure why.
