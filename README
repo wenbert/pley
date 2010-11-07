@@ -8,3 +8,4 @@ REQUIREMENTS:
    As of now 0.3.18 is required or else haystack will not work.
 7) Install django-haystack (http://haystacksearch.org/)
 8) Install django-taggit (http://github.com/alex/django-taggit)
+9) Install django-debug-toolbar (https://github.com/robhudson/django-debug-toolbar)

@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 from registration import signals
 
 class UserProfile(models.Model):
-    user = models.OneToOneField(User, unique=True)
+    user = models.OneToOneField(User)
     reputation = models.IntegerField(default=0)
     address1        = models.CharField(max_length=250, verbose_name="Address 1",blank=True, null=True)
     address2        = models.CharField(max_length=250, verbose_name="Address 2", blank=True, null=True)
@@ -21,6 +21,7 @@ class UserProfile(models.Model):
 
 def create_user_profile(sender, **kwargs):
     '''Create a user profile for the user after registering'''
+    print 'creating user profile'
     user = kwargs['user']
     request = kwargs['request']
     first_name = request.POST['first_name']
@@ -39,5 +40,6 @@ def create_user_profile(sender, **kwargs):
     profile.save()
 
 
+#NOTE: this is triggered twice. not sure why.
 signals.user_registered.connect(create_user_profile)
 
